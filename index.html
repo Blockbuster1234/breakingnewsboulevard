@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breaking News Boulevard — Latest News & Analysis</title>
+  <meta name="description" content="Your source for breaking news, analysis, and trending stories from around the world. Stay informed with daily updates.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Breaking News Boulevard">
+  <meta property="og:description" content="Your source for breaking news, analysis, and trending stories from around the world.">
+  <link rel="canonical" href="https://www.breakingnewsboulevard.com/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Breaking News Boulevard",
+    "url": "https://www.breakingnewsboulevard.com/",
+    "description": "Your source for breaking news, analysis, and trending stories.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Breaking News Boulevard"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fff;--text:#1a1a2e;--text-light:#666;--accent:#2563eb;--accent-hover:#1d4ed8;--border:#e5e7eb;--card:#f8f9fa;--radius:12px;--shadow:0 2px 8px rgba(0,0,0,.08)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    a{color:var(--accent);text-decoration:none;transition:color .2s}
+    a:hover{color:var(--accent-hover)}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+    /* HEADER */
+    .header{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .logo{font-size:1.4rem;font-weight:800;color:var(--text);letter-spacing:-.02em}
+    .logo a{color:var(--text)}
+    .logo a:hover{color:var(--accent)}
+    .nav{display:flex;gap:24px}
+    .nav a{color:var(--text-light);font-weight:500;font-size:.9rem}
+    .nav a:hover{color:var(--accent)}
+
+    /* HERO */
+    .hero{background:linear-gradient(135deg,#1a1a2e 0%,#2563eb 100%);color:#fff;padding:64px 0;text-align:center}
+    .hero h1{font-size:2.4rem;font-weight:800;margin-bottom:12px;font-family:'Merriweather',serif}
+    .hero p{font-size:1.1rem;opacity:.85;max-width:600px;margin:0 auto}
+
+    /* BREAKING TICKER */
+    .ticker{background:#dc2626;color:#fff;padding:10px 0;overflow:hidden}
+    .ticker-inner{display:flex;align-items:center;gap:16px;animation:ticker 30s linear infinite;white-space:nowrap}
+    .ticker-label{background:#fff;color:#dc2626;padding:4px 12px;border-radius:4px;font-weight:700;font-size:.8rem;flex-shrink:0}
+    @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+    /* ARTICLES GRID */
+    .articles{padding:48px 0}
+    .section-title{font-size:1.5rem;font-weight:700;margin-bottom:24px;display:flex;align-items:center;gap:12px}
+    .section-title::after{content:'';flex:1;height:1px;background:var(--border)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px}
+    .card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+    .card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.12)}
+    .card-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#e5e7eb}
+    .card-body{padding:20px}
+    .card-category{display:inline-block;background:var(--accent);color:#fff;padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+    .card-body h2{font-size:1.15rem;font-weight:700;margin-bottom:8px;line-height:1.3}
+    .card-body h2 a{color:var(--text)}
+    .card-body h2 a:hover{color:var(--accent)}
+    .card-body p{color:var(--text-light);font-size:.88rem;margin-bottom:12px;line-height:1.6}
+    .card-meta{font-size:.78rem;color:var(--text-light)}
+
+    /* FEATURED */
+    .featured{padding:48px 0}
+    .featured-card{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .featured-card img{width:100%;height:100%;object-fit:cover}
+    .featured-body{padding:32px;display:flex;flex-direction:column;justify-content:center}
+    .featured-body h2{font-size:1.6rem;font-weight:800;margin-bottom:12px;line-height:1.3;font-family:'Merriweather',serif}
+    .featured-body h2 a{color:var(--text)}
+    .featured-body h2 a:hover{color:var(--accent)}
+    .featured-body p{color:var(--text-light);margin-bottom:16px;line-height:1.7}
+
+    /* FOOTER */
+    .footer{background:#1a1a2e;color:rgba(255,255,255,.7);padding:48px 0;margin-top:48px}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:32px}
+    .footer h4{color:#fff;margin-bottom:12px;font-size:1rem}
+    .footer a{color:rgba(255,255,255,.7)}
+    .footer a:hover{color:#fff}
+    .footer ul{list-style:none}
+    .footer li{margin-bottom:8px;font-size:.9rem}
+    .footer-bottom{text-align:center;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem}
+
+    /* AD PLACEHOLDER */
+    .ad-placeholder{background:#f0f0f0;border:2px dashed #ccc;border-radius:var(--radius);padding:40px;text-align:center;color:#999;margin:32px 0;font-size:.9rem}
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .hero h1{font-size:1.6rem}
+      .grid{grid-template-columns:1fr}
+      .featured-card{grid-template-columns:1fr}
+      .nav{display:none}
+      .featured-body{padding:20px}
+      .featured-body h2{font-size:1.3rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-label">BREAKING</span>
+    <span id="ticker-text">Loading latest news...</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo"><a href="/">Breaking News Boulevard</a></div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/category/world.html">World</a>
+      <a href="/category/tech.html">Tech</a>
+      <a href="/category/health.html">Health</a>
+      <a href="/category/science.html">Science</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Breaking News Boulevard</h1>
+    <p>Your source for breaking news, in-depth analysis, and stories that matter.</p>
+  </div>
+</section>
+
+<!-- FEATURED POST -->
+<section class="featured" id="featured">
+  <!-- Dynamic content loaded by JS -->
+</section>
+
+<!-- AD -->
+<div class="container">
+  <div class="ad-placeholder">
+    <!-- Google AdSense -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4316838278696534" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
+<!-- ARTICLES GRID -->
+<section class="articles">
+  <div class="container">
+    <h2 class="section-title">Latest Stories</h2>
+    <div class="grid" id="articles-grid">
+      <!-- Dynamic content loaded by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Breaking News Boulevard</h4>
+        <p>Your trusted source for breaking news, analysis, and trending stories from around the world.</p>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="/category/world.html">World News</a></li>
+          <li><a href="/category/tech.html">Technology</a></li>
+          <li><a href="/category/health.html">Health</a></li>
+          <li><a href="/category/science.html">Science</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Twitter / X</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Breaking News Boulevard. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/posts.js"></script>
+<script>
+  // Load posts dynamically
+  if (typeof posts !== 'undefined' && posts.length > 0) {
+    // Ticker
+    document.getElementById('ticker-text').textContent = posts[0].title + ' — ' + (posts[1] ? posts[1].title : '');
+
+    // Featured
+    const feat = posts[0];
+    document.getElementById('featured').innerHTML = `
+      <div class="container">
+        <div class="featured-card">
+          <img src="${feat.image}" alt="${feat.title}" loading="lazy">
+          <div class="featured-body">
+            <span class="card-category">${feat.category}</span>
+            <h2><a href="${feat.url}">${feat.title}</a></h2>
+            <p>${feat.excerpt}</p>
+            <div class="card-meta">${feat.date} &bull; By ${feat.author}</div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Grid
+    const grid = document.getElementById('articles-grid');
+    for (let i = 1; i < posts.length && i < 9; i++) {
+      const p = posts[i];
+      grid.innerHTML += `
+        <article class="card">
+          <img class="card-img" src="${p.image}" alt="${p.title}" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">${p.category}</span>
+            <h2><a href="${p.url}">${p.title}</a></h2>
+            <p>${p.excerpt}</p>
+            <div class="card-meta">${p.date}</div>
+          </div>
+        </article>
+      `;
+    }
+  }
+</script>
+
+<!-- AdSense Script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4316838278696534" crossorigin="anonymous"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+</body>
+</html>

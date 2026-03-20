@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Category — Breaking News Boulevard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--text:#1a1a2e;--text-light:#666;--accent:#2563eb;--border:#e5e7eb;--card:#f8f9fa;--radius:12px;--shadow:0 2px 8px rgba(0,0,0,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--accent);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.header{background:rgba(255,255,255,.97);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-size:1.4rem;font-weight:800}
+.logo a{color:var(--text)}
+.nav{display:flex;gap:24px}
+.nav a{color:var(--text-light);font-weight:500;font-size:.9rem}
+.cat-hero{background:linear-gradient(135deg,#1a1a2e,#2563eb);color:#fff;padding:48px 0;text-align:center}
+.cat-hero h1{font-size:2rem;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;padding:48px 0}
+.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.card-body{padding:20px}
+.card-body h2{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.card-body h2 a{color:var(--text)}
+.card-body p{color:var(--text-light);font-size:.88rem;margin-bottom:8px}
+.card-meta{font-size:.78rem;color:var(--text-light)}
+.footer{background:#1a1a2e;color:rgba(255,255,255,.7);padding:40px 0;text-align:center;margin-top:48px}
+@media(max-width:768px){.grid{grid-template-columns:1fr}.nav{display:none}}
+</style>
+</head>
+<body>
+<header class="header"><div class="container header-inner"><div class="logo"><a href="/">Breaking News Boulevard</a></div><nav class="nav"><a href="/">Home</a><a href="/category/world.html">World</a><a href="/category/tech.html">Tech</a><a href="/category/health.html">Health</a><a href="/category/science.html">Science</a></nav></div></header>
+<section class="cat-hero"><div class="container"><h1 id="cat-title">Category</h1></div></section>
+<div class="container"><div class="grid" id="grid"></div></div>
+<footer class="footer"><div class="container"><p>&copy; 2026 Breaking News Boulevard</p></div></footer>
+<script src="/js/posts.js"></script>
+<script>
+const cat=location.pathname.split('/').pop().replace('.html','');
+document.getElementById('cat-title').textContent=cat.charAt(0).toUpperCase()+cat.slice(1)+' News';
+const filtered=posts.filter(p=>p.category.toLowerCase()===cat);
+const grid=document.getElementById('grid');
+filtered.forEach(p=>{
+grid.innerHTML+=`<article class="card"><img src="${p.image}" alt="${p.title}" loading="lazy"><div class="card-body"><h2><a href="${p.url}">${p.title}</a></h2><p>${p.excerpt}</p><div class="card-meta">${p.date}</div></div></article>`;
+});
+if(filtered.length===0)grid.innerHTML='<p>No articles in this category yet. Check back soon!</p>';
+</script>
+</body>
+</html>
