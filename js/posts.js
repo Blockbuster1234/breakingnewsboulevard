@@ -1,164 +1,151 @@
 // posts.js — Article database
-// Each post: { slug, title, excerpt, image, category, date, author, body }
+// Each post: { slug, title, excerpt, image, category, date, author, url, body }
 
 const posts = [
   {
-    slug: "europe-drone-wall-2026",
-    title: "Europe Plans 'Drone Wall' to Protect Airports from Rising Threats",
-    excerpt: "The EU is considering a cross-border sensor and defense network to detect and neutralize drones after multiple airport disruptions across Northern Europe.",
-    image: "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=800&h=450&fit=crop",
+    slug: "strait-of-hormuz-oil-crisis-2026",
+    title: "Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes",
+    excerpt: "Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.",
+    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&h=450&fit=crop",
     category: "World",
-    date: "March 20, 2026",
+    date: "March 21, 2026",
     author: "Breaking News Boulevard",
-    url: "/posts/europe-drone-wall-2026.html",
+    url: "/posts/strait-of-hormuz-oil-crisis-2026.html",
     body: `
-<p>In a significant move to address growing security concerns, the European Union is considering the creation of a "Drone Wall" — a sophisticated cross-border sensor and defense network designed to detect and neutralize unauthorized drones near critical infrastructure.</p>
+<p>Several leading European nations, Japan, and Canada have announced a joint coalition to ensure safe passage for commercial ships through the Strait of Hormuz, as oil prices continue to climb amid escalating geopolitical tensions.</p>
 
-<h2>The Growing Drone Threat</h2>
-<p>The proposal comes after a series of alarming incidents across Northern Europe. Denmark was forced to close airports multiple times due to drone sightings, with Aalborg airport particularly affected. Flights were diverted or temporarily suspended, causing significant disruption to travelers and the aviation industry.</p>
-<p>Germany's Federal Ministry of the Interior has classified the drone threat level as "high," with Interior Minister Alexander Dobrindt announcing new measures to better protect critical infrastructure and large public events.</p>
+<h2>Oil Prices Surge</h2>
+<p>Brent crude futures rose 1.5% to <strong>$110.32 a barrel</strong>, while US WTI crude saw a 0.3% increase to $96.47. Energy analysts warn that a prolonged conflict could trigger a global energy shock with far-reaching economic consequences.</p>
 
-<h2>What Is the Drone Wall?</h2>
-<p>The proposed Drone Wall would function as a unified defense network spanning multiple EU member states. Key components include:</p>
-<ul>
-<li><strong>Sensor Networks:</strong> Advanced radar and radio frequency detection systems along borders</li>
-<li><strong>Jamming Technology:</strong> Systems capable of disrupting drone communications</li>
-<li><strong>Rapid Response Teams:</strong> Coordinated military and civilian units trained in counter-drone operations</li>
-<li><strong>AI-Powered Detection:</strong> Machine learning systems to distinguish between authorized and unauthorized drones</li>
-</ul>
+<h2>US Sanctions on Iran</h2>
+<p>US Treasury Secretary Scott Bessent indicated that the United States might soon remove sanctions on Iranian oil currently held on tankers to increase global supply and stabilize prices. This comes after reports that Ali Mohammad Naini, spokesperson for Iran's Islamic Revolutionary Guard Corps, was killed in strikes by the US and Israel.</p>
 
-<h2>Germany's Red Storm Bravo Exercise</h2>
-<p>Germany has already begun testing countermeasures through the exercise "Red Storm Bravo," which demonstrates jamming and other defensive capabilities. Military and civilian authorities are practicing coordination to respond to drone threats effectively.</p>
+<h2>Trump on Israeli Operations</h2>
+<p>US President Donald Trump stated that Israel would no longer attack Iranian gas fields after previous retaliatory strikes, signaling a potential de-escalation in the energy sector.</p>
 
-<h2>Changes to Aviation Security Law</p>
-<p>The German government is considering changes to aviation security law, including potentially authorizing the military to take direct action against drones near airports. This would represent a significant shift in how European nations handle aerial security threats.</p>
+<h2>Which Economies Are Most Vulnerable?</h2>
+<p>Experts warn that several economies face disproportionate impact from the energy crisis, including import-dependent nations in Europe and Southeast Asia. Analysts recommend monitoring oil futures closely as the situation develops.</p>
 
-<h2>What This Means for Travelers</h2>
-<p>For travelers, these developments could mean enhanced security at airports but also potential delays as new systems are implemented. Aviation experts recommend staying informed about drone-related disruptions when planning flights through Northern Europe.</p>
-
-<p>The EU's response to the drone threat signals a new era in aviation security — one where the skies above airports are as carefully defended as the ground below.</p>
+<p>A vessel carrying Russian Urals crude is also expected to reach India on March 21, adding another dimension to the complex energy landscape.</p>
     `
   },
   {
-    slug: "nasa-japanese-astronaut-moon-artemis",
-    title: "Japanese Astronaut to Join NASA's Moon Mission in Historic First",
-    excerpt: "In a landmark achievement for space collaboration, a Japanese astronaut will become the first non-American to walk on the Moon as part of the Artemis program.",
+    slug: "chuck-norris-dies-at-86",
+    title: "Chuck Norris, Martial Arts Legend and Hollywood Icon, Dies at 86",
+    excerpt: "Actor and martial arts master Chuck Norris has passed away at age 86, leaving behind a legacy spanning decades of film, television, and martial arts.",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=450&fit=crop",
+    category: "World",
+    date: "March 21, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/chuck-norris-dies-at-86.html",
+    body: `
+<p>Chuck Norris, the legendary martial artist and actor known for his roles in action films and the hit TV series "Walker, Texas Ranger," has died at the age of 86.</p>
+
+<h2>A Life of Achievement</h2>
+<p>Born Carlos Ray Norris on March 10, 1940, in Ryan, Oklahoma, Norris became one of the most recognizable faces in martial arts and entertainment. He began studying martial arts while serving in the US Air Force in South Korea in the late 1950s.</p>
+
+<h2>Hollywood Career</h2>
+<p>Norris made his film debut in 1969 alongside Bruce Lee in "The Way of the Dragon." He went on to star in numerous action films throughout the 1970s and 1980s, including "Missing in Action" and "Delta Force." His most famous role came as Cordell Walker in "Walker, Texas Ranger," which ran for eight seasons from 1993 to 2001.</p>
+
+<h2>Martial Arts Legacy</h2>
+<p>A six-time world karate champion, Norris founded his own martial arts system called Chun Kuk Do. He was inducted into the Martial Arts History Museum's Hall of Fame and received numerous accolades for his contributions to the discipline.</p>
+
+<h2>Cultural Impact</h2>
+<p>Norris became an internet phenomenon in the mid-2000s with "Chuck Norris Facts" — humorous, exaggerated claims about his toughness that became a viral meme. He embraced the phenomenon with good humor, further endearing himself to fans worldwide.</p>
+
+<p>He is survived by his wife Gena and their children. The entertainment world mourns the loss of a true icon.</p>
+    `
+  },
+  {
+    slug: "rocket-lab-launches-8th-satellite-synspective",
+    title: "Rocket Lab Successfully Deploys 8th Satellite for Synspective in 'Eight Days A Week' Mission",
+    excerpt: "Rocket Lab marks its 84th Electron launch, successfully placing the eighth StriX SAR imaging satellite into orbit as part of an expanding partnership with Synspective.",
+    image: "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=800&h=450&fit=crop",
+    category: "Science",
+    date: "March 21, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/rocket-lab-launches-8th-satellite-synspective.html",
+    body: `
+<p>Rocket Lab has successfully launched its "Eight Days A Week" mission, deploying the eighth StriX SAR imaging satellite for Japanese company Synspective to a 573 km low Earth orbit.</p>
+
+<h2>Mission Details</h2>
+<p>The launch marked Rocket Lab's <strong>84th Electron mission</strong> overall and its eighth mission for Synspective. The StriX satellites are synthetic aperture radar (SAR) imaging spacecraft capable of capturing high-resolution images of Earth's surface regardless of weather conditions or time of day.</p>
+
+<h2>Expanding Partnership</h2>
+<p>The collaboration between Rocket Lab and Synspective continues to grow. The companies have extended their partnership for <strong>19 additional launches before 2028</strong>, making it one of the most significant commercial launch agreements in the small satellite industry.</p>
+
+<h2>What Are StriX Satellites?</h2>
+<p>Synspective's StriX satellites provide:</p>
+<ul>
+<li>All-weather, day-and-night Earth observation</li>
+<li>Disaster monitoring and response capabilities</li>
+<li>Infrastructure and urban development tracking</li>
+<li>Environmental and agricultural monitoring</li>
+</ul>
+
+<h2>Rocket Lab's Growth</h2>
+<p>With 84 successful Electron launches, Rocket Lab continues to establish itself as a leading provider of dedicated small satellite launches. The company is also developing the larger Neutron rocket for medium-lift missions.</p>
+    `
+  },
+  {
+    slug: "nasa-moon-rocket-launch-pad-april-2026",
+    title: "NASA Moves Repaired Moon Rocket Back to Launch Pad for Early April Liftoff",
+    excerpt: "NASA's repaired Artemis moon rocket is back on the launch pad as the agency targets an early April launch window for its next lunar mission.",
     image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&h=450&fit=crop",
     category: "Science",
-    date: "March 19, 2026",
+    date: "March 21, 2026",
     author: "Breaking News Boulevard",
-    url: "/posts/nasa-japanese-astronaut-moon-artemis.html",
+    url: "/posts/nasa-moon-rocket-launch-pad-april-2026.html",
     body: `
-<p>In a landmark achievement for international space collaboration, NASA has announced that a Japanese astronaut will become the first non-American to step onto the Moon. This historic moment is part of the Artemis program, which aims to return humans to the lunar surface after more than five decades.</p>
+<p>NASA has rolled its repaired Space Launch System (SLS) moon rocket back to the launch pad at Kennedy Space Center, targeting an early April launch window for the next Artemis mission.</p>
 
-<h2>A New Era of Space Partnership</h2>
-<p>The decision to include a Japanese astronaut in the Artemis program represents a significant departure from past practices. During the Apollo era, all lunar explorations were carried out exclusively by American astronauts. This shift underscores a new era of international partnership in space exploration.</p>
+<h2>Road to the Pad</h2>
+<p>The rocket was moved to the Vehicle Assembly Building after its last scheduled launch attempt was scrubbed due to technical issues. Engineers have since completed repairs and testing, giving the green light for the rollout to Launch Complex 39B.</p>
 
-<h2>Japan's Contributions</h2>
-<p>Under this collaboration, Japan will make significant contributions to the Artemis missions, including:</p>
+<h2>Artemis Program Progress</h2>
+<p>The Artemis program aims to:</p>
 <ul>
-<li>A next-generation lunar rover capable of extended surface operations</li>
-<li>Advanced life support system components</li>
-<li>Critical supply missions to the Lunar Gateway station</li>
-<li>Research equipment for lunar soil analysis</li>
+<li>Return humans to the lunar surface for the first time since 1972</li>
+<li>Establish a sustainable presence on the Moon</li>
+<li>Prepare for eventual crewed missions to Mars</li>
+<li>Include international astronauts in future moonwalks</li>
 </ul>
 
-<h2>Strengthening US-Japan Relations</h2>
-<p>The partnership strengthens ties between the United States and Japan through this monumental agreement. Space officials from both nations have emphasized that this collaboration extends beyond exploration — it represents a deep commitment to shared scientific goals and mutual trust.</p>
+<h2>What to Expect</h2>
+<p>If the early April launch is successful, it will mark a major milestone in the Artemis campaign. Mission managers are conducting final reviews of all systems before committing to a specific launch date.</p>
 
-<h2>The Artemis Timeline</h2>
-<p>NASA's Artemis program continues to progress, with crewed missions planned for the coming years. The inclusion of international astronauts ensures that humanity's return to the Moon will be a collaborative effort, bringing together expertise from around the world.</p>
-
-<p>As the Artemis program advances, it carries with it the dreams and aspirations of not just one nation, but of all humanity looking to the stars.</p>
+<p>Space enthusiasts worldwide are watching closely as NASA prepares to write the next chapter in human space exploration.</p>
     `
   },
   {
-    slug: "ai-revolutionizes-medical-diagnosis-2026",
-    title: "AI System Detects Cancer Earlier Than Human Doctors in New Study",
-    excerpt: "A groundbreaking AI system has demonstrated the ability to detect early-stage cancers with unprecedented accuracy, outperforming experienced radiologists.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=450&fit=crop",
+    slug: "bird-flu-kerala-india-h5n1-2026",
+    title: "Bird Flu Outbreak Confirmed in Kerala, India: Over 5,000 Birds to Be Culled",
+    excerpt: "H5N1 avian influenza has been detected in Kerala's Alappuzha district, prompting authorities to order the culling of thousands of birds to contain the spread.",
+    image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&h=450&fit=crop",
     category: "Health",
-    date: "March 20, 2026",
+    date: "March 21, 2026",
     author: "Breaking News Boulevard",
-    url: "/posts/ai-revolutionizes-medical-diagnosis-2026.html",
+    url: "/posts/bird-flu-kerala-india-h5n1-2026.html",
     body: `
-<p>A groundbreaking artificial intelligence system has demonstrated the ability to detect early-stage cancers with unprecedented accuracy, outperforming experienced radiologists in a large-scale clinical trial.</p>
+<p>Health authorities in India have confirmed an outbreak of H5N1 avian influenza in the Alappuzha district of Kerala, with plans to cull more than 5,000 birds to prevent further spread of the virus.</p>
 
-<h2>The Study</h2>
-<p>Researchers at a leading medical institution conducted a comprehensive study involving over 50,000 patient scans. The AI system analyzed medical images and identified cancerous patterns that human doctors had missed in 17% of cases.</p>
+<h2>Containment Efforts</h2>
+<p>Local officials have established containment zones around the affected area, restricting the movement of poultry and poultry products. Veterinary teams have been deployed to oversee the culling operation and conduct surveillance in surrounding areas.</p>
 
-<h2>How It Works</h2>
-<p>The AI system uses deep learning algorithms trained on millions of medical images. It can detect subtle patterns in:</p>
+<h2>Public Health Response</h2>
+<p>While H5N1 primarily affects birds, health officials are taking precautions to protect human health:</p>
 <ul>
-<li>Mammograms for breast cancer screening</li>
-<li>CT scans for lung cancer detection</li>
-<li>MRI scans for brain tumors</li>
-<li>Colonoscopy images for colorectal polyps</li>
+<li>Screening of individuals who had contact with infected birds</li>
+<li>Distribution of personal protective equipment to workers</li>
+<li>Enhanced surveillance at local hospitals</li>
+<li>Public awareness campaigns about hygiene and food safety</li>
 </ul>
 
-<h2>Implications for Healthcare</h2>
-<p>This technology could revolutionize cancer screening globally. Early detection is crucial — cancers caught in Stage 1 have a 90%+ survival rate, compared to just 20% for Stage 4 diagnoses.</p>
+<h2>Global Context</h2>
+<p>Bird flu outbreaks continue to be reported worldwide, with significant impacts on poultry industries and raising ongoing concerns about zoonotic transmission. The WHO maintains that the risk of sustained human-to-human transmission remains low but continues to monitor mutations.</p>
 
-<p>Medical experts emphasize that AI is not replacing doctors but serving as a powerful diagnostic assistant, catching what the human eye might miss.</p>
-    `
-  },
-  {
-    slug: "global-economy-outlook-2026",
-    title: "Global Economy Shows Signs of Recovery as Inflation Stabilizes",
-    excerpt: "Economists report positive trends as major economies show steady growth and inflation rates return to target levels across developed nations.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=450&fit=crop",
-    category: "World",
-    date: "March 19, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/global-economy-outlook-2026.html",
-    body: `
-<p>The global economy is showing encouraging signs of recovery as inflation rates across major developed nations stabilize near their target levels. Economists from leading institutions are cautiously optimistic about the outlook for 2026.</p>
-
-<h2>Key Indicators</h2>
-<p>Several positive economic signals have emerged in recent months:</p>
-<ul>
-<li>Consumer confidence indices rising across the US and EU</li>
-<li>Unemployment rates at historic lows in multiple countries</li>
-<li>Central banks signaling potential rate cuts</li>
-<li>Manufacturing output increasing in key sectors</li>
-</ul>
-
-<h2>Regional Outlooks</h2>
-<p><strong>United States:</strong> The Federal Reserve has indicated that inflation is moving toward its 2% target, with potential rate adjustments planned for mid-2026.</p>
-<p><strong>European Union:</strong> The ECB reports steady progress in taming inflation while maintaining employment growth across member states.</p>
-<p><strong>Asia-Pacific:</strong> Manufacturing hubs in Vietnam, India, and Indonesia continue to drive global supply chain recovery.</p>
-
-<h2>Challenges Ahead</h2>
-<p>Despite positive trends, economists warn of potential headwinds including geopolitical tensions, climate-related disruptions, and ongoing supply chain vulnerabilities.</p>
-    `
-  },
-  {
-    slug: "green-energy-record-2026",
-    title: "Renewable Energy Hits Record 40% of Global Electricity Generation",
-    excerpt: "Solar and wind energy combined now generate 40% of the world's electricity, marking a historic milestone in the clean energy transition.",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=450&fit=crop",
-    category: "Science",
-    date: "March 18, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/green-energy-record-2026.html",
-    body: `
-<p>Renewable energy has reached a historic milestone, now accounting for 40% of global electricity generation. This achievement marks a significant acceleration in the clean energy transition that scientists say is essential for combating climate change.</p>
-
-<h2>Solar and Wind Lead the Way</h2>
-<p>Solar energy has seen the most dramatic growth, with global capacity doubling in just three years. Wind energy has also expanded significantly, particularly offshore installations in Europe and Asia.</p>
-
-<h2>Country-by-Country Progress</h2>
-<ul>
-<li><strong>Germany:</strong> Renewables now generate over 60% of electricity</li>
-<li><strong>China:</strong> World's largest solar panel producer and installer</li>
-<li><strong>India:</strong> On track to exceed renewable targets by 2027</li>
-<li><strong>Brazil:</strong> Already at 85% renewable electricity</li>
-</ul>
-
-<h2>What's Driving the Change</h2>
-<p>Several factors are accelerating the transition: falling costs (solar is now the cheapest energy source in most countries), government policies, corporate commitments, and growing public demand for clean energy.</p>
-
-<p>Energy analysts predict that renewables could reach 50% of global electricity by 2028 if current trends continue.</p>
+<h2>Advice for the Public</h2>
+<p>Authorities advise residents in the affected region to avoid contact with wild birds, ensure poultry products are thoroughly cooked, and report any unusual bird deaths to local health officials.</p>
     `
   }
 ];
