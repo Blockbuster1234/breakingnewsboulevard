@@ -3,6 +3,43 @@
 
 const posts = [
   {
+    slug: "iran-us-war-natanz-nuclear-strike-march-2026",
+    title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
+    excerpt: "The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.",
+    image: "https://images.unsplash.com/photo-1580752300992-559f8e54eabb?w=800&h=450&fit=crop",
+    category: "World",
+    date: "March 21, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/iran-us-war-natanz-nuclear-strike-march-2026.html",
+    body: `
+<p>The United States and Israel have struck Iran's Natanz nuclear enrichment facility in a dramatic escalation of the 2026 Iran war, now entering its fourth week. Iran's atomic energy organization confirmed the attack but reported no radioactive leakage.</p>
+
+<h2>Natanz Strike: What Happened</h2>
+<p>US and Israeli forces targeted the Natanz complex, Iran's primary uranium enrichment site. The UN atomic watchdog IAEA is investigating and has called for "military restraint to avoid any risk of a nuclear accident." The strike marks one of the most significant military actions against Iran's nuclear infrastructure in history.</p>
+
+<h2>Trump Signals Wind-Down</h2>
+<p>President Trump stated on March 20 that the US was "getting very close to meeting our objectives" and was considering winding down military operations. These objectives include:</p>
+<ul>
+<li>Preventing Iran from achieving nuclear capability</li>
+<li>Degrading Iran's missile capabilities</li>
+<li>Eliminating Iran's navy and air force</li>
+</ul>
+<p>Despite this, Pentagon officials have reportedly made detailed preparations for potentially deploying US ground forces into Iran.</p>
+
+<h2>Iran Retaliates</h2>
+<p>Iran fired two ballistic missiles toward the joint US-UK military base at Diego Garcia in the Indian Ocean. Neither missile hit, but the incident reveals Iran possesses longer-range missiles than previously assessed. Iran-backed groups have also launched drone attacks on US diplomatic hubs in Iraq, including Baghdad International Airport.</p>
+
+<h2>Strait of Hormuz Closed</h2>
+<p>The critical oil shipping lane remains effectively closed, driving Brent crude to $108-$112 per barrel. The US has temporarily lifted sanctions on Iranian oil at sea with a 30-day waiver to ease global energy supply pressures.</p>
+
+<h2>Supreme Leader's Condition Unknown</h2>
+<p>Iran's new Supreme Leader Mojtaba Khamenei, who replaced his father after Ali Khamenei was killed at the start of the war, is believed to be badly injured or incapacitated due to continued absence from public appearances.</p>
+
+<h2>Regional Impact</h2>
+<p>Israel has launched strikes on "regime targets" in Tehran and Hezbollah targets in southern Beirut. The IDF reported killing four Hezbollah members in southern Lebanon. International calls for restraint continue to grow as the conflict threatens to expand further.</p>
+    `
+  },
+  {
     slug: "strait-of-hormuz-oil-crisis-2026",
     title: "Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes",
     excerpt: "Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.",
