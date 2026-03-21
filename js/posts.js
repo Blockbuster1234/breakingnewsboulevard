@@ -33,7 +33,7 @@ const posts = [
     slug: "chuck-norris-dies-at-86",
     title: "Chuck Norris, Martial Arts Legend and Hollywood Icon, Dies at 86",
     excerpt: "Actor and martial arts master Chuck Norris has passed away at age 86, leaving behind a legacy spanning decades of film, television, and martial arts.",
-    image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=450&fit=croph=450https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=450&fit=cropfit=crop",
+    image: "https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?w=800&h=450&fit=crop",
     category: "World",
     date: "March 21, 2026",
     author: "Breaking News Boulevard",
