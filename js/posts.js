@@ -6,7 +6,7 @@ const posts = [
     slug: "iran-us-war-natanz-nuclear-strike-march-2026",
     title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
     excerpt: "The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.",
-    image: "https://images.unsplash.com/photo-1580752300992-559f8e54eabb?w=800&h=450&fit=crop",
+    image: "https://images.unsplash.com/photo-1569242840510-9fe6f0112cee?w=800&h=450&fit=crop",
     category: "World",
     date: "March 21, 2026",
     author: "Breaking News Boulevard",
