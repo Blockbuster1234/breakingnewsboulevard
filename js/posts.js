@@ -3,6 +3,47 @@
 
 const posts = [
   {
+    slug: "trump-48-hour-ultimatum-iran-hormuz-march-2026",
+    title: "Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants",
+    excerpt: "President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.",
+    image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800&h=450&fit=crop",
+    category: "World",
+    date: "March 22, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/trump-48-hour-ultimatum-iran-hormuz-march-2026.html",
+    body: `
+<p>President Donald Trump has issued a dramatic 48-hour ultimatum to Iran, threatening to "obliterate" its power plants — starting with the largest — if the Strait of Hormuz is not fully reopened to international shipping. The warning, posted on Truth Social on March 22, marks the most aggressive escalation yet in a war now entering its fourth week.</p>
+
+<h2>The Ultimatum</h2>
+<p>In a characteristically blunt social media post, Trump demanded Iran immediately cease its blockade of the Strait of Hormuz, the narrow waterway through which roughly a fifth of the world's oil and liquefied natural gas supplies flow. "If Iran does not open the Strait of Hormuz fully and immediately, we will begin by obliterating their largest power plant," Trump wrote. "Then the next one. And the next."</p>
+<p>The threat came after weeks of mounting frustration as Iranian military forces have maintained what multiple nations have called a "de facto closure" of the strait, despite Iran's UN representative claiming it remains open to non-enemy vessels.</p>
+
+<h2>Iran Fires Back — Literally</h2>
+<p>Iran's military wasted no time responding. Tehran warned it would target US and Israeli energy and desalination infrastructure across the Middle East if its own power plants were struck. The threat raises the specter of a devastating tit-for-tat targeting of civilian infrastructure across the region.</p>
+<p>Earlier on March 22, Iran launched a barrage of ballistic missiles at communities in southern Israel near the Dimona nuclear research center and the city of Arad. Over 100 people were injured, with significant damage to apartment blocks. Sirens sounded in Jerusalem as missiles were detected incoming.</p>
+
+<h2>The Widening War</h2>
+<p>The conflict, which began on February 28 with US and Israeli strikes on Iranian military and nuclear targets, has expanded far beyond its original scope. Key developments this week include:</p>
+<ul>
+<li><strong>Saudi Arabia intercepts missiles:</strong> Riyadh detected three ballistic missiles headed for its capital, intercepting one. The kingdom expelled Iran's military attaché and four embassy staff.</li>
+<li><strong>Jordan under fire:</strong> Iranian forces have fired 240 missiles and drones at Jordan in three weeks. The Royal Jordanian Air Force intercepted 222, but 18 penetrated defenses, injuring 24 civilians.</li>
+<li><strong>UAE responds:</strong> The Emirates intercepted three incoming Iranian drones targeting its territory.</li>
+<li><strong>Lebanon front:</strong> Rocket fire from Hezbollah in Lebanon killed one person in northern Israel. Israeli strikes continue on Hezbollah positions in southern Beirut.</li>
+<li><strong>Iraq attacks:</strong> Drone strikes targeted a military base near Baghdad International Airport.</li>
+</ul>
+
+<h2>"Largest Supply Disruption in History"</h2>
+<p>The International Energy Agency has described the Hormuz crisis as "the largest supply disruption in the history of the global oil market." Brent crude remains above $110 per barrel, and gas prices have surged worldwide. A coalition of nations — including the UK, France, Italy, Germany, South Korea, Australia, the UAE, and Bahrain — has condemned the strait's closure.</p>
+<p>Japan is reportedly considering minesweeping operations in the strait if a ceasefire is established, signaling just how seriously the disruption is being taken in Asia.</p>
+
+<h2>Human Cost Mounts</h2>
+<p>The war's toll continues to climb. Over 1,500 people have been killed in Iran, more than 1,000 in Lebanon, 15 in Israel, and 13 US military members have died. Millions have been displaced in both Lebanon and Iran. Iran's President Masoud Pezeshkian has called for an "immediate cessation" of US-Israeli aggression, while Trump has signaled the US is "getting close to meeting our objectives."</p>
+
+<h2>What Happens Next</h2>
+<p>All eyes are on the clock. If Trump's 48-hour deadline passes without compliance — and Iran shows no signs of backing down — the destruction of Iranian power infrastructure could trigger a new and far more dangerous phase of the conflict. With Iran threatening retaliatory strikes on regional energy assets and both sides showing little appetite for diplomacy, the next 48 hours may prove decisive for the entire Middle East.</p>
+    `
+  },
+  {
     slug: "iran-us-war-natanz-nuclear-strike-march-2026",
     title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
     excerpt: "The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.",
