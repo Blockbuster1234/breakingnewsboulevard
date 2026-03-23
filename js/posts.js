@@ -3,6 +3,49 @@
 
 const posts = [
   {
+    slug: "iea-global-economy-major-threat-iran-war-march-2026",
+    title: "IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy — Worse Than 1970s Oil Crises",
+    excerpt: "The head of the International Energy Agency says the Iran war's impact on energy markets surpasses both 1970s oil shocks and the Russia-Ukraine war combined, as stock markets tumble worldwide and oil prices keep climbing.",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=450&fit=crop",
+    category: "Economy",
+    date: "March 23, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/iea-global-economy-major-threat-iran-war-march-2026.html",
+    body: `
+<p>The head of the International Energy Agency has issued his starkest warning yet about the economic fallout of the Iran war, declaring that the global economy faces a "major, major threat" from the conflict — one that surpasses the combined impact of the two 1970s oil shocks and the Russia-Ukraine energy crisis.</p>
+
+<h2>"No Country Is Immune"</h2>
+<p>IEA Executive Director Fatih Birol delivered the warning on March 23 as oil prices continued their relentless climb and stock markets across Asia, Europe, and the Americas posted sharp losses. "No country will be immune from the repercussions of this crisis," Birol said, adding that the disruption to energy supplies through the Strait of Hormuz represents the single largest supply shock in the history of the global oil market.</p>
+<p>Birol's assessment marks a dramatic escalation in tone from international energy officials, who had previously sought to project calm about supply resilience. The strait, through which roughly a fifth of the world's oil and liquefied natural gas flows, remains effectively closed to commercial shipping as Iranian military forces maintain their blockade.</p>
+
+<h2>Markets in Freefall</h2>
+<p>Global financial markets reacted swiftly to the worsening situation:</p>
+<ul>
+<li><strong>South Korea's Kospi</strong> dropped sharply, leading losses across Asian exchanges</li>
+<li><strong>Japan's Nikkei</strong> fell as the yen weakened on energy import fears</li>
+<li><strong>China's Shanghai Composite</strong> declined amid concerns about supply chain disruption</li>
+<li><strong>Hong Kong's Hang Seng</strong> lost ground as investors fled to safe-haven assets</li>
+<li><strong>European markets</strong> opened lower following the Asian selloff</li>
+</ul>
+<p>WTI crude futures ticked higher again, while Brent crude held firmly above $110 per barrel. Analysts warn that a prolonged closure of Hormuz could push prices well past $130.</p>
+
+<h2>Strategic Reserves on the Table</h2>
+<p>The IEA is now actively consulting with European and Asian governments about a coordinated release of strategic petroleum reserves if market conditions deteriorate further. Such a move would mirror the response to Russia's invasion of Ukraine in 2022 but would likely need to be larger in scale given the magnitude of the current disruption.</p>
+<p>Several nations are already taking independent action. Indonesia has announced plans to allocate up to 80 trillion rupiah — approximately $4.7 billion — to cushion its economy from the energy price shock. Japan and South Korea are reportedly considering their own emergency measures.</p>
+
+<h2>US Faces Domestic Pressure</h2>
+<p>In the United States, rising gasoline prices are expected to consume much of this year's tax refund windfall, according to economists — erasing the spending boost that policymakers had hoped would support growth. The political pressure on President Trump is mounting as pump prices climb in key electoral states.</p>
+<p>In a bid to ease supply constraints, the US has temporarily waived sanctions on Iranian oil shipments at sea, granting a 30-day window for tankers carrying Iranian crude to deliver their cargoes. The move signals a pragmatic shift even as military operations against Iran continue to escalate.</p>
+
+<h2>Trump's 48-Hour Clock Ticks</h2>
+<p>The economic crisis unfolds alongside the military one. Trump's 48-hour ultimatum to Iran — demanding the full reopening of the Strait of Hormuz or face strikes on Iranian power plants — expires on March 24. Iran has responded defiantly, threatening to "completely close" the strait and strike regional energy infrastructure if the US follows through.</p>
+<p>Meanwhile, the Israeli military launched a "wide-scale wave" of strikes targeting Iranian infrastructure in Tehran early on March 23, with Iranian news agencies reporting explosions in the capital. Iran-backed Hezbollah claimed 56 attacks on Israeli positions between March 21 and 22.</p>
+
+<h2>What Comes Next</h2>
+<p>With the IEA's warning, the Iran war is no longer just a geopolitical crisis — it is an economic emergency with the potential to trigger a global recession. If Hormuz remains closed through April, analysts project oil could hit $150, inflation would spike worldwide, and central banks would face an impossible choice between fighting price rises and supporting growth. The next 48 hours may determine whether the world slides into that scenario or steps back from the brink.</p>
+    `
+  },
+  {
     slug: "trump-48-hour-ultimatum-iran-hormuz-march-2026",
     title: "Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants",
     excerpt: "President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.",
