@@ -3,6 +3,51 @@
 
 const posts = [
   {
+    slug: "trump-claims-iran-talks-denied-ultimatum-extended-march-2026",
+    title: "Trump Claims 'Productive Talks' With Iran to End War — Tehran Denies Everything",
+    excerpt: "President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.",
+    image: "/images/trump-iran-talks-denied.jpg",
+    category: "World",
+    date: "March 24, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/trump-claims-iran-talks-denied-ultimatum-extended-march-2026.html",
+    body: `
+<p>In a stunning twist that sent oil prices plunging but left diplomats bewildered, President Donald Trump announced on March 24 that the United States is engaged in "very good and productive conversations" with Iran to end the war — even as Tehran flatly denied that any such talks are taking place. The conflicting narratives have left the world guessing: Is a ceasefire genuinely within reach, or is this political theater while the bombs keep falling?</p>
+
+<h2>Trump Extends the Deadline</h2>
+<p>Trump's 48-hour ultimatum — demanding Iran fully reopen the Strait of Hormuz or face the destruction of its power plants — was set to expire on March 24. But rather than ordering strikes, the president announced he was extending the deadline, citing progress in back-channel negotiations. "We've had very good and productive conversations," Trump told reporters, declining to provide specifics about who was talking to whom or what terms were on the table.</p>
+<p>The extension immediately injected optimism into global financial markets. Brent crude, the international oil benchmark, plunged more than 10% in a single session — its sharpest daily decline since the war began on February 28. Asian stock markets, which had been sliding for weeks, posted broad gains on the hope that energy disruptions might ease.</p>
+
+<h2>Iran: "He Retreated Out of Fear"</h2>
+<p>Iran's response was swift and dismissive. State media declared that Trump had "retreated from his ultimatum out of fear of Iran's response," framing the extension as a victory for Tehran's military defiance rather than a diplomatic breakthrough. Iranian officials emphasized that they had made no concessions and entered no negotiations.</p>
+<p>However, a senior Iranian Foreign Ministry official told CBS News that "we received points from the U.S. through mediators and they are being reviewed" — suggesting some form of indirect communication is indeed underway, even if it falls short of formal talks. The official did not identify the mediators.</p>
+
+<h2>The War Rages On</h2>
+<p>Even as the diplomatic rhetoric swirled, the fighting showed no signs of abating:</p>
+<ul>
+<li><strong>Missiles hit Tel Aviv:</strong> Iran launched multiple missile waves at Israel, with at least one projectile impacting a residential area in Tel Aviv, blowing out windows but causing no reported injuries.</li>
+<li><strong>Beirut under fire:</strong> Israeli airstrikes hit a residential apartment building near Beirut, killing at least two people and wounding five others. Strikes also targeted several areas across southern Lebanon.</li>
+<li><strong>Tehran still being struck:</strong> US-Israeli forces continued hitting targets in the Iranian capital.</li>
+<li><strong>Iraq strikes:</strong> Seven Popular Mobilization Forces fighters were killed in a strike near Baghdad.</li>
+</ul>
+<p>US Central Command reported that it has struck more than 9,000 Iranian targets and conducted 9,000 combat sorties since the war began — a staggering operational tempo that underscores the scale of the military campaign.</p>
+
+<h2>Strait of Hormuz: Mines, Not Peace</h2>
+<p>Despite the optimistic headlines, the Strait of Hormuz remains effectively closed. US intelligence assessments indicate at least a dozen Iranian mines have been laid in the waterway. Iran has threatened to mine the "entire Persian Gulf" if its power plants are struck, raising the stakes for any future military escalation.</p>
+<p>The strait, through which roughly a fifth of the world's oil and liquefied natural gas flows, has been under de facto Iranian blockade for weeks. While Iran's Foreign Ministry insists the waterway "remains open under wartime monitoring," commercial shipping companies are not taking chances — most tankers are avoiding the route entirely.</p>
+
+<h2>Global Diplomatic Pressure</h2>
+<p>International calls for a ceasefire are intensifying. Russia has urged a "political and diplomatic" settlement, while China has called on all parties to end military operations to prevent a "vicious cycle" of escalation. In Italy, protests erupted against the war, Prime Minister Giorgia Meloni, and a forthcoming constitutional referendum.</p>
+<p>The death toll continues to mount grimly: over 1,500 killed in Iran, more than 1,000 in Lebanon, 15 in Israel, and 13 US military members. Millions have been displaced across the region.</p>
+
+<h2>Oil Markets: Relief or Trap?</h2>
+<p>The 10% plunge in Brent crude offered temporary relief, but analysts caution against premature celebration. Even after the drop, oil remains far above pre-war levels, and any resumption of hostilities at Hormuz would send prices skyrocketing again. The Federal Reserve noted that Middle East developments present "uncertain" implications for the US economy, while the Producer Price Index surged 0.7% in February, driven by energy and food cost increases.</p>
+
+<h2>What Comes Next</h2>
+<p>The next few days will be critical. If back-channel communications — however informal — can produce even a partial reopening of Hormuz, markets could stabilize. But if Iran's defiance continues and Trump is forced to either strike or lose credibility, the world faces a dramatic escalation. For now, both sides are playing a dangerous game of brinkmanship, with the global economy hanging in the balance.</p>
+    `
+  },
+  {
     slug: "ai-image-generation-chatgpt-claude-grok-2026",
     title: "ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?",
     excerpt: "A comprehensive comparison of AI image generation tools — from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.",
