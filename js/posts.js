@@ -3,6 +3,51 @@
 
 const posts = [
   {
+    slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
+    title: "US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan",
+    excerpt: "The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.",
+    image: "/images/us-82nd-airborne-iran-ceasefire.jpg",
+    category: "World",
+    date: "March 25, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026.html",
+    body: `
+<p>The United States is preparing to deploy approximately 3,000 soldiers from the elite 82nd Airborne Division to the Middle East — the largest single ground deployment since the Iran war began on February 28 — even as Pakistan brokers a 15-point ceasefire plan that sent oil prices crashing below $100 for the first time in weeks. The contradictory signals of escalation and diplomacy have left the world watching to see which force wins out: the generals or the diplomats.</p>
+
+<h2>Boots on the Ground</h2>
+<p>The deployment of the 82nd Airborne, one of the US military's most rapid-response units, marks a significant shift in the conflict. Until now, the war has been fought primarily through air strikes, naval operations, and missile defense. The paratroopers will join thousands of Marines already heading to the region, raising the prospect that US forces could be used in a ground capacity for the first time.</p>
+<p>Pentagon officials have not disclosed the troops' specific mission, but military analysts say their likely roles include securing forward operating bases, providing rapid-reaction capability near the Strait of Hormuz, and potentially supporting special operations inside Iran. The deployment signals that Washington is preparing for a prolonged engagement rather than the quick campaign originally envisioned.</p>
+
+<h2>The 15-Point Plan</h2>
+<p>In a dramatic diplomatic development, Pakistan has presented both Washington and Tehran with a 15-point framework for ending the war. The plan, reportedly facilitated through back-channel communications over the past week, is said to include provisions for a phased ceasefire, the reopening of the Strait of Hormuz, and guarantees around Iran's nuclear program.</p>
+<p>President Trump has expressed cautious optimism, telling reporters that "talks are progressing" and hinting at a "present" related to oil, gas, and the strait. The ceasefire hopes immediately roiled energy markets: Brent crude plunged 5.9% to $98.28 per barrel, while WTI fell 5.1% to $87.68 — erasing the previous day's gains in a single session.</p>
+
+<h2>Iran's Military Pushes Back</h2>
+<p>Despite Trump's optimism, Iran's military establishment has flatly rejected the prospect of negotiations with Washington. The Islamic Revolutionary Guard Corps declared that it would not negotiate "under the shadow of bombs," while state media continued to frame the conflict as a defensive war against American aggression. Iran has consistently denied seeking nuclear weapons, a position it reiterated through its UN mission.</p>
+<p>Adding complexity, Israel's UN Ambassador stated that Jerusalem is "not part of US-Iran talks" and will continue military operations until Iran's nuclear and missile capabilities are fully eliminated. The gap between Washington's apparent willingness to talk and Israel's insistence on total victory could prove to be the plan's greatest obstacle.</p>
+
+<h2>Day 26: The Toll</h2>
+<p>The human cost of the conflict continues to mount on all sides:</p>
+<ul>
+<li><strong>Iran:</strong> Over 1,500 killed. A raid in southern Tehran caused at least 12 deaths and 28 injuries. Explosions destroyed a school and residential buildings in eastern Tehran.</li>
+<li><strong>Lebanon:</strong> 1,072 killed and 2,966 wounded since March 2. Officials warn of a potential Israeli ground invasion south of the Litani River. Mass evacuations ordered in Beirut's southern suburbs.</li>
+<li><strong>Israel:</strong> Continued missile barrages from Iran, though frequency has dropped from nearly 400 on day one to roughly 10 per day.</li>
+<li><strong>US forces:</strong> 13 killed, approximately 290 wounded in action since the war began.</li>
+<li><strong>Regional:</strong> Kuwait reported a fire at its airport following a drone strike on a fuel tank. Jordan continues intercepting Iranian missiles and drones aimed at its territory.</li>
+</ul>
+
+<h2>Lebanon Expels Iran's Ambassador</h2>
+<p>In a major diplomatic escalation, Lebanon expelled Iran's ambassador as part of a crackdown on Tehran's influence within its borders. The move reflects growing Lebanese frustration with Iran-backed Hezbollah's role in dragging the country into a war many Lebanese did not choose. Hezbollah, meanwhile, continues attacking Israeli soldiers and infrastructure in southern Lebanon.</p>
+
+<h2>Markets Breathe — Briefly</h2>
+<p>Asian markets rallied sharply on ceasefire hopes. Tokyo's Nikkei surged 3%, Seoul's Kospi gained 1.6%, and India's Sensex soared over 1,100 points. But US markets closed lower the previous day, with the S&P 500 falling 0.4% and the Nasdaq dropping 0.8% — suggesting Wall Street remains skeptical that diplomacy will prevail.</p>
+<p>Retail fuel prices continue to bite: US gasoline has hit $3.98 per gallon (up 34% since the war began), while diesel has surged 42% to $5.35. Even if a ceasefire materializes, analysts expect oil to remain in the $85-$90 range, with prices climbing back toward $110 only if Hormuz fully reopens.</p>
+
+<h2>What Happens Next</h2>
+<p>The next 72 hours are critical. If Pakistan's 15-point plan gains traction — and if Trump can bridge the gap between his desire for a deal and Israel's demand for total victory — the war could enter a new diplomatic phase. But the deployment of 3,000 paratroopers tells a different story: Washington is also preparing for the possibility that talks fail. For now, the world is caught between two timelines — one toward peace, the other toward a ground war nobody wants.</p>
+    `
+  },
+  {
     slug: "trump-claims-iran-talks-denied-ultimatum-extended-march-2026",
     title: "Trump Claims 'Productive Talks' With Iran to End War — Tehran Denies Everything",
     excerpt: "President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.",
