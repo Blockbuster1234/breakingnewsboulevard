@@ -4,9 +4,25 @@
 const posts = [  {
     slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
     title: "Why does the US have Iran's Kharg Island in its sights?",
-    excerpt: `**Why the United States IsWatching Iran’s Kharg Island**
+    excerpt: "**Whythe United States Is Watching Iran’s Kharg Island**
 
-The tiny speck of land known as Kharg Island, situated about 25 kilometres off Iran’s southern coast in the Persian Gulf, has become a focal point of U. S.`,
+*By [Your Name] – [Date]*  
+
+Kharg Island, a speck of land in the Persian Gulf roughly 25 kilometres off the coast of Iran’s Bushehr province, has become a focal point of U. S.",
+    image: "/images/ai-image-generation.jpg",
+    category: "World",
+    date: "March 30, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/why-does-the-us-have-iran-s-kharg-island-in-its-sights.html",
+    body: `
+<p>**Whythe United States Is Watching Iran’s Kharg Island**</p><p>*By [Your Name] – [Date]*  </p><p>Kharg Island, a speck of land in the Persian Gulf roughly 25 kilometres off the coast of Iran’s Bushehr province, has become a focal point of U.S. strategic attention because it houses the bulk of Iran’s oil export infrastructure. The island’s terminals load crude onto supertankers that feed global markets, making it a linchpin of Tehran’s economy and a potential lever in Washington’s broader pressure campaign against the Islamic Republic.</p><p>The island’s significance dates back to the 1960s, when Iran’s national oil company began developing Kharg as a deep‑water port capable of handling Very Large Crude Carriers (VLCCs). Over the decades, the facility expanded to include multiple berths, storage tanks, and pipelines linking it to Iran’s major oil fields in the southwest. Today, Kharg handles roughly 90 % of Iran’s crude exports, according to industry analysts, and any disruption to its operations can sharply affect global oil prices.</p><p>U.S. interest in Kharg has intensified amid renewed sanctions targeting Iran’s energy sector. After the United States withdrew from the Joint Comprehensive Plan of Action (JCPOA) in 2018 and reimposed sweeping sanctions, Washington has sought to curb Tehran’s ability to finance its ballistic‑missile program and regional activities by limiting oil revenue. While direct military action against Kharg remains unlikely given the risk of escalation, U.S. officials have repeatedly warned that they retain the option to target Iranian energy infrastructure if Tehran violates nuclear commitments or engages in provocative behavior.</p><p>Recent satellite imagery analyzed by independent researchers shows increased U.S. naval presence in the northern Gulf, including destroyers and patrol vessels conducting routine freedom‑of‑navigation operations near Iranian waters. Although these maneuvers are framed as ensuring maritime security, analysts note they also serve to monitor activity around Kharg and signal Washington’s readiness to respond swiftly to any perceived threat.</p><p>Iran, for its part, has taken steps to harden the island’s defenses. Reports from Iranian state media describe the deployment of additional air‑defense systems, coastal artillery, and rapid‑response boats around Kharg. Tehran insists these measures are purely defensive and aimed at safeguarding its sovereign rights to export oil.</p><p>The broader context involves a delicate balance of power in the Gulf. Saudi Arabia and the United Arab Emirates, both U.S. allies, have sought to increase their own oil output to compensate for any potential shortfall from Iran, while China and India continue to import Iranian crude despite U.S. secondary sanctions, often through complex ship‑to‑ship transfers that obscure the origin of the cargo.</p><p>Energy experts warn that any intentional disruption of Kharg’s operations could trigger a spike in oil prices, hurting consumers worldwide and potentially destabilizing economies still recovering from the pandemic‑induced downturn. Consequently, U.S. policymakers appear to favor a strategy of diplomatic pressure and sanctions enforcement rather than direct kinetic action, reserving military options as a last resort.</p><p>As negotiations over Iran’s nuclear program stall and regional tensions persist, Kharg Island remains a barometer of U.S.-Iran relations. Its continued operation underpins Iran’s fiscal health, while its vulnerability underscores the extent to which Washington can influence</p>
+  },
+{
+    slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
+    title: "Why does the US have Iran's Kharg Island in its sights?",
+    excerpt:"**Why the United States IsWatching Iran’s Kharg Island**
+
+The tiny speck of land known as Kharg Island, situated about 25 kilometres off Iran’s southern coast in the Persian Gulf, has become a focal point of U. S.",
     image: "/images/ai-image-generation.jpg",
     category: "World",
     date: "March 30, 2026",
@@ -18,9 +34,9 @@ The tiny speck of land known as Kharg Island, situated about 25 kilometres off
 {
     slug: "russian-oil-tanker-reaches-cuba-after-trump-appears-to-loosen-blockade",
     title: "Russian oil tanker reaches Cuba after Trump appears to loose",
-    excerpt: `**Russian oil tankerreaches Cuban waters shortly after Trump remarks**
+    excerpt:"**Russian oil tankerreaches Cuban waters shortly after Trump remarks**
 
-HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U. S.`,
+HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U. S.",
     image: "/images/ai-image-generation.jpg",
     category: "World",
     date: "March 30, 2026",
@@ -31,7 +47,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
 {
     slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
     title: "US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan",
-    excerpt: `The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.`,
+    excerpt:"The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.",
     image: "/images/us-82nd-airborne-iran-ceasefire.jpg",
     category: "World",
     date: "March 25, 2026",
@@ -76,7 +92,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "trump-claims-iran-talks-denied-ultimatum-extended-march-2026",
     title: "Trump Claims 'Productive Talks' With Iran to End War — Tehran Denies Everything",
-    excerpt: `President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.`,
+    excerpt:"President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.",
     image: "/images/trump-iran-talks-denied.jpg",
     category: "World",
     date: "March 24, 2026",
@@ -121,7 +137,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "ai-image-generation-chatgpt-claude-grok-2026",
     title: "ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?",
-    excerpt: `A comprehensive comparison of AI image generation tools — from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.`,
+    excerpt:"A comprehensive comparison of AI image generation tools — from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.",
     image: "/images/ai-image-generation.jpg",
     category: "Tech",
     date: "March 23, 2026",
@@ -194,7 +210,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "iea-global-economy-major-threat-iran-war-march-2026",
     title: "IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy — Worse Than 1970s Oil Crises",
-    excerpt: `The head of the International Energy Agency says the Iran war's impact on energy markets surpasses both 1970s oil shocks and the Russia-Ukraine war combined, as stock markets tumble worldwide and oil prices keep climbing.`,
+    excerpt:"The head of the International Energy Agency says the Iran war's impact on energy markets surpasses both 1970s oil shocks and the Russia-Ukraine war combined, as stock markets tumble worldwide and oil prices keep climbing.",
     image: "/images/iea-economy-oil-crisis.jpg",
     category: "Economy",
     date: "March 23, 2026",
@@ -237,7 +253,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "trump-48-hour-ultimatum-iran-hormuz-march-2026",
     title: "Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants",
-    excerpt: `President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.`,
+    excerpt:"President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.",
     image: "/images/trump-ultimatum-military.jpg",
     category: "World",
     date: "March 22, 2026",
@@ -278,7 +294,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "iran-us-war-natanz-nuclear-strike-march-2026",
     title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
-    excerpt: `The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.`,
+    excerpt:"The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.",
     image: "/images/natanz-nuclear-strike.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -315,7 +331,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "strait-of-hormuz-oil-crisis-2026",
     title: "Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes",
-    excerpt: `Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.`,
+    excerpt:"Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.",
     image: "/images/strait-hormuz-oil-route.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -342,7 +358,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "chuck-norris-dies-at-86",
     title: "Chuck Norris, Martial Arts Legend and Hollywood Icon, Dies at 86",
-    excerpt: `Actor and martial arts master Chuck Norris has passed away at age 86, leaving behind a legacy spanning decades of film, television, and martial arts.`,
+    excerpt:"Actor and martial arts master Chuck Norris has passed away at age 86, leaving behind a legacy spanning decades of film, television, and martial arts.",
     image: "/images/chuck-norris-legacy.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -369,7 +385,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "rocket-lab-launches-8th-satellite-synspective",
     title: "Rocket Lab Successfully Deploys 8th Satellite for Synspective in 'Eight Days A Week' Mission",
-    excerpt: `Rocket Lab marks its 84th Electron launch, successfully placing the eighth StriX SAR imaging satellite into orbit as part of an expanding partnership with Synspective.`,
+    excerpt:"Rocket Lab marks its 84th Electron launch, successfully placing the eighth StriX SAR imaging satellite into orbit as part of an expanding partnership with Synspective.",
     image: "/images/rocket-lab-satellite.jpg",
     category: "Science",
     date: "March 21, 2026",
@@ -400,7 +416,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "nasa-moon-rocket-launch-pad-april-2026",
     title: "NASA Moves Repaired Moon Rocket Back to Launch Pad for Early April Liftoff",
-    excerpt: `NASA's repaired Artemis moon rocket is back on the launch pad as the agency targets an early April launch window for its next lunar mission.`,
+    excerpt:"NASA's repaired Artemis moon rocket is back on the launch pad as the agency targets an early April launch window for its next lunar mission.",
     image: "/images/nasa-moon-rocket.jpg",
     category: "Science",
     date: "March 21, 2026",
@@ -430,7 +446,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "bird-flu-kerala-india-h5n1-2026",
     title: "Bird Flu Outbreak Confirmed in Kerala, India: Over 5,000 Birds to Be Culled",
-    excerpt: `H5N1 avian influenza has been detected in Kerala's Alappuzha district, prompting authorities to order the culling of thousands of birds to contain the spread.`,
+    excerpt:"H5N1 avian influenza has been detected in Kerala's Alappuzha district, prompting authorities to order the culling of thousands of birds to contain the spread.",
     image: "/images/bird-flu-kerala.jpg",
     category: "Health",
     date: "March 21, 2026",
@@ -461,7 +477,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "scientists-grow-hair-follicles-lab-breakthrough-2026",
     title: "Scientists Successfully Grow Functional Hair Follicles in Lab, Opening Door to Regenerative Breakthroughs",
-    excerpt: `Researchers have achieved a major milestone by growing fully functional human hair follicles in the laboratory, a development with profound implications for treating hair loss and advancing regenerative medicine.`,
+    excerpt:"Researchers have achieved a major milestone by growing fully functional human hair follicles in the laboratory, a development with profound implications for treating hair loss and advancing regenerative medicine.",
     image: "/images/hair-follicles-lab.jpg",
     category: "Health",
     date: "March 21, 2026",
