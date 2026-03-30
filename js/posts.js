@@ -4,9 +4,9 @@
 const posts = [  {
     slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
     title: "Why does the US have Iran's Kharg Island in its sights?",
-    excerpt: "**Why the United States IsWatching Iran’s Kharg Island**
+    excerpt: `**Why the United States IsWatching Iran’s Kharg Island**
 
-The tiny speck of land known as Kharg Island, situated about 25 kilometres off Iran’s southern coast in the Persian Gulf, has become a focal point of U. S.",
+The tiny speck of land known as Kharg Island, situated about 25 kilometres off Iran’s southern coast in the Persian Gulf, has become a focal point of U. S.`,
     image: "/images/ai-image-generation.jpg",
     category: "World",
     date: "March 30, 2026",
@@ -18,9 +18,9 @@ The tiny speck of land known as Kharg Island, situated about 25 kilometres off
 {
     slug: "russian-oil-tanker-reaches-cuba-after-trump-appears-to-loosen-blockade",
     title: "Russian oil tanker reaches Cuba after Trump appears to loose",
-    excerpt: "**Russian oil tankerreaches Cuban waters shortly after Trump remarks**
+    excerpt: `**Russian oil tankerreaches Cuban waters shortly after Trump remarks**
 
-HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U. S.",
+HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U. S.`,
     image: "/images/ai-image-generation.jpg",
     category: "World",
     date: "March 30, 2026",
@@ -31,7 +31,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
 {
     slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
     title: "US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan",
-    excerpt: "The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.",
+    excerpt: `The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.`,
     image: "/images/us-82nd-airborne-iran-ceasefire.jpg",
     category: "World",
     date: "March 25, 2026",
@@ -76,7 +76,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "trump-claims-iran-talks-denied-ultimatum-extended-march-2026",
     title: "Trump Claims 'Productive Talks' With Iran to End War — Tehran Denies Everything",
-    excerpt: "President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.",
+    excerpt: `President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.`,
     image: "/images/trump-iran-talks-denied.jpg",
     category: "World",
     date: "March 24, 2026",
@@ -121,7 +121,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "ai-image-generation-chatgpt-claude-grok-2026",
     title: "ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?",
-    excerpt: "A comprehensive comparison of AI image generation tools — from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.",
+    excerpt: `A comprehensive comparison of AI image generation tools — from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.`,
     image: "/images/ai-image-generation.jpg",
     category: "Tech",
     date: "March 23, 2026",
@@ -194,7 +194,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "iea-global-economy-major-threat-iran-war-march-2026",
     title: "IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy — Worse Than 1970s Oil Crises",
-    excerpt: "The head of the International Energy Agency says the Iran war's impact on energy markets surpasses both 1970s oil shocks and the Russia-Ukraine war combined, as stock markets tumble worldwide and oil prices keep climbing.",
+    excerpt: `The head of the International Energy Agency says the Iran war's impact on energy markets surpasses both 1970s oil shocks and the Russia-Ukraine war combined, as stock markets tumble worldwide and oil prices keep climbing.`,
     image: "/images/iea-economy-oil-crisis.jpg",
     category: "Economy",
     date: "March 23, 2026",
@@ -237,7 +237,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "trump-48-hour-ultimatum-iran-hormuz-march-2026",
     title: "Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants",
-    excerpt: "President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.",
+    excerpt: `President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.`,
     image: "/images/trump-ultimatum-military.jpg",
     category: "World",
     date: "March 22, 2026",
@@ -278,7 +278,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "iran-us-war-natanz-nuclear-strike-march-2026",
     title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
-    excerpt: "The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.",
+    excerpt: `The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.`,
     image: "/images/natanz-nuclear-strike.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -315,7 +315,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "strait-of-hormuz-oil-crisis-2026",
     title: "Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes",
-    excerpt: "Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.",
+    excerpt: `Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.`,
     image: "/images/strait-hormuz-oil-route.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -342,7 +342,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "chuck-norris-dies-at-86",
     title: "Chuck Norris, Martial Arts Legend and Hollywood Icon, Dies at 86",
-    excerpt: "Actor and martial arts master Chuck Norris has passed away at age 86, leaving behind a legacy spanning decades of film, television, and martial arts.",
+    excerpt: `Actor and martial arts master Chuck Norris has passed away at age 86, leaving behind a legacy spanning decades of film, television, and martial arts.`,
     image: "/images/chuck-norris-legacy.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -369,7 +369,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "rocket-lab-launches-8th-satellite-synspective",
     title: "Rocket Lab Successfully Deploys 8th Satellite for Synspective in 'Eight Days A Week' Mission",
-    excerpt: "Rocket Lab marks its 84th Electron launch, successfully placing the eighth StriX SAR imaging satellite into orbit as part of an expanding partnership with Synspective.",
+    excerpt: `Rocket Lab marks its 84th Electron launch, successfully placing the eighth StriX SAR imaging satellite into orbit as part of an expanding partnership with Synspective.`,
     image: "/images/rocket-lab-satellite.jpg",
     category: "Science",
     date: "March 21, 2026",
@@ -400,7 +400,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "nasa-moon-rocket-launch-pad-april-2026",
     title: "NASA Moves Repaired Moon Rocket Back to Launch Pad for Early April Liftoff",
-    excerpt: "NASA's repaired Artemis moon rocket is back on the launch pad as the agency targets an early April launch window for its next lunar mission.",
+    excerpt: `NASA's repaired Artemis moon rocket is back on the launch pad as the agency targets an early April launch window for its next lunar mission.`,
     image: "/images/nasa-moon-rocket.jpg",
     category: "Science",
     date: "March 21, 2026",
@@ -430,7 +430,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "bird-flu-kerala-india-h5n1-2026",
     title: "Bird Flu Outbreak Confirmed in Kerala, India: Over 5,000 Birds to Be Culled",
-    excerpt: "H5N1 avian influenza has been detected in Kerala's Alappuzha district, prompting authorities to order the culling of thousands of birds to contain the spread.",
+    excerpt: `H5N1 avian influenza has been detected in Kerala's Alappuzha district, prompting authorities to order the culling of thousands of birds to contain the spread.`,
     image: "/images/bird-flu-kerala.jpg",
     category: "Health",
     date: "March 21, 2026",
@@ -461,7 +461,7 @@ HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tu
   {
     slug: "scientists-grow-hair-follicles-lab-breakthrough-2026",
     title: "Scientists Successfully Grow Functional Hair Follicles in Lab, Opening Door to Regenerative Breakthroughs",
-    excerpt: "Researchers have achieved a major milestone by growing fully functional human hair follicles in the laboratory, a development with profound implications for treating hair loss and advancing regenerative medicine.",
+    excerpt: `Researchers have achieved a major milestone by growing fully functional human hair follicles in the laboratory, a development with profound implications for treating hair loss and advancing regenerative medicine.`,
     image: "/images/hair-follicles-lab.jpg",
     category: "Health",
     date: "March 21, 2026",
