@@ -1,8 +1,21 @@
 // posts.js — Article database
 // Each post: { slug, title, excerpt, image, category, date, author, url, body }
 
-const posts = [
-  {
+const posts = [  {
+    slug: "russian-oil-tanker-reaches-cuba-after-trump-appears-to-loosen-blockade",
+    title: "Russian oil tanker reaches Cuba after Trump appears to loose",
+    excerpt: "**Russian oil tankerreaches Cuban waters shortly after Trump remarks**
+
+HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U. S.",
+    image: "/images/ai-image-generation.jpg",
+    category: "World",
+    date: "March 30, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/russian-oil-tanker-reaches-cuba-after-trump-appears-to-loosen-blockade.html",
+    body: `
+<p>**Russian oil tankerreaches Cuban waters shortly after Trump remarks**</p><p>HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U.S. President Donald Trump told reporters he had “no problem” with the vessel’s arrival. The ship, identified as the *Vladimir Monaco*, discharged its cargo at the port of Mariel, west of Havana, according to port authorities and satellite tracking data.</p><p>The *Vladimir Monaco*, a Suezmax‑class crude carrier registered in Saint Petersburg, left the Russian port of Novorossiysk on September 12 carrying approximately 800,000 barrels of Urals blend crude. After transiting the Atlantic and passing through the Caribbean, the vessel altered its course toward Cuba on September 24, prompting monitoring by U.S. and regional maritime authorities. Cuban officials confirmed the tanker docked at the Mariel Special Development Zone at 03:15 local time, where it began offloading fuel destined for the island’s power plants and transportation sector.</p><p>Trump’s comment came during a press briefing in Florida on Monday, where he was asked about reports of a Russian tanker heading to Cuba. “If they want to bring oil in, I have no problem with it,” he said, adding that the United States should focus on “securing our own borders” rather than interfering with foreign shipments. The remark contrasted with the longstanding U.S. embargo that restricts most trade with Cuba, including energy exports, and with recent statements from the Biden administration urging compliance with sanctions against Russia’s energy sector.</p><p>The arrival highlights the shifting dynamics of Cuba’s energy supply. Since the deterioration of its longtime benefactor Venezuela’s oil output, the island has faced recurring fuel shortages, prompting it to seek alternative sources. Russia, seeking to expand its influence in Latin America, has increased shipments of crude and refined products to Cuba over the past year, often routing vessels through third‑party flags to evade scrutiny. The *Vladimir Monaco*’s voyage follows a similar delivery by the *Akademik Lomonosov* in June, which delivered liquefied natural gas to a Cuban power plant.</p><p>Cuban officials welcomed the shipment, stating that the crude would help stabilize electricity generation and reduce reliance on more</p>
+  },
+{
     slug: "trump-claims-iran-talks-denied-ultimatum-extended-march-2026",
     title: "Trump Claims 'Productive Talks' With Iran to End War — Tehran Denies Everything",
     excerpt: "President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.",
@@ -421,5 +434,4 @@ const posts = [
 <h2>A New Chapter in Regenerative Medicine</h2>
 <p>The achievement adds to a growing list of lab-grown tissue milestones, including functional kidney organoids and synthetic retinas. Scientists involved in the project say it reinforces the idea that the body's most complex structures may eventually be replicable outside the body — a prospect that once belonged firmly in the realm of science fiction.</p>
     `
-  }
-];
+  }];
