@@ -2,42 +2,6 @@
 // Each post: { slug, title, excerpt, image, category, date, author, url, body }
 
 const posts = [  {
-    slug: "spain-closes-airspace-to-us-aircraft-involved-in-iran-war",
-    title: "Spain closes airspace to US aircraft involved in Iran war",
-    excerpt: "Spain has announced it willclose its airspace to U.S. military flights linked to operations against Iran and will deny American forces the use of the jointly",
-    image: "/images/ai-image-generation.jpg",
-    category: "Tech",
-    date: "March 31, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/spain-closes-airspace-to-us-aircraft-involved-in-iran-war.html",
-    body: `
-<p>Spain Restricts U.S. Military Flights Over Its Territory Amid Iran Tensions  </p><p>MADRID — The Spanish government has announced that it will close its airspace to U.S. aircraft engaged in operations related to the ongoing Iran conflict and will deny American forces the use of two jointly operated military installations in the Andalusia region. The decision, communicated by the Ministry of Defence on Monday, marks a notable shift in Spain’s traditionally cooperative stance with the United States on defence matters.</p><p>According to the statement, the restriction applies to all U.S. military flights that are “directly supporting or participating in actions against Iran,” including reconnaissance, refuelling and combat sorties. The two affected facilities are Morón Air Base, near Seville, and Naval Station Rota, located on the Atlantic coast near Cádiz. Both bases have hosted U.S. personnel and equipment under bilateral agreements dating back to the 1950s, serving as strategic hubs for NATO operations in the Mediterranean and Atlantic.</p><p>Spanish officials said the move follows a careful assessment of the country’s legal obligations under international law and its own constitutional provisions regarding the use of national territory for foreign military activities. “Spain remains committed to its NATO allies and to the preservation of regional stability,” the ministry noted. “However, we cannot allow our territory to be used for actions that may escalate tensions in a volatile region without a clear mandate from the United Nations or broad international consensus.”</p><p>The decision comes amid heightened friction between Washington and Tehran, which has intensified since the U.S. withdrawal from the 2015 Joint Comprehensive Plan of Action (JCPOA) and the subsequent reimposition of sanctions. In recent months, U.S. forces have conducted a series of patrols and show‑of‑force missions in the Gulf, prompting concerns among European capitals about the risk of inadvertent escalation. Spain, while a NATO member, has repeatedly called for diplomatic solutions and has voiced unease over unilateral military actions that lack multilateral endorsement.</p><p>Domestically, the announcement has drawn mixed reactions. Opposition parties praised the government for asserting national sovereignty, arguing that the basing arrangements should be subject to greater parliamentary oversight. Supporters of the U.S. partnership warned that the restriction could strain bilateral defence cooperation and affect joint training exercises that have been conducted at Morón and Rota for decades. Defence analysts noted that, while the closure of airspace will require U.S. planners to reroute certain missions, the impact on overall operational capacity is likely limited, given the availability of alternative bases in Italy, Greece and Turkey.</p><p>The Spanish government emphasized that the measure is reversible and subject to review. “We will continue to engage with our American partners through NATO channels to address security concerns in a manner that respects international law and</p>
-  },
-{
-    slug: "spain-closes-airspace-to-us-aircraft-involved-in-iran-war",
-    title: "Spain closes airspace to US aircraft involved in Iran war",
-    excerpt: "Spain has closed its airspace to U.S. military aircraft involved in combat or reconnaissance missions against Iran and barred their use of the Morón and Rota bases, citing concerns over entanglement in a conflict it does not support. The move reflects growing NATO unease over U.S. actions in the Middle East, while Spain stresses it remains open to dialogue and",
-    image: "/images/ai-image-generation.jpg",
-    category: "Tech",
-    date: "March 31, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/spain-closes-airspace-to-us-aircraft-involved-in-iran-war.html",
-    body: `
-<p>Spain Closes Airspace to U.S. Aircraft Linked to Iran Operations  </p><p>MADRID — The Spanish government has ordered the closure of its airspace to U.S. military aircraft that are engaged in operations related to the ongoing conflict with Iran, officials said on Thursday. The measure follows a decision by Madrid to deny Washington the use of two jointly operated military installations in the Andalusia region, a move that underscores growing friction between the two NATO allies over the scope and conduct of U.S. activities in the Middle East.</p><p>According to a statement from Spain’s Ministry of Defence, the restriction applies to all U.S. flights that are “directly supporting or participating in combat or reconnaissance missions against Iranian forces.” The ban does not affect civilian aviation or U.S. flights that are purely logistical, humanitarian, or unrelated to the Iran theater. Spanish authorities said the decision was taken after a review of the legal framework governing the use of Spanish territory by foreign forces and in response to concerns raised by members of parliament and civil society groups about the potential entanglement of Spain in a conflict it does not support.</p><p>The two installations affected are Morón Air Base near Seville and Naval Station Rota in the province of Cádiz. Both facilities have been used by the United States under bilateral agreements dating back to the Cold War, allowing U.S. aircraft to refuel, conduct maintenance, and stage operations across Europe, Africa and the Middle East. In recent years, the bases have played a role in supporting U.S. presence in the Eastern Mediterranean and in missions linked to counter‑terrorism and regional stability efforts.</p><p>Spain’s move comes amid a broader debate within NATO about the alliance’s response to rising tensions between the United States and Iran. While Washington has framed its actions as necessary to deter Iranian aggression and protect shipping lanes in the Strait of Hormuz, several European allies have urged caution, calling for diplomatic solutions and expressing worry that military escalation could destabilize the region further. Spain, which has traditionally pursued a balanced foreign policy and maintains close ties with both the United States and Arab nations, appears to be signaling its reluctance to facilitate what it perceives as a widening of the conflict.</p><p>U.S. officials have not yet issued a formal response to the Spanish announcement. Pentagon spokespeople have previously emphasized the strategic value of the Andalusian bases, noting that they enable rapid deployment of assets to both the Atlantic and Mediterranean theaters. Analysts suggest that the loss of access to these facilities could complicate logistical planning for U.S. forces operating in the region, although alternative routes through other NATO partners — such as Italy, Greece and Turkey — remain available.</p><p>The Spanish government said it will continue to monitor the situation and remains open to dialogue with Washington on the terms of base usage. It added that any future decisions will be guided by Spain’s national interests, its commitments to NATO, and the imperative to avoid entanglement in conflicts that lack broad international consensus.</p><p>As</p>
-  },
-{
-    slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
-    title: "Why does the US have Iran's Kharg Island in its sights?",
-    excerpt: "Kharg Island handles roughly 90 % of Iran’s crude exports, making it a vital economic asset and a focal point for U.S. efforts to monitor",
-    image: "/images/ai-image-generation.jpg",
-    category: "World",
-    date: "March 30, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/why-does-the-us-have-iran-s-kharg-island-in-its-sights.html",
-    body: `
-<p>**Whythe United States Is Watching Iran’s Kharg Island**</p><p>Kharg Island, a speck of land in the northern Persian Gulf, has become a focal point of U.S. attention because it hosts the bulk of Iran’s oil export infrastructure. The island’s terminal loads roughly 90 % of Tehran’s crude shipments, making it a linchpin of the country’s economy and a potential leverage point in Washington’s broader strategy toward Iran.</p><p>Located about 25 kilometers off the Iranian coast, Kharg Island covers less than 3 square kilometers yet handles an average of 6–7 million barrels of oil per day. The facility includes several loading berths, storage tanks, and a network of pipelines that connect to Iran’s major oil fields in the southwest. Because of its capacity and relatively shallow waters, the island allows large crude carriers to dock directly, reducing transit times and costs for Iranian exporters.</p><p>U.S. officials have long viewed Iran’s oil sector as a key source of revenue that funds the country’s military programs, including its ballistic‑missile and uranium‑enrichment activities. Since the reimposition of sanctions in 2018, Washington has sought to curb Tehran’s ability to sell crude abroad. Kharg Island’s prominence makes it a natural target for surveillance and, potentially, for measures aimed at disrupting illicit shipments.</p><p>Satellite imagery analyzed by independent researchers shows a steady increase in U.S. naval and aerial patrols near the island over the past year. The Pentagon has not confirmed any specific operations, but defense analysts say the heightened presence reflects a broader effort to monitor compliance with sanctions and to deter any attempts by Iran to evade restrictions through ship‑to‑ship transfers or deceptive routing.</p><p>Iranian authorities, meanwhile, have repeatedly warned that any interference with Kharg Island would be met with a “strong response.” Tehran has invested in upgrading the island’s defenses, deploying anti‑aircraft systems and fast‑attack craft to protect the terminal. In recent statements, Iranian oil officials have emphasized the island’s strategic importance, describing it as “the heart of our energy exports.”</p><p>The focus on Kharg Island also fits into a larger pattern of U.S. interest in chokepoints that control global energy flows. Similar attention has been paid to the Strait of Hormuz, through which roughly a fifth of the world’s oil passes, and to Saudi Arabia’s Ras Tanura terminal. By keeping tabs on Iran</p>
-  },
-{
     slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
     title: "Why does the US have Iran's Kharg Island in its sights?",
     excerpt: "**Why the United States Is Watching Iran’s Kharg Island**
@@ -54,14 +18,14 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 {
     slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
     title: "US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan",
-    excerpt: "The 82nd Airborne Division heads to the Gulf as oil plunges below \$100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.",
+    excerpt: "The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.",
     image: "/images/us-82nd-airborne-iran-ceasefire.jpg",
     category: "World",
     date: "March 25, 2026",
     author: "Breaking News Boulevard",
     url: "/posts/us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026.html",
     body: `
-<p>The United States is preparing to deploy approximately 3,000 soldiers from the elite 82nd Airborne Division to the Middle East — the largest single ground deployment since the Iran war began on February 28 — even as Pakistan brokers a 15-point ceasefire plan that sent oil prices crashing below \$100 for the first time in weeks. The contradictory signals of escalation and diplomacy have left the world watching to see which force wins out: the generals or the diplomats.</p>
+<p>The United States is preparing to deploy approximately 3,000 soldiers from the elite 82nd Airborne Division to the Middle East — the largest single ground deployment since the Iran war began on February 28 — even as Pakistan brokers a 15-point ceasefire plan that sent oil prices crashing below $100 for the first time in weeks. The contradictory signals of escalation and diplomacy have left the world watching to see which force wins out: the generals or the diplomats.</p>
 
 <h2>Boots on the Ground</h2>
 <p>The deployment of the 82nd Airborne, one of the US military's most rapid-response units, marks a significant shift in the conflict. Until now, the war has been fought primarily through air strikes, naval operations, and missile defense. The paratroopers will join thousands of Marines already heading to the region, raising the prospect that US forces could be used in a ground capacity for the first time.</p>
@@ -69,7 +33,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 
 <h2>The 15-Point Plan</h2>
 <p>In a dramatic diplomatic development, Pakistan has presented both Washington and Tehran with a 15-point framework for ending the war. The plan, reportedly facilitated through back-channel communications over the past week, is said to include provisions for a phased ceasefire, the reopening of the Strait of Hormuz, and guarantees around Iran's nuclear program.</p>
-<p>President Trump has expressed cautious optimism, telling reporters that "talks are progressing" and hinting at a "present" related to oil, gas, and the strait. The ceasefire hopes immediately roiled energy markets: Brent crude plunged 5.9% to \$98.28 per barrel, while WTI fell 5.1% to \$87.68 — erasing the previous day's gains in a single session.</p>
+<p>President Trump has expressed cautious optimism, telling reporters that "talks are progressing" and hinting at a "present" related to oil, gas, and the strait. The ceasefire hopes immediately roiled energy markets: Brent crude plunged 5.9% to $98.28 per barrel, while WTI fell 5.1% to $87.68 — erasing the previous day's gains in a single session.</p>
 
 <h2>Iran's Military Pushes Back</h2>
 <p>Despite Trump's optimism, Iran's military establishment has flatly rejected the prospect of negotiations with Washington. The Islamic Revolutionary Guard Corps declared that it would not negotiate "under the shadow of bombs," while state media continued to frame the conflict as a defensive war against American aggression. Iran has consistently denied seeking nuclear weapons, a position it reiterated through its UN mission.</p>
@@ -90,7 +54,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 
 <h2>Markets Breathe — Briefly</h2>
 <p>Asian markets rallied sharply on ceasefire hopes. Tokyo's Nikkei surged 3%, Seoul's Kospi gained 1.6%, and India's Sensex soared over 1,100 points. But US markets closed lower the previous day, with the S&P 500 falling 0.4% and the Nasdaq dropping 0.8% — suggesting Wall Street remains skeptical that diplomacy will prevail.</p>
-<p>Retail fuel prices continue to bite: US gasoline has hit \$3.98 per gallon (up 34% since the war began), while diesel has surged 42% to \$5.35. Even if a ceasefire materializes, analysts expect oil to remain in the \$85-\$90 range, with prices climbing back toward \$110 only if Hormuz fully reopens.</p>
+<p>Retail fuel prices continue to bite: US gasoline has hit $3.98 per gallon (up 34% since the war began), while diesel has surged 42% to $5.35. Even if a ceasefire materializes, analysts expect oil to remain in the $85-$90 range, with prices climbing back toward $110 only if Hormuz fully reopens.</p>
 
 <h2>What Happens Next</h2>
 <p>The next 72 hours are critical. If Pakistan's 15-point plan gains traction — and if Trump can bridge the gap between his desire for a deal and Israel's demand for total victory — the war could enter a new diplomatic phase. But the deployment of 3,000 paratroopers tells a different story: Washington is also preparing for the possibility that talks fail. For now, the world is caught between two timelines — one toward peace, the other toward a ground war nobody wants.</p>
@@ -239,11 +203,11 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 <li><strong>Hong Kong's Hang Seng</strong> lost ground as investors fled to safe-haven assets</li>
 <li><strong>European markets</strong> opened lower following the Asian selloff</li>
 </ul>
-<p>WTI crude futures ticked higher again, while Brent crude held firmly above \$110 per barrel. Analysts warn that a prolonged closure of Hormuz could push prices well past \$130.</p>
+<p>WTI crude futures ticked higher again, while Brent crude held firmly above $110 per barrel. Analysts warn that a prolonged closure of Hormuz could push prices well past $130.</p>
 
 <h2>Strategic Reserves on the Table</h2>
 <p>The IEA is now actively consulting with European and Asian governments about a coordinated release of strategic petroleum reserves if market conditions deteriorate further. Such a move would mirror the response to Russia's invasion of Ukraine in 2022 but would likely need to be larger in scale given the magnitude of the current disruption.</p>
-<p>Several nations are already taking independent action. Indonesia has announced plans to allocate up to 80 trillion rupiah — approximately \$4.7 billion — to cushion its economy from the energy price shock. Japan and South Korea are reportedly considering their own emergency measures.</p>
+<p>Several nations are already taking independent action. Indonesia has announced plans to allocate up to 80 trillion rupiah — approximately $4.7 billion — to cushion its economy from the energy price shock. Japan and South Korea are reportedly considering their own emergency measures.</p>
 
 <h2>US Faces Domestic Pressure</h2>
 <p>In the United States, rising gasoline prices are expected to consume much of this year's tax refund windfall, according to economists — erasing the spending boost that policymakers had hoped would support growth. The political pressure on President Trump is mounting as pump prices climb in key electoral states.</p>
@@ -254,7 +218,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 <p>Meanwhile, the Israeli military launched a "wide-scale wave" of strikes targeting Iranian infrastructure in Tehran early on March 23, with Iranian news agencies reporting explosions in the capital. Iran-backed Hezbollah claimed 56 attacks on Israeli positions between March 21 and 22.</p>
 
 <h2>What Comes Next</h2>
-<p>With the IEA's warning, the Iran war is no longer just a geopolitical crisis — it is an economic emergency with the potential to trigger a global recession. If Hormuz remains closed through April, analysts project oil could hit \$150, inflation would spike worldwide, and central banks would face an impossible choice between fighting price rises and supporting growth. The next 48 hours may determine whether the world slides into that scenario or steps back from the brink.</p>
+<p>With the IEA's warning, the Iran war is no longer just a geopolitical crisis — it is an economic emergency with the potential to trigger a global recession. If Hormuz remains closed through April, analysts project oil could hit $150, inflation would spike worldwide, and central banks would face an impossible choice between fighting price rises and supporting growth. The next 48 hours may determine whether the world slides into that scenario or steps back from the brink.</p>
     `
   },
   {
@@ -288,7 +252,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 </ul>
 
 <h2>"Largest Supply Disruption in History"</h2>
-<p>The International Energy Agency has described the Hormuz crisis as "the largest supply disruption in the history of the global oil market." Brent crude remains above \$110 per barrel, and gas prices have surged worldwide. A coalition of nations — including the UK, France, Italy, Germany, South Korea, Australia, the UAE, and Bahrain — has condemned the strait's closure.</p>
+<p>The International Energy Agency has described the Hormuz crisis as "the largest supply disruption in the history of the global oil market." Brent crude remains above $110 per barrel, and gas prices have surged worldwide. A coalition of nations — including the UK, France, Italy, Germany, South Korea, Australia, the UAE, and Bahrain — has condemned the strait's closure.</p>
 <p>Japan is reportedly considering minesweeping operations in the strait if a ceasefire is established, signaling just how seriously the disruption is being taken in Asia.</p>
 
 <h2>Human Cost Mounts</h2>
@@ -301,7 +265,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
   {
     slug: "iran-us-war-natanz-nuclear-strike-march-2026",
     title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
-    excerpt: "The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past \$110.",
+    excerpt: "The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.",
     image: "/images/natanz-nuclear-strike.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -326,7 +290,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 <p>Iran fired two ballistic missiles toward the joint US-UK military base at Diego Garcia in the Indian Ocean. Neither missile hit, but the incident reveals Iran possesses longer-range missiles than previously assessed. Iran-backed groups have also launched drone attacks on US diplomatic hubs in Iraq, including Baghdad International Airport.</p>
 
 <h2>Strait of Hormuz Closed</h2>
-<p>The critical oil shipping lane remains effectively closed, driving Brent crude to \$108-\$112 per barrel. The US has temporarily lifted sanctions on Iranian oil at sea with a 30-day waiver to ease global energy supply pressures.</p>
+<p>The critical oil shipping lane remains effectively closed, driving Brent crude to $108-$112 per barrel. The US has temporarily lifted sanctions on Iranian oil at sea with a 30-day waiver to ease global energy supply pressures.</p>
 
 <h2>Supreme Leader's Condition Unknown</h2>
 <p>Iran's new Supreme Leader Mojtaba Khamenei, who replaced his father after Ali Khamenei was killed at the start of the war, is believed to be badly injured or incapacitated due to continued absence from public appearances.</p>
@@ -338,7 +302,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
   {
     slug: "strait-of-hormuz-oil-crisis-2026",
     title: "Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes",
-    excerpt: "Oil prices surge past \$110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.",
+    excerpt: "Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.",
     image: "/images/strait-hormuz-oil-route.jpg",
     category: "World",
     date: "March 21, 2026",
@@ -348,7 +312,7 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 <p>Several leading European nations, Japan, and Canada have announced a joint coalition to ensure safe passage for commercial ships through the Strait of Hormuz, as oil prices continue to climb amid escalating geopolitical tensions.</p>
 
 <h2>Oil Prices Surge</h2>
-<p>Brent crude futures rose 1.5% to <strong>\$110.32 a barrel</strong>, while US WTI crude saw a 0.3% increase to \$96.47. Energy analysts warn that a prolonged conflict could trigger a global energy shock with far-reaching economic consequences.</p>
+<p>Brent crude futures rose 1.5% to <strong>$110.32 a barrel</strong>, while US WTI crude saw a 0.3% increase to $96.47. Energy analysts warn that a prolonged conflict could trigger a global energy shock with far-reaching economic consequences.</p>
 
 <h2>US Sanctions on Iran</h2>
 <p>US Treasury Secretary Scott Bessent indicated that the United States might soon remove sanctions on Iranian oil currently held on tankers to increase global supply and stabilize prices. This comes after reports that Ali Mohammad Naini, spokesperson for Iran's Islamic Revolutionary Guard Corps, was killed in strikes by the US and Israel.</p>
@@ -516,6 +480,3 @@ The tiny speck of land known as Kharg Island, situated in the northern reaches o
 <p>The achievement adds to a growing list of lab-grown tissue milestones, including functional kidney organoids and synthetic retinas. Scientists involved in the project say it reinforces the idea that the body's most complex structures may eventually be replicable outside the body — a prospect that once belonged firmly in the realm of science fiction.</p>
     `
   }];
-posts.push({'slug':'starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage','title':'Starmer gives doctors 48 hours to cancel strike or lose new jobs package','excerpt':'**Starmer gives doctors 48 hours to cancel strike or lose new jobs package**
-
-Labour leader Sir Keir Starmer has issued an ultimatum to NHS doctors,','date':'2026-03-31','image':'https://picsum.photos/seed/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage/800/400'});
