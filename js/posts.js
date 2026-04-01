@@ -3,6 +3,39 @@
 
 const posts = [
   {
+    slug: "trump-claims-iran-ceasefire-iran-denies-april-1-2026",
+    title: "Trump Claims Iran Requested Ceasefire — Tehran Calls It 'False and Baseless'",
+    excerpt: "President Trump says Iran's president asked for a ceasefire, but Tehran flatly denies it. Stocks rally on hopes of ending the war, oil prices ease as Trump prepares a primetime address on the conflict.",
+    image: "/images/trump-iran-ceasefire-claim.jpg",
+    category: "World",
+    date: "April 1, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/trump-claims-iran-ceasefire-iran-denies-april-1-2026.html",
+    body: `<p>In a dramatic reversal that has left diplomats scrambling and markets swinging, US President Donald Trump claimed on April 1 that Iran's "New Regime President" had requested a ceasefire — an assertion that Tehran quickly branded as "false and baseless."</p>
+
+<h2>Trump's Claim</h2>
+<p>Trump's statement came amid mounting pressure at home to avoid a protracted conflict. The war, now in its fifth week since it began on February 28, has claimed nearly 2,000 lives in Iran alone, with over 24 deaths in Israel and 13 US soldiers killed. US gasoline prices have surged to $3.98 per gallon — up 34% since the war started.</p>
+
+<h2>Tehran's Denial</h2>
+<p>Iran flatly rejected Trump's claim. Iranian officials said no ceasefire request had been made, calling the statement a fabrication. The contradiction underscores the widening gulf between Washington and Tehran even as speculation about negotiations intensifies.</p>
+
+<h2>Markets Rally</h2>
+<p>Global stock markets rallied worldwide on hopes that the war could be ending soon. Oil prices eased as investors bet on a possible ceasefire. However, analysts cautioned that the fundamental disruption to the Strait of Hormuz remains unresolved.</p>
+
+<h2>Primetime Address</h2>
+<p>Trump is scheduled to deliver a primetime televised address on the war, raising expectations that the president may announce a significant shift in strategy. Questions swirl over whether the US will continue military operations or pivot toward diplomacy.</p>
+
+<h2>China Steps In</h2>
+<p>In a related development, China has been playing peacemaker behind the scenes, according to BBC reporting. Beijing's official response to the crisis has been muted so far, but the move represents a potential turnaround in China's diplomatic engagement on the international stage.</p>
+
+<h2>Russian Plane Crash in Crimea</h2>
+<p>Meanwhile, a Russian military plane has crashed in occupied Crimea, killing 29 people. An AN-26 transport aircraft went down into a cliff side, with Russian authorities blaming a technical malfunction. The incident adds to the broader picture of instability across multiple hotspots.</p>
+
+<h2>What Happens Next</h2>
+<p>Trump's primetime address will be closely watched for any indication of the US position going forward. If the administration is genuinely seeking an exit from the war, the challenge will be bridging the gap between conflicting claims about who initiated the ceasefire conversation.</p>`
+  },
+
+  {
     slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
     title: "US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan",
     excerpt: "The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.",
