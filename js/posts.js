@@ -500,5 +500,16 @@ The tiny speck of land known as Kharg Island, situated about 25 kilometres off I
     author: "Breaking News Boulevard",
     url: "/posts/nasa-artemis-ii-moon-mission-launch-april-2026.html",
     body: ""
+  },
+  {
+    slug: "artemis-ii-leaves-earth-orbit-hello-world-photo-april-2026",
+    title: "Artemis II Leaves Earth Orbit: Crew Captures 'Hello, World' Photo on Way to Moon",
+    excerpt: "For the first time since 1972, humans have left Earth orbit. The Artemis II crew executed a flawless trans-lunar injection burn and shared breathtaking new photographs of Earth from deep space.",
+    image: "/images/artemis-ii-earth-hello-world.jpg",
+    category: "Space",
+    date: "April 3, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/artemis-ii-leaves-earth-orbit-hello-world-photo-april-2026.html",
+    body: ""
   }
 ];
