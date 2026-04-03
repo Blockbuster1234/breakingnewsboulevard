@@ -28,6 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <style>
+
     :root{--bg:#fff;--text:#1a1a2e;--text-light:#666;--accent:#2563eb;--accent-hover:#1d4ed8;--border:#e5e7eb;--card:#f8f9fa;--radius:12px;--shadow:0 2px 8px rgba(0,0,0,.08)}
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
@@ -106,144 +107,179 @@
       .featured-body{padding:20px}
       .featured-body h2{font-size:1.3rem}
     }
+  
   </style>
 </head>
 <body>
-
-<!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-inner">
-    <span class="ticker-label">BREAKING</span>
-    <span id="ticker-text">Loading latest news...</span>
-  </div>
-</div>
-
-<!-- HEADER -->
-<header class="header">
-  <div class="container header-inner">
-    <div class="logo"><a href="/">Breaking News Boulevard</a></div>
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/category/world.html">World</a>
-      <a href="/category/tech.html">Tech</a>
-      <a href="/category/health.html">Health</a>
-      <a href="/category/science.html">Science</a>
-      <a href="/about.html">About</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Breaking News Boulevard</h1>
-    <p>Your source for breaking news, in-depth analysis, and stories that matter.</p>
-  </div>
-</section>
-
-<!-- FEATURED POST -->
-<section class="featured" id="featured">
-  <!-- Dynamic content loaded by JS -->
-</section>
-
-<!-- AD -->
-<div class="container">
-  <div class="ad-placeholder">
-    <!-- Google AdSense -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4316838278696534" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-  </div>
-</div>
-
-<!-- ARTICLES GRID -->
-<section class="articles">
-  <div class="container">
-    <h2 class="section-title">Latest Stories</h2>
-    <div class="grid" id="articles-grid">
-      <!-- Dynamic content loaded by JS -->
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <h4>Breaking News Boulevard</h4>
-        <p>Global news summaries and analysis.</p>
-        <p style="font-size:0.75rem;color:#888;margin-top:8px;">⚠️ AI-generated content. Verify with official sources. | <a href="/impressum.html" style="color:#e94560;">Impressum</a> | <a href="/datenschutz.html" style="color:#e94560;">Datenschutz</a> | <a href="/about.html" style="color:#e94560;">About</a></p>
-      </div>
-      <div>
-        <h4>Categories</h4>
-        <ul>
-          <li><a href="/category/world.html">World News</a></li>
-          <li><a href="/category/tech.html">Technology</a></li>
-          <li><a href="/category/health.html">Health</a></li>
-          <li><a href="/category/science.html">Science</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="#">Twitter / X</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">RSS Feed</a></li>
-        </ul>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo"><a href="/">🔴 Breaking News Boulevard</a></div>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/impressum.html">Impressum</a>
+        </nav>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Breaking News Boulevard. All Rights Reserved. | <a href="/impressum.html" style="color: #e94560;">Impressum</a> | <a href="/datenschutz.html" style="color: #e94560;">Datenschutz</a></p>
+  </header>
+
+  <!-- BREAKING NEWS TICKER -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-label">🔴 BREAKING</span>
+      <span id="ticker-text">US Fighter Jet Shot Down Over Iran \u2014 One Crew Member Rescued in Daring Operation — Federal Judge Blocks Trump's \u200b$400 Million White House Ballroom \u2014 Iran War Fuels Hunger Crisis in Somalia — Why does the US have Iran's Kharg Island in its sights? — US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan — Trump Claims 'Productive Talks' With Iran to End War - Tehran Denies Everything</span>
     </div>
   </div>
-</footer>
 
-<script src="/js/posts.js"></script>
-<script>
-  // Load posts dynamically
-  if (typeof posts !== 'undefined' && posts.length > 0) {
-    // Ticker
-    document.getElementById('ticker-text').textContent = posts[0].title + ' — ' + (posts[1] ? posts[1].title : '');
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Breaking News Boulevard</h1>
+      <p>Your source for breaking news, in-depth analysis, and stories that matter.</p>
+    </div>
+  </section>
 
-    // Featured
-    const feat = posts[0];
-    document.getElementById('featured').innerHTML = `
-      <div class="container">
-        <div class="featured-card">
-          <img src="${feat.image}" alt="${feat.title}" loading="lazy">
-          <div class="featured-body">
-            <span class="card-category">${feat.category}</span>
-            <h2><a href="${feat.url}">${feat.title}</a></h2>
-            <p>${feat.excerpt}</p>
-            <div class="card-meta">${feat.date} &bull; By ${feat.author}</div>
-          </div>
+  <section id="featured" class="featured">
+    <div class="container">
+      <div class="featured-card">
+        <img src="/images/us-fighter-jet-downed-iran-april-2026.jpg" alt="US Fighter Jet Shot Down Over Iran \u2014 One Crew Member Rescued in Daring Operation" loading="lazy">
+        <div class="featured-body">
+          <span class="card-category">World</span>
+          <h2><a href="/posts/us-fighter-jet-downed-over-iran-crew-rescued-april-3-2026.html">US Fighter Jet Shot Down Over Iran \u2014 One Crew Member Rescued in Daring Operation</a></h2>
+          <p>A US fighter jet has been shot down over southern Iran, marking the deepest penetration of Iranian airspace in the ongoing war. One crew member has been rescued in a daring search-and-rescue mission, while the fate of a second remains unknown.</p>
+          <div class="card-meta">April 3, 2026 &bull; By Breaking News Boulevard</div>
         </div>
       </div>
-    `;
+    </div>
+  </section>
 
-    // Grid
-    const grid = document.getElementById('articles-grid');
-    for (let i = 1; i < posts.length && i < 9; i++) {
-      const p = posts[i];
-      grid.innerHTML += `
+  <!-- Ad Slot 1 -->
+  <div style="max-width:1200px;margin:32px auto;padding:0 20px;">
+    <ins class="adsbygoogle"
+         style="display:block;min-height:100px;"
+         data-ad-client="ca-pub-4316838278696534"
+         data-ad-slot=""
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
+  <!-- ARTICLES GRID -->
+  <section id="articles" class="articles">
+    <div class="container">
+      <h2 class="section-title">Latest Articles</h2>
+      <div class="grid" id="articles-grid">
         <article class="card">
-          <img class="card-img" src="${p.image}" alt="${p.title}" loading="lazy">
+          <img class="card-img" src="/images/courthouse-blocks-trump-ballroom-april-2026.jpg" alt="Federal Judge Blocks Trump's \u200b$400 Million White House Ballroom \u2014 Iran War Fuels Hunger Crisis in Somalia" loading="lazy">
           <div class="card-body">
-            <span class="card-category">${p.category}</span>
-            <h2><a href="${p.url}">${p.title}</a></h2>
-            <p>${p.excerpt}</p>
-            <div class="card-meta">${p.date}</div>
+            <span class="card-category">World</span>
+            <h2><a href="/posts/us-judge-blocks-trump-white-house-ballroom-iran-war-somalia-crisis-april-2-2026.html">Federal Judge Blocks Trump's \u200b$400 Million White House Ballroom \u2014 Iran War Fuels Hunger Crisis in Somalia</a></h2>
+            <p>A US federal judge has blocked President Trump's controversial \u200b$400 million White House ballroom expansion. Meanwhile, the UN warns that fuel and transport disruptions from the Iran war are deepening a hunger crisis in East Africa.</p>
+            <div class="card-meta">April 2, 2026</div>
           </div>
         </article>
-      `;
-    }
-  }
-</script>
+        <article class="card">
+          <img class="card-img" src="/images/ai-image-generation.jpg" alt="Why does the US have Iran's Kharg Island in its sights?" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">World</span>
+            <h2><a href="/posts/why-does-the-us-have-iran-s-kharg-island-in-its-sights.html">Why does the US have Iran's Kharg Island in its sights?</a></h2>
+            <p>Kharg Island, situated 25 km off Iran's southern coast, houses the country's most vital oil-export terminal and has become a focal point of US strategic interest in the Iran conflict.</p>
+            <div class="card-meta">March 30, 2026</div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="/images/us-82nd-airborne-iran-ceasefire.jpg" alt="US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">World</span>
+            <h2><a href="/posts/us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026.html">US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan</a></h2>
+            <p>The 82nd Airborne Division heads to the Gulf as oil plunges below $100 on ceasefire hopes. Pakistan presents a 15-point peace plan while Iran's military dismisses talks. Day 26 of the war brings both the largest US ground deployment yet and the first credible diplomatic opening.</p>
+            <div class="card-meta">March 25, 2026</div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="/images/trump-iran-talks-denied.jpg" alt="Trump Claims 'Productive Talks' With Iran to End War - Tehran Denies Everything" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">World</span>
+            <h2><a href="/posts/trump-claims-iran-talks-denied-ultimatum-extended-march-2026.html">Trump Claims 'Productive Talks' With Iran to End War - Tehran Denies Everything</a></h2>
+            <p>President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.</p>
+            <div class="card-meta">March 24, 2026</div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="/images/ai-image-generation.jpg" alt="ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">Tech</span>
+            <h2><a href="/posts/ai-image-generation-chatgpt-claude-grok-2026.html">ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?</a></h2>
+            <p>A comprehensive comparison of AI image generation tools - from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.</p>
+            <div class="card-meta">March 23, 2026</div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="/images/iea-economy-oil-crisis.jpg" alt="IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy - Worse Than 1970s Oil Crises" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">Economy</span>
+            <h2><a href="/posts/iea-global-economy-major-threat-iran-war-march-2026.html">IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy - Worse Than 1970s Oil Crises</a></h2>
+            <p>The head of the International Energy Agency says the Iran war's impact on energy markets surpasses both 1970s oil shocks and the Russia-Ukraine war combined, as stock markets tumble worldwide and oil prices keep climbing.</p>
+            <div class="card-meta">March 23, 2026</div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="/images/trump-ultimatum-military.jpg" alt="Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">World</span>
+            <h2><a href="/posts/trump-48-hour-ultimatum-iran-hormuz-march-2026.html">Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants</a></h2>
+            <p>President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.</p>
+            <div class="card-meta">March 22, 2026</div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="/images/natanz-nuclear-strike.jpg" alt="US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">World</span>
+            <h2><a href="/posts/iran-us-war-natanz-nuclear-strike-march-2026.html">US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies</a></h2>
+            <p>The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.</p>
+            <div class="card-meta">March 21, 2026</div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="/images/strait-hormuz-oil-route.jpg" alt="Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes" loading="lazy">
+          <div class="card-body">
+            <span class="card-category">World</span>
+            <h2><a href="/posts/strait-of-hormuz-oil-crisis-2026.html">Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes</a></h2>
+            <p>Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.</p>
+            <div class="card-meta">March 21, 2026</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<!-- AdSense Script -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4316838278696534" crossorigin="anonymous"></script>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <!-- Ad Slot 2 (bottom) -->
+  <div style="max-width:1200px;margin:32px auto;padding:0 20px;">
+    <ins class="adsbygoogle"
+         style="display:block;min-height:100px;"
+         data-ad-client="ca-pub-4316838278696534"
+         data-ad-slot=""
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Breaking News Boulevard. All Rights Reserved. | <a href="/impressum.html" style="color: #e94560;">Impressum</a> | <a href="/datenschutz.html" style="color: #e94560;">Datenschutz</a> | <a href="/about.html" style="color: #e94560;">About</a></p>
+    </div>
+  </footer>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4316838278696534" crossorigin="anonymous"></script>
+  <script>
+  // AdSense init
+  (function() {
+    var ad = window.adsbygoogle || [];
+    ad.push({});
+  })();
+  </script>
 </body>
 </html>
-
-# Force deploy Sat Mar 21 03:47:36 CET 2026
