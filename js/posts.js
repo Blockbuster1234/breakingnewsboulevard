@@ -1,9 +1,5 @@
-// posts.js - Article database
-// Each post: { slug, title, excerpt, image, category, date, author, url, body }
-
 const posts = [
-
-  {
+{
     slug: "us-fighter-jet-downed-over-iran-crew-rescued-april-3-2026",
     title: "US Fighter Jet Shot Down Over Iran \u2014 One Crew Member Rescued in Daring Operation",
     excerpt: "A US fighter jet has been shot down over southern Iran, marking the deepest penetration of Iranian airspace in the ongoing war. One crew member has been rescued in a daring search-and-rescue mission, while the fate of a second remains unknown.",
@@ -30,8 +26,40 @@ const posts = [
 <p>The UN reports that fuel costs and transport disruptions from the war are worsening a hunger crisis in Somalia, highlighting the conflict's devastating ripple effects across the developing world. Meanwhile, families across Lebanon, Iran, and the Gulf states continue to mourn mounting casualties.</p>
 `
   },
-
-  {
+{
+    slug: "who-declares-end-of-covid-pandemic-april-2026",
+    title: "WHO Declares Official End of Global COVID-19 Pandemic Era After Four Years",
+    excerpt: "The World Health Organization has declared the end of the COVID-19 pandemic era after four years of disruption. Global cases have dropped by 95%% from their peak.",
+    image: "/images/who-end-pandemic-2026.jpg",
+    category: "Health",
+    date: "April 4, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/who-declares-end-of-covid-pandemic-april-2026.html",
+    body: ``
+  },
+{
+    slug: "bundesliga-bayern-loses-title-race-april-2026",
+    title: "Bundesliga Shock: Bayern Munich Stumbles as Underdogs Close In on Title",
+    excerpt: "Bayern Munich's 13-year winning streak is in danger after consecutive losses put Bayer Leverkusen in position to claim their second straight Bundesliga title.",
+    image: "/images/bundesliga-title-race-2026.jpg",
+    category: "Sports",
+    date: "April 4, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/bundesliga-bayern-loses-title-race-april-2026.html",
+    body: ``
+  },
+{
+    slug: "germany-eu-ai-law-april-2026",
+    title: "EU Passes World's First Comprehensive AI Law — Tech Giants Face Strict New Rules",
+    excerpt: "The European Parliament has approved groundbreaking AI legislation that forces tech companies to label AI-generated content and face fines up to 7%% of global revenue.",
+    image: "/images/eu-ai-law-2026.jpg",
+    category: "Tech",
+    date: "April 4, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/germany-eu-ai-law-april-2026.html",
+    body: ``
+  },
+{
     slug: "us-judge-blocks-trump-white-house-ballroom-iran-war-somalia-crisis-april-2-2026",
     title: "Federal Judge Blocks Trump's \u200b$400 Million White House Ballroom \u2014 Iran War Fuels Hunger Crisis in Somalia",
     excerpt: "A US federal judge has blocked President Trump's controversial \u200b$400 million White House ballroom expansion. Meanwhile, the UN warns that fuel and transport disruptions from the Iran war are deepening a hunger crisis in East Africa.",
@@ -536,7 +564,7 @@ const posts = [
 <p>The achievement adds to a growing list of lab-grown tissue milestones, including functional kidney organoids and synthetic retinas. Scientists involved in the project say it reinforces the idea that the body's most complex structures may eventually be replicable outside the body - a prospect that once belonged firmly in the realm of science fiction.</p>
     `
   },
-  {
+{
     slug: 'starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage',
     title: 'Starmer gives doctors 48 hours to cancel strike or lose new jobs package',
     excerpt: 'Labour leader Sir Keir Starmer has issued an ultimatum to NHS doctors: cancel their planned strike within 48 hours or lose the new jobs package on the table.',
@@ -545,7 +573,7 @@ const posts = [
     url: '/posts/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage.html',
     image: 'https://picsum.photos/seed/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage/800/400'
   },
-  {
+{
     slug: "nasa-artemis-ii-moon-mission-launch-april-2026",
     title: "NASA Artemis II Successfully Launches: First Crewed Moon Mission in 53 Years",
     excerpt: "Four astronauts aboard NASA's most powerful rocket ever have set course for the Moon — the first crewed lunar voyage since 1972, carrying the most diverse crew in space history.",
@@ -556,7 +584,7 @@ const posts = [
     url: "/posts/nasa-artemis-ii-moon-mission-launch-april-2026.html",
     body: ""
   },
-  {
+{
     slug: "artemis-ii-leaves-earth-orbit-hello-world-photo-april-2026",
     title: "Artemis II Leaves Earth Orbit: Crew Captures 'Hello, World' Photo on Way to Moon",
     excerpt: "For the first time since 1972, humans have left Earth orbit. The Artemis II crew executed a flawless trans-lunar injection burn and shared breathtaking new photographs of Earth from deep space.",
