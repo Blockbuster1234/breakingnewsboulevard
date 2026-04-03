@@ -63,16 +63,13 @@ const posts = [
 {
     slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
     title: "Why does the US have Iran's Kharg Island in its sights?",
-    excerpt: "**Why the United States IsWatching Iran's Kharg Island**
-
-The tiny speck of land known as Kharg Island, situated about 25 kilometres off Iran's southern coast in the Persian Gulf, has become a focal point of U. S.",
+    excerpt: "Kharg Island, situated 25 km off Iran's southern coast, houses the country's most vital oil-export terminal and has become a focal point of US strategic interest in the Iran conflict.",
     image: "/images/ai-image-generation.jpg",
     category: "World",
     date: "March 30, 2026",
     author: "Breaking News Boulevard",
     url: "/posts/why-does-the-us-have-iran-s-kharg-island-in-its-sights.html",
-    body: `
-<p>**Why the United States IsWatching Iran's Kharg Island**</p><p>The tiny speck of land known as Kharg Island, situated about 25 kilometres off Iran's southern coast in the Persian Gulf, has become a focal point of U.S. strategic interest because it houses the country's most vital oil-export infrastructure. Analysts say that any disruption to the island's facilities could significantly affect Tehran's ability to sell crude on global markets, making it a natural point of leverage in Washington's broader pressure campaign against Iran.</p><p>Kharg Island hosts Iran's principal crude-oil loading terminal, operated by the National Iranian Oil Company (NIOC). The complex includes several jetties, storage tanks and pipelines capable of handling up to 6 million barrels of oil per day, according to industry estimates. Roughly 90 % of Iran's seaborne oil exports pass through Kharg, making the island a linchpin of the nation's revenue stream, which funds government budgets, subsidies and, according to U.S. officials, activities deemed destabilizing in the region.</p><p>The United States has long viewed Iran's energy sector as a choke point for exerting economic pressure. Following the reimposition of sanctions in 2018 after the U.S. withdrawal from the Joint Comprehensive Plan of Action (JCPOA), Washington has sought to limit Tehran's oil sales to curb its financing of regional proxies and its nuclear program. While sanctions primarily target buyers and insurers, the U.S. Navy's increased presence in the Gulf - including regular patrols of the Strait of Hormuz and occasional close-in monitoring of Iranian ports - serves as a visible reminder that Washington retains the ability to interdict shipments if deemed necessary.</p><p>Analysts note that the U.S. does not appear to be planning a direct assault on Kharg Island; instead, the focus is on intelligence gathering, diplomatic outreach to countries that purchase Iranian oil, and the readiness to act should Tehran attempt to circumvent sanctions through illicit shipments. Satellite imagery frequently shows U.S. naval vessels operating near the island, a practice that both sides describe as routine maritime security operations but which Tehran often characterizes as provocative.</p><p>Iran, for its part, has taken steps to harden Kharg's defenses. The island hosts air-defense batteries, radar installations and a contingent of Islamic Revolutionary Guard Corps (IRGC) forces tasked with protecting the terminal. Tehran has also sought to diversify its export routes, increasing reliance on overland pipelines to Turkey and exploring ship-to-ship transfers in international waters to evade detection.</p><p>The strategic calculus surrounding Kharg reflects broader tensions in the Gulf. As global energy markets remain volatile and major consumers - including China, India and Europe - weigh the risks of purchasing Iranian crude, the island's output continues to be a bargaining chip. For the United States, maintaining oversight of Kharg allows it to monitor compliance with sanctions, deter potential</p>
+    body: `<p>Kharg Island houses Iran's most vital oil-export terminal and has become a focal point of US strategic interest in the ongoing conflict.</p>`
   },
 {
     slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
@@ -542,7 +539,7 @@ The tiny speck of land known as Kharg Island, situated about 25 kilometres off I
   {
     slug: 'starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage',
     title: 'Starmer gives doctors 48 hours to cancel strike or lose new jobs package',
-    excerpt: 'Starmer gives doctors 48 hours to cancel strike or lose new jobs package\n\nLabour leader Sir Keir Starmer has issued an ultimatum to NHS doctors,',
+    excerpt: 'Labour leader Sir Keir Starmer has issued an ultimatum to NHS doctors: cancel their planned strike within 48 hours or lose the new jobs package on the table.',
     date: '2026-03-31',
     author: 'Breaking News Boulevard',
     url: '/posts/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage.html',
