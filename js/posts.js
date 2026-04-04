@@ -193,7 +193,7 @@ const posts = [
     slug: "ai-image-generation-chatgpt-claude-grok-2026",
     title: "ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?",
     excerpt: "A comprehensive comparison of AI image generation tools - from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.",
-    image: "/images/ai-image-generation.jpg",
+    image: "/images/ai-comparison-chatgpt-claude-grok-2026.jpg",
     category: "Tech",
     date: "March 23, 2026",
     author: "Breaking News Boulevard",
