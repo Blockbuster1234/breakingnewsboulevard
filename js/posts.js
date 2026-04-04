@@ -92,7 +92,7 @@ const posts = [
     slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
     title: "Why does the US have Iran's Kharg Island in its sights?",
     excerpt: "Kharg Island, situated 25 km off Iran's southern coast, houses the country's most vital oil-export terminal and has become a focal point of US strategic interest in the Iran conflict.",
-    image: "/images/ai-image-generation.jpg",
+    image: "/images/kharg-island-oil-terminal.jpg",
     category: "World",
     date: "March 30, 2026",
     author: "Breaking News Boulevard",
