@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+"""Fix starmer post — raw markdown placeholder → clean static HTML"""
+
+import json
+
+post_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starmer gives doctors 48 hours to cancel strike or lose new jobs package — Breaking News Boulevard</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YB2E0D5B4K"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YB2E0D5B4K');</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4316838278696534" crossorigin="anonymous"></script>
+  <meta name="description" content="Labour leader Sir Keir Starmer has issued an ultimatum to NHS doctors, demanding that they call off a planned 48-hour strike within two days or forfeit a newly announced £1.2 billion recruitment package.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Starmer gives doctors 48 hours to cancel strike or lose new jobs package">
+  <meta property="og:description" content="Labour leader Sir Keir Starmer has issued an ultimatum to NHS doctors, demanding that they call off a planned 48-hour strike within two days.">
+  <meta property="og:image" content="https://breakingnewsboulevard.com/images/starmer-nhs-strike-2026.jpg">
+  <link rel="canonical" href="https://breakingnewsboulevard.com/posts/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Starmer gives doctors 48 hours to cancel strike or lose new jobs package",
+    "url": "https://breakingnewsboulevard.com/posts/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage.html",
+    "author": {"@type": "Person", "name": "Breaking News Boulevard"},
+    "publisher": {"@type": "Organization", "name": "Breaking News Boulevard"},
+    "image": "https://breakingnewsboulevard.com/images/starmer-nhs-strike-2026.jpg",
+    "datePublished": "March 31, 2026"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fff;--text:#1a1a2e;--text-light:#666;--accent:#2563eb;--accent-hover:#1d4ed8;--border:#e5e7eb;--card:#f8f9fa;--radius:12px;--shadow:0 2px 8px rgba(0,0,0,.08)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+    a{color:var(--accent);text-decoration:none;transition:color .2s}
+    a:hover{color:var(--accent-hover)}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:800px;margin:0 auto;padding:0 20px}
+    .header{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px)}
+    .header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 20px}
+    .logo{font-size:1.4rem;font-weight:800}
+    .logo a{color:var(--text)}
+    .logo a:hover{color:var(--accent)}
+    .nav{display:flex;gap:24px}
+    .nav a{color:var(--text-light);font-weight:500;font-size:.9rem}
+    .nav a:hover{color:var(--accent)}
+    .article{padding:48px 0}
+    .article-hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius);margin-bottom:32px;background:#e5e7eb}
+    .article h1{font-size:2rem;font-weight:800;line-height:1.2;margin-bottom:16px;font-family:'Merriweather',serif}
+    .article-meta{color:var(--text-light);font-size:.9rem;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+    .article-body{font-size:1.05rem}
+    .article-body p{margin-bottom:1.3em}
+    .article-body h2{font-size:1.4rem;margin:2em 0 .6em;font-weight:700}
+    .category-tag{display:inline-block;background:var(--accent);color:#fff;padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;margin-bottom:16px}
+    .ad-placeholder{background:#f0f0f0;border:2px dashed #ccc;border-radius:var(--radius);padding:40px;text-align:center;color:#999;margin:32px 0}
+    .footer{background:#1a1a2e;color:rgba(255,255,255,.7);padding:40px 0;margin-top:48px;text-align:center}
+    .footer p{font-size:.85rem;margin-bottom:8px}
+    @media(max-width:768px){.article h1{font-size:1.5rem}.nav{display:none}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo"><a href="/">Breaking News Boulevard</a></div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/category/world.html">World</a>
+      <a href="/category/tech.html">Tech</a>
+      <a href="/category/health.html">Health</a>
+      <a href="/category/science.html">Science</a>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="container">
+    <img class="article-hero" src="/images/starmer-nhs-strike-2026.jpg" alt="Starmer NHS strike ultimatum" loading="lazy">
+    <span class="category-tag">Health</span>
+    <h1>Starmer gives doctors 48 hours to cancel strike or lose new jobs package</h1>
+    <div class="article-meta">March 31, 2026 &bull; By Breaking News Boulevard</div>
+    <div class="article-body">
+<p>Labour leader Sir Keir Starmer has issued an ultimatum to NHS doctors, demanding that they call off a planned 48-hour strike within two days or forfeit a newly announced £1.2 billion jobs and recruitment package aimed at easing staffing shortages across the health service.</p>
+
+<h2>The Ultimatum</h2>
+<p>The warning came during a press conference at Westminster on Tuesday afternoon, where Starmer stood alongside Shadow Health Secretary Wes Streeting. He said the strike, scheduled to begin at 07:00 GMT on Thursday, would "undermine patient care at a time when the NHS is already under unprecedented pressure" and warned that the government-backed incentive scheme would be withdrawn if the industrial action proceeded.</p>
+
+<h2>Behind the Strike</h2>
+<p>The doctors' strike, organised by the British Medical Association (BMA), is the first nationwide walkout by consultants and junior doctors in over a decade. It follows months of failed negotiations over pay, working conditions and the government's pledge to recruit 50,000 additional NHS staff by 2025. The BMA argues that real-terms pay for doctors has fallen by roughly 15% since 2010, while workloads have risen sharply due to an ageing population and the lingering effects of the COVID-19 pandemic.</p>
+
+<h2>Starmer's Jobs Package</h2>
+<p>Starmer's new jobs package, unveiled last week, promises £800 million for the recruitment and retention of doctors, nurses and allied health professionals, plus £400 million to expand training places and improve workplace wellbeing. The Labour leader said the scheme was designed to "address the root causes of the staffing crisis" and to give clinicians "a fair deal for the vital work they do".</p>
+
+<p>In his remarks, Starmer appealed directly to the medical profession: "We understand the frustration and the genuine concerns about pay and conditions. But striking now will hurt the very patients you swore to protect. I am giving you 48 hours to reconsider. If you choose to go ahead, the package will be withdrawn and we will have to look at other ways to meet our commitments to the NHS."</p>
+
+<h2>BMA Response</h2>
+<p>The BMA responded swiftly, issuing a statement that condemned the ultimatum as "a coercive tactic that undermines the right to industrial action". Dr Chaand Nagpaul, BMA council chair, said: "Doctors are not taking this decision lightly. We have tried every avenue of negotiation and have been met with indifference. The strike is a last resort to secure a sustainable future for the NHS and for the professionals who keep it running."</p>
+
+<h2>Public Opinion</h2>
+<p>Public opinion polls released earlier this week show a divided electorate. Approximately 42% of respondents support the doctors' right to strike, while 38% believe the action could jeopardise patient safety, with the remainder undecided. NHS trusts have begun drafting contingency plans, including the postponement of non-urgent procedures and the activation of bank staff, to mitigate potential disruption.</p>
+
+<p>The government, led by Prime Minister Rishi Sunak, has so far refrained from commenting directly on Starmer's ultimatum, focusing instead on its own long-term workforce strategy. As the 48-hour clock ticks down, the healthcare sector — and the public — are watching closely to see whether the standoff will end in negotiation or confrontation.</p>
+    </div>
+    <div class="ad-placeholder">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4316838278696534" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Breaking News Boulevard. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>"""
+
+with open("/data/data/com.termux/files/home/.openclaw/workspace/breakingnewsboulevard/posts/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage.html", "w") as f:
+    f.write(post_html)
+
+print(f"✅ starmer post fixed ({len(post_html)} bytes)")

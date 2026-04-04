@@ -1,136 +1,20 @@
-const posts = [
-{
-    slug: "trump-vows-continue-iran-war-oil-crude-uranium-april-4-2026",
-    title: "Trump kündigt 2–3 weitere Wochen Iran-Angriffe an — Ölpreis jagt in die Höhe, Spezialeinsatz für Uran geplant",
-    excerpt: "US-Präsident Trump will die Militärschläge gegen den Iran noch zwei bis drei Wochen fortsetzen. Der Ölpreis klettert auf 106 Dollar. Washington plant angeblich eine hochriskante Operation zur Beschlagnahme von iranischem hochangereichertem Uran.",
-    image: "/images/trump-iran-escalation-oil-surge-april-2026.jpg",
-    category: "Weltpolitik",
-    date: "April 4, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/trump-vows-continue-iran-war-oil-crude-uranium-april-4-2026.html",
-    body: `<p>Die Iran-Offensive der USA und Israels wird länger dauern als von vielen erwartet. In einer Fernsehansprache am Mittwochabend kündigte Präsident Donald Trump an, die Angriffe auf iranische Ziele noch zwei bis drei weitere Wochen fortsetzen zu wollen. Die Börse reagierte sofort: Brent-Rohöl stieg um etwa fünf Prozent auf 106,16 Dollar pro Barrel — nachdem der Preis Anfang der Woche bereits kurzzeitig die 116-Dollar-Marke durchbrochen hatte.</p>
+// posts.js — Article database
+// Each post: { slug, title, excerpt, image, category, date, author, url, body }
 
-<h2>Ölpreise explodieren — Asiatische Börsen im freien Fall</h2>
-<p>Die Märkte weltweit stehen unter Schock. Der Ölpreis hat sich seit Kriegsbeginn am 28. Februar nahezu verdreifacht, und es gibt derzeit kein Ende der Abwärtsspirale in Sicht. Asiatische Börsen reagierten am Donnerstag mit deutlichen Verlusten: Der japanische Nikkei und der südkoreanische Kospi gaben spürbar nach. Auch europäische Indizes eröffneten im Minus.</p>
-<p>Viele Länder greifen inzwischen auf ihre strategischen Ölreserven zurück, um die schlimmsten wirtschaftlichen Auswirkungen abzufedern. Doch Analysten warnen: Selbst eine vollständige Wiedereröffnung der Straße von Hormuz würde Monate dauern, bis sich die globalen Energiemärkte stabilisiert hätten.</p>
+<<<<<<< HEAD
+const posts = [{
+    slug: "russian-oil-tanker-reaches-cuba-after-trump-appears-to-loosen-blockade",
+    title: "Russian oil tanker reaches Cuba after Trump appears to loose",
+    excerpt: "**Russian oil tankerreaches Cuban waters shortly after Trump remarks**
 
-<h2>Sonderoperation: US-Eliteeinheiten sollen iranisches Uran sichern</h2>
-<p>Parallel zu den Luftschlägen wird im Hintergrund eine der riskantesten Militäroperationen der jüngeren Geschichte erwogen. Berichten zufolge prüft Washington den Einsatz von Spezialeinheiten, um die Bestände an hochangereichertem Uran im Iran zu beschlagnahmen.</p>
-<p>Iran lagert schätzungsweise 440 Kilogramm auf 60 Prozent angereichertes Uran — genug theoretisches Material für mehr als zehn Atomwaffen. Etwa die Hälfte davon wird in einem Tunnelkomplex bei Isfahan vermutet, mehr als 480 Kilometer vom nächsten US-Stützpunkt entfernt. Das Problem: US-Truppen müssten Hunderte Kilometer durch aktives Kriegsgebiet transportiert werden, und das Uran liegt vermutlich als hexafluorid-Gas vor — beim Kontakt mit Wasser entstehen extrem giftige und ätzende Chemikalien.</p>
-<p>«Das ist keine Angelegenheit von ein paar Hubschraubern und ein paar Stunden Einsatz,» sagte ein Sicherheitsexperte des German Marshall Fund. «Sie bräuchten absolute Gewissheit, dass Sie alles bekommen — sonst geben Sie dem Iran einen gewaltigen Anreiz, sein Nuklearprogramm im Geheimen fortzusetzen.»</p>
-
-<h2>Die humanitäre Lage spitzt sich zu</h2>
-<p>Während Washington über Militäroptionen diskutiert, verschärft sich die Lage für Zivilisten in der gesamten Region. Die vorläufige Bilanz des Konflikts ist erschütternd: Über 2.076 Tote im Iran, mindestens 24 in Israel, 13 US-Soldaten und 27 weitere Tote in Golfstaaten.</p>
-<p>In Israel wächst die Erschöpfung in der Bevölkerung. Obwohl laut Umfragen noch 78 Prozent der jüdischen Israelis die Fortsetzung des Krieges unterstützen, zweifelt eine Mehrheit daran, dass Washington und Jerusalem die militärischen Fähigkeiten Teherans realistisch eingeschätzt haben. Der israelische Premierminister Netanjahu räumte gegenüber US-Medien ein, die Kriegsziele seien erst zur «Hälfte» erreicht.</p>
-
-<h2>China: «Tee-Kannen-Raffinerien» puffern die Ölkrise ab</h2>
-<p>Während der Westen mit steigenden Energiepreisen kämpft, hat China einen interessanten Weg gefunden, sich vor dem Schlimmsten zu schützen. Sogenannte «Tee-Kannen-Raffinerien» — kleine, unabhängige Ölverarbeitungsanlagen in der Provinz Shandong — haben jahrelang sanktioniertes iranisches und russisches Öl zu Dumpingpreisen gekauft und so strategische Vorräte aufgebaut.</p>
-<p>Doch auch dieser Puffer hat Grenzen. Die meisten aktuellen Ölbestände dieser Raffinerien wurden vor Kriegsbeginn gekauft. Ab April dürfte ein deutlicher Rückgang der Öllieferungen nach China einsetzen, warnen Marktbeobachter.</p>
-
-<h2>Was kommt als Nächstes?</h2>
-<p>Die nächsten Wochen entscheiden über den weiteren Verlauf des Konflikts. Wenn Trumps Ankündigung von zwei bis drei weiteren Wochen Bombardements Realität wird, könnten die Ölpreise weiter in Richtung 130 bis 150 Dollar steigen. Analysten rechnen mit erheblichen wirtschaftlichen Folgen, darunter eine mögliche globale Rezession. Das eine ist klar: Die Welt hält den Atem an.</p>
-`
-  },
-{
-    slug: "us-fighter-jet-downed-over-iran-crew-rescued-april-3-2026",
-    title: "US Fighter Jet Shot Down Over Iran \u2014 One Crew Member Rescued in Daring Operation",
-    excerpt: "A US fighter jet has been shot down over southern Iran, marking the deepest penetration of Iranian airspace in the ongoing war. One crew member has been rescued in a daring search-and-rescue mission, while the fate of a second remains unknown.",
-    image: "/images/us-fighter-jet-downed-iran-april-2026.jpg",
-    category: "World",
-    date: "April 3, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/us-fighter-jet-downed-over-iran-crew-rescued-april-3-2026.html",
-    body: `<p>A US fighter jet has been shot down over southern Iran, triggering an emergency search-and-rescue operation deep inside Iranian territory. US media confirmed that one crew member has been successfully recovered, while the fate of a second airman remains unknown. The incident marks one of the most dramatic developments in the five-week-old conflict.</p>
-
-<h2>Rescue Under Fire</h2>
-<p>Search-and-rescue teams penetrated deep into southern Iran to locate and recover the first crew member. Video reportedly captured by rescuers appears to show the operation underway, though the Pentagon has released no official details. The depth of the rescue mission \u2014 far inside Iranian-controlled territory \u2014 underscores the risks pilots are taking in contested airspace.</p>
-<p>US Central Command has not disclosed the type of aircraft that was downed or the mission it was carrying out at the time. Military analysts say the loss of a fighter jet this deep inside Iran suggests either a malfunction, surface-to-air fire, or a combination of both.</p>
-
-<h2>Second Crew Member Still Missing</h2>
-<p>The US military has not confirmed whether the second crew member is alive, captured, or killed. Combat search and rescue operations are ongoing, but Iranian forces are reportedly combing the crash area, complicating the effort. The incident echoes some of the most dangerous rescue missions in modern military history.</p>
-
-<h2>Artemis II Launches Amid Global Tension</h2>
-<p>In a stark contrast to the escalating conflict, NASA's Artemis II mission successfully launched from Kennedy Space Center, carrying four astronauts on a lunar flyby \u2014 the first crewed mission to orbit the Moon in over 50 years. Astronaut Reid Wiseman, commander of the mission, later returned a "spectacular" image of Earth from aboard the Orion capsule.</p>
-<p>The mission does not include a Moon landing but is seen as a crucial stepping stone toward future lunar landing preparations targeting 2028. For a brief moment, the world looked upward instead of at the battlefields.</p>
-
-<h2>War Rages On</h2>
-<p>Despite diplomatic efforts, the conflict shows no sign of ending. Israel launched a rocket strike on a building in Beirut, while fragments of Iranian missiles continue to hit targets in southern Israel, where a factory was struck and a large black smoke cloud rose over the site.</p>
-<p>The UN reports that fuel costs and transport disruptions from the war are worsening a hunger crisis in Somalia, highlighting the conflict's devastating ripple effects across the developing world. Meanwhile, families across Lebanon, Iran, and the Gulf states continue to mourn mounting casualties.</p>
-`
-  },
-{
-    slug: "who-declares-end-of-covid-pandemic-april-2026",
-    title: "WHO Declares Official End of Global COVID-19 Pandemic Era After Four Years",
-    excerpt: "The World Health Organization has declared the end of the COVID-19 pandemic era after four years of disruption. Global cases have dropped by 95%% from their peak.",
-    image: "/images/who-end-pandemic-2026.jpg",
-    category: "Health",
-    date: "April 4, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/who-declares-end-of-covid-pandemic-april-2026.html",
-    body: ``
-  },
-{
-    slug: "bundesliga-bayern-loses-title-race-april-2026",
-    title: "Bundesliga Shock: Bayern Munich Stumbles as Underdogs Close In on Title",
-    excerpt: "Bayern Munich's 13-year winning streak is in danger after consecutive losses put Bayer Leverkusen in position to claim their second straight Bundesliga title.",
-    image: "/images/bundesliga-title-race-2026.jpg",
-    category: "Sports",
-    date: "April 4, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/bundesliga-bayern-loses-title-race-april-2026.html",
-    body: ``
-  },
-{
-    slug: "germany-eu-ai-law-april-2026",
-    title: "EU Passes World's First Comprehensive AI Law — Tech Giants Face Strict New Rules",
-    excerpt: "The European Parliament has approved groundbreaking AI legislation that forces tech companies to label AI-generated content and face fines up to 7%% of global revenue.",
-    image: "/images/eu-ai-law-2026.jpg",
-    category: "Tech",
-    date: "April 4, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/germany-eu-ai-law-april-2026.html",
-    body: ``
-  },
-{
-    slug: "us-judge-blocks-trump-white-house-ballroom-iran-war-somalia-crisis-april-2-2026",
-    title: "Federal Judge Blocks Trump's \u200b$400 Million White House Ballroom \u2014 Iran War Fuels Hunger Crisis in Somalia",
-    excerpt: "A US federal judge has blocked President Trump's controversial \u200b$400 million White House ballroom expansion. Meanwhile, the UN warns that fuel and transport disruptions from the Iran war are deepening a hunger crisis in East Africa.",
-    image: "/images/courthouse-blocks-trump-ballroom-april-2026.jpg",
-    category: "World",
-    date: "April 2, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/us-judge-blocks-trump-white-house-ballroom-iran-war-somalia-crisis-april-2-2026.html",
-    body: `<p>Washington was rocked by a major legal setback for the White House on Wednesday, as a federal judge blocked President Trump's \u200b$400 million plan to construct a grand ballroom on the White House grounds. The ruling raises fresh questions about executive power and public spending authority as the ongoing Iran war drains both political capital and public patience.</p>
-
-<h2>Court Blocks Ballroom Plans</h2>
-<p>The federal judge found that the administration attempted to bypass congressional oversight and proper procurement procedures in pushing forward with the lavish expansion project. The White House had argued the ballroom was necessary for official state functions, but critics called it an extravagant misuse of funds during a time of military conflict and rising domestic costs.</p>
-<p>The ruling is likely to be appealed, and the legal battle over the ballroom could drag on for months. Opposition lawmakers hailed the decision as a victory for accountability.</p>
-
-<h2>Iran War Deepens Somalia's Hunger Crisis</h2>
-<p>The United Nations has issued a stark warning: the Iran war's disruption to fuel supplies and maritime transport is exacerbating an already severe hunger crisis in Somalia. Rising fuel costs have pushed food prices to unsustainable levels across East Africa, where millions were already on the brink of famine before the conflict.</p>
-<p>With the Strait of Hormuz \u2014 one of the world's most critical oil chokepoints \u2014 still partially disrupted by military operations, global energy markets remain in turmoil. The consequences extend far beyond the immediate war zone.</p>
-
-<h2>Trump's Name on Airport and Presidential Library</h2>
-<p>Even as courts push back on one major spending project, Trump is moving ahead with plans to put his name on a US airport and a new presidential library. The announcements have been met with mixed reactions, with supporters calling it a fitting honor and critics dismissing it as self-promotion during wartime.</p>
-
-<h2>Oil Price Volatility Continues</h2>
-<p>Global oil markets remain volatile as the Iran conflict persists. The war, which began on February 28, has now entered its sixth week, with preliminary death tolls exceeding 2,000 in Iran and dozens in Israel and Gulf states. US gasoline prices have remained elevated, with diesel surging over 40% since the conflict began.</p>
-
-<h2>What Comes Next</h2>
-<p>With the court battle over the ballroom likely to escalate, diplomatic efforts on Iran showing mixed signals, and the humanitarian crisis worsening in affected regions, the administration faces mounting pressure on multiple fronts. The next few weeks will be critical in determining whether diplomacy or escalation prevails.</p>
-`
-  },
-{
-    slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
-    title: "Why does the US have Iran's Kharg Island in its sights?",
-    excerpt: "Kharg Island, situated 25 km off Iran's southern coast, houses the country's most vital oil-export terminal and has become a focal point of US strategic interest in the Iran conflict.",
-    image: "/images/kharg-island-oil-terminal.jpg",
+HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U. S.",
+    image: "/images/ai-image-generation.jpg",
     category: "World",
     date: "March 30, 2026",
     author: "Breaking News Boulevard",
-    url: "/posts/why-does-the-us-have-iran-s-kharg-island-in-its-sights.html",
-    body: `<p>Kharg Island houses Iran's most vital oil-export terminal and has become a focal point of US strategic interest in the ongoing conflict.</p>`
-  },
+    url: "/posts/russian-oil-tanker-reaches-cuba-after-trump-appears-to-loosen-blockade.html",
+    body: `
+<p>**Russian oil tankerreaches Cuban waters shortly after Trump remarks**</p><p>HAVANA — A Russian‑flagged oil tanker entered Cuban territorial waters on Tuesday, arriving just hours after former U.S. President Donald Trump told reporters he had “no problem” with the vessel’s arrival. The ship, identified as the *Vladimir Monaco*, discharged its cargo at the port of Mariel, west of Havana, according to port authorities and satellite tracking data.</p><p>The *Vladimir Monaco*, a Suezmax‑class crude carrier registered in Saint Petersburg, left the Russian port of Novorossiysk on September 12 carrying approximately 800,000 barrels of Urals blend crude. After transiting the Atlantic and passing through the Caribbean, the vessel altered its course toward Cuba on September 24, prompting monitoring by U.S. and regional maritime authorities. Cuban officials confirmed the tanker docked at the Mariel Special Development Zone at 03:15 local time, where it began offloading fuel destined for the island’s power plants and transportation sector.</p><p>Trump’s comment came during a press briefing in Florida on Monday, where he was asked about reports of a Russian tanker heading to Cuba. “If they want to bring oil in, I have no problem with it,” he said, adding that the United States should focus on “securing our own borders” rather than interfering with foreign shipments. The remark contrasted with the longstanding U.S. embargo that restricts most trade with Cuba, including energy exports, and with recent statements from the Biden administration urging compliance with sanctions against Russia’s energy sector.</p><p>The arrival highlights the shifting dynamics of Cuba’s energy supply. Since the deterioration of its longtime benefactor Venezuela’s oil output, the island has faced recurring fuel shortages, prompting it to seek alternative sources. Russia, seeking to expand its influence in Latin America, has increased shipments of crude and refined products to Cuba over the past year, often routing vessels through third‑party flags to evade scrutiny. The *Vladimir Monaco*’s voyage follows a similar delivery by the *Akademik Lomonosov* in June, which delivered liquefied natural gas to a Cuban power plant.</p><p>Cuban officials welcomed the shipment, stating that the crude would help stabilize electricity generation and reduce reliance on more</p>,
 {
     slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
     title: "US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan",
@@ -141,7 +25,7 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026.html",
     body: `
-<p>The United States is preparing to deploy approximately 3,000 soldiers from the elite 82nd Airborne Division to the Middle East - the largest single ground deployment since the Iran war began on February 28 - even as Pakistan brokers a 15-point ceasefire plan that sent oil prices crashing below $100 for the first time in weeks. The contradictory signals of escalation and diplomacy have left the world watching to see which force wins out: the generals or the diplomats.</p>
+<p>The United States is preparing to deploy approximately 3,000 soldiers from the elite 82nd Airborne Division to the Middle East — the largest single ground deployment since the Iran war began on February 28 — even as Pakistan brokers a 15-point ceasefire plan that sent oil prices crashing below $100 for the first time in weeks. The contradictory signals of escalation and diplomacy have left the world watching to see which force wins out: the generals or the diplomats.</p>
 
 <h2>Boots on the Ground</h2>
 <p>The deployment of the 82nd Airborne, one of the US military's most rapid-response units, marks a significant shift in the conflict. Until now, the war has been fought primarily through air strikes, naval operations, and missile defense. The paratroopers will join thousands of Marines already heading to the region, raising the prospect that US forces could be used in a ground capacity for the first time.</p>
@@ -149,7 +33,7 @@ const posts = [
 
 <h2>The 15-Point Plan</h2>
 <p>In a dramatic diplomatic development, Pakistan has presented both Washington and Tehran with a 15-point framework for ending the war. The plan, reportedly facilitated through back-channel communications over the past week, is said to include provisions for a phased ceasefire, the reopening of the Strait of Hormuz, and guarantees around Iran's nuclear program.</p>
-<p>President Trump has expressed cautious optimism, telling reporters that "talks are progressing" and hinting at a "present" related to oil, gas, and the strait. The ceasefire hopes immediately roiled energy markets: Brent crude plunged 5.9% to $98.28 per barrel, while WTI fell 5.1% to $87.68 - erasing the previous day's gains in a single session.</p>
+<p>President Trump has expressed cautious optimism, telling reporters that "talks are progressing" and hinting at a "present" related to oil, gas, and the strait. The ceasefire hopes immediately roiled energy markets: Brent crude plunged 5.9% to $98.28 per barrel, while WTI fell 5.1% to $87.68 — erasing the previous day's gains in a single session.</p>
 
 <h2>Iran's Military Pushes Back</h2>
 <p>Despite Trump's optimism, Iran's military establishment has flatly rejected the prospect of negotiations with Washington. The Islamic Revolutionary Guard Corps declared that it would not negotiate "under the shadow of bombs," while state media continued to frame the conflict as a defensive war against American aggression. Iran has consistently denied seeking nuclear weapons, a position it reiterated through its UN mission.</p>
@@ -168,17 +52,17 @@ const posts = [
 <h2>Lebanon Expels Iran's Ambassador</h2>
 <p>In a major diplomatic escalation, Lebanon expelled Iran's ambassador as part of a crackdown on Tehran's influence within its borders. The move reflects growing Lebanese frustration with Iran-backed Hezbollah's role in dragging the country into a war many Lebanese did not choose. Hezbollah, meanwhile, continues attacking Israeli soldiers and infrastructure in southern Lebanon.</p>
 
-<h2>Markets Breathe - Briefly</h2>
-<p>Asian markets rallied sharply on ceasefire hopes. Tokyo's Nikkei surged 3%, Seoul's Kospi gained 1.6%, and India's Sensex soared over 1,100 points. But US markets closed lower the previous day, with the S&P 500 falling 0.4% and the Nasdaq dropping 0.8% - suggesting Wall Street remains skeptical that diplomacy will prevail.</p>
+<h2>Markets Breathe — Briefly</h2>
+<p>Asian markets rallied sharply on ceasefire hopes. Tokyo's Nikkei surged 3%, Seoul's Kospi gained 1.6%, and India's Sensex soared over 1,100 points. But US markets closed lower the previous day, with the S&P 500 falling 0.4% and the Nasdaq dropping 0.8% — suggesting Wall Street remains skeptical that diplomacy will prevail.</p>
 <p>Retail fuel prices continue to bite: US gasoline has hit $3.98 per gallon (up 34% since the war began), while diesel has surged 42% to $5.35. Even if a ceasefire materializes, analysts expect oil to remain in the $85-$90 range, with prices climbing back toward $110 only if Hormuz fully reopens.</p>
 
 <h2>What Happens Next</h2>
-<p>The next 72 hours are critical. If Pakistan's 15-point plan gains traction - and if Trump can bridge the gap between his desire for a deal and Israel's demand for total victory - the war could enter a new diplomatic phase. But the deployment of 3,000 paratroopers tells a different story: Washington is also preparing for the possibility that talks fail. For now, the world is caught between two timelines - one toward peace, the other toward a ground war nobody wants.</p>
+<p>The next 72 hours are critical. If Pakistan's 15-point plan gains traction — and if Trump can bridge the gap between his desire for a deal and Israel's demand for total victory — the war could enter a new diplomatic phase. But the deployment of 3,000 paratroopers tells a different story: Washington is also preparing for the possibility that talks fail. For now, the world is caught between two timelines — one toward peace, the other toward a ground war nobody wants.</p>
     `
   },
-{
+  {
     slug: "trump-claims-iran-talks-denied-ultimatum-extended-march-2026",
-    title: "Trump Claims 'Productive Talks' With Iran to End War - Tehran Denies Everything",
+    title: "Trump Claims 'Productive Talks' With Iran to End War — Tehran Denies Everything",
     excerpt: "President Trump says the US is in 'very good and productive conversations' with Iran to de-escalate the war and extends his Hormuz ultimatum. Iran calls it a 'retreat.' Oil plunges 10% on hopes of a ceasefire that neither side seems to be pursuing.",
     image: "/images/trump-iran-talks-denied.jpg",
     category: "World",
@@ -186,15 +70,15 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/trump-claims-iran-talks-denied-ultimatum-extended-march-2026.html",
     body: `
-<p>In a stunning twist that sent oil prices plunging but left diplomats bewildered, President Donald Trump announced on March 24 that the United States is engaged in "very good and productive conversations" with Iran to end the war - even as Tehran flatly denied that any such talks are taking place. The conflicting narratives have left the world guessing: Is a ceasefire genuinely within reach, or is this political theater while the bombs keep falling?</p>
+<p>In a stunning twist that sent oil prices plunging but left diplomats bewildered, President Donald Trump announced on March 24 that the United States is engaged in "very good and productive conversations" with Iran to end the war — even as Tehran flatly denied that any such talks are taking place. The conflicting narratives have left the world guessing: Is a ceasefire genuinely within reach, or is this political theater while the bombs keep falling?</p>
 
 <h2>Trump Extends the Deadline</h2>
-<p>Trump's 48-hour ultimatum - demanding Iran fully reopen the Strait of Hormuz or face the destruction of its power plants - was set to expire on March 24. But rather than ordering strikes, the president announced he was extending the deadline, citing progress in back-channel negotiations. "We've had very good and productive conversations," Trump told reporters, declining to provide specifics about who was talking to whom or what terms were on the table.</p>
-<p>The extension immediately injected optimism into global financial markets. Brent crude, the international oil benchmark, plunged more than 10% in a single session - its sharpest daily decline since the war began on February 28. Asian stock markets, which had been sliding for weeks, posted broad gains on the hope that energy disruptions might ease.</p>
+<p>Trump's 48-hour ultimatum — demanding Iran fully reopen the Strait of Hormuz or face the destruction of its power plants — was set to expire on March 24. But rather than ordering strikes, the president announced he was extending the deadline, citing progress in back-channel negotiations. "We've had very good and productive conversations," Trump told reporters, declining to provide specifics about who was talking to whom or what terms were on the table.</p>
+<p>The extension immediately injected optimism into global financial markets. Brent crude, the international oil benchmark, plunged more than 10% in a single session — its sharpest daily decline since the war began on February 28. Asian stock markets, which had been sliding for weeks, posted broad gains on the hope that energy disruptions might ease.</p>
 
 <h2>Iran: "He Retreated Out of Fear"</h2>
 <p>Iran's response was swift and dismissive. State media declared that Trump had "retreated from his ultimatum out of fear of Iran's response," framing the extension as a victory for Tehran's military defiance rather than a diplomatic breakthrough. Iranian officials emphasized that they had made no concessions and entered no negotiations.</p>
-<p>However, a senior Iranian Foreign Ministry official told CBS News that "we received points from the U.S. through mediators and they are being reviewed" - suggesting some form of indirect communication is indeed underway, even if it falls short of formal talks. The official did not identify the mediators.</p>
+<p>However, a senior Iranian Foreign Ministry official told CBS News that "we received points from the U.S. through mediators and they are being reviewed" — suggesting some form of indirect communication is indeed underway, even if it falls short of formal talks. The official did not identify the mediators.</p>
 
 <h2>The War Rages On</h2>
 <p>Even as the diplomatic rhetoric swirled, the fighting showed no signs of abating:</p>
@@ -204,11 +88,11 @@ const posts = [
 <li><strong>Tehran still being struck:</strong> US-Israeli forces continued hitting targets in the Iranian capital.</li>
 <li><strong>Iraq strikes:</strong> Seven Popular Mobilization Forces fighters were killed in a strike near Baghdad.</li>
 </ul>
-<p>US Central Command reported that it has struck more than 9,000 Iranian targets and conducted 9,000 combat sorties since the war began - a staggering operational tempo that underscores the scale of the military campaign.</p>
+<p>US Central Command reported that it has struck more than 9,000 Iranian targets and conducted 9,000 combat sorties since the war began — a staggering operational tempo that underscores the scale of the military campaign.</p>
 
 <h2>Strait of Hormuz: Mines, Not Peace</h2>
 <p>Despite the optimistic headlines, the Strait of Hormuz remains effectively closed. US intelligence assessments indicate at least a dozen Iranian mines have been laid in the waterway. Iran has threatened to mine the "entire Persian Gulf" if its power plants are struck, raising the stakes for any future military escalation.</p>
-<p>The strait, through which roughly a fifth of the world's oil and liquefied natural gas flows, has been under de facto Iranian blockade for weeks. While Iran's Foreign Ministry insists the waterway "remains open under wartime monitoring," commercial shipping companies are not taking chances - most tankers are avoiding the route entirely.</p>
+<p>The strait, through which roughly a fifth of the world's oil and liquefied natural gas flows, has been under de facto Iranian blockade for weeks. While Iran's Foreign Ministry insists the waterway "remains open under wartime monitoring," commercial shipping companies are not taking chances — most tankers are avoiding the route entirely.</p>
 
 <h2>Global Diplomatic Pressure</h2>
 <p>International calls for a ceasefire are intensifying. Russia has urged a "political and diplomatic" settlement, while China has called on all parties to end military operations to prevent a "vicious cycle" of escalation. In Italy, protests erupted against the war, Prime Minister Giorgia Meloni, and a forthcoming constitutional referendum.</p>
@@ -218,14 +102,14 @@ const posts = [
 <p>The 10% plunge in Brent crude offered temporary relief, but analysts caution against premature celebration. Even after the drop, oil remains far above pre-war levels, and any resumption of hostilities at Hormuz would send prices skyrocketing again. The Federal Reserve noted that Middle East developments present "uncertain" implications for the US economy, while the Producer Price Index surged 0.7% in February, driven by energy and food cost increases.</p>
 
 <h2>What Comes Next</h2>
-<p>The next few days will be critical. If back-channel communications - however informal - can produce even a partial reopening of Hormuz, markets could stabilize. But if Iran's defiance continues and Trump is forced to either strike or lose credibility, the world faces a dramatic escalation. For now, both sides are playing a dangerous game of brinkmanship, with the global economy hanging in the balance.</p>
+<p>The next few days will be critical. If back-channel communications — however informal — can produce even a partial reopening of Hormuz, markets could stabilize. But if Iran's defiance continues and Trump is forced to either strike or lose credibility, the world faces a dramatic escalation. For now, both sides are playing a dangerous game of brinkmanship, with the global economy hanging in the balance.</p>
     `
   },
-{
+  {
     slug: "ai-image-generation-chatgpt-claude-grok-2026",
     title: "ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?",
-    excerpt: "A comprehensive comparison of AI image generation tools - from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.",
-    image: "/images/ai-comparison-chatgpt-claude-grok-2026.jpg",
+    excerpt: "A comprehensive comparison of AI image generation tools — from ChatGPT's native GPT-4o image creator to Grok's Aurora model and Claude's surprising workaround. Here's which one to use and when.",
+    image: "/images/ai-image-generation.jpg",
     category: "Tech",
     date: "March 23, 2026",
     author: "Breaking News Boulevard",
@@ -238,10 +122,10 @@ const posts = [
 
 <p><strong>What it does best:</strong></p>
 <ul>
-<li><strong>Text rendering in images</strong> - One of the hardest problems in AI image generation, and ChatGPT nails it. Posters, signs, book covers, logos with real text - it handles them better than any competitor.</li>
-<li><strong>Multi-turn refinement</strong> - You can say "make the sky darker" or "add a cat in the corner" and it edits the existing image rather than starting from scratch. The context memory between turns is excellent.</li>
-<li><strong>Style flexibility</strong> - From photorealistic photos to watercolors, anime, pixel art, oil paintings - GPT-4o adapts fluidly to whatever style you describe.</li>
-<li><strong>Editing uploaded images</strong> - Upload a photo and ask it to change the background, add elements, or transform the style. It handles composition and lighting surprisingly well.</li>
+<li><strong>Text rendering in images</strong> — One of the hardest problems in AI image generation, and ChatGPT nails it. Posters, signs, book covers, logos with real text — it handles them better than any competitor.</li>
+<li><strong>Multi-turn refinement</strong> — You can say "make the sky darker" or "add a cat in the corner" and it edits the existing image rather than starting from scratch. The context memory between turns is excellent.</li>
+<li><strong>Style flexibility</strong> — From photorealistic photos to watercolors, anime, pixel art, oil paintings — GPT-4o adapts fluidly to whatever style you describe.</li>
+<li><strong>Editing uploaded images</strong> — Upload a photo and ask it to change the background, add elements, or transform the style. It handles composition and lighting surprisingly well.</li>
 </ul>
 
 <p><strong>Limitations:</strong> Generation can be slow (15-30 seconds for detailed images). Occasionally struggles with very complex scenes involving many distinct objects. Free tier has limited generations per day.</p>
@@ -253,10 +137,10 @@ const posts = [
 
 <p><strong>What it does best:</strong></p>
 <ul>
-<li><strong>Ultra-realistic photography</strong> - Aurora produces images that are nearly indistinguishable from real photographs. Portraits, landscapes, product shots - the level of detail is remarkable.</li>
-<li><strong>Real-world accuracy</strong> - The model has an unusually strong understanding of how real objects, lighting, and physics work. Text on buildings looks correct. Shadows fall in the right direction.</li>
-<li><strong>Batch generation</strong> - You can generate up to 10 images per request at 1K resolution, making it great for exploring variations quickly.</li>
-<li><strong>Video generation</strong> - Grok Imagine can also produce short video clips (up to 10 seconds at 720p), something neither ChatGPT nor Claude currently offer natively.</li>
+<li><strong>Ultra-realistic photography</strong> — Aurora produces images that are nearly indistinguishable from real photographs. Portraits, landscapes, product shots — the level of detail is remarkable.</li>
+<li><strong>Real-world accuracy</strong> — The model has an unusually strong understanding of how real objects, lighting, and physics work. Text on buildings looks correct. Shadows fall in the right direction.</li>
+<li><strong>Batch generation</strong> — You can generate up to 10 images per request at 1K resolution, making it great for exploring variations quickly.</li>
+<li><strong>Video generation</strong> — Grok Imagine can also produce short video clips (up to 10 seconds at 720p), something neither ChatGPT nor Claude currently offer natively.</li>
 </ul>
 
 <p><strong>Limitations:</strong> Limited to paying X subscribers. The January 2026 controversy over explicit imagery led to stricter content filters. Less refined at stylized or artistic outputs compared to ChatGPT.</p>
@@ -264,13 +148,13 @@ const posts = [
 <p><strong>Best for:</strong> Photorealistic imagery, concept art that needs to look "real," quick batch generation, and anyone already active on the X platform.</p>
 
 <h2>Claude (Anthropic): The Surprising Workaround</h2>
-<p>Here's the twist - Claude <strong>cannot generate images directly</strong>. Anthropic designed Claude to excel at text, reasoning, and analysis. But that hasn't stopped creative users from finding clever workarounds.</p>
+<p>Here's the twist — Claude <strong>cannot generate images directly</strong>. Anthropic designed Claude to excel at text, reasoning, and analysis. But that hasn't stopped creative users from finding clever workarounds.</p>
 
 <p><strong>What you can actually do:</strong></p>
 <ul>
-<li><strong>Prompt crafting</strong> - Claude is arguably the best AI at writing detailed, structured image prompts. You can describe your vision in natural language, and Claude will refine it into an optimized prompt for Midjourney, DALL-E, or Stable Diffusion.</li>
-<li><strong>Image analysis</strong> - Upload any image and Claude can describe it in detail, suggest improvements, analyze composition, and even reverse-engineer the style to help you recreate it.</li>
-<li><strong>Third-party integration</strong> - Claude can be connected to image generation APIs through MCP (Model Context Protocol) servers, effectively acting as a creative director that hands off to dedicated image models.</li>
+<li><strong>Prompt crafting</strong> — Claude is arguably the best AI at writing detailed, structured image prompts. You can describe your vision in natural language, and Claude will refine it into an optimized prompt for Midjourney, DALL-E, or Stable Diffusion.</li>
+<li><strong>Image analysis</strong> — Upload any image and Claude can describe it in detail, suggest improvements, analyze composition, and even reverse-engineer the style to help you recreate it.</li>
+<li><strong>Third-party integration</strong> — Claude can be connected to image generation APIs through MCP (Model Context Protocol) servers, effectively acting as a creative director that hands off to dedicated image models.</li>
 </ul>
 
 <p><strong>The future:</strong> There's a 41% predicted chance (per Manifold Markets) that Anthropic will release its own image generation model by end of 2026. The competitive pressure is real.</p>
@@ -289,14 +173,14 @@ const posts = [
 </ul>
 
 <h2>The Verdict</h2>
-<p>If you want <strong>one tool that does everything</strong>, ChatGPT is the safest bet - it generates, edits, handles text, and works across every style. If you need <strong>photorealism that could fool a photographer</strong>, Grok's Aurora model is hard to beat. And if you're a <strong>power user who works with external tools</strong>, Claude's ability to craft perfect prompts and analyze images makes it the best creative co-pilot.</p>
+<p>If you want <strong>one tool that does everything</strong>, ChatGPT is the safest bet — it generates, edits, handles text, and works across every style. If you need <strong>photorealism that could fool a photographer</strong>, Grok's Aurora model is hard to beat. And if you're a <strong>power user who works with external tools</strong>, Claude's ability to craft perfect prompts and analyze images makes it the best creative co-pilot.</p>
 
-<p>The real winner? You - because in 2026, you have three genuinely powerful options that were pure science fiction just a few years ago.</p>
+<p>The real winner? You — because in 2026, you have three genuinely powerful options that were pure science fiction just a few years ago.</p>
     `
   },
-{
+  {
     slug: "iea-global-economy-major-threat-iran-war-march-2026",
-    title: "IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy - Worse Than 1970s Oil Crises",
+    title: "IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy — Worse Than 1970s Oil Crises",
     excerpt: "The head of the International Energy Agency says the Iran war's impact on energy markets surpasses both 1970s oil shocks and the Russia-Ukraine war combined, as stock markets tumble worldwide and oil prices keep climbing.",
     image: "/images/iea-economy-oil-crisis.jpg",
     category: "Economy",
@@ -304,7 +188,7 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/iea-global-economy-major-threat-iran-war-march-2026.html",
     body: `
-<p>The head of the International Energy Agency has issued his starkest warning yet about the economic fallout of the Iran war, declaring that the global economy faces a "major, major threat" from the conflict - one that surpasses the combined impact of the two 1970s oil shocks and the Russia-Ukraine energy crisis.</p>
+<p>The head of the International Energy Agency has issued his starkest warning yet about the economic fallout of the Iran war, declaring that the global economy faces a "major, major threat" from the conflict — one that surpasses the combined impact of the two 1970s oil shocks and the Russia-Ukraine energy crisis.</p>
 
 <h2>"No Country Is Immune"</h2>
 <p>IEA Executive Director Fatih Birol delivered the warning on March 23 as oil prices continued their relentless climb and stock markets across Asia, Europe, and the Americas posted sharp losses. "No country will be immune from the repercussions of this crisis," Birol said, adding that the disruption to energy supplies through the Strait of Hormuz represents the single largest supply shock in the history of the global oil market.</p>
@@ -323,21 +207,21 @@ const posts = [
 
 <h2>Strategic Reserves on the Table</h2>
 <p>The IEA is now actively consulting with European and Asian governments about a coordinated release of strategic petroleum reserves if market conditions deteriorate further. Such a move would mirror the response to Russia's invasion of Ukraine in 2022 but would likely need to be larger in scale given the magnitude of the current disruption.</p>
-<p>Several nations are already taking independent action. Indonesia has announced plans to allocate up to 80 trillion rupiah - approximately $4.7 billion - to cushion its economy from the energy price shock. Japan and South Korea are reportedly considering their own emergency measures.</p>
+<p>Several nations are already taking independent action. Indonesia has announced plans to allocate up to 80 trillion rupiah — approximately $4.7 billion — to cushion its economy from the energy price shock. Japan and South Korea are reportedly considering their own emergency measures.</p>
 
 <h2>US Faces Domestic Pressure</h2>
-<p>In the United States, rising gasoline prices are expected to consume much of this year's tax refund windfall, according to economists - erasing the spending boost that policymakers had hoped would support growth. The political pressure on President Trump is mounting as pump prices climb in key electoral states.</p>
+<p>In the United States, rising gasoline prices are expected to consume much of this year's tax refund windfall, according to economists — erasing the spending boost that policymakers had hoped would support growth. The political pressure on President Trump is mounting as pump prices climb in key electoral states.</p>
 <p>In a bid to ease supply constraints, the US has temporarily waived sanctions on Iranian oil shipments at sea, granting a 30-day window for tankers carrying Iranian crude to deliver their cargoes. The move signals a pragmatic shift even as military operations against Iran continue to escalate.</p>
 
 <h2>Trump's 48-Hour Clock Ticks</h2>
-<p>The economic crisis unfolds alongside the military one. Trump's 48-hour ultimatum to Iran - demanding the full reopening of the Strait of Hormuz or face strikes on Iranian power plants - expires on March 24. Iran has responded defiantly, threatening to "completely close" the strait and strike regional energy infrastructure if the US follows through.</p>
+<p>The economic crisis unfolds alongside the military one. Trump's 48-hour ultimatum to Iran — demanding the full reopening of the Strait of Hormuz or face strikes on Iranian power plants — expires on March 24. Iran has responded defiantly, threatening to "completely close" the strait and strike regional energy infrastructure if the US follows through.</p>
 <p>Meanwhile, the Israeli military launched a "wide-scale wave" of strikes targeting Iranian infrastructure in Tehran early on March 23, with Iranian news agencies reporting explosions in the capital. Iran-backed Hezbollah claimed 56 attacks on Israeli positions between March 21 and 22.</p>
 
 <h2>What Comes Next</h2>
-<p>With the IEA's warning, the Iran war is no longer just a geopolitical crisis - it is an economic emergency with the potential to trigger a global recession. If Hormuz remains closed through April, analysts project oil could hit $150, inflation would spike worldwide, and central banks would face an impossible choice between fighting price rises and supporting growth. The next 48 hours may determine whether the world slides into that scenario or steps back from the brink.</p>
+<p>With the IEA's warning, the Iran war is no longer just a geopolitical crisis — it is an economic emergency with the potential to trigger a global recession. If Hormuz remains closed through April, analysts project oil could hit $150, inflation would spike worldwide, and central banks would face an impossible choice between fighting price rises and supporting growth. The next 48 hours may determine whether the world slides into that scenario or steps back from the brink.</p>
     `
   },
-{
+  {
     slug: "trump-48-hour-ultimatum-iran-hormuz-march-2026",
     title: "Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants",
     excerpt: "President Trump demands Iran fully reopen the Strait of Hormuz within 48 hours, threatening to destroy Iranian power plants as the 2026 war enters its fourth week with no end in sight.",
@@ -347,13 +231,13 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/trump-48-hour-ultimatum-iran-hormuz-march-2026.html",
     body: `
-<p>President Donald Trump has issued a dramatic 48-hour ultimatum to Iran, threatening to "obliterate" its power plants - starting with the largest - if the Strait of Hormuz is not fully reopened to international shipping. The warning, posted on Truth Social on March 22, marks the most aggressive escalation yet in a war now entering its fourth week.</p>
+<p>President Donald Trump has issued a dramatic 48-hour ultimatum to Iran, threatening to "obliterate" its power plants — starting with the largest — if the Strait of Hormuz is not fully reopened to international shipping. The warning, posted on Truth Social on March 22, marks the most aggressive escalation yet in a war now entering its fourth week.</p>
 
 <h2>The Ultimatum</h2>
 <p>In a characteristically blunt social media post, Trump demanded Iran immediately cease its blockade of the Strait of Hormuz, the narrow waterway through which roughly a fifth of the world's oil and liquefied natural gas supplies flow. "If Iran does not open the Strait of Hormuz fully and immediately, we will begin by obliterating their largest power plant," Trump wrote. "Then the next one. And the next."</p>
 <p>The threat came after weeks of mounting frustration as Iranian military forces have maintained what multiple nations have called a "de facto closure" of the strait, despite Iran's UN representative claiming it remains open to non-enemy vessels.</p>
 
-<h2>Iran Fires Back - Literally</h2>
+<h2>Iran Fires Back — Literally</h2>
 <p>Iran's military wasted no time responding. Tehran warned it would target US and Israeli energy and desalination infrastructure across the Middle East if its own power plants were struck. The threat raises the specter of a devastating tit-for-tat targeting of civilian infrastructure across the region.</p>
 <p>Earlier on March 22, Iran launched a barrage of ballistic missiles at communities in southern Israel near the Dimona nuclear research center and the city of Arad. Over 100 people were injured, with significant damage to apartment blocks. Sirens sounded in Jerusalem as missiles were detected incoming.</p>
 
@@ -368,17 +252,17 @@ const posts = [
 </ul>
 
 <h2>"Largest Supply Disruption in History"</h2>
-<p>The International Energy Agency has described the Hormuz crisis as "the largest supply disruption in the history of the global oil market." Brent crude remains above $110 per barrel, and gas prices have surged worldwide. A coalition of nations - including the UK, France, Italy, Germany, South Korea, Australia, the UAE, and Bahrain - has condemned the strait's closure.</p>
+<p>The International Energy Agency has described the Hormuz crisis as "the largest supply disruption in the history of the global oil market." Brent crude remains above $110 per barrel, and gas prices have surged worldwide. A coalition of nations — including the UK, France, Italy, Germany, South Korea, Australia, the UAE, and Bahrain — has condemned the strait's closure.</p>
 <p>Japan is reportedly considering minesweeping operations in the strait if a ceasefire is established, signaling just how seriously the disruption is being taken in Asia.</p>
 
 <h2>Human Cost Mounts</h2>
 <p>The war's toll continues to climb. Over 1,500 people have been killed in Iran, more than 1,000 in Lebanon, 15 in Israel, and 13 US military members have died. Millions have been displaced in both Lebanon and Iran. Iran's President Masoud Pezeshkian has called for an "immediate cessation" of US-Israeli aggression, while Trump has signaled the US is "getting close to meeting our objectives."</p>
 
 <h2>What Happens Next</h2>
-<p>All eyes are on the clock. If Trump's 48-hour deadline passes without compliance - and Iran shows no signs of backing down - the destruction of Iranian power infrastructure could trigger a new and far more dangerous phase of the conflict. With Iran threatening retaliatory strikes on regional energy assets and both sides showing little appetite for diplomacy, the next 48 hours may prove decisive for the entire Middle East.</p>
+<p>All eyes are on the clock. If Trump's 48-hour deadline passes without compliance — and Iran shows no signs of backing down — the destruction of Iranian power infrastructure could trigger a new and far more dangerous phase of the conflict. With Iran threatening retaliatory strikes on regional energy assets and both sides showing little appetite for diplomacy, the next 48 hours may prove decisive for the entire Middle East.</p>
     `
   },
-{
+  {
     slug: "iran-us-war-natanz-nuclear-strike-march-2026",
     title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
     excerpt: "The US and Israel have struck Iran's Natanz nuclear facility as the 2026 Iran war enters its fourth week. Trump signals possible wind-down while oil prices surge past $110.",
@@ -415,7 +299,7 @@ const posts = [
 <p>Israel has launched strikes on "regime targets" in Tehran and Hezbollah targets in southern Beirut. The IDF reported killing four Hezbollah members in southern Lebanon. International calls for restraint continue to grow as the conflict threatens to expand further.</p>
     `
   },
-{
+  {
     slug: "strait-of-hormuz-oil-crisis-2026",
     title: "Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes",
     excerpt: "Oil prices surge past $110 as multiple nations form a coalition to ensure safe passage for ships through the Strait of Hormuz amid rising tensions.",
@@ -442,7 +326,7 @@ const posts = [
 <p>A vessel carrying Russian Urals crude is also expected to reach India on March 21, adding another dimension to the complex energy landscape.</p>
     `
   },
-{
+  {
     slug: "chuck-norris-dies-at-86",
     title: "Chuck Norris, Martial Arts Legend and Hollywood Icon, Dies at 86",
     excerpt: "Actor and martial arts master Chuck Norris has passed away at age 86, leaving behind a legacy spanning decades of film, television, and martial arts.",
@@ -464,12 +348,12 @@ const posts = [
 <p>A six-time world karate champion, Norris founded his own martial arts system called Chun Kuk Do. He was inducted into the Martial Arts History Museum's Hall of Fame and received numerous accolades for his contributions to the discipline.</p>
 
 <h2>Cultural Impact</h2>
-<p>Norris became an internet phenomenon in the mid-2000s with "Chuck Norris Facts" - humorous, exaggerated claims about his toughness that became a viral meme. He embraced the phenomenon with good humor, further endearing himself to fans worldwide.</p>
+<p>Norris became an internet phenomenon in the mid-2000s with "Chuck Norris Facts" — humorous, exaggerated claims about his toughness that became a viral meme. He embraced the phenomenon with good humor, further endearing himself to fans worldwide.</p>
 
 <p>He is survived by his wife Gena and their children. The entertainment world mourns the loss of a true icon.</p>
     `
   },
-{
+  {
     slug: "rocket-lab-launches-8th-satellite-synspective",
     title: "Rocket Lab Successfully Deploys 8th Satellite for Synspective in 'Eight Days A Week' Mission",
     excerpt: "Rocket Lab marks its 84th Electron launch, successfully placing the eighth StriX SAR imaging satellite into orbit as part of an expanding partnership with Synspective.",
@@ -500,7 +384,7 @@ const posts = [
 <p>With 84 successful Electron launches, Rocket Lab continues to establish itself as a leading provider of dedicated small satellite launches. The company is also developing the larger Neutron rocket for medium-lift missions.</p>
     `
   },
-{
+  {
     slug: "nasa-moon-rocket-launch-pad-april-2026",
     title: "NASA Moves Repaired Moon Rocket Back to Launch Pad for Early April Liftoff",
     excerpt: "NASA's repaired Artemis moon rocket is back on the launch pad as the agency targets an early April launch window for its next lunar mission.",
@@ -530,7 +414,7 @@ const posts = [
 <p>Space enthusiasts worldwide are watching closely as NASA prepares to write the next chapter in human space exploration.</p>
     `
   },
-{
+  {
     slug: "bird-flu-kerala-india-h5n1-2026",
     title: "Bird Flu Outbreak Confirmed in Kerala, India: Over 5,000 Birds to Be Culled",
     excerpt: "H5N1 avian influenza has been detected in Kerala's Alappuzha district, prompting authorities to order the culling of thousands of birds to contain the spread.",
@@ -561,7 +445,7 @@ const posts = [
 <p>Authorities advise residents in the affected region to avoid contact with wild birds, ensure poultry products are thoroughly cooked, and report any unusual bird deaths to local health officials.</p>
     `
   },
-{
+  {
     slug: "scientists-grow-hair-follicles-lab-breakthrough-2026",
     title: "Scientists Successfully Grow Functional Hair Follicles in Lab, Opening Door to Regenerative Breakthroughs",
     excerpt: "Researchers have achieved a major milestone by growing fully functional human hair follicles in the laboratory, a development with profound implications for treating hair loss and advancing regenerative medicine.",
@@ -574,7 +458,7 @@ const posts = [
 <p>In a breakthrough that could transform both cosmetic medicine and regenerative science, an international team of researchers has announced the successful cultivation of fully functional human hair follicles entirely in a laboratory setting.</p>
 
 <h2>The Breakthrough Explained</h2>
-<p>The team, working across multiple biotech institutes, used a combination of stem cell engineering and advanced tissue scaffolding to coax human cells into forming hair follicle organoids - miniature, self-organizing structures that mimic the biology of real follicles. Crucially, the lab-grown follicles produced actual hair shafts, demonstrating that the structures are not merely cosmetic mimics but functionally complete.</p>
+<p>The team, working across multiple biotech institutes, used a combination of stem cell engineering and advanced tissue scaffolding to coax human cells into forming hair follicle organoids — miniature, self-organizing structures that mimic the biology of real follicles. Crucially, the lab-grown follicles produced actual hair shafts, demonstrating that the structures are not merely cosmetic mimics but functionally complete.</p>
 
 <h2>Why This Matters</h2>
 <p>Hair loss affects an estimated <strong>two-thirds of men</strong> and nearly <strong>half of women</strong> by age 50, making it one of the most widespread conditions in the world. Current treatments range from medications with limited efficacy to hair transplant surgery, which relies on relocating existing follicles rather than generating new ones. A reliable method of growing new follicles from a patient's own cells could render these approaches obsolete.</p>
@@ -593,38 +477,7 @@ const posts = [
 <p>However, several biotech firms have already expressed interest in licensing the technology, and clinical trials are expected to begin within the next two to three years. If successful, lab-grown hair restoration could become available to patients before the end of the decade.</p>
 
 <h2>A New Chapter in Regenerative Medicine</h2>
-<p>The achievement adds to a growing list of lab-grown tissue milestones, including functional kidney organoids and synthetic retinas. Scientists involved in the project say it reinforces the idea that the body's most complex structures may eventually be replicable outside the body - a prospect that once belonged firmly in the realm of science fiction.</p>
+<p>The achievement adds to a growing list of lab-grown tissue milestones, including functional kidney organoids and synthetic retinas. Scientists involved in the project say it reinforces the idea that the body's most complex structures may eventually be replicable outside the body — a prospect that once belonged firmly in the realm of science fiction.</p>
     `
-  },
-{
-    slug: 'starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage',
-    title: 'Starmer gives doctors 48 hours to cancel strike or lose new jobs package',
-    excerpt: 'Labour leader Sir Keir Starmer has issued an ultimatum to NHS doctors: cancel their planned strike within 48 hours or lose the new jobs package on the table.',
-    date: '2026-03-31',
-    author: 'Breaking News Boulevard',
-    url: '/posts/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage.html',
-    image: 'https://picsum.photos/seed/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage/800/400'
-  },
-{
-    slug: "nasa-artemis-ii-moon-mission-launch-april-2026",
-    title: "NASA Artemis II Successfully Launches: First Crewed Moon Mission in 53 Years",
-    excerpt: "Four astronauts aboard NASA's most powerful rocket ever have set course for the Moon — the first crewed lunar voyage since 1972, carrying the most diverse crew in space history.",
-    image: "/images/artemis-ii-launch.jpg",
-    category: "Space",
-    date: "April 2, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/nasa-artemis-ii-moon-mission-launch-april-2026.html",
-    body: ""
-  },
-{
-    slug: "artemis-ii-leaves-earth-orbit-hello-world-photo-april-2026",
-    title: "Artemis II Leaves Earth Orbit: Crew Captures 'Hello, World' Photo on Way to Moon",
-    excerpt: "For the first time since 1972, humans have left Earth orbit. The Artemis II crew executed a flawless trans-lunar injection burn and shared breathtaking new photographs of Earth from deep space.",
-    image: "/images/artemis-ii-earth-hello-world.jpg",
-    category: "Space",
-    date: "April 3, 2026",
-    author: "Breaking News Boulevard",
-    url: "/posts/artemis-ii-leaves-earth-orbit-hello-world-photo-april-2026.html",
-    body: ""
   }
 ];
