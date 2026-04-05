@@ -1,5 +1,31 @@
 const posts = [
 {
+    slug: "us-airman-rescued-iran-combat-search-april-5-2026",
+    title: "US-Oberst in gewagter Rettungsaktion aus Iran befreit — 24 Stunden hinter feindlichen Linien",
+    excerpt: "Das US-Militär hat den vermissten F-15-Piloten in einer spektakulären Kampfrettungsaktion aus dem Iran befreit. 24 Stunden in den Bergen, nur mit einer Pistole bewaffnet.",
+    image: "/images/us-airman-rescued-iran-mountains-april-2026.jpg",
+    category: "Weltpolitik",
+    date: "April 5, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/us-airman-rescued-iran-combat-search-april-5-2026.html",
+    body: `<p>Präsident Donald Trump bestätigte die Rettung am Sonntagmorgen über seine Social-Media-Plattform und nannte die Operation „eine der waghalsigsten Such- und Rettungsmissionen" in der Geschichte des US-Militärs. Der Offizier sei „sicher und gesund", so Trump.</p>
+
+<h2>CIA spielte Schlüsselrolle — Täuschungskampagne im Iran</h2>
+<p>Zwei Besatzungsmitglieder waren an Bord der F-15 gewesen, als sie am Freitag über dem südlichen Iran abgeschossen wurde. Der gerettete Oberst verbrachte mehr als 24 Stunden allein in den Bergen, nur mit einer Dienstpistole bewaffnet. Senior US-Offizielle überwachten seinen Standort rund um die Uhr und planten die Rettungsoperation.</p>
+<p>Ein hochrangiger Beamter berichtete, dass die CIA den Piloten in einer Felsspalte ortete und die exakte Position an das Pentagon weiterleitete. Parallel dazu startete die CIA eine Täuschungskampagne innerhalb des Iran: Es wurde gezielt die Falschinformation verbreitet, der Airman sei bereits gefunden und werde außer Landes gebracht — während die eigentliche Rettungsmission im Vorbereitungsstadium lief.</p>
+
+<h2>„Huge Combat Search and Rescue Mission"</h2>
+<p>Das US-Militär schickte Dutzende Flugzeuge in den iranischen Luftraum. Die gesamte Operation sei ohne amerikanische Verluste verlaufen. Iranische Staatsmedien berichteten, dass Truppen der Islamischen Revolutionsgarde eine US-Drohne abgeschossen hätten, die im Süden der Provinz Isfahan abgestürzt sei.</p>
+<p>Der F-15-Jäger war am Freitag mit dem iranischen Luftabwehrsystem abgeschossen worden. Als Absturzgebiet nannten iranische Medien die Provinzen Kohgiluyeh und Boyer-Ahmad sowie Khuzestan. Bei der Rettungsaktion kam es offenbar zu einem Gefecht zwischen US- und iranischen Streitkräften.</p>
+
+<h2>Schleudersitz in feindlichem Gebiet</h2>
+<p>Beide Besatzungsmitglieder hatten sich mit dem Schleudersitz retten können. Der Oberst wurde bei der Landung möglicherweise verletzt. Das iranische Militär hatte zuvor eine Belohnung für Hinweise zum Aufenthaltsort des vermissten Amerikaners ausgesetzt.</p>
+<p>„Ihre oberste Priorität ist es, am Leben zu bleiben und einer Festnahme zu entgehen", erklärte Jennifer Kavanagh, Direktorin für Militäranalyse beim Thinktank Defense Priorities. „Sie sind darauf trainiert, sich so schnell wie möglich vom Schleudersitzort zu entfernen und sich zu verstecken."</p>
+
+<h2>Militärisches und politisches Signal</h2>
+<p>Die erfolgreiche Rettung eines Piloten hinter feindlichen Linien ist ein bedeutendes militärisches und politisches Signal. Sie zeigt, wie weit das US-Militär bereit ist zu gehen, um eigene Soldaten zu bergen — mitten in einem aktiven Konfliktszenario.</p>`
+},
+{
     slug: "trump-vows-continue-iran-war-oil-crude-uranium-april-4-2026",
     title: "Trump kündigt 2–3 weitere Wochen Iran-Angriffe an — Ölpreis jagt in die Höhe, Spezialeinsatz für Uran geplant",
     excerpt: "US-Präsident Trump will die Militärschläge gegen den Iran noch zwei bis drei Wochen fortsetzen. Der Ölpreis klettert auf 106 Dollar. Washington plant angeblich eine hochriskante Operation zur Beschlagnahme von iranischem hochangereichertem Uran.",
