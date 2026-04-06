@@ -1,5 +1,28 @@
 const posts = [
 {
+    slug: "oil-price-surge-trump-threat-iran-hormuz-strait-april-6-2026",
+    title: "Ölpreis explodiert über 110 Dollar — Trump droht Iran mit Zerstörung der Infrastruktur",
+    excerpt: "Nach der Blockade der Straße von Hormuz steigt der Ölpreis dramatisch. US-Präsident Trump reagiert mit einer wüsten Drohung: Iranische Kraftwerke und Brücken würden zerstört werden.",
+    image: "/images/oil-price-surge-hormuz-strait-april-2026.jpg",
+    category: "Wirtschaft",
+    date: "April 6, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/oil-price-surge-trump-threat-iran-hormuz-strait-april-6-2026.html",
+    body: `<p>Die Energiekrise verschärft sich dramatisch. Der Ölpreis hat am Montag die Marke von 110 Dollar pro Barrel überschritten — ausgelöst durch Irans Blockade der Straße von Hormuz, einer der wichtigsten Schifffahrtsrouten der Welt. Rund zwanzig Prozent des weltweit verbrauchten Öls passieren normalerweise diese Meerenge.</p>
+
+<h2>„Werden sie zerstören" — Trumps Drohung gegen Teheran</h2>
+<p>US-Präsident Donald Trump reagierte auf die Sperrung der Wasserstraße mit einer verbalen Eskalation, die ihrerseits die Märkte weiter in Unruhe versetzte. In einer Mitteilung auf seiner Social-Media-Plattform kündigte er an, iranische Kraftwerke und Brücken zu zerstören, sollte die Straße von Hormuz nicht unverzüglich wiedereröffnet werden.</p>
+<p>Die Straße von Hormuz verbindet den Persischen Golf mit dem offenen Meer und ist eine strategische Lebensader für den globalen Energiehandel. Irans Entscheidung, die Passage zu blockieren, stellt eine massive Verschärfung des seit dem 28. Februar andauernden Konflikts dar.</p>
+
+<h2>Märkte unter Druck — Verbraucher spüren die Folgen</h2>
+<p>Die Folgen sind bereits spürbar: Benzinkosten steigen, Heizöl wird teurer, und die globalen Lieferketten geraten erneut unter Druck. Analysten warnen, dass sich die Situation über Wochen oder Monate hinziehen könnte, selbst wenn die Blockade bald enden würde.</p>
+<p>Die Ölindustrie bereitet Notfallpläne vor. Einige Länder aktivieren ihre strategischen Reserven, doch Experten bezweifeln, dass diese ausreichen werden, um einen längeren Ausfall der Hormuz-Passage abzufedern.</p>
+
+<h2>Regionale Spannungen erreichen neuen Höhepunkt</h2>
+<p>Die Lage am Persischen Golf bleibt angespannt. US-Kriegsschiffe patrouillieren in der Region, während Iranische Revolutionsgarden ihre Präsenz entlang der Küste verstärken. Beobachter befürchten eine weitere Eskalation, die den gesamten Nahen Osten destabilisieren könnte.</p>
+<p>Die internationale Gemeinschaft ruft zu Deeskalation auf. Die Vereinten Nationen haben eine Sondersitzung einberufen, um über diplomatische Lösungen zu sprechen.</p>`
+},
+{
     slug: "us-airman-rescued-iran-combat-search-april-5-2026",
     title: "US-Oberst in gewagter Rettungsaktion aus Iran befreit — 24 Stunden hinter feindlichen Linien",
     excerpt: "Das US-Militär hat den vermissten F-15-Piloten in einer spektakulären Kampfrettungsaktion aus dem Iran befreit. 24 Stunden in den Bergen, nur mit einer Pistole bewaffnet.",
