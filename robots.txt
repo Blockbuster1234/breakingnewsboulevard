@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /posts/
+Allow: /about.html
+Allow: /impressum.html
+Allow: /datenschutz.html
+
+Sitemap: https://www.breakingnewsboulevard.com/sitemap.xml
