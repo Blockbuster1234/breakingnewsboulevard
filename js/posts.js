@@ -1,5 +1,26 @@
 const posts = [
 {
+    slug: "iran-konflikt-oelpreise-us-politik-weltraum-technologie-07-04-2026",
+    title: "Escalation im Nahen Osten treibt Ölpreise – US-Wahlkampf, Raumfahrt und KI-Boom",
+    excerpt: "Spannungen zwischen Iran und Israel lassen Ölpreise auf 95 USD/Barril steigen, während die USA im Wahlkampf stehen, neue Mondmissionen starten und KI-Regulierung debattiert wird.",
+    image: "/images/iran-konflikt-oelpreise-us-politik-weltraum-technologie-07-04-2026.jpg",
+    category: "Weltpolitik",
+    date: "April 07, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/iran-konflikt-oelpreise-us-politik-weltraum-technologie-07-04-2026.html",
+    body: <h2>Iran-Israel-Konflikt eskaliert – Ölpreise schiessen nach oben</h2>
+<p>Am Morgen des 7. April 2026 berichteten internationale Nachrichtendienste über einen verheerenden Raketenschlag des Iran auf ein israelisches Militärziel in der Negev-Wüste. Israël reagierte mit einem gezielten Luftangriff auf eine iranische Urananreicherungsanlage nahe Natanz. Beide Seiten bestätigten den Austausch von mehr als einem Dutzend Raketen und warnten vor einer weiteren Ausweitung des Konflikts. Die Unsicherheit an den Energiemärkten trieb den Brent-Ölpreis innerhalb weniger Stunden auf rund 95 US-Dollar pro Barrel – den höchsten Stand seit dem Ölpreisschock von 2022. Analysten der Internationalen Energieagentur warnen, dass eine länger andauernde Blockade des Hormus-Sundariffs die globale Versorgung weiter belasten könnte.</p>
+
+<h2>US-Politik im Wahlkampfmodus – Bidens Nachfolger unter Druck</h2>
+<p>In den Vereinigten Staaten steht das Land vor den Mitte‑Jahreswahlen 2026. Präsidentin Kamala Harris, die nach dem Rücktritt von Joe Biden im Januar 2025 das Amt übernommen hat, sieht sich wachsenden Kritik von beiden Seiten des politischen Spektrums ausgesetzt. Republikaner werfen ihr vor, die Außenpolitik zu schwächen und die Inflation nicht ausreichend zu bekämpfen, während progressive Demokraten mehr Engagement bei Klimaschutz und sozialer Gerechtigkeit fordern. Umfragewerte zeigen ein knappes Rennen: Harris liegt derzeit bei 48 %, ihr herausfordernder republikanischer Kandidat, ehemaliger Gouverneur Ron DeSantis, bei 45 %. Beide Kandidaten haben bereits ihre Energiepläne vorgestellt – Harris setzt auf einen beschleunigten Ausbau erneuerbarer Energien, während DeSantis die Förderung fossiler Brennstoffe und die Senkung der Steuern betont.</p>
+
+<h2>Weltraum: Artemis‑Basiskonstruktionen und kommerzielle Meilensteine</h2>
+<p>Parallel zu den geopolitischen Spannungen machte die NASA am 5. April bedeutende Fortschritte beim Artemis-Programm. Die erste bemannte Landung seit Apollo 17 fand erfolgreich beim Shackleton-Krater am Südpol des Mondes statt. Astronautinnen Jessica Watkins und Raja Chari errichteten dort ein erstes Habitat-Modul, das künftig als Basis für langfristige Forschung dienen soll. Gleichzeitig testete SpaceX seine Starship-Rakete erneut im hohen Orbit und erreichte eine vollständige Wiederverwendung beider Stufen – ein Schritt, der die Kosten für Mond- und Marsmissionen erheblich senken könnte. Die ESA kündigte zudem an, ihr Lunar Gateway-Modul bis 2028 zur Verfügung zu stellen, um eine internationale Mondstation zu ermöglichen.</p>
+
+<h2>Technologie: KI-Regulierung und Quantenfortschritt</h2>
+<p>Im Technologiebereich dominierte die Debatte um künstliche Intelligenz die Schlagzeilen. Die EU-Kommission veröffentlichte am 6. April einen Entwurf für ein neues KI-Gesetz, das strenge Transparenzpflichten für Hochrisiko-Systeme wie autonome Waffensysteme und Gesichtserkennung vorsieht. In den USA forderte Präsidentin Harris ein bipartisanes Rahmenwerk, das Innovation schützt, aber Missbrauch verhindert. Gleichzeitig meldete das Quantencomputing-Labor von IBM einen Durchbruch: Ein 1.024-Qubit-Prozessor erreichte eine Fehlerrate unter 0,1 %, was komplexe Simulationen in Materialwissenschaft und Kryptografie ermöglicht. Experten sehen darin einen möglichen Katalysator für die nächste Generation sicherer Kommunikation und neuer Medikamente.</p>
+},
+{
     slug: "oil-price-surge-trump-threat-iran-hormuz-strait-april-6-2026",
     title: "Ölpreis explodiert über 110 Dollar — Trump droht Iran mit Zerstörung der Infrastruktur",
     excerpt: "Nach der Blockade der Straße von Hormuz steigt der Ölpreis dramatisch. US-Präsident Trump reagiert mit einer wüsten Drohung: Iranische Kraftwerke und Brücken würden zerstört werden.",
