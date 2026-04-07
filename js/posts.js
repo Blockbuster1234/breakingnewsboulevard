@@ -44,7 +44,7 @@ const posts = [
     slug: "oil-price-surge-trump-threat-iran-hormuz-strait-april-6-2026",
     title: "Ölpreis explodiert über 110 Dollar — Trump droht Iran mit Zerstörung der Infrastruktur",
     excerpt: "Nach der Blockade der Straße von Hormuz steigt der Ölpreis dramatisch. US-Präsident Trump reagiert mit einer wüsten Drohung: Iranische Kraftwerke und Brücken würden zerstört werden.",
-    image: "/images/oil-price-surge-hormuz-strait-april-2026.jpg",
+    image: "/images/natanz-nuclear-strike.jpg",
     category: "Wirtschaft",
     date: "April 6, 2026",
     author: "Breaking News Boulevard",
