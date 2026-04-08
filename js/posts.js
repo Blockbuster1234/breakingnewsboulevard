@@ -1,5 +1,6 @@
 const posts = [
 {
+{\n    slug: 'irandealgivestrumpawayoutofwar-butatahighcost',\n    title: 'Iran deal gives Trump a way out of war - but at a high cost',\n    excerpt: 'Recent diplomatic shifts provide a potential exit strategy for the US from the current conflict, though the strategic cost remains high.',\n    date: '2026-04-08',\n    image: 'https://picsum.photos/seed/irandealgivestrumpawayoutofwar-butatahighcost/800/400',\n    url: '/posts/irandealgivestrumpawayoutofwar-butatahighcost.html',\n    body: ''\n  },
     slug: "iran-konflikt-oelpreise-us-politik-weltraum-technologie-07-04-2026",
     title: "Escalation im Nahen Osten treibt Ölpreise – US-Wahlkampf, Raumfahrt und KI-Boom",
     excerpt: ": Spannungen zwischen Iran und Israel lassen Ölpreise auf 95 USD/Barril steigen, während die USA im Wahlkampf stehen, neue Mondmissionen starten und KI-Regulierung debattiert wird.",
@@ -716,4 +717,4 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/artemis-ii-leaves-earth-orbit-hello-world-photo-april-2026.html",
     body: ""
-  }
+];
