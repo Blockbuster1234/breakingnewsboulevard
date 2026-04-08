@@ -718,3 +718,4 @@ const posts = [
     body: ""
   }
 ];
+posts.push({'slug':'irandealgivestrumpawayoutofwar-butatahighcost','title':'Iran deal gives Trump a way out of war - but at a high cost','excerpt':'Okay, I need to write a news article based on the headline: \\Iran deal gives Trump a way out of war - but at a high cost\\. I must use British English ','date':'2026-04-08','image':'https://picsum.photos/seed/irandealgivestrumpawayoutofwar-butatahighcost/800/400'});
