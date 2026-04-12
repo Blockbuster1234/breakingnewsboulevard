@@ -2,6 +2,7 @@ import os
 import json
 import random
 import subprocess
+import re
 from datetime import datetime
 import openai
 
@@ -11,10 +12,9 @@ POSTS_JS = os.path.join(BASE_DIR, "js", "posts.js")
 
 # Get API key from .bashrc
 
-api_key = os.environ.get("OPENROUTER_API_KEY")
 
 client = openai.OpenAI(
-    api_key=api_key,
+    api_key="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",
     base_url="https://openrouter.ai/api/v1"
 )
 
@@ -27,20 +27,36 @@ def generate_article():
     print(response.choices[0].message.content); return json.loads(response.choices[0].message.content.replace("```json", "").replace("```", "").strip())
 
 def update_posts_js(new_post):
+    # Load existing posts
     with open(POSTS_JS, 'r') as f:
         content = f.read()
-    
-    # Simple injection - assumes content starts with "const posts = ["
-    # We strip the closing "];" and append the new post
-    header = "const posts = ["
-    if header in content:
-        parts = content.split(header)
-        post_data = json.dumps(new_post)
-        # Fix escaping for JS compatibility (use single quotes)
-        # This is a naive fix, in production use a better parser
-        updated = f"{header}\n{post_data},\n" + parts[1]
-        with open(POSTS_JS, 'w') as f:
-            f.write(updated)
+
+    # Extract current entries: find everything between [ and ]
+    match = re.search(r'const posts = \[(.*?)\];', content, re.DOTALL)
+    entries = []
+    if match:
+        raw_entries = match.group(1).strip()
+        if raw_entries:
+            # Split by "}," which is the entry delimiter in our new format
+            entries = [b.strip() + "}" for b in raw_entries.split("},") if b.strip()]
+
+    # Format new entry
+    new_entry = (
+        "  {\n"
+        "    slug: '" + new_post['slug'] + "',\n"
+        "    title: '" + new_post['title'].replace("'", "\\'") + "',\n"
+        "    excerpt: '" + new_post['excerpt'].replace("'", "\\'") + "',\n"
+        "    date: '" + new_post['date'] + "',\n"
+        "    body: '" + new_post['body'].replace("'", "\\'").replace("\n", " ") + "',\n"
+        "    url: '/posts/" + new_post['slug'] + ".html'\n"
+        "  }"
+    )
+    entries.append(new_entry)
+
+    # Write full file
+    output = "const posts = [\n" + ",\n".join(entries) + "\n];"
+    with open(POSTS_JS, 'w') as f:
+        f.write(output)
 
 def main():
     post = generate_article()
