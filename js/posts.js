@@ -17,18 +17,8 @@ const posts = [
     date: "April 07, 2026",
     author: "Breaking News Boulevard",
     url: "/posts/iran-konflikt-oelpreise-us-politik-weltraum-technologie-07-04-2026.html",
-    body: <h2>Iran-Israel-Konflikt eskaliert – Ölpreise schiessen nach oben</h2>
-<p>Am Morgen des 7. April 2026 berichteten internationale Nachrichtendienste über einen verheerenden Raketenschlag des Iran auf ein israelisches Militärziel in der Negev-Wüste. Israël reagierte mit einem gezielten Luftangriff auf eine iranische Urananreicherungsanlage nahe Natanz. Beide Seiten bestätigten den Austausch von mehr als einem Dutzend Raketen und warnten vor einer weiteren Ausweitung des Konflikts. Die Unsicherheit an den Energiemärkten trieb den Brent-Ölpreis innerhalb weniger Stunden auf rund 95 US-Dollar pro Barrel – den höchsten Stand seit dem Ölpreisschock von 2022. Analysten der Internationalen Energieagentur warnen, dass eine länger andauernde Blockade des Hormus-Sundariffs die globale Versorgung weiter belasten könnte.</p>
-
-<h2>US-Politik im Wahlkampfmodus – Bidens Nachfolger unter Druck</h2>
-<p>In den Vereinigten Staaten steht das Land vor den Mitte‑Jahreswahlen 2026. Präsidentin Kamala Harris, die nach dem Rücktritt von Joe Biden im Januar 2025 das Amt übernommen hat, sieht sich wachsenden Kritik von beiden Seiten des politischen Spektrums ausgesetzt. Republikaner werfen ihr vor, die Außenpolitik zu schwächen und die Inflation nicht ausreichend zu bekämpfen, während progressive Demokraten mehr Engagement bei Klimaschutz und sozialer Gerechtigkeit fordern. Umfragewerte zeigen ein knappes Rennen: Harris liegt derzeit bei 48 %, ihr herausfordernder republikanischer Kandidat, ehemaliger Gouverneur Ron DeSantis, bei 45 %. Beide Kandidaten haben bereits ihre Energiepläne vorgestellt – Harris setzt auf einen beschleunigten Ausbau erneuerbarer Energien, während DeSantis die Förderung fossiler Brennstoffe und die Senkung der Steuern betont.</p>
-
-<h2>Weltraum: Artemis‑Basiskonstruktionen und kommerzielle Meilensteine</h2>
-<p>Parallel zu den geopolitischen Spannungen machte die NASA am 5. April bedeutende Fortschritte beim Artemis-Programm. Die erste bemannte Landung seit Apollo 17 fand erfolgreich beim Shackleton-Krater am Südpol des Mondes statt. Astronautinnen Jessica Watkins und Raja Chari errichteten dort ein erstes Habitat-Modul, das künftig als Basis für langfristige Forschung dienen soll. Gleichzeitig testete SpaceX seine Starship-Rakete erneut im hohen Orbit und erreichte eine vollständige Wiederverwendung beider Stufen – ein Schritt, der die Kosten für Mond- und Marsmissionen erheblich senken könnte. Die ESA kündigte zudem an, ihr Lunar Gateway-Modul bis 2028 zur Verfügung zu stellen, um eine internationale Mondstation zu ermöglichen.</p>
-
-<h2>Technologie: KI-Regulierung und Quantenfortschritt</h2>
-<p>Im Technologiebereich dominierte die Debatte um künstliche Intelligenz die Schlagzeilen. Die EU-Kommission veröffentlichte am 6. April einen Entwurf für ein neues KI-Gesetz, das strenge Transparenzpflichten für Hochrisiko-Systeme wie autonome Waffensysteme und Gesichtserkennung vorsieht. In den USA forderte Präsidentin Harris ein bipartisanes Rahmenwerk, das Innovation schützt, aber Missbrauch verhindert. Gleichzeitig meldete das Quantencomputing-Labor von IBM einen Durchbruch: Ein 1.024-Qubit-Prozessor erreichte eine Fehlerrate unter 0,1 %, was komplexe Simulationen in Materialwissenschaft und Kryptografie ermöglicht. Experten sehen darin einen möglichen Katalysator für die nächste Generation sicherer Kommunikation und neuer Medikamente.</p>
-}
+body: ``
+  },
 {
     slug: "oil-price-surge-trump-threat-iran-hormuz-strait-april-6-2026",
     title: "Ölpreis explodiert über 110 Dollar — Trump droht Iran mit Zerstörung der Infrastruktur",
@@ -51,7 +41,7 @@ const posts = [
 <h2>Regionale Spannungen erreichen neuen Höhepunkt</h2>
 <p>Die Lage am Persischen Golf bleibt angespannt. US-Kriegsschiffe patrouillieren in der Region, während Iranische Revolutionsgarden ihre Präsenz entlang der Küste verstärken. Beobachter befürchten eine weitere Eskalation, die den gesamten Nahen Osten destabilisieren könnte.</p>
 <p>Die internationale Gemeinschaft ruft zu Deeskalation auf. Die Vereinten Nationen haben eine Sondersitzung einberufen, um über diplomatische Lösungen zu sprechen.</p>`
-}
+},
 {
     slug: "us-airman-rescued-iran-combat-search-april-5-2026",
     title: "US-Oberst in gewagter Rettungsaktion aus Iran befreit — 24 Stunden hinter feindlichen Linien",
@@ -77,7 +67,7 @@ const posts = [
 
 <h2>Militärisches und politisches Signal</h2>
 <p>Die erfolgreiche Rettung eines Piloten hinter feindlichen Linien ist ein bedeutendes militärisches und politisches Signal. Sie zeigt, wie weit das US-Militär bereit ist zu gehen, um eigene Soldaten zu bergen — mitten in einem aktiven Konfliktszenario.</p>`
-}
+},
 {
     slug: "trump-vows-continue-iran-war-oil-crude-uranium-april-4-2026",
     title: "Trump kündigt 2–3 weitere Wochen Iran-Angriffe an — Ölpreis jagt in die Höhe, Spezialeinsatz für Uran geplant",
@@ -109,7 +99,7 @@ const posts = [
 <h2>Was kommt als Nächstes?</h2>
 <p>Die nächsten Wochen entscheiden über den weiteren Verlauf des Konflikts. Wenn Trumps Ankündigung von zwei bis drei weiteren Wochen Bombardements Realität wird, könnten die Ölpreise weiter in Richtung 130 bis 150 Dollar steigen. Analysten rechnen mit erheblichen wirtschaftlichen Folgen, darunter eine mögliche globale Rezession. Das eine ist klar: Die Welt hält den Atem an.</p>
 `
-  }
+  },
 {
     slug: "us-fighter-jet-downed-over-iran-crew-rescued-april-3-2026",
     title: "US Fighter Jet Shot Down Over Iran \u2014 One Crew Member Rescued in Daring Operation",
@@ -136,7 +126,7 @@ const posts = [
 <p>Despite diplomatic efforts, the conflict shows no sign of ending. Israel launched a rocket strike on a building in Beirut, while fragments of Iranian missiles continue to hit targets in southern Israel, where a factory was struck and a large black smoke cloud rose over the site.</p>
 <p>The UN reports that fuel costs and transport disruptions from the war are worsening a hunger crisis in Somalia, highlighting the conflict's devastating ripple effects across the developing world. Meanwhile, families across Lebanon, Iran, and the Gulf states continue to mourn mounting casualties.</p>
 `
-  }
+  },
 {
     slug: "who-declares-end-of-covid-pandemic-april-2026",
     title: "WHO Declares Official End of Global COVID-19 Pandemic Era After Four Years",
@@ -147,7 +137,7 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/who-declares-end-of-covid-pandemic-april-2026.html",
     body: ``
-  }
+  },
 {
     slug: "bundesliga-bayern-loses-title-race-april-2026",
     title: "Bundesliga Shock: Bayern Munich Stumbles as Underdogs Close In on Title",
@@ -158,7 +148,7 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/bundesliga-bayern-loses-title-race-april-2026.html",
     body: ``
-  }
+  },
 {
     slug: "germany-eu-ai-law-april-2026",
     title: "EU Passes World's First Comprehensive AI Law — Tech Giants Face Strict New Rules",
@@ -169,7 +159,7 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/germany-eu-ai-law-april-2026.html",
     body: ``
-  }
+  },
 {
     slug: "us-judge-blocks-trump-white-house-ballroom-iran-war-somalia-crisis-april-2-2026",
     title: "Federal Judge Blocks Trump's \u200b$400 Million White House Ballroom \u2014 Iran War Fuels Hunger Crisis in Somalia",
@@ -198,7 +188,7 @@ const posts = [
 <h2>What Comes Next</h2>
 <p>With the court battle over the ballroom likely to escalate, diplomatic efforts on Iran showing mixed signals, and the humanitarian crisis worsening in affected regions, the administration faces mounting pressure on multiple fronts. The next few weeks will be critical in determining whether diplomacy or escalation prevails.</p>
 `
-  }
+  },
 {
     slug: "why-does-the-us-have-iran-s-kharg-island-in-its-sights",
     title: "Why does the US have Iran's Kharg Island in its sights?",
@@ -209,7 +199,7 @@ const posts = [
     author: "Breaking News Boulevard",
     url: "/posts/why-does-the-us-have-iran-s-kharg-island-in-its-sights.html",
     body: `<p>Kharg Island houses Iran's most vital oil-export terminal and has become a focal point of US strategic interest in the ongoing conflict.</p>`
-  }
+  },
 {
     slug: "us-deploys-82nd-airborne-ceasefire-talks-iran-war-march-2026",
     title: "US Deploys 3,000 Elite Paratroopers to Middle East as Pakistan Brokers 15-Point Iran Ceasefire Plan",
@@ -254,7 +244,7 @@ const posts = [
 <h2>What Happens Next</h2>
 <p>The next 72 hours are critical. If Pakistan's 15-point plan gains traction - and if Trump can bridge the gap between his desire for a deal and Israel's demand for total victory - the war could enter a new diplomatic phase. But the deployment of 3,000 paratroopers tells a different story: Washington is also preparing for the possibility that talks fail. For now, the world is caught between two timelines - one toward peace, the other toward a ground war nobody wants.</p>
     `
-  }
+  },
 {
     slug: "trump-claims-iran-talks-denied-ultimatum-extended-march-2026",
     title: "Trump Claims 'Productive Talks' With Iran to End War - Tehran Denies Everything",
@@ -299,7 +289,7 @@ const posts = [
 <h2>What Comes Next</h2>
 <p>The next few days will be critical. If back-channel communications - however informal - can produce even a partial reopening of Hormuz, markets could stabilize. But if Iran's defiance continues and Trump is forced to either strike or lose credibility, the world faces a dramatic escalation. For now, both sides are playing a dangerous game of brinkmanship, with the global economy hanging in the balance.</p>
     `
-  }
+  },
 {
     slug: "ai-image-generation-chatgpt-claude-grok-2026",
     title: "ChatGPT vs Claude vs Grok: Which AI Creates the Best Images in 2026?",
@@ -372,7 +362,7 @@ const posts = [
 
 <p>The real winner? You - because in 2026, you have three genuinely powerful options that were pure science fiction just a few years ago.</p>
     `
-  }
+  },
 {
     slug: "iea-global-economy-major-threat-iran-war-march-2026",
     title: "IEA Chief Warns Iran War Poses 'Major, Major Threat' to Global Economy - Worse Than 1970s Oil Crises",
@@ -415,7 +405,7 @@ const posts = [
 <h2>What Comes Next</h2>
 <p>With the IEA's warning, the Iran war is no longer just a geopolitical crisis - it is an economic emergency with the potential to trigger a global recession. If Hormuz remains closed through April, analysts project oil could hit $150, inflation would spike worldwide, and central banks would face an impossible choice between fighting price rises and supporting growth. The next 48 hours may determine whether the world slides into that scenario or steps back from the brink.</p>
     `
-  }
+  },
 {
     slug: "trump-48-hour-ultimatum-iran-hormuz-march-2026",
     title: "Trump Issues 48-Hour Ultimatum to Iran: Reopen Strait of Hormuz or Face 'Obliteration' of Power Plants",
@@ -456,7 +446,7 @@ const posts = [
 <h2>What Happens Next</h2>
 <p>All eyes are on the clock. If Trump's 48-hour deadline passes without compliance - and Iran shows no signs of backing down - the destruction of Iranian power infrastructure could trigger a new and far more dangerous phase of the conflict. With Iran threatening retaliatory strikes on regional energy assets and both sides showing little appetite for diplomacy, the next 48 hours may prove decisive for the entire Middle East.</p>
     `
-  }
+  },
 {
     slug: "iran-us-war-natanz-nuclear-strike-march-2026",
     title: "US and Israel Strike Iran's Natanz Nuclear Facility as War Intensifies",
@@ -493,7 +483,7 @@ const posts = [
 <h2>Regional Impact</h2>
 <p>Israel has launched strikes on "regime targets" in Tehran and Hezbollah targets in southern Beirut. The IDF reported killing four Hezbollah members in southern Lebanon. International calls for restraint continue to grow as the conflict threatens to expand further.</p>
     `
-  }
+  },
 {
     slug: "strait-of-hormuz-oil-crisis-2026",
     title: "Strait of Hormuz Crisis: Europe, Japan & Canada Join Forces to Secure Oil Routes",
@@ -520,7 +510,7 @@ const posts = [
 
 <p>A vessel carrying Russian Urals crude is also expected to reach India on March 21, adding another dimension to the complex energy landscape.</p>
     `
-  }
+  },
 {
     slug: "chuck-norris-dies-at-86",
     title: "Chuck Norris, Martial Arts Legend and Hollywood Icon, Dies at 86",
@@ -547,7 +537,7 @@ const posts = [
 
 <p>He is survived by his wife Gena and their children. The entertainment world mourns the loss of a true icon.</p>
     `
-  }
+  },
 {
     slug: "rocket-lab-launches-8th-satellite-synspective",
     title: "Rocket Lab Successfully Deploys 8th Satellite for Synspective in 'Eight Days A Week' Mission",
@@ -578,7 +568,7 @@ const posts = [
 <h2>Rocket Lab's Growth</h2>
 <p>With 84 successful Electron launches, Rocket Lab continues to establish itself as a leading provider of dedicated small satellite launches. The company is also developing the larger Neutron rocket for medium-lift missions.</p>
     `
-  }
+  },
 {
     slug: "nasa-moon-rocket-launch-pad-april-2026",
     title: "NASA Moves Repaired Moon Rocket Back to Launch Pad for Early April Liftoff",
@@ -608,7 +598,7 @@ const posts = [
 
 <p>Space enthusiasts worldwide are watching closely as NASA prepares to write the next chapter in human space exploration.</p>
     `
-  }
+  },
 {
     slug: "bird-flu-kerala-india-h5n1-2026",
     title: "Bird Flu Outbreak Confirmed in Kerala, India: Over 5,000 Birds to Be Culled",
@@ -639,7 +629,7 @@ const posts = [
 <h2>Advice for the Public</h2>
 <p>Authorities advise residents in the affected region to avoid contact with wild birds, ensure poultry products are thoroughly cooked, and report any unusual bird deaths to local health officials.</p>
     `
-  }
+  },
 {
     slug: "scientists-grow-hair-follicles-lab-breakthrough-2026",
     title: "Scientists Successfully Grow Functional Hair Follicles in Lab, Opening Door to Regenerative Breakthroughs",
@@ -674,7 +664,7 @@ const posts = [
 <h2>A New Chapter in Regenerative Medicine</h2>
 <p>The achievement adds to a growing list of lab-grown tissue milestones, including functional kidney organoids and synthetic retinas. Scientists involved in the project say it reinforces the idea that the body's most complex structures may eventually be replicable outside the body - a prospect that once belonged firmly in the realm of science fiction.</p>
     `
-  }
+  },
 {
     slug: 'starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage',
     title: 'Starmer gives doctors 48 hours to cancel strike or lose new jobs package',
@@ -683,7 +673,7 @@ const posts = [
     author: 'Breaking News Boulevard',
     url: '/posts/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage.html',
     image: 'https://picsum.photos/seed/starmergivesdoctors48hourstocancelstrikeorlosenewjobspackage/800/400'
-  }
+  },
 {
     slug: "nasa-artemis-ii-moon-mission-launch-april-2026",
     title: "NASA Artemis II Successfully Launches: First Crewed Moon Mission in 53 Years",
@@ -695,4 +685,15 @@ const posts = [
     url: "/posts/nasa-artemis-ii-moon-mission-launch-april-2026.html",
     body: ""
   }
-];
+,
+{
+    slug: "new-article-example",
+    title: "Example New Article Title",
+    excerpt: "Short summary of the new article.",
+    image: "/images/example.jpg",
+    category: "Tech",
+    date: "April 8, 2026",
+    author: "Breaking News Boulevard",
+    url: "/posts/new-article-example.html",
+    body: ""
+  }
