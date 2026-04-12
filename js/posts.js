@@ -1,10 +1,18 @@
 const posts = [
-  {
+{
     slug: 'breaking:-"unity-accord"-signed,-dashing-hopes-for-immediate-separatist-resolution-in-atheria',
     title: 'BREAKING: "Unity Accord" Signed, Dashing Hopes for Immediate Separatist Resolution in Atheria',
     excerpt: 'Tensions remain high as the \'Unity Accord\' between the Atherian central government and the Northern Provinces was inked today, a move critics argue consolidates existing power structures and sidelines genuine self-determination demands.',
     date: '2026-04-12',
     body: 'The Atherian capital, Veridia, buzzed with a mix of relief and apprehension today as President Anya Sharma and representatives from the secessionist Northern Provinces, led by Governor Silas Vance, formally signed the "Unity Accord." The hastily arranged ceremony, broadcast live globally, was hailed by the government as a "historic step towards national reconciliation." However, for many within the Northern Provinces, particularly those advocating for full independence, the Accord represents a significant setback.  Sources close to the separatist movement reveal deep divisions over the terms, which reportedly offer increased regional autonomy but fall far short of the sovereignty demanded.  Critics point to the inclusion of clauses that maintain significant central government oversight on key economic and defense matters, effectively preserving Atheria\'s territorial integrity at the expense of true self-governance.  International observers expressed cautious optimism, but many fear the Accord may only serve to suppress underlying grievances, potentially fueling future unrest rather than resolving it.  The signing followed a turbulent week of negotiations in Veridia, marked by protests and sporadic clashes between government forces and regional militia remnants. The full details of the Accord are expected to be released within 24 hours, but preliminary reports suggest it is a compromise that satisfies neither the hardline unionists nor the ardent separatists, leaving the future of Atheria shrouded in uncertainty.',
     url: '/posts/breaking:-"unity-accord"-signed,-dashing-hopes-for-immediate-separatist-resolution-in-atheria.html'
+  }},
+  {
+    slug: 'breaking:-massive-asteroid-to-pass-uncomfortably-close-to-earth',
+    title: 'BREAKING: Massive Asteroid to Pass Uncomfortably Close to Earth',
+    excerpt: 'Astronomers confirm a substantial asteroid, currently designated \'2024 QM7\', will make a surprisingly close flyby of Earth within the next 48 hours. While impact is not predicted, the event has generated significant scientific interest and public attention.',
+    date: '2026-04-12',
+    body: 'Panic is not warranted, but a palpable sense of anticipation is rippling through the scientific community following the confirmation of a near-miss by a large celestial object. Asteroid 2024 QM7, estimated to be over a kilometer in diameter, is on a trajectory that will bring it within an unprecedentedly close proximity to our planet.  Ground-based telescopes and space observatories are now intensely focused on tracking its path, though initial analyses indicate it will pass safely beyond Earth\'s atmosphere.  "This is a valuable opportunity for scientific study," stated Dr. Anya Sharma of the International Astronomical Union. "We\'ll gather unprecedented data on its composition and trajectory, which will enhance our understanding of potential future threats and the dynamics of our solar system." The asteroid\'s closest approach is expected late Tuesday evening UTC. Residents in certain regions may experience slightly higher radar noise during the flyby due to the object\'s proximity, but no visual observation without specialized equipment is anticipated.',
+    url: '/posts/breaking:-massive-asteroid-to-pass-uncomfortably-close-to-earth.html'
   }
 ];
