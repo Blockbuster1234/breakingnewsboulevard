@@ -20,5 +20,13 @@ const posts = [
     date: '2026-04-13',
     body: 'In a historic move that many are calling the "Geneva Convention for Silicon Valley," representatives from 50 nations and the world\'s leading technology companies have officially signed the Universal AI Safety Accord (UASA) today in Geneva.',
     url: '/posts/global-tech-summit-universal-ai-safety-standards-2026.html'
+  },
+  {
+    slug: 'mars-colony-breakthrough-oxygen-generation-2026',
+    title: 'BREAKING: Mars Colony Breakthrough - Continuous Oxygen Generation Success',
+    excerpt: 'A historic milestone in space exploration: The Mars Colony project has achieved 24 hours of continuous oxygen generation using local Martian resources.',
+    date: '2026-04-13',
+    body: 'A historic milestone in human space exploration has been achieved today at the Mars Base Alpha. Scientists have confirmed the successful continuous operation of the "Martian Breath" oxygen generation system for a full 24-hour cycle.',
+    url: '/posts/mars-colony-breakthrough-oxygen-generation-2026.html'
   }
 ];
