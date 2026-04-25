@@ -1,5 +1,10 @@
-// posts.js — Article database
-// Each post: { slug, title, excerpt, image, category, date, author, url, body }
-
 const posts = [
-
+  {
+    slug: 'breaking:-unprecedented-aurora-borealis-dazzles-southern-skies',
+    title: 'BREAKING: Unprecedented Aurora Borealis Dazzles Southern Skies',
+    excerpt: 'A celestial spectacle of unimaginable beauty is currently unfolding as the Aurora Borealis, typically confined to polar regions, has been widely reported and photographed as far south as the United States and Europe. Scientists are scrambling to understand the cause of this extraordinary event.',
+    date: '2026-04-25',
+    body: 'Tonight, stargazers and residents across lower latitudes are witnessing a breathtaking display of the Northern Lights, an event once thought impossible to observe so far from the Arctic. Reports are flooding in from cities and rural areas alike, with vibrant hues of green, purple, and red dancing across the night sky. Social media is abuzz with stunning imagery and disbelieving accounts of the phenomenon.  Leading solar physicists are attributing the unprecedented aurora to an exceptionally powerful geomagnetic storm, far exceeding typical solar flare activity. "We haven\'t seen anything like this in recorded history," stated Dr. Aris Thorne, a senior researcher at the National Space Weather Center. "The solar wind activity has been off the charts, and its interaction with Earth\'s magnetosphere is creating this incredible, widespread aurora."  While the visual display is stunning, authorities are also monitoring for any potential impacts on satellite communications and power grids, though no significant disruptions have been reported thus far. Residents are encouraged to safely enjoy the once-in-a-lifetime celestial event. Further details are expected as scientists continue to analyze the situation.',
+    url: '/posts/breaking:-unprecedented-aurora-borealis-dazzles-southern-skies.html'
+  }
+];
