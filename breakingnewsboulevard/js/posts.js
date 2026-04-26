@@ -1,5 +1,13 @@
 const posts = [
   {
+    slug: 'fact-check-no-evidence-of-gunfire-at-trump-press-dinner-amid-viral-video-claims',
+    title: 'Fact Check: No Evidence of Gunfire at Trump Press Dinner Amid Viral Video Claims',
+    excerpt: 'Social media posts alleging gunfire disrupted a recent Trump press dinner have spread rapidly, but officials and journalists say there is no credible evidence to support the claims.',
+    date: '2026-04-26',
+    body: '<p>The video in question began circulating on platforms such as Twitter and TikTok on Tuesday evening, showing a chaotic scene with shouting and what appears to be muzzle flashes near a banquet hall where former President Donald Trump was addressing a small group of reporters. The clip, edited to include dramatic sound effects, quickly garnered millions of views and sparked speculation about a possible attack.</p><p>Law enforcement agencies, including the U.S. Secret Service and local police departments, have stated that they received no reports of gunfire or any violent incident at the location described. A spokesperson for the Secret Service said, \'We have no record of any shots fired or any threat to the protectees during the event in question,\' and added that the venue\'s security footage shows no signs of disturbance.</p><p>Media analysts warn that the clip exemplifies a growing trend of manipulated content designed to provoke outrage. Dr. Laura Chen, a professor of digital communications at Georgetown University, noted, \'When sensational visuals are paired with unverified narratives, they can spread faster than fact-checking efforts can keep up, especially when they involve high‑profile figures.\' She urged viewers to verify sources before sharing.</p><p>Experts recommend relying on established news outlets and official statements for breaking news. As of now, no credible evidence supports the claim of gunfire at the Trump press dinner, and authorities continue to monitor the situation for any genuine threats.</p>',
+    url: '/posts/fact-check-no-evidence-of-gunfire-at-trump-press-dinner-amid-viral-video-claims.html'
+  },
+{
     slug: 'bbc-news-announces-global-initiative-to-combat-digital-misinformation',
     title: 'BBC News Announces Global Initiative to Combat Digital Misinformation',
     excerpt: 'The broadcaster unveils a £50 million fund and AI-powered tools to tackle false information online, citing rising threats to democratic processes worldwide.',
