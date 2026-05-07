@@ -1,5 +1,13 @@
 const posts = [
   {
+    slug: 'uk-election-countdown-when-to-expect-results-for-england-scotland-and-wales-votes',
+    title: 'UK Election Countdown: When to Expect Results for England, Scotland and Wales Votes',
+    excerpt: 'Polls close at 10 pm across the three nations, with electoral officials promising rapid counting and first declarations expected within hours, while analysts warn that tight races could delay final outcomes until early morning.',
+    date: '2026-05-08',
+    body: '<p>Voting stations in England, Scotland and Wales shut their doors at precisely 22:00 BST, ending a day of high turnout that saw over 46 million ballots cast. Ballot boxes were immediately sealed and transported to regional counting centres, where staff began the verification process under the watchful eyes of party agents and independent observers.</p><p>"We have deployed additional counting teams and upgraded our scanning equipment to ensure that the first results can be released as soon as the polls close," said Jenny Watson, Chief Electoral Officer for the United Kingdom. "Our target is to have the first constituency declarations published by midnight, with a rolling stream of results following throughout the night."</p><p>Political scientist Professor John Curtice of the University of Strathclyde cautioned that close contests in key marginal seats could extend the timeline. "In races where the margin is under a percentage point, recounts and legal challenges are possible, which may push the final declaration for some constituencies into the early morning hours," he noted.</p><p>Despite potential delays, electoral authorities expect the overall picture of the election to be clear by 06:00 BST, allowing party leaders to address the nation and begin post‑election negotiations. The final certification of all results is scheduled for later today, after all outstanding ballots — including postal and overseas votes — have been fully processed.</p>',
+    url: '/posts/uk-election-countdown-when-to-expect-results-for-england-scotland-and-wales-votes.html'
+  },
+{
     slug: 'gunfire-erupts-at-trump-hosted-press-dinner-prompting-swift-security-response',
     title: 'Gunfire Erupts at Trump-Hosted Press Dinner, Prompting Swift Security Response',
     excerpt: 'Shots were reported during a private dinner for journalists at former President Donald Trump’s Mar-a-Lago estate, causing panic and a rapid lockdown as law enforcement arrived on the scene.',
