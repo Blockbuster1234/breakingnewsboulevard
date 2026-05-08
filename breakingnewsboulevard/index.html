@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Breaking News Boulevard</title>
+</head>
+<body>
+  <h1>Breaking News Boulevard</h1>
+  <div id="posts-container"></div>
+  <script src="js/posts.js"></script>
+  <script>
+    const container = document.getElementById('posts-container');
+    posts.forEach(post => {
+      const article = document.createElement('article');
+      article.innerHTML = `
+        <h2>${post.title}</h2>
+        <div class="date">${post.date}</div>
+        <div class="excerpt">${post.excerpt}</div>
+        <a href="${post.url}">Read more</a>
+      `;
+      container.appendChild(article);
+    });
+  </script>
+</body>
+</html>
