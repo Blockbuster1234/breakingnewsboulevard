@@ -1,0 +1,10 @@
+{
+  "framework": "static",
+  "outputDirectory": ".",
+  "cleanCommand": "",
+  "buildCommand": "",
+  "installCommand": "",
+  "env": {
+    "NODE_VERSION": "18"
+  }
+}
