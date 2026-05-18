@@ -137,3 +137,12 @@ const posts = [
     url: '/posts/labour-s-rayner-streeting-and-burnham-stoke-12-hour-crisis-that-erodes-pm-s-authority.html'
   }
 ];
+{
+    slug: 'judge-rules-gun-writings-are-admissible-in-luigi-mangione-s-new-york-murder-trial',
+    title: '```json',
+    excerpt: '{   "title": "Judge Rules Gun, Writings Admissible in Luigi Mangione's New York Murder Trial",   "body": "<p>A New York judge has ruled that key evide',
+    date: '2026-05-18',
+    category: 'World',
+    url: '/posts/judge-rules-gun-writings-are-admissible-in-luigi-mangione-s-new-york-murder-trial.html',
+    image: '/posts/judge-rules-gun-writings-are-admissible-in-luigi-mangione-s-new-york-murder-trial-hero.jpg'
+  },
