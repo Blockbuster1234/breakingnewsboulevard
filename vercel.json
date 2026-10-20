@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/breakingnewsboulevard/index.html" },
+    { "source": "/index.html", "destination": "/breakingnewsboulevard/index.html" },
+    { "source": "/js/:path*", "destination": "/breakingnewsboulevard/js/:path*" },
+    { "source": "/posts/:path*", "destination": "/breakingnewsboulevard/posts/:path*" },
+    { "source": "/sitemap.xml", "destination": "/breakingnewsboulevard/sitemap.xml" },
+    { "source": "/robots.txt", "destination": "/breakingnewsboulevard/robots.txt" }
+  ]
+}
