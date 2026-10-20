@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "generate:daily": "node scripts/generate.mjs --count 3"
+    "generate:daily": "node scripts/generate.mjs --count 3",
+    "build": "echo 'Static site — no build step'"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",
