@@ -1,13 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { collectCandidates, extractArticle, isSimilarTitle } from './lib/news.mjs';
+import {
+  BLOCKED_SOURCES,
+  SOURCES,
+  collectCandidates,
+  extractArticle,
+  isSimilarTitle,
+  isSourceEnabled,
+} from './lib/news.mjs';
 import { rewriteArticle, generateImage } from './lib/ai.mjs';
-import { rebuildSite, slugify, writePostPage } from './lib/render.mjs';
+import { rebuildSite, slugify } from './lib/render.mjs';
 import { sleep } from './lib/http.mjs';
 
 const ROOT = process.cwd();
 const DATA_FILE = path.join(ROOT, 'data', 'posts.json');
 const POSTS_DIR = path.join(ROOT, 'posts');
+const REVIEW_DIR = path.join(ROOT, 'review', 'queue');
 
 function argValue(name, fallback) {
   const index = process.argv.indexOf(name);
@@ -25,9 +33,21 @@ function loadPosts() {
   }
 }
 
-function savePosts(posts) {
-  fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
-  fs.writeFileSync(DATA_FILE, `${JSON.stringify(posts, null, 2)}\n`);
+function loadDrafts() {
+  if (!fs.existsSync(REVIEW_DIR)) return [];
+  return fs
+    .readdirSync(REVIEW_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => {
+      try {
+        return JSON.parse(
+          fs.readFileSync(path.join(REVIEW_DIR, entry.name, 'post.json'), 'utf8'),
+        );
+      } catch {
+        return null;
+      }
+    })
+    .filter(Boolean);
 }
 
 function normalizeUrl(url) {
@@ -46,32 +66,100 @@ function uniqueSlug(title, date, posts) {
   let slug = base;
   let counter = 2;
   const taken = new Set(posts.map((post) => post.slug));
-  while (taken.has(slug) || fs.existsSync(path.join(POSTS_DIR, `${slug}.html`))) {
+  while (
+    taken.has(slug) ||
+    fs.existsSync(path.join(POSTS_DIR, `${slug}.html`)) ||
+    fs.existsSync(path.join(REVIEW_DIR, slug))
+  ) {
     slug = `${base}-${counter}`;
     counter += 1;
   }
   return slug;
 }
 
+function formatDate(value) {
+  if (!value) return '';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleDateString('de-DE', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    timeZone: 'Europe/Berlin',
+  });
+}
+
+function buildCredit(source, article) {
+  if (source.id === 'bgh') {
+    const date = formatDate(article.publishedAt);
+    return date
+      ? `Pressemitteilung des Bundesgerichtshofs vom ${date}.`
+      : 'Pressemitteilung des Bundesgerichtshofs.';
+  }
+  if (source.id === 'destatis') {
+    const parsed = article.publishedAt ? new Date(article.publishedAt) : new Date();
+    const year = Number.isNaN(parsed.getTime()) ? new Date().getUTCFullYear() : parsed.getUTCFullYear();
+    return `Quelle: Statistisches Bundesamt (Destatis), ${year}.`;
+  }
+  if (source.id === 'ec-press') {
+    return 'Quelle: Europäische Kommission; Lizenz CC BY 4.0; Änderungen vorgenommen.';
+  }
+  return `Quelle: ${source.name}.`;
+}
+
+function sourceMeta(source, candidate, article) {
+  return {
+    name: source.name,
+    title: article.title,
+    url: article.url || candidate.url,
+    termsUrl: source.termsUrl,
+    license: source.license,
+    licenseUrl: source.licenseUrl,
+    credit: buildCredit(source, article),
+    reuseNote: source.reuseNote,
+    publishedAt: article.publishedAt || candidate.publishedAt || '',
+  };
+}
+
+function saveDraft(post, article, image) {
+  const dir = path.join(REVIEW_DIR, post.slug);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'post.json'), `${JSON.stringify(post, null, 2)}\n`);
+  fs.writeFileSync(path.join(dir, 'source.txt'), `${article.text}\n`);
+  fs.writeFileSync(path.join(dir, `hero.${image.ext}`), image.buffer);
+  return dir;
+}
+
 async function main() {
   const count = Math.max(0, Number(argValue('--count', '3')) || 0);
+  const posts = loadPosts();
+  const drafts = loadDrafts();
+
   if (count === 0) {
-    const posts = loadPosts();
     rebuildSite(posts);
-    console.log(`[site] rebuilt with ${posts.length} posts (no new articles requested)`);
+    console.log(`[site] rebuilt with ${posts.length} approved posts (no new articles requested)`);
     return;
   }
 
-  fs.mkdirSync(POSTS_DIR, { recursive: true });
-  const posts = loadPosts();
-  const usedUrls = new Set(posts.map((post) => normalizeUrl(post.source?.url || '')).filter(Boolean));
-  const titles = posts.map((post) => post.title);
-  const date = new Date().toISOString().slice(0, 10);
+  const activeSources = SOURCES.filter(isSourceEnabled);
+  console.log(
+    `[sources] ${activeSources.map((source) => source.name).join(', ') || 'keine'}; ${BLOCKED_SOURCES.length} Quellen gesperrt`,
+  );
 
-  console.log(`[start] ${date} — existing posts: ${posts.length}, target: ${count}`);
+  const date = new Date().toISOString().slice(0, 10);
+  const usedUrls = new Set(
+    [...posts, ...drafts].map((post) => normalizeUrl(post.source?.url || '')).filter(Boolean),
+  );
+  const titles = [...posts, ...drafts].map((post) => post.title);
+
+  console.log(
+    `[start] ${date} — approved: ${posts.length}, drafts: ${drafts.length}, target: ${count}`,
+  );
 
   const candidates = await collectCandidates(16);
-  console.log(`[news] ${candidates.length} candidates from ${new Set(candidates.map((c) => c.source)).size} sources`);
+  console.log(
+    `[news] ${candidates.length} candidates from ${new Set(candidates.map((c) => c.sourceId)).size} sources`,
+  );
 
   let created = 0;
 
@@ -89,11 +177,13 @@ async function main() {
         continue;
       }
 
+      const source = SOURCES.find((item) => item.id === candidate.sourceId);
       console.log(`[write] AI rewrite (${article.text.length} chars source)`);
       const rewritten = await rewriteArticle({
-        sourceName: candidate.source,
+        sourceName: source.name,
         sourceTitle: article.title,
         sourceText: article.text,
+        sourceLanguage: article.language,
       });
 
       if (titles.some((title) => isSimilarTitle(title, rewritten.title))) {
@@ -102,12 +192,9 @@ async function main() {
       }
 
       console.log(`[image] ${rewritten.imagePrompt}`);
-      const { buffer, ext } = await generateImage(rewritten.imagePrompt);
+      const image = await generateImage(rewritten.imagePrompt);
 
-      const slug = uniqueSlug(rewritten.title, date, posts);
-      const imageFile = `${slug}-hero.${ext}`;
-      fs.writeFileSync(path.join(POSTS_DIR, imageFile), buffer);
-
+      const slug = uniqueSlug(rewritten.title, date, [...posts, ...drafts]);
       const post = {
         slug,
         title: rewritten.title,
@@ -115,32 +202,37 @@ async function main() {
         date,
         category: rewritten.category,
         url: `/posts/${slug}.html`,
-        image: `/posts/${imageFile}`,
-        images: [`/posts/${imageFile}`],
-        source: { name: candidate.source, url: candidate.url },
+        image: '',
+        images: [],
+        heroFile: `hero.${image.ext}`,
+        source: sourceMeta(source, candidate, article),
         body: rewritten.body,
         imagePrompt: rewritten.imagePrompt,
+        wordCount: rewritten.wordCount,
+        sourcePublishedAt: article.publishedAt || candidate.publishedAt || '',
         createdAt: new Date().toISOString(),
+        review: { status: 'draft' },
       };
 
-      writePostPage(post);
-      posts.unshift(post);
+      const dir = saveDraft(post, article, image);
+      drafts.push(post);
       titles.push(post.title);
       usedUrls.add(normalizeUrl(candidate.url));
       created += 1;
 
-      posts.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
-      savePosts(posts.slice(0, 180));
-      console.log(`[ok] ${post.title} -> ${post.url}`);
+      console.log(`[draft] ${post.title} -> ${path.relative(ROOT, dir)}`);
 
       if (created < count) await sleep(30000);
     } catch (error) {
       console.warn(`[skip] ${candidate.url} — ${error.message}`);
+      if (created < count) await sleep(10000);
     }
   }
 
   rebuildSite(posts);
-  console.log(`[done] created ${created}/${count} new posts; site rebuilt with ${posts.length} posts`);
+  console.log(
+    `[done] created ${created}/${count} review drafts; live site still has ${posts.length} approved posts`,
+  );
 
   if (created === 0) process.exitCode = 1;
 }

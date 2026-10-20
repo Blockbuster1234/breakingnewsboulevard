@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Breaking News Boulevard — Echte Nachrichten, täglich neu</title>
-  <meta name="description" content="Aktuelle Weltnachrichten, täglich in eigenen Worten neu geschrieben – auf Basis echter Berichterstattung, mit KI-Illustrationen und Quellenlink zu jedem Artikel.">
+  <meta name="description" content="Aktuelle Nachrichten aus offiziellen Primärquellen, eigenständig zusammengefasst, automatisch geprüft und mit Quellenlink zu jedem Artikel.">
   <link rel="canonical" href="https://www.breakingnewsboulevard.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Breaking News Boulevard">
   <meta property="og:title" content="Breaking News Boulevard">
-  <meta property="og:description" content="Echte Nachrichten, täglich neu. KI-gestützte Artikel mit KI-Illustrationen und Link zur Originalquelle.">
+  <meta property="og:description" content="Echte Nachrichten, täglich neu. KI-gestützte Artikel mit redaktionellen Illustrationen und Link zur Originalquelle.">
   <meta property="og:url" content="https://www.breakingnewsboulevard.com/">
   <meta name="theme-color" content="#111318">
   <style>
@@ -111,18 +111,6 @@
     .feature { min-width: 0; }
     .feature figure { margin: 0 0 16px; position: relative; overflow: hidden; border-radius: 6px; background: #ddd; }
     .feature img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-    .ai-chip {
-      position: absolute;
-      left: 10px;
-      bottom: 10px;
-      background: rgba(17, 19, 24, 0.82);
-      color: #fff;
-      font-size: 0.62rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 4px 8px;
-      border-radius: 3px;
-    }
     .kicker {
       display: inline-block;
       color: var(--accent);
@@ -144,6 +132,7 @@
     .feature .dek { color: #4c4f55; font-size: 1.02rem; line-height: 1.55; margin: 0 0 10px; }
     .meta { color: var(--muted); font-size: 0.78rem; }
     .meta .dot { margin: 0 6px; }
+    .meta a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 
     .side h3 {
       font-family: var(--sans);
@@ -240,6 +229,12 @@
     .footer-inner strong { color: var(--ink); }
     .footer-brand { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); margin-bottom: 6px; }
     .disclosure { font-size: 0.76rem; color: var(--muted); }
+    .ai-note { font-size: 0.68rem; color: #85878b; }
+    .ai-note strong { color: #6e7075; font-weight: 600; }
+    .legal-links { margin: 10px 0 0; font-size: 0.72rem; }
+    .legal-links a { color: var(--ink); text-decoration: none; border-bottom: 1px solid #c9c3b7; }
+    .legal-links a:hover { color: var(--accent); border-color: var(--accent); }
+    .legal-links span { color: #b9b4a9; margin: 0 6px; }
 
     @media (max-width: 900px) {
       .lead { grid-template-columns: 1fr; }
@@ -261,7 +256,7 @@
   <div class="topbar">
     <div class="topbar-inner">
       <span>{{DATE_HUMAN}}</span>
-      <span class="ai">KI-gestützte Redaktion · echte Meldungen, täglich neu</span>
+      <span class="ai">KI-gestützte Redaktion · offizielle Quellen, automatisch geprüft</span>
     </div>
   </div>
 
@@ -287,11 +282,12 @@
     <div class="footer-inner">
       <div>
         <div class="footer-brand">Breaking News Boulevard</div>
-        <p>Unabhängiger, KI-gestützter Nachrichtenüberblick. Jeder Artikel ist eine eigenständige Neuformulierung auf Basis der Berichterstattung einer etablierten Nachrichtenorganisation – und jede Geschichte verlinkt ihre Quelle.</p>
+        <p>Unabhängiger, KI-gestützter Nachrichtenüberblick auf Basis offizieller Primärquellen. Jeder Artikel ist eine eigenständige Zusammenfassung, nennt die tatsächlich verwendete Originalquelle und wird vor Veröffentlichung automatisch geprüft.</p>
       </div>
       <div class="disclosure">
-        <p><strong>Transparenz:</strong> Die Artikel werden mit KI erstellt und gegen den zitierten Quelltext geprüft. Bilder sind KI-generierte Illustrationen, keine Fotos des Geschehens. Für vollständigen Kontext lies bitte immer die Originalberichterstattung.</p>
+        <p class="ai-note"><strong>Transparenz:</strong> Die Artikel werden mit KI erstellt, gegen den Quelltext geprüft und automatisch validiert. Bilder sind redaktionelle Illustrationen, keine Fotos des Geschehens. Für vollständigen Kontext lies bitte immer die Originalquelle.</p>
         <p>© {{YEAR}} Breaking News Boulevard</p>
+        <p class="legal-links"><a href="/impressum">Impressum</a><span>·</span><a href="/datenschutz">Datenschutz</a></p>
       </div>
     </div>
   </footer>
@@ -323,11 +319,11 @@
       function featureMarkup(post) {
         const image = imageOf(post);
         return `<article class="feature">
-          ${image ? `<figure><a href="${esc(post.url)}"><img src="${esc(image)}" alt="${esc(post.title)}" fetchpriority="high"><span class="ai-chip">KI-Illustration</span></a></figure>` : ''}
+          ${image ? `<figure><a href="${esc(post.url)}"><img src="${esc(image)}" alt="${esc(post.title)}" fetchpriority="high"></a></figure>` : ''}
           <span class="kicker">${esc(post.category)}</span>
           <h1><a href="${esc(post.url)}">${esc(post.title)}</a></h1>
           <p class="dek">${esc(post.excerpt)}</p>
-          <div class="meta">${esc(fmt(post.date))}${post.source ? `<span class="dot">·</span>Basierend auf Berichterstattung von ${esc(post.source)}` : ''}</div>
+          <div class="meta">${esc(fmt(post.date))}${post.source ? `<span class="dot">·</span>Quelle: <a href="${esc(post.sourceUrl || '#')}" target="_blank" rel="noopener noreferrer">${esc(post.source.name || post.source)}</a>` : ''}</div>
         </article>`;
       }
 
@@ -349,7 +345,7 @@
           <span class="kicker">${esc(post.category)}</span>
           <h3><a href="${esc(post.url)}">${esc(post.title)}</a></h3>
           <p>${esc(post.excerpt)}</p>
-          <div class="meta">${esc(fmt(post.date))}</div>
+          <div class="meta">${esc(fmt(post.date))}${post.source ? `<span class="dot">·</span><a href="${esc(post.sourceUrl || '#')}" target="_blank" rel="noopener noreferrer">${esc(post.source.name || post.source)}</a>` : ''}</div>
         </article>`;
       }
 

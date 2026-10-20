@@ -1,8 +1,8 @@
-name: Daily AI News
+name: Daily Autonomous News
 
 on:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '15 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -17,8 +17,9 @@ defaults:
     working-directory: breakingnewsboulevard
 
 jobs:
-  generate:
+  publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,17 +34,26 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate today's stories
-        run: npm run generate:daily
+      - name: Legal readiness
+        run: npm run legal:check || echo "::warning title=Rechtstexte::Impressum oder Datenschutz enthalten noch Platzhalter."
+
+      - name: Generate one draft
+        run: npm run generate:one
+
+      - name: Auto-approve and publish
+        run: npm run auto:publish
+
+      - name: Validate published site
+        run: npm test
 
       - name: Commit and push
         run: |
-          git config user.name "BNB News Bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add -A
+          git config user.name "Breaking News Boulevard Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/posts.json posts index.html js/posts.js sitemap.xml
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "Keine Änderungen zu committen."
             exit 0
           fi
-          git commit -m "news: daily edition $(date -u +%F)"
+          git commit -m "Daily news: $(date -u +%F)"
           git push

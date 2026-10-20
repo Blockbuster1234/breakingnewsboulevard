@@ -4,12 +4,16 @@ breakingnewsboulevard/.api_key
 
 # Abhängigkeiten und Build-Artefakte
 node_modules/
-breakingnewsboulevard/node_modules/
+breakingnewsboulevard/node_modules
 .vercel/
 
 # Generierte Rohdaten und Logs
 breakingnewsboulevard/logs/
 breakingnewsboulevard/news_raw/
+
+# Unveröffentlichte Entwürfe und Altarchive
+breakingnewsboulevard/review/
+archive/
 
 # Betriebssystem
 .DS_Store

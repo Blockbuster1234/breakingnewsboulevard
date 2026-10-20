@@ -24,6 +24,18 @@ export function humanDate(isoDate) {
   });
 }
 
+export function displayDate(value) {
+  if (!value) return '';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleDateString('de-DE', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    timeZone: 'Europe/Berlin',
+  });
+}
+
 export function slugify(title, date) {
   const base = title
     .replace(/ä/g, 'ae')
@@ -47,7 +59,12 @@ export function bodyToHtml(body) {
     .map((block) => block.trim())
     .filter(Boolean)
     .map((block) => {
-      if (block.startsWith('## ')) return `<h2>${escapeHtml(block.slice(3).trim())}</h2>`;
+      if (block.startsWith('## ')) {
+        const [heading, ...rest] = block.split('\n');
+        const restText = rest.join('\n').trim();
+        const headingHtml = `<h2>${escapeHtml(heading.slice(3).trim())}</h2>`;
+        return restText ? `${headingHtml}\n        <p>${escapeHtml(restText)}</p>` : headingHtml;
+      }
       return `<p>${escapeHtml(block)}</p>`;
     })
     .join('\n        ');
@@ -64,16 +81,20 @@ function fill(template, values) {
 export function writePostPage(post) {
   const template = fs.readFileSync(path.join(ROOT, 'templates', 'post.html'), 'utf8');
   const canonical = `${SITE_URL}${post.url}`;
+  const source = post.source || {};
+  const reviewedAt = post.review?.reviewedAt || `${post.date}T06:00:00Z`;
   const jsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
     headline: post.title,
     description: post.excerpt,
     datePublished: `${post.date}T06:00:00Z`,
-    dateModified: `${post.date}T06:00:00Z`,
+    dateModified: reviewedAt,
     image: [`${SITE_URL}${post.image}`],
     mainEntityOfPage: canonical,
     inLanguage: 'de-DE',
+    citation: source.url || undefined,
+    isBasedOn: source.url || undefined,
     author: {
       '@type': 'Organization',
       name: 'Breaking News Boulevard',
@@ -86,6 +107,12 @@ export function writePostPage(post) {
     isAccessibleForFree: true,
   }).replace(/</g, '\\u003c');
 
+  const licenseHtml = source.license
+    ? source.licenseUrl
+      ? `<a href="${escapeHtml(source.licenseUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.license)}</a>`
+      : escapeHtml(source.license)
+    : '';
+
   const html = fill(template, {
     TITLE: escapeHtml(post.title),
     EXCERPT: escapeHtml(post.excerpt),
@@ -95,8 +122,17 @@ export function writePostPage(post) {
     IMAGE: post.image,
     IMAGE_ALT: escapeHtml(post.title),
     BODY: bodyToHtml(post.body),
-    SOURCE_NAME: escapeHtml(post.source.name),
-    SOURCE_URL: escapeHtml(post.source.url),
+    SOURCE_NAME: escapeHtml(source.name || 'Originalquelle'),
+    SOURCE_URL: escapeHtml(source.url || '#'),
+    SOURCE_TITLE: escapeHtml(source.title || ''),
+    SOURCE_PUBLISHED: escapeHtml(displayDate(source.publishedAt)),
+    SOURCE_CREDIT: escapeHtml(source.credit || ''),
+    SOURCE_LICENSE: licenseHtml,
+    SOURCE_REUSE_NOTE: escapeHtml(source.reuseNote || ''),
+    REVIEW_NOTE:
+      post.review?.status === 'approved'
+        ? 'Dieser Artikel wurde vor Veröffentlichung automatisch geprüft.'
+        : 'Dieser Artikel wurde noch nicht redaktionell freigegeben.',
     CANONICAL: canonical,
     JSONLD: jsonLd,
   });
@@ -125,6 +161,7 @@ export function writePostsJs(posts) {
     image: post.image,
     images: post.images,
     source: post.source.name,
+    sourceUrl: post.source.url,
   }));
   const js = `const posts = ${JSON.stringify(slim, null, 2)};\n`;
   fs.mkdirSync(path.join(ROOT, 'js'), { recursive: true });

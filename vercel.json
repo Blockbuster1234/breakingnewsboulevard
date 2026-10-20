@@ -5,6 +5,10 @@
     { "source": "/js/:path*", "destination": "/breakingnewsboulevard/js/:path*" },
     { "source": "/posts/:path*", "destination": "/breakingnewsboulevard/posts/:path*" },
     { "source": "/sitemap.xml", "destination": "/breakingnewsboulevard/sitemap.xml" },
-    { "source": "/robots.txt", "destination": "/breakingnewsboulevard/robots.txt" }
+    { "source": "/robots.txt", "destination": "/breakingnewsboulevard/robots.txt" },
+    { "source": "/impressum", "destination": "/breakingnewsboulevard/legal/impressum.html" },
+    { "source": "/impressum.html", "destination": "/breakingnewsboulevard/legal/impressum.html" },
+    { "source": "/datenschutz", "destination": "/breakingnewsboulevard/legal/datenschutz.html" },
+    { "source": "/datenschutz.html", "destination": "/breakingnewsboulevard/legal/datenschutz.html" }
   ]
 }

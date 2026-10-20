@@ -49,22 +49,33 @@
 
     figure.hero { margin: 24px 0 30px; }
     figure.hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; background: #ddd; }
-    figcaption { color: var(--muted); font-size: 0.74rem; line-height: 1.45; margin-top: 8px; }
 
     .prose { font-family: var(--serif); font-size: 1.13rem; line-height: 1.75; color: #22242a; }
     .prose p { margin: 0 0 1.25em; }
     .prose h2 { font-family: var(--sans); font-size: 1.12rem; letter-spacing: 0.01em; margin: 1.9em 0 0.7em; }
     .prose p:first-of-type::first-letter { float: left; font-size: 3.35em; line-height: 0.82; padding: 0.08em 0.09em 0 0; font-weight: 700; }
 
+    .source-top { font-family: var(--sans); font-size: 0.8rem; margin: 14px 0 0; }
+    .source-top span { color: var(--muted); font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 6px; }
+    .source-top a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
     .source-box { margin: 34px 0 26px; padding: 16px 18px; background: #f2eee6; border-left: 3px solid var(--accent); font-family: var(--sans); font-size: 0.88rem; line-height: 1.55; }
     .source-box strong { display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .source-box p { margin: 4px 0; }
     .source-box a { color: var(--accent); font-weight: 600; }
+    .source-note { color: var(--muted); font-size: 0.8rem; }
+    .review-note { font-family: var(--sans); font-size: 0.8rem; line-height: 1.5; color: var(--muted); margin: 0 0 18px; }
     .disclaimer { font-family: var(--sans); font-size: 0.78rem; line-height: 1.6; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; margin-top: 26px; }
     .disclaimer strong { color: var(--ink); }
 
     footer { background: #f2eee6; border-top: 1px solid var(--line); margin-top: 40px; }
     .footer-inner { max-width: 780px; margin: 0 auto; padding: 24px 20px 34px; font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
     .footer-inner a { color: var(--ink); }
+    .ai-note { font-size: 0.68rem; color: #85878b; }
+    .ai-note strong { color: #6e7075; font-weight: 600; }
+    .legal-links { margin: 8px 0 0; font-size: 0.7rem; }
+    .legal-links a { text-decoration: none; border-bottom: 1px solid #c9c3b7; }
+    .legal-links a:hover { color: var(--accent); border-color: var(--accent); }
+    .legal-links span { color: #b9b4a9; margin: 0 6px; }
 
     @media (max-width: 620px) {
       .topbar-inner { flex-direction: column; gap: 3px; align-items: center; }
@@ -77,7 +88,7 @@
   <div class="topbar">
     <div class="topbar-inner">
       <span>Breaking News Boulevard</span>
-      <span class="ai">KI-gestützter Bericht · mit Quellenangabe</span>
+      <span class="ai">KI-gestützter Bericht · automatisch geprüft</span>
     </div>
   </div>
 
@@ -93,14 +104,15 @@
     <div class="byline">
       <strong>BNB-Redaktion</strong>
       <span class="dot">·</span>
-      <span>KI-gestützter Bericht</span>
+      <span>automatisch geprüft</span>
       <span class="dot">·</span>
       <time datetime="{{DATE_ISO}}">{{DATE_HUMAN}}</time>
     </div>
 
+    <p class="source-top"><span>Originalquelle</span><a href="{{SOURCE_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_NAME}}</a></p>
+
     <figure class="hero">
       <img src="{{IMAGE}}" alt="{{IMAGE_ALT}}" fetchpriority="high">
-      <figcaption>KI-generierte Illustration zu diesem Artikel. Kein Foto des Ereignisses.</figcaption>
     </figure>
 
     <div class="prose">
@@ -108,16 +120,24 @@
     </div>
 
     <div class="source-box">
-      <strong>Originalberichterstattung</strong>
-      Dieser Artikel ist eine eigenständige Neuformulierung auf Basis der Berichterstattung von <a href="{{SOURCE_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_NAME}}</a>. Lies die Quelle für vollständigen Kontext und direkte Zitate.
+      <strong>Originalquelle</strong>
+      <p>Dieser Artikel ist eine eigenständige Zusammenfassung von <a href="{{SOURCE_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_NAME}}</a>. Dort finden Sie den vollständigen Originaltext.</p>
+      <p class="source-note">Originaltitel: {{SOURCE_TITLE}}</p>
+      <p class="source-note">Original veröffentlicht: {{SOURCE_PUBLISHED}}</p>
+      <p>{{SOURCE_CREDIT}}</p>
+      <p>{{SOURCE_LICENSE}}</p>
+      <p class="source-note">{{SOURCE_REUSE_NOTE}}</p>
     </div>
 
-    <p class="disclaimer"><strong>So entsteht dieser Artikel:</strong> Ein KI-Modell hat die zitierte Quelle zusammengefasst und in eigenen Worten neu geschrieben; die Illustration wurde von einem KI-Bildmodell erzeugt. Fakten, Namen und Zahlen stammen aus dem Quelltext. Bei sich entwickelnden Ereignissen prüfe bitte die Originalberichterstattung.</p>
+    <p class="review-note">{{REVIEW_NOTE}}</p>
+
+    <p class="disclaimer"><strong>So entsteht dieser Artikel:</strong> Ein KI-Modell hat die offizielle Quelle in eigenen Worten zusammengefasst; die Illustration ist eine redaktionelle Illustration, kein Foto des Ereignisses. Namen, Funktionen, Zahlen und Fakten wurden vor der Veröffentlichung automatisch gegen die Quelle geprüft. Bei sich entwickelnden Ereignissen prüfe bitte die Originalquelle.</p>
   </article>
 
   <footer>
     <div class="footer-inner">
-      <p><a href="/">Breaking News Boulevard</a> — echte Berichterstattung, täglich neu geschrieben. Bilder sind KI-generierte Illustrationen.</p>
+      <p><a href="/">Breaking News Boulevard</a> — echte Berichterstattung, täglich neu geschrieben. <span class="ai-note">Bilder sind redaktionelle Illustrationen.</span></p>
+      <p class="legal-links"><a href="/impressum">Impressum</a><span>·</span><a href="/datenschutz">Datenschutz</a></p>
     </div>
   </footer>
 </body>
