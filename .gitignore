@@ -1,0 +1,15 @@
+# Geheimnisse niemals committen
+.api_key
+breakingnewsboulevard/.api_key
+
+# Abhängigkeiten und Build-Artefakte
+node_modules/
+breakingnewsboulevard/node_modules/
+.vercel/
+
+# Generierte Rohdaten und Logs
+breakingnewsboulevard/logs/
+breakingnewsboulevard/news_raw/
+
+# Betriebssystem
+.DS_Store

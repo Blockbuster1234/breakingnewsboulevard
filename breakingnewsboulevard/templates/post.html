@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} — Breaking News Boulevard</title>
+  <meta name="description" content="{{EXCERPT}}">
+  <link rel="canonical" href="{{CANONICAL}}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Breaking News Boulevard">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{EXCERPT}}">
+  <meta property="og:image" content="https://www.breakingnewsboulevard.com{{IMAGE}}">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta name="theme-color" content="#111318">
+  <script type="application/ld+json">{{JSONLD}}</script>
+  <style>
+    :root {
+      --ink: #14151a;
+      --paper: #fbfaf7;
+      --accent: #c62828;
+      --muted: #6d7178;
+      --line: #e5e0d6;
+      --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    .topbar { background: var(--ink); color: #f4f1ea; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .topbar-inner { max-width: 1180px; margin: 0 auto; padding: 9px 20px; display: flex; justify-content: space-between; gap: 16px; }
+    .topbar .ai { color: #f0b7b7; }
+
+    .post-header { max-width: 1180px; margin: 0 auto; padding: 22px 20px 14px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); }
+    .logo { font-family: var(--serif); font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; text-decoration: none; line-height: 1; }
+    .logo span { color: var(--accent); font-style: italic; }
+    .back { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+    .back:hover { color: var(--accent); }
+
+    .article { max-width: 780px; margin: 0 auto; padding: 36px 20px 10px; }
+    .article .kicker { display: inline-block; color: var(--accent); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
+    .article h1 { font-family: var(--serif); font-size: clamp(1.9rem, 4.6vw, 3rem); line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 14px; }
+    .article .deck { font-size: 1.12rem; line-height: 1.55; color: #4c4f55; margin: 0 0 18px; }
+    .byline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--muted); font-size: 0.8rem; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+    .byline strong { color: var(--ink); font-weight: 600; }
+    .byline .dot { color: #b9b4a9; }
+
+    figure.hero { margin: 24px 0 30px; }
+    figure.hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; background: #ddd; }
+    figcaption { color: var(--muted); font-size: 0.74rem; line-height: 1.45; margin-top: 8px; }
+
+    .prose { font-family: var(--serif); font-size: 1.13rem; line-height: 1.75; color: #22242a; }
+    .prose p { margin: 0 0 1.25em; }
+    .prose h2 { font-family: var(--sans); font-size: 1.12rem; letter-spacing: 0.01em; margin: 1.9em 0 0.7em; }
+    .prose p:first-of-type::first-letter { float: left; font-size: 3.35em; line-height: 0.82; padding: 0.08em 0.09em 0 0; font-weight: 700; }
+
+    .source-box { margin: 34px 0 26px; padding: 16px 18px; background: #f2eee6; border-left: 3px solid var(--accent); font-family: var(--sans); font-size: 0.88rem; line-height: 1.55; }
+    .source-box strong { display: block; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+    .source-box a { color: var(--accent); font-weight: 600; }
+    .disclaimer { font-family: var(--sans); font-size: 0.78rem; line-height: 1.6; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; margin-top: 26px; }
+    .disclaimer strong { color: var(--ink); }
+
+    footer { background: #f2eee6; border-top: 1px solid var(--line); margin-top: 40px; }
+    .footer-inner { max-width: 780px; margin: 0 auto; padding: 24px 20px 34px; font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
+    .footer-inner a { color: var(--ink); }
+
+    @media (max-width: 620px) {
+      .topbar-inner { flex-direction: column; gap: 3px; align-items: center; }
+      .post-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .article { padding-top: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Breaking News Boulevard</span>
+      <span class="ai">KI-gestützter Bericht · mit Quellenangabe</span>
+    </div>
+  </div>
+
+  <header class="post-header">
+    <a class="logo" href="/">Breaking News <span>Boulevard</span></a>
+    <a class="back" href="/">&larr; Alle Artikel</a>
+  </header>
+
+  <article class="article">
+    <span class="kicker">{{CATEGORY}}</span>
+    <h1>{{TITLE}}</h1>
+    <p class="deck">{{EXCERPT}}</p>
+    <div class="byline">
+      <strong>BNB-Redaktion</strong>
+      <span class="dot">·</span>
+      <span>KI-gestützter Bericht</span>
+      <span class="dot">·</span>
+      <time datetime="{{DATE_ISO}}">{{DATE_HUMAN}}</time>
+    </div>
+
+    <figure class="hero">
+      <img src="{{IMAGE}}" alt="{{IMAGE_ALT}}" fetchpriority="high">
+      <figcaption>KI-generierte Illustration zu diesem Artikel. Kein Foto des Ereignisses.</figcaption>
+    </figure>
+
+    <div class="prose">
+        {{BODY}}
+    </div>
+
+    <div class="source-box">
+      <strong>Originalberichterstattung</strong>
+      Dieser Artikel ist eine eigenständige Neuformulierung auf Basis der Berichterstattung von <a href="{{SOURCE_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_NAME}}</a>. Lies die Quelle für vollständigen Kontext und direkte Zitate.
+    </div>
+
+    <p class="disclaimer"><strong>So entsteht dieser Artikel:</strong> Ein KI-Modell hat die zitierte Quelle zusammengefasst und in eigenen Worten neu geschrieben; die Illustration wurde von einem KI-Bildmodell erzeugt. Fakten, Namen und Zahlen stammen aus dem Quelltext. Bei sich entwickelnden Ereignissen prüfe bitte die Originalberichterstattung.</p>
+  </article>
+
+  <footer>
+    <div class="footer-inner">
+      <p><a href="/">Breaking News Boulevard</a> — echte Berichterstattung, täglich neu geschrieben. Bilder sind KI-generierte Illustrationen.</p>
+    </div>
+  </footer>
+</body>
+</html>
