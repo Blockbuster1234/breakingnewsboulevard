@@ -12,6 +12,10 @@ concurrency:
   group: daily-news
   cancel-in-progress: false
 
+defaults:
+  run:
+    working-directory: breakingnewsboulevard
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -24,7 +28,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: breakingnewsboulevard/package-lock.json
 
       - name: Install dependencies
         run: npm ci
