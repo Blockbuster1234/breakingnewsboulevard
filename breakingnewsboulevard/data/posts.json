@@ -1,5 +1,47 @@
 [
   {
+    "slug": "2026-10-20-erzeugerpreise-steigen-im-september-2026-um-6-7-gegenueber-vorjahr",
+    "title": "Erzeugerpreise steigen im September 2026 um 6,7 % gegenüber Vorjahr",
+    "excerpt": "Die Erzeugerpreise gewerblicher Produkte stiegen im September 2026 um 6,7 % im Vergleich zu September 2025, der stärkste Anstieg seit März 2023.",
+    "date": "2026-10-20",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-10-20-erzeugerpreise-steigen-im-september-2026-um-6-7-gegenueber-vorjahr.html",
+    "image": "/posts/2026-10-20-erzeugerpreise-steigen-im-september-2026-um-6-7-gegenueber-vorjahr-hero.jpg",
+    "images": [
+      "/posts/2026-10-20-erzeugerpreise-steigen-im-september-2026-um-6-7-gegenueber-vorjahr-hero.jpg"
+    ],
+    "source": {
+      "name": "Statistisches Bundesamt (Destatis)",
+      "title": "Erzeugerpreise im September 2026: +6,7 % gegenüber September 2025",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_373_61241.html",
+      "termsUrl": "https://www.destatis.de/DE/Service/Impressum/copyright-allgemein.html",
+      "license": "Weiterverwendung mit Quellenangabe",
+      "licenseUrl": "https://www.destatis.de/DE/Service/Impressum/copyright-allgemein.html",
+      "credit": "Quelle: Statistisches Bundesamt (Destatis), 2026.",
+      "reuseNote": "Änderungen, Kürzungen oder Neugestaltungen sind kenntlich zu machen.",
+      "publishedAt": "Tue, 20 Oct 2026 08:00:00 +0200"
+    },
+    "body": "## Preisentwicklung\nDie Erzeugerpreise gewerblicher Produkte im September 2026 waren um 6,7 % höher als im September 2025. Der Anstieg gegenüber dem Vormonat August 2026 betrug 1,9 %. Der stärkste Jahresvergleich seit März 2023 (+7,5 %) wurde damit erreicht.\n\n## Treiber des Anstiegs\nDer Hauptfaktor war die Preissteigerung bei Energie, die um 14,9 % zunahm. Auch die Preise für Vorleistungsgüter stiegen um 6,4 %. Investitionsgüter und Gebrauchsgüter waren um 2,4 % bzw. 2,2 % teurer. Verbrauchsgüter waren dagegen um 1,8 % günstiger.\n\n## Branchen‑ und Rohstoffpreise\nMineralölerzeugnisse stiegen im Vorjahresvergleich um 51,3 %. Kupfer und dessen Halbzeug verzeichneten einen Anstieg von 31,4 %. Düngemittel und chemische Grundstoffe stiegen um 8,9 % bzw. 11,3 %. Holzprodukte und Pellets wiesen Preiserhöhungen von 7,1 % bzw. 38,5 % auf.\n\n## Ausblick\nDie Erzeugerpreise bleiben ein Frühindikator für die wirtschaftliche Entwicklung. Das Statistische Bundesamt veröffentlicht die Daten regelmäßig im Dashboard Konjunktur.",
+    "imagePrompt": "A modern industrial skyline at dusk, with subtle light reflections on glass facades",
+    "wordCount": 135,
+    "sourcePublishedAt": "Tue, 20 Oct 2026 08:00:00 +0200",
+    "createdAt": "2026-10-20T20:59:23.093Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-10-20T20:59:23.893Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote"
+      ]
+    }
+  },
+  {
     "slug": "2026-10-20-eu-kommission-bestaetigt-einigung-ueber-neues-bio-regelwerk",
     "title": "EU-Kommission begrüßt Einigung über neues Bio-Regelwerk",
     "excerpt": "Die Europäische Kommission begrüßt die zwischen Parlament und Rat erzielte Einigung zu Änderungen im Bio-Bereich, die Verbrauchern bessere Kennzeichnung und Unternehmen vereinfachte Regeln bieten.",
