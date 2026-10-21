@@ -349,6 +349,7 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
           messages,
           temperature,
           max_tokens: maxTokens,
+          reasoning_effort: 'low',
         }),
         signal: AbortSignal.timeout(180000),
       });
@@ -417,7 +418,7 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
         },
       ];
       const temperature = feedback ? 0.25 : 0.5;
-      const data = await requestCompletion(messages, temperature, 3000);
+      const data = await requestCompletion(messages, temperature, 4000);
       const finish = data?.choices?.[0]?.finish_reason;
       const content = data?.choices?.[0]?.message?.content;
       if (finish === 'length') throw new Error('model output truncated');
