@@ -1,5 +1,33 @@
 const posts = [
   {
+    "slug": "2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei",
+    "title": "Russland lässt US-Bürger Stephen Hubbard frei",
+    "excerpt": "Der 74-jährige frühere Lehrer Stephen Hubbard ist von Russland freigelassen worden; Trump zufolge war kein Austausch nötig.",
+    "date": "2026-10-21",
+    "category": "Politik",
+    "url": "/posts/2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei.html",
+    "image": "/posts/2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei-hero.jpg",
+    "images": [
+      "/posts/2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei-hero.jpg"
+    ],
+    "source": "BBC",
+    "sourceUrl": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o"
+  },
+  {
+    "slug": "2026-10-21-schwer-kranke-haeftlinge-in-florida-sollen-in-afrikanische-laender-abgeschoben-werden",
+    "title": "Schwer kranke Häftlinge in Florida sollen in afrikanische Länder abgeschoben werden",
+    "excerpt": "Angehörige und Workers Circle berichten, dass schwer kranke Häftlinge in zwei Einwanderungsgefängnissen in Südflorida in unbekannte afrikanische Länder abgeschoben werden sollen.",
+    "date": "2026-10-21",
+    "category": "Politik",
+    "url": "/posts/2026-10-21-schwer-kranke-haeftlinge-in-florida-sollen-in-afrikanische-laender-abgeschoben-werden.html",
+    "image": "/posts/2026-10-21-schwer-kranke-haeftlinge-in-florida-sollen-in-afrikanische-laender-abgeschoben-werden-hero.jpg",
+    "images": [
+      "/posts/2026-10-21-schwer-kranke-haeftlinge-in-florida-sollen-in-afrikanische-laender-abgeschoben-werden-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/us-news/2026/oct/21/ice-detention-illness-deportation-florida"
+  },
+  {
     "slug": "2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda",
     "title": "Nigeria bestätigt Ebola-Fall in Abuja nach Einreise aus Uganda",
     "excerpt": "Nigeria bestätigt einen Ebola-Fall in Abuja; eine aus Uganda eingereiste Frau wurde positiv getestet und zeigte am 7. Oktober Symptome.",
