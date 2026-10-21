@@ -145,7 +145,7 @@ function approve(id, flags) {
   if (!post.title || post.title.length < 15 || post.title.length > maxTitle) fail('Titel fehlt oder hat eine ungültige Länge');
   if (!post.excerpt) fail('Teaser fehlt');
   if (isShort && post.excerpt.length > 180) fail('Teaser ist länger als 180 Zeichen');
-  if (isShort && post.source?.mode !== 'rss') fail('Kurzartikel muss aus einer RSS-Quelle stammen');
+  if (isShort && !['rss', 'full'].includes(post.source?.mode)) fail('Kurzartikel braucht Quellenmodus rss oder full');
   if (post.review?.status !== 'draft') fail('Entwurf ist nicht im Status draft');
   if (!post.source?.url?.startsWith('https://') || !post.source?.termsUrl?.startsWith('https://')) {
     fail('Quellen- oder Nutzungsrechte-URL fehlt oder ist ungültig');

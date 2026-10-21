@@ -69,10 +69,10 @@ export const SOURCES = [
     daily: true,
     rss: true,
     termsUrl: 'https://www.bbc.co.uk/usingthebbc/terms/',
-    license: 'BBC-Nutzungsbedingungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    license: 'BBC-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung',
     licenseUrl: 'https://www.bbc.co.uk/usingthebbc/terms/',
     reuseNote:
-      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+      'Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
   },
   {
     id: 'tagesschau',
@@ -85,10 +85,10 @@ export const SOURCES = [
     daily: true,
     rss: true,
     termsUrl: 'https://www.tagesschau.de/impressum/',
-    license: 'ARD/tagesschau.de-Nutzungsbedingungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    license: 'ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung',
     licenseUrl: 'https://www.tagesschau.de/impressum/',
     reuseNote:
-      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+      'Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
   },
   {
     id: 'dw',
@@ -101,10 +101,10 @@ export const SOURCES = [
     daily: true,
     rss: true,
     termsUrl: 'https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025',
-    license: 'DW-Nutzungsbestimmungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    license: 'DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung',
     licenseUrl: 'https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025',
     reuseNote:
-      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+      'Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
   },
   {
     id: 'guardian',
@@ -117,10 +117,10 @@ export const SOURCES = [
     daily: true,
     rss: true,
     termsUrl: 'https://www.theguardian.com/help/terms-of-service',
-    license: 'Guardian-Nutzungsbedingungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    license: 'Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung',
     licenseUrl: 'https://www.theguardian.com/help/terms-of-service',
     reuseNote:
-      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+      'Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
   },
   {
     id: 'nasa',
@@ -521,25 +521,7 @@ async function extractEc(candidate, source) {
   };
 }
 
-export async function extractArticle(candidate) {
-  const source = SOURCES.find((item) => item.id === candidate.sourceId);
-  if (!source) throw new Error(`Unbekannte Quelle: ${candidate.sourceId}`);
-
-  if (source.extractor === 'ec') return extractEc(candidate, source);
-
-  if (source.rss) {
-    const text = clean(candidate.description || '');
-    if (text.length < 60) throw new Error('RSS-Kurzbeschreibung zu kurz');
-    return {
-      title: cleanArticleTitle(candidate.title, candidate.title),
-      text: text.slice(0, 2000),
-      language: source.language || 'de',
-      publishedAt: candidate.publishedAt || '',
-      sourceId: source.id,
-      url: candidate.url,
-    };
-  }
-
+async function extractFullArticle(candidate, source) {
   const html = await fetchText(candidate.url);
   const dom = new JSDOM(html, { url: candidate.url });
   const parsed = new Readability(dom.window.document, { charThreshold: 400 }).parse();
@@ -563,5 +545,14 @@ export async function extractArticle(candidate) {
     publishedAt: candidate.publishedAt,
     sourceId: source.id,
     url: candidate.url,
+    mode: 'full',
   };
+}
+
+export async function extractArticle(candidate) {
+  const source = SOURCES.find((item) => item.id === candidate.sourceId);
+  if (!source) throw new Error(`Unbekannte Quelle: ${candidate.sourceId}`);
+
+  if (source.extractor === 'ec') return extractEc(candidate, source);
+  return extractFullArticle(candidate, source);
 }

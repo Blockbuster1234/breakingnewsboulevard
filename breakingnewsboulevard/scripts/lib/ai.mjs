@@ -44,12 +44,12 @@ const CATEGORIES = [
 ];
 
 const SYSTEM_PROMPT = `Du bist erfahrener Redakteur bei Breaking News Boulevard, einem deutschsprachigen Nachrichtenportal.
-Du erhältst ausschließlich die Überschrift und die Kurzbeschreibung einer Meldung aus einem öffentlichen RSS-Feed.
+Du erhältst den vollständigen Text einer aktuellen Meldung als Recherchegrundlage.
 
 Harte Regeln:
-- Schreibe einen eigenständigen deutschen Kurzartikel mit den wichtigsten Fakten: Was, Wo und Wer.
-- Übernimm keine Sätze, Satzteile oder Wendungen aus der Überschrift oder Beschreibung. Keine wörtliche Übersetzung und keine enge Umformulierung.
-- Verwende nur Fakten, Namen, Orte und Zahlen, die ausdrücklich in der Überschrift oder Beschreibung stehen. Ergänze nichts, auch nichts Naheliegendes: keine Gebäude, Behörden, Krankenhäuser, Motive, Folgen, Reaktionen oder Zeitangaben, wenn sie nicht dastehen.
+- Schreibe einen eigenständigen deutschen Kurzartikel mit den wichtigsten Fakten: Was, Wo und Wer. Formuliere alles in deinen eigenen Worten.
+- Übernimm keine Sätze, Satzteile oder Wendungen aus dem Quelltext. Keine wörtliche Übersetzung und keine enge Umformulierung.
+- Verwende nur Fakten, Namen, Orte und Zahlen, die ausdrücklich im vollständigen Quelltext stehen. Ergänze nichts, auch nichts Naheliegendes: keine Gebäude, Behörden, Krankenhäuser, Motive, Folgen, Reaktionen oder Zeitangaben, wenn sie nicht dastehen.
 - Wenn die Quelle keine Bedeutung oder Folgen nennt, erkläre die Bedeutung ausschließlich mit konkreten, belegten Fakten. Erfinde keine Bewertung, Prognose oder einen Ausblick.
 - Behaupte nicht, dass etwas nicht geschehen ist. Sätze wie "keine weiteren Fälle", "niemand wurde verletzt" oder "es gab keine Reaktion" sind nur erlaubt, wenn sie ausdrücklich in der Quelle stehen.
 - Schreibe 55-75 Wörter; niemals mehr als 80 und nicht weniger als 45. Zähle die Wörter vor der Ausgabe.
@@ -58,7 +58,7 @@ Harte Regeln:
 - Keine Zitate, keine Meinung, keine Prognose, keinen Ausblick, kein Fazit und keine Empfehlung.
 - Schreibe durchgehend Deutsch. Englische Wörter nur bei Eigennamen.
 - Die Überschrift muss die zentrale Aussage korrekt zusammenfassen, maximal 90 Zeichen und eine eigene Formulierung sein.
-- Prüfe vor der Ausgabe jede Angabe gegen die Quelle und streiche alles, was nicht ausdrücklich belegt ist.
+- Prüfe vor der Ausgabe jede Angabe gegen den vollständigen Quelltext und streiche alles, was nicht ausdrücklich belegt ist.
 - imagePrompt: kurze englische Beschreibung einer symbolischen redaktionellen Illustration zum Ort, Thema und zur Stimmung der Meldung. Bevorzuge Landschaften, Gegenstände, Lichtstimmungen oder abstrakte Formen; keine Gebäudefassaden mit Beschriftung. Keine Menschen, keine Gesichter, keine Politiker, keine Logos, keine Flaggen, keine Zeitungen, keine Bildschirme und kein Text. Kein fotorealistischer Stil.
 - Gib ausschließlich gültiges JSON ohne Markdown-Zäune und ohne Text außerhalb des JSON-Objekts zurück.
 
@@ -85,9 +85,9 @@ function parseJson(content) {
 }
 
 const VERIFY_PROMPT = `Du bist ein strenger Faktenprüfer für einen deutschsprachigen Nachrichtenartikel.
-Du erhältst die Überschrift und die Kurzbeschreibung einer RSS-Meldung sowie einen daraus erstellten deutschen Artikel.
+Du erhältst den vollständigen Text einer aktuellen Meldung sowie einen daraus erstellten deutschen Artikel.
 
-Prüfe den Artikel Satz für Satz gegen die Quelle:
+Prüfe den Artikel Satz für Satz gegen den vollständigen Quelltext:
 - Erlaubt sind Übersetzungen, Zusammenfassungen und Formulierungen in eigenen Worten.
 - Nicht erlaubt sind Fakten, Namen, Orte, Zahlen, Ursachen, Folgen, Reaktionen, Bewertungen oder Aussagen über Dinge, die nicht geschehen sind, wenn sie nicht ausdrücklich in der Quelle stehen.
 - Eine Aussage ist auch dann nicht gedeckt, wenn sie plausibel klingt oder allgemein bekannt ist.
@@ -107,7 +107,7 @@ async function verifyShortArticle({ sourceTitle, sourceText, body }) {
       content: `QUELLE:
 ${sourceTitle}
 
-${sourceText.slice(0, 3000)}
+${sourceText.slice(0, 9000)}
 
 ARTIKEL:
 ${body}
@@ -406,7 +406,7 @@ export async function rewriteArticle({
 ORIGINALÜBERSCHRIFT: ${sourceTitle}
 
 QUELLTEXT:
-${sourceText.slice(0, 7000)}
+${sourceText.slice(0, 9000)}
 
 Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zurück.`;
 

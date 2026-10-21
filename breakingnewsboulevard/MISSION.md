@@ -1,13 +1,13 @@
 # MISSION: Sechs kurze Weltnachrichten pro Tag
 
-Breaking News Boulevard fasst täglich sechs aktuelle Meldungen aus öffentlichen RSS-Feeds in eigenständigen deutschen Kurzartikeln zusammen. Jeder Artikel wird vor Veröffentlichung automatisch gegen Quelle und Format geprüft.
+Breaking News Boulevard fasst täglich sechs aktuelle Meldungen in eigenständigen deutschen Kurzartikeln zusammen. RSS dient nur zur Auswahl der Meldung; die Faktenbasis ist der verlinkte Volltext. Jeder Artikel wird vor Veröffentlichung automatisch gegen Quelle und Format geprüft.
 
 ## Quellen
-- Tägliche RSS-Quellen: BBC, Tagesschau, DW und The Guardian. Kein Al Jazeera.
+- Tägliche Quellen: BBC, Tagesschau, DW und The Guardian. Kein Al Jazeera.
 - Zusätzlich bleiben die geprüften Primärquellen NASA, CISA/US-Regierung, UK Government, Wikinews, Europäische Kommission, Destatis und Bundesgerichtshof in der Registry.
 - UN News, WHO, ESA und Bundesregierung sind wegen unklarer bzw. restriktiver Nutzungsrechte gesperrt; die WHO ist wegen der nicht-kommerziellen Lizenz CC BY-NC-SA 3.0 IGO deaktiviert.
 - Nur Quellen aus der aktiven Registry in `scripts/lib/news.mjs` verwenden.
-- Aus RSS nur Überschrift und Kurzbeschreibung als Recherchegrundlage nutzen; keine Artikel-URL nachladen und keine Originaltexte oder Fotos übernehmen.
+- RSS nur zur Auswahl der Meldung nutzen; den verlinkten Volltext als Recherchegrundlage laden. Keine Sätze, Formulierungen oder Fotos übernehmen; eigene Zusammenfassung.
 - Quellenlink immer auf den tatsächlich verwendeten Artikel, nicht auf eine Übersichtsseite.
 - Nutzungsrechte, Quellenangabe und Änderungshinweis aus der Quellen-Registry übernehmen.
 
@@ -15,7 +15,7 @@ Breaking News Boulevard fasst täglich sechs aktuelle Meldungen aus öffentliche
 - Pro Tag maximal sechs Kurzartikel; `generate:daily` erzeugt bis zu sechs Entwürfe und respektiert das Tageslimit.
 - 45–80 Wörter Fließtext; Ziel sind 55–75 Wörter und niemals mehr als 80.
 - Erster Absatz: genau ein Satz mit Was, Wo und Wer. Zweiter Absatz: ein bis zwei Sätze dazu, warum die Meldung wichtig ist, ausschließlich mit Fakten aus der Quelle.
-- Jeder Satz muss durch die Überschrift oder Kurzbeschreibung gedeckt sein; keine eigene Einordnung, keine Prognosen, kein Ausblick, kein Fazit, keine Empfehlungen.
+- Jeder Satz muss durch den vollständigen Quelltext gedeckt sein; keine eigene Einordnung, keine Prognosen, kein Ausblick, kein Fazit, keine Empfehlungen.
 - Durchgehend Deutsch, eigene Formulierungen, keine wörtliche Übersetzung und keine enge Umformulierung.
 - Nie mehr als sechs aufeinanderfolgende Wörter aus der Quelle übernehmen; keine Zitate.
 - Keine erfundenen Fakten, Namen, Funktionen, Zahlen, Orte oder Zusammenhänge.

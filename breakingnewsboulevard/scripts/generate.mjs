@@ -120,7 +120,7 @@ function sharesStory(a, b) {
 }
 
 function buildCredit(source, article) {
-  if (source.rss) return `Quelle: ${source.name}; RSS-Kurzbeschreibung; eigene Zusammenfassung.`;
+  if (source.rss) return `Quelle: ${source.name}; Volltext als Recherchegrundlage; eigene Zusammenfassung.`;
   if (source.id === 'bgh') {
     const date = formatDate(article.publishedAt);
     return date
@@ -161,7 +161,7 @@ function sourceMeta(source, candidate, article) {
     credit: buildCredit(source, article),
     reuseNote: source.reuseNote,
     language: source.language || 'de',
-    mode: source.rss ? 'rss' : 'full',
+    mode: article.mode || 'full',
     publishedAt: article.publishedAt || candidate.publishedAt || '',
   };
 }

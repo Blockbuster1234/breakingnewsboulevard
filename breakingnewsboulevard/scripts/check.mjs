@@ -54,7 +54,7 @@ if (Array.isArray(posts)) {
     check(Boolean(post.source?.licenseUrl?.startsWith('https://')), `${label}: Lizenz-URL der Quelle fehlt`);
     check(Boolean(post.source?.credit), `${label}: Quellenangabe fehlt`);
     if (isShort) {
-      check(post.source?.mode === 'rss', `${label}: Kurzartikel ohne RSS-Quellenmodus`);
+      check(['rss', 'full'].includes(post.source?.mode), `${label}: Kurzartikel ohne Quellenmodus`);
       check(!post.source?.publishedAt || !Number.isNaN(new Date(post.source.publishedAt).getTime()), `${label}: ungültiges Quellen-Datum`);
     }
 
