@@ -9,7 +9,9 @@ import {
   normalizeForMatch,
 } from './text.mjs';
 
-const TEXT_ENDPOINT = 'https://text.pollinations.ai/openai';
+const POLLINATIONS_TEXT_ENDPOINT = 'https://gen.pollinations.ai/v1/chat/completions';
+const POLLINATIONS_TEXT_MODEL =
+  process.env.POLLINATIONS_TEXT_MODEL || 'deepseek/deepseek-v4.1-flash';
 const OMNI_TEXT_ENDPOINT =
   (process.env.OMNI_BASE_URL || 'http://127.0.0.1:20128').replace(/\/$/, '') +
   '/v1/chat/completions';
@@ -113,18 +115,41 @@ Prüfe jetzt den Artikel und antworte nur mit dem JSON-Objekt.`,
   return unsupported.slice(0, 6);
 }
 
+function splitSentences(text) {
+  if (typeof Intl.Segmenter === 'function') {
+    return [...new Intl.Segmenter('de', { granularity: 'sentence' }).segment(text)]
+      .map((entry) => entry.segment.trim())
+      .filter(Boolean);
+  }
+  return (text.match(/[^.!?]+[.!?]+/g) || [text]).map((sentence) => sentence.trim()).filter(Boolean);
+}
+
+function normalizeShortBody(value) {
+  const paragraphs = String(value || '')
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+  if (!paragraphs.length) return '';
+
+  const first = splitSentences(paragraphs[0]);
+  if (!first.length) return paragraphs.join('\n\n');
+  return [first[0], [...first.slice(1), ...paragraphs.slice(1)].join(' ').trim()]
+    .filter(Boolean)
+    .join('\n\n');
+}
+
 function sanitize(result) {
   const title = String(result.title || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   const excerpt = String(result.excerpt || '')
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-  const body = String(result.body || '')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\r/g, '')
-    .replace(/[ \t]+\n/g, '\n')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
+  const body = normalizeShortBody(
+    String(result.body || '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\r/g, '')
+      .trim(),
+  );
   const category = CATEGORIES.includes(result.category) ? result.category : 'Welt';
   const imagePrompt = String(result.imagePrompt || '')
     .replace(/<[^>]+>/g, ' ')
@@ -296,37 +321,55 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
     }
   }
 
-  for (let rateWait = 0; rateWait <= 3; rateWait += 1) {
-    const res = await fetch(TEXT_ENDPOINT, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        model: 'openai',
-        messages,
-        temperature,
-        max_tokens: maxTokens,
-        reasoning_effort: 'low',
-      }),
-      signal: AbortSignal.timeout(180000),
-    });
-    if (res.status === 402 || res.status === 429) {
-      if (rateWait === 3) throw new Error(`text API HTTP ${res.status} (rate limit)`);
-      const wait = 60000 * (rateWait + 1);
-      console.warn(`[text] Rate-Limit erreicht, warte ${Math.round(wait / 1000)}s`);
-      await sleep(wait);
-      continue;
+  const apiKey = String(process.env.POLLINATIONS_API_KEY || '').trim();
+  if (!apiKey) throw new Error('POLLINATIONS_API_KEY fehlt; Text kann nicht erzeugt werden');
+
+  let lastError;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    let res;
+    try {
+      res = await fetch(POLLINATIONS_TEXT_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          model: POLLINATIONS_TEXT_MODEL,
+          messages,
+          temperature,
+          max_tokens: maxTokens,
+        }),
+        signal: AbortSignal.timeout(180000),
+      });
+    } catch (error) {
+      lastError = error;
+      if (attempt < 2) {
+        await sleep(5000 * (attempt + 1));
+        continue;
+      }
+      throw lastError;
     }
-    if (res.status >= 500) {
-      if (rateWait === 3) throw new Error(`text API HTTP ${res.status}`);
-      const wait = 15000 * (rateWait + 1);
-      console.warn(`[text] Serverfehler ${res.status}, warte ${Math.round(wait / 1000)}s`);
-      await sleep(wait);
-      continue;
+
+    if (res.status === 401) throw new Error('Pollinations-Key fehlt oder ist ungültig');
+    if (res.status === 402) throw new Error('Pollinations-Guthaben ist aufgebraucht');
+    if (res.status === 429 || res.status >= 500) {
+      lastError = new Error(`text API HTTP ${res.status}`);
+      if (attempt < 2) {
+        const retryAfter = Number(res.headers.get('retry-after'));
+        const wait = Number.isFinite(retryAfter) && retryAfter > 0
+          ? Math.min(retryAfter * 1000, 60000)
+          : 10000 * (attempt + 1);
+        console.warn(`[text] HTTP ${res.status}, warte ${Math.round(wait / 1000)}s`);
+        await sleep(wait);
+        continue;
+      }
+      throw lastError;
     }
     if (!res.ok) throw new Error(`text API HTTP ${res.status}`);
     return await res.json();
   }
-  throw new Error('keine Textantwort erhalten');
+  throw lastError || new Error('keine Textantwort erhalten');
 }
 
 export async function rewriteArticle({
