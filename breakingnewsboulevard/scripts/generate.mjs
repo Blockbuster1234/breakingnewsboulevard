@@ -8,7 +8,7 @@ import {
   isSimilarTitle,
   isSourceEnabled,
 } from './lib/news.mjs';
-import { rewriteArticle, generateImage } from './lib/ai.mjs';
+import { rewriteArticle, generateImage, pollinationsKey } from './lib/ai.mjs';
 import { rebuildSite, slugify } from './lib/render.mjs';
 import { sleep } from './lib/http.mjs';
 
@@ -186,9 +186,16 @@ async function main() {
     return;
   }
 
-  if (!String(process.env.POLLINATIONS_API_KEY || '').trim()) {
+  const apiKey = pollinationsKey();
+  if (!apiKey) {
     throw new Error('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
   }
+  const keyType = apiKey.startsWith('sk_')
+    ? 'Secret Key'
+    : apiKey.startsWith('pk_')
+      ? 'Publishable/App Key'
+      : 'unbekannter Typ';
+  console.log(`[key] ${keyType} (${apiKey.length} Zeichen)`);
 
   const activeSources = SOURCES.filter((source) => isSourceEnabled(source) && source.daily);
   console.log(

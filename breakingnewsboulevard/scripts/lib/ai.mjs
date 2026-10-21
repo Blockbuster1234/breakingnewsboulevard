@@ -20,6 +20,14 @@ const OMNI_API_KEY = process.env.OMNI_API_KEY || '';
 const IMAGE_ENDPOINT = 'https://gen.pollinations.ai/image';
 const IMAGE_MODEL = process.env.POLLINATIONS_IMAGE_MODEL || 'black-forest-labs/flux.1-schnell';
 
+export function pollinationsKey() {
+  return String(process.env.POLLINATIONS_API_KEY || '')
+    .trim()
+    .replace(/^["']|["']$/g, '')
+    .replace(/^Bearer\s+/i, '')
+    .replace(/\s+/g, '');
+}
+
 const CATEGORIES = [
   'Welt',
   'Politik',
@@ -321,7 +329,7 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
     }
   }
 
-  const apiKey = String(process.env.POLLINATIONS_API_KEY || '').trim();
+  const apiKey = pollinationsKey();
   if (!apiKey) throw new Error('POLLINATIONS_API_KEY fehlt; Text kann nicht erzeugt werden');
 
   let lastError;
@@ -351,7 +359,7 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
       throw lastError;
     }
 
-    if (res.status === 401) throw new Error('Pollinations-Key fehlt oder ist ungültig');
+    if (res.status === 401) throw new Error('Pollinations-Key ungültig; ein Secret Key (sk_...) ist nötig');
     if (res.status === 402) throw new Error('Pollinations-Guthaben ist aufgebraucht');
     if (res.status === 429 || res.status >= 500) {
       lastError = new Error(`text API HTTP ${res.status}`);
@@ -526,7 +534,7 @@ async function pollinationsImage(prompt, seed, apiKey) {
       throw lastError;
     }
 
-    if (res.status === 401) throw new Error('Pollinations-Key fehlt oder ist ungültig');
+    if (res.status === 401) throw new Error('Pollinations-Key ungültig; ein Secret Key (sk_...) ist nötig');
     if (res.status === 402) throw new Error('Pollinations-Guthaben ist aufgebraucht');
     if (res.status === 429) {
       lastError = new Error('Pollinations-Rate-Limit erreicht');
@@ -576,7 +584,7 @@ function safeImagePrompt(prompt, category = 'Welt') {
 }
 
 export async function generateImage(prompt, seed = Math.floor(Math.random() * 1_000_000_000), category = 'Welt') {
-  const apiKey = String(process.env.POLLINATIONS_API_KEY || '').trim();
+  const apiKey = pollinationsKey();
   if (!apiKey) {
     throw new Error('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
   }
