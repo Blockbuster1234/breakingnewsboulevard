@@ -28,20 +28,6 @@ const posts = [
     "sourceUrl": "https://www.theguardian.com/us-news/2026/oct/21/ice-detention-illness-deportation-florida"
   },
   {
-    "slug": "2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda",
-    "title": "Nigeria bestätigt Ebola-Fall in Abuja nach Einreise aus Uganda",
-    "excerpt": "Nigeria bestätigt einen Ebola-Fall in Abuja; eine aus Uganda eingereiste Frau wurde positiv getestet und zeigte am 7. Oktober Symptome.",
-    "date": "2026-10-21",
-    "category": "Gesundheit",
-    "url": "/posts/2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda.html",
-    "image": "/posts/2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda-hero.jpg",
-    "images": [
-      "/posts/2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda-hero.jpg"
-    ],
-    "source": "The Guardian",
-    "sourceUrl": "https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest"
-  },
-  {
     "slug": "2026-10-21-nasa-startet-sr-1-freedom-erster-fissionbetriebener-weltraumfahrzeug",
     "title": "NASA startet SR‑1 Freedom: erster fissionbetriebener Weltraumfahrzeug",
     "excerpt": "NASA kündigt Fortschritte beim Kernkraftmodul des SR‑1 Freedom an, das 2028 mit nuklearer Elektrizität zum Mars fliegen soll.",

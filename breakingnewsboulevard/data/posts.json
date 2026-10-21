@@ -108,60 +108,6 @@
     }
   },
   {
-    "slug": "2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda",
-    "title": "Nigeria bestätigt Ebola-Fall in Abuja nach Einreise aus Uganda",
-    "excerpt": "Nigeria bestätigt einen Ebola-Fall in Abuja; eine aus Uganda eingereiste Frau wurde positiv getestet und zeigte am 7. Oktober Symptome.",
-    "date": "2026-10-21",
-    "category": "Gesundheit",
-    "url": "/posts/2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda.html",
-    "image": "/posts/2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda-hero.jpg",
-    "images": [
-      "/posts/2026-10-21-nigeria-bestaetigt-ebola-fall-in-abuja-nach-einreise-aus-uganda-hero.jpg"
-    ],
-    "format": "short",
-    "source": {
-      "name": "The Guardian",
-      "title": "Nigeria confirms Ebola case as outbreak spreads into western Africa",
-      "url": "https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest",
-      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
-      "license": "Guardian-Nutzungsbedingungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung",
-      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
-      "credit": "Quelle: The Guardian; RSS-Kurzbeschreibung; eigene Zusammenfassung.",
-      "reuseNote": "Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
-      "language": "en",
-      "mode": "rss",
-      "publishedAt": "Wed, 21 Oct 2026 00:14:55 GMT"
-    },
-    "body": "Nigeria hat nach Angaben des Gesundheitsministeriums einen Ebola-Fall in der Hauptstadt Abuja bestätigt; eine aus Uganda eingereiste Frau wurde positiv getestet.\n\nDie Frau zeigte am 7. Oktober Symptome und wurde vier Tage später in ein Krankenhaus in Abuja aufgenommen, wo sie später die Ebola-Diagnose erhielt. Der Ausbruch breitet sich nach Westafrika aus; wann die Frau in Nigeria ankam, ist nicht bekannt.",
-    "imagePrompt": "Abstract editorial illustration of a West African savanna at dawn, a single glowing virus-like sphere floating above dry grass, muted warm tones, cautious mood, non-photorealistic, no text.",
-    "imageCredit": "Pollinations / GPT Image 2",
-    "imageLicense": "KI-generiert mit Pollinations (GPT Image 2)",
-    "imageLicenseUrl": "",
-    "imageSourceUrl": "",
-    "imageType": "illustration",
-    "imageProvider": "Pollinations",
-    "imageAlt": "KI-generierte Illustration: Nigeria bestätigt Ebola-Fall in Abuja nach Einreise aus Uganda",
-    "wordCount": 61,
-    "sourcePublishedAt": "Wed, 21 Oct 2026 00:14:55 GMT",
-    "createdAt": "2026-10-21T13:20:19.840Z",
-    "review": {
-      "status": "approved",
-      "reviewer": "Auto-Redaktion",
-      "reviewedAt": "2026-10-21T13:20:20.290Z",
-      "checks": [
-        "names",
-        "roles",
-        "numbers",
-        "facts",
-        "timeliness",
-        "source",
-        "quote",
-        "grounding",
-        "structure"
-      ]
-    }
-  },
-  {
     "slug": "2026-10-21-nasa-startet-sr-1-freedom-erster-fissionbetriebener-weltraumfahrzeug",
     "title": "NASA startet SR‑1 Freedom: erster fissionbetriebener Weltraumfahrzeug",
     "excerpt": "NASA kündigt Fortschritte beim Kernkraftmodul des SR‑1 Freedom an, das 2028 mit nuklearer Elektrizität zum Mars fliegen soll.",
