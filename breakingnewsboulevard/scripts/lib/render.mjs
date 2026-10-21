@@ -1,11 +1,5 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {
-  BRIEFS_PAGE,
-  briefSourceLabel,
-  loadBriefsData,
-} from './briefs.mjs';
-
 export const SITE_URL = 'https://www.breakingnewsboulevard.com';
 const ROOT = process.cwd();
 
@@ -75,94 +69,6 @@ export function bodyToHtml(body) {
     .join('\n        ');
 }
 
-function displayDateTime(value) {
-  if (!value) return '';
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return '';
-  return date.toLocaleString('de-DE', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    timeZone: 'Europe/Berlin',
-  });
-}
-
-function briefSourceHtml(item) {
-  const label = briefSourceLabel(item);
-  return `<span class="brief-source">Quelle: <a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a></span>`;
-}
-
-function briefCardHtml(item) {
-  return `<article class="brief-card">
-        <h3>${escapeHtml(item.headline)}</h3>
-        <p>${escapeHtml(item.text)}</p>
-        <div class="brief-meta">${briefSourceHtml(item)}</div>
-      </article>`;
-}
-
-function briefsHomeHtml(data) {
-  const latest = data.days.find((day) => day.items.length);
-  const updated = latest ? `Stand: ${escapeHtml(humanDate(latest.date))}` : 'Noch keine Meldungen';
-
-  if (!latest) {
-    return `<div class="section-head">
-        <h2>Weltnachrichten kurz</h2>
-        <span>${updated}</span>
-      </div>
-      <p class="brief-empty">Die erste Ausgabe erscheint mit dem nächsten Redaktionslauf.</p>`;
-  }
-
-  return `<div class="section-head">
-        <h2>Weltnachrichten kurz</h2>
-        <span>${updated} · <a href="/${BRIEFS_PAGE}">Alle Meldungen</a></span>
-      </div>
-      <div class="brief-grid">
-        ${latest.items.slice(0, 10).map(briefCardHtml).join('\n        ')}
-      </div>
-      <p class="brief-note">KI-zusammengefasste Kurzmeldungen auf Basis öffentlicher RSS-Feeds. Die Quellen sind verlinkt; es werden keine Originaltexte oder Fotos der Nachrichtenseiten übernommen.</p>`;
-}
-
-function briefsPageList(data) {
-  if (!data.days.length) {
-    return `<p class="brief-empty">Die erste Ausgabe erscheint mit dem nächsten Redaktionslauf.</p>`;
-  }
-
-  return data.days
-    .map((day) => {
-      const items = day.items
-        .map((item) => `<article class="brief-card">
-          <h3>${escapeHtml(item.headline)}</h3>
-          <p>${escapeHtml(item.text)}</p>
-          <div class="brief-meta">${briefSourceHtml(item)}</div>
-        </article>`)
-        .join('\n        ');
-      return `<section class="brief-day">
-        <div class="brief-day-head">
-          <h2>${escapeHtml(humanDate(day.date))}</h2>
-          <span>${day.items.length} ${day.items.length === 1 ? 'Meldung' : 'Meldungen'}</span>
-        </div>
-        <div class="brief-list">
-        ${items}
-        </div>
-      </section>`;
-    })
-    .join('\n');
-}
-
-function writeBriefsPage(data) {
-  const template = fs.readFileSync(path.join(ROOT, 'templates', 'briefs.html'), 'utf8');
-  const today = new Date().toISOString().slice(0, 10);
-  const html = fill(template, {
-    DATE_HUMAN: escapeHtml(humanDate(today)),
-    YEAR: String(new Date().getUTCFullYear()),
-    UPDATED: escapeHtml(displayDateTime(data.updatedAt) || 'noch nicht aktualisiert'),
-    BRIEFS_LIST: briefsPageList(data),
-  });
-  fs.writeFileSync(path.join(ROOT, BRIEFS_PAGE), html);
-}
-
 function fill(template, values) {
   let output = template;
   for (const [key, value] of Object.entries(values)) {
@@ -215,15 +121,15 @@ export function writePostPage(post) {
     ? `<a href="${escapeHtml(post.imageSourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.imageProvider || 'Bildquelle')}</a>`
     : '';
   const imageCaption = [
-    `${post.imageType === 'photo' ? 'Foto' : 'Illustration'}: ${escapeHtml(post.imageCredit || 'Breaking News Boulevard')}`,
-    imageLicenseHtml ? `Lizenz: ${imageLicenseHtml}` : '',
+    `${post.imageType === 'photo' ? 'Foto' : 'KI-generierte Illustration'}: ${escapeHtml(post.imageCredit || 'Breaking News Boulevard')}`,
+    imageLicenseHtml ? `${post.imageType === 'photo' ? 'Lizenz: ' : ''}${imageLicenseHtml}` : '',
     imageSourceHtml,
   ]
     .filter(Boolean)
     .join(' · ');
   const imageKind = post.imageType === 'photo'
     ? 'ein frei lizenziertes Foto'
-    : 'eine redaktionelle Illustration';
+    : 'eine KI-generierte Illustration, kein Beweisfoto des Ereignisses';
   const correctionNote = post.correctionNote
     ? `<p class="correction-note">${escapeHtml(post.correctionNote)}</p>`
     : '';
@@ -258,13 +164,12 @@ export function writePostPage(post) {
   fs.writeFileSync(path.join(ROOT, 'posts', `${post.slug}.html`), html);
 }
 
-export function writeIndex(posts, briefsData = loadBriefsData()) {
+export function writeIndex(posts) {
   const template = fs.readFileSync(path.join(ROOT, 'templates', 'index.html'), 'utf8');
   const today = new Date().toISOString().slice(0, 10);
   const html = fill(template, {
     DATE_HUMAN: escapeHtml(humanDate(today)),
     YEAR: String(new Date().getUTCFullYear()),
-    BRIEFS_HOME: briefsHomeHtml(briefsData),
   });
   fs.writeFileSync(path.join(ROOT, 'index.html'), html);
 }
@@ -287,11 +192,9 @@ export function writePostsJs(posts) {
   fs.writeFileSync(path.join(ROOT, 'js', 'posts.js'), js);
 }
 
-export function writeSitemap(posts, briefsData = loadBriefsData()) {
-  const briefsLastmod = briefsData.days[0]?.date || new Date().toISOString().slice(0, 10);
+export function writeSitemap(posts) {
   const urls = [
     `<url><loc>${SITE_URL}/</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod><changefreq>hourly</changefreq><priority>1.0</priority></url>`,
-    `<url><loc>${SITE_URL}/${BRIEFS_PAGE}</loc><lastmod>${briefsLastmod}</lastmod><changefreq>hourly</changefreq><priority>0.7</priority></url>`,
     ...posts.map(
       (post) =>
         `<url><loc>${SITE_URL}${post.url}</loc><lastmod>${post.date}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`,
@@ -305,9 +208,8 @@ export function writeSitemap(posts, briefsData = loadBriefsData()) {
   );
 }
 
-export function rebuildSite(posts, briefsData = loadBriefsData()) {
-  writeIndex(posts, briefsData);
+export function rebuildSite(posts) {
+  writeIndex(posts);
   writePostsJs(posts);
-  writeBriefsPage(briefsData);
-  writeSitemap(posts, briefsData);
+  writeSitemap(posts);
 }

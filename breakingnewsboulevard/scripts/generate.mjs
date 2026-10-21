@@ -9,7 +9,6 @@ import {
   isSourceEnabled,
 } from './lib/news.mjs';
 import { rewriteArticle, generateImage } from './lib/ai.mjs';
-import { findArticleImage } from './lib/images.mjs';
 import { rebuildSite, slugify } from './lib/render.mjs';
 import { sleep } from './lib/http.mjs';
 
@@ -17,6 +16,13 @@ const ROOT = process.cwd();
 const DATA_FILE = path.join(ROOT, 'data', 'posts.json');
 const POSTS_DIR = path.join(ROOT, 'posts');
 const REVIEW_DIR = path.join(ROOT, 'review', 'queue');
+const MAX_DAILY = 6;
+
+const NAME_STOPWORDS = new Set(
+  `aber alle allem allen aller alles als also am an auch auf aus bei beim bin bis da damit dann das dass dem den denn der des die dies diese diesem diesen dieser dieses doch dort du durch ein eine einem einen einer eines er es fuer gegen gewesen gibt hat hatte haben hier hin hinter ich im in ist ja jede jeder jedes kann kein keine koennen man mehr mit muss nach nicht nichts noch nun nur ob oder ohne sehr sein seine sich sie sind so ueber um und uns unser unter viel vom von vor war waren was weg weil weiter welche wenn werden wie wieder wir wird wo zu zum zur zwar zwischen fuer gegenueber koennen ueber die der das ein eine the and with from that this those these after before about into their there where while according over under more than have has been were was will news update updates live latest report reports first last also just only very much many some such other another`.split(
+    /\s+/,
+  ),
+);
 
 function argValue(name, fallback) {
   const index = process.argv.indexOf(name);
@@ -90,7 +96,26 @@ function formatDate(value) {
   });
 }
 
+function namedEntities(text) {
+  const matches = String(text || '').match(/\b[\p{Lu}][\p{L}'-]{2,}\b/gu) || [];
+  return new Set(
+    matches
+      .map((word) => word.toLowerCase())
+      .filter((word) => word.length >= 4 && !NAME_STOPWORDS.has(word)),
+  );
+}
+
+function sharesStory(a, b) {
+  const left = namedEntities(a);
+  const right = namedEntities(b);
+  if (!left.size || !right.size) return false;
+  let common = 0;
+  for (const word of left) if (right.has(word)) common += 1;
+  return common >= 2;
+}
+
 function buildCredit(source, article) {
+  if (source.rss) return `Quelle: ${source.name}; RSS-Kurzbeschreibung; eigene Zusammenfassung.`;
   if (source.id === 'bgh') {
     const date = formatDate(article.publishedAt);
     return date
@@ -131,6 +156,7 @@ function sourceMeta(source, candidate, article) {
     credit: buildCredit(source, article),
     reuseNote: source.reuseNote,
     language: source.language || 'de',
+    mode: source.rss ? 'rss' : 'full',
     publishedAt: article.publishedAt || candidate.publishedAt || '',
   };
 }
@@ -139,28 +165,36 @@ function saveDraft(post, article, image) {
   const dir = path.join(REVIEW_DIR, post.slug);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'post.json'), `${JSON.stringify(post, null, 2)}\n`);
-  fs.writeFileSync(path.join(dir, 'source.txt'), `${article.text}\n`);
+  fs.writeFileSync(path.join(dir, 'source.txt'), `${article.title}\n\n${article.text}\n`);
   fs.writeFileSync(path.join(dir, `hero.${image.ext}`), image.buffer);
   return dir;
 }
 
 async function main() {
-  const count = Math.max(0, Number(argValue('--count', '2')) || 0);
+  const requested = Math.max(0, Number(argValue('--count', String(MAX_DAILY))) || 0);
   const posts = loadPosts();
   const drafts = loadDrafts();
+  const date = new Date().toISOString().slice(0, 10);
+  const alreadyToday = [...posts, ...drafts].filter(
+    (post) => post.date === date && post.format === 'short',
+  ).length;
+  const count = Math.min(requested, Math.max(0, MAX_DAILY - alreadyToday));
 
   if (count === 0) {
     rebuildSite(posts);
-    console.log(`[site] rebuilt with ${posts.length} approved posts (no new articles requested)`);
+    console.log(`[site] rebuilt with ${posts.length} approved posts (daily target reached or none requested)`);
     return;
   }
 
-  const activeSources = SOURCES.filter(isSourceEnabled);
+  if (!String(process.env.POLLINATIONS_API_KEY || '').trim()) {
+    throw new Error('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
+  }
+
+  const activeSources = SOURCES.filter((source) => isSourceEnabled(source) && source.daily);
   console.log(
     `[sources] ${activeSources.map((source) => source.name).join(', ') || 'keine'}; ${BLOCKED_SOURCES.length} Quellen gesperrt`,
   );
 
-  const date = new Date().toISOString().slice(0, 10);
   const usedUrls = new Set(
     [...posts, ...drafts].map((post) => normalizeUrl(post.source?.url || '')).filter(Boolean),
   );
@@ -170,17 +204,22 @@ async function main() {
     `[start] ${date} — approved: ${posts.length}, drafts: ${drafts.length}, target: ${count}`,
   );
 
-  const candidates = await collectCandidates(16);
+  const candidates = await collectCandidates(32, { dailyOnly: true });
   console.log(
     `[news] ${candidates.length} candidates from ${new Set(candidates.map((c) => c.sourceId)).size} sources`,
   );
 
   let created = 0;
+  const acceptedStories = [];
 
   for (const candidate of candidates) {
     if (created >= count) break;
     if (usedUrls.has(normalizeUrl(candidate.url))) continue;
     if (titles.some((title) => isSimilarTitle(title, candidate.title))) continue;
+    if (acceptedStories.some((story) => sharesStory(story, `${candidate.title} ${candidate.description || ''}`))) {
+      console.log(`[skip] duplicate story across sources: ${candidate.title}`);
+      continue;
+    }
 
     try {
       console.log(`[fetch] ${candidate.source}: ${candidate.title}`);
@@ -192,7 +231,7 @@ async function main() {
       }
 
       const source = SOURCES.find((item) => item.id === candidate.sourceId);
-      console.log(`[write] AI rewrite (${article.text.length} chars source)`);
+      console.log(`[write] AI short article (${article.text.length} chars source)`);
       const rewritten = await rewriteArticle({
         sourceName: source.name,
         sourceTitle: article.title,
@@ -205,37 +244,18 @@ async function main() {
         continue;
       }
 
-      let image;
-      let imageMeta;
-      const photo = await findArticleImage({
-        title: article.title,
-        sourceName: source.name,
-      });
-      if (photo) {
-        image = { buffer: photo.buffer, ext: photo.ext };
-        imageMeta = {
-          imageCredit: photo.credit,
-          imageLicense: photo.license,
-          imageLicenseUrl: photo.licenseUrl,
-          imageSourceUrl: photo.sourceUrl,
-          imageType: 'photo',
-          imageProvider: photo.provider,
-          imageAlt: photo.alt || article.title,
-        };
-        console.log(`[image] freies Foto: ${photo.provider} / ${photo.license}`);
-      } else {
-        console.log(`[image] kein freies Foto; Illustration: ${rewritten.imagePrompt}`);
-        image = await generateImage(rewritten.imagePrompt);
-        imageMeta = {
-          imageCredit: 'Breaking News Boulevard',
-          imageLicense: 'Eigene redaktionelle Illustration',
-          imageLicenseUrl: '',
-          imageSourceUrl: '',
-          imageType: 'illustration',
-          imageProvider: 'Jimp',
-          imageAlt: rewritten.title,
-        };
-      }
+      console.log(`[image] KI-Illustration: ${rewritten.imagePrompt}`);
+      const image = await generateImage(rewritten.imagePrompt, undefined, rewritten.category);
+      const imageMeta = {
+        imageCredit: 'Pollinations / FLUX.1 schnell',
+        imageLicense: 'KI-generiert mit Pollinations (FLUX.1 schnell)',
+        imageLicenseUrl: '',
+        imageSourceUrl: '',
+        imageType: 'illustration',
+        imageProvider: 'Pollinations',
+        imageAlt: `KI-generierte Illustration: ${rewritten.title}`,
+      };
+      console.log(`[image] Pollinations / FLUX.1 schnell (${image.ext})`);
 
       const slug = uniqueSlug(rewritten.title, date, [...posts, ...drafts]);
       const post = {
@@ -248,6 +268,7 @@ async function main() {
         image: '',
         images: [],
         heroFile: `hero.${image.ext}`,
+        format: 'short',
         source: sourceMeta(source, candidate, article),
         body: rewritten.body,
         imagePrompt: rewritten.imagePrompt,
@@ -261,15 +282,16 @@ async function main() {
       const dir = saveDraft(post, article, image);
       drafts.push(post);
       titles.push(post.title);
+      acceptedStories.push(`${candidate.title} ${candidate.description || ''}`);
       usedUrls.add(normalizeUrl(candidate.url));
       created += 1;
 
       console.log(`[draft] ${post.title} -> ${path.relative(ROOT, dir)}`);
 
-      if (created < count) await sleep(30000);
+      if (created < count) await sleep(8000);
     } catch (error) {
       console.warn(`[skip] ${candidate.url} — ${error.message}`);
-      if (created < count) await sleep(10000);
+      if (created < count) await sleep(5000);
     }
   }
 

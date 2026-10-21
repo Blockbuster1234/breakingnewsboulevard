@@ -43,5 +43,5 @@ if (failures) {
   console.error(`[sources] ${failures} aktive Quelle(n) fehlgeschlagen`);
   process.exitCode = 1;
 } else {
-  console.log('[sources] alle aktiven Quellen liefern vollständige Artikel');
+  console.log('[sources] alle aktiven Quellen liefern Inhalte');
 }

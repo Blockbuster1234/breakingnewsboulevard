@@ -8,6 +8,18 @@ const EXCLUDE =
 const SOFT_NEWS =
   /\b(harry|meghan|sussex|royals?|kardashian|celebrity|celebrities|actor|actress|singer|rapper|movie|film|tv show|reality tv|netflix|oscars?|grammys?|eurovision|fashion|beauty pageant|wedding|divorce|dating|football|soccer|premier league|champions league|olympic|tennis|golf|cricket|formula 1|boxing|ufc)\b/i;
 
+const TRACKING_PARAMS = [
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_term',
+  'utm_content',
+  'at_medium',
+  'at_campaign',
+  'maca',
+  'traffic_source',
+];
+
 async function collectWikinews(source) {
   const params = new URLSearchParams({
     action: 'query',
@@ -46,6 +58,70 @@ async function collectWikinews(source) {
 }
 
 export const SOURCES = [
+  {
+    id: 'bbc',
+    name: 'BBC',
+    category: 'Welt',
+    homepage: 'https://www.bbc.co.uk/news/world',
+    feed: 'https://feeds.bbci.co.uk/news/world/rss.xml',
+    include: /^https:\/\/www\.bbc\.(?:co\.uk|com)\/news\//i,
+    language: 'en',
+    daily: true,
+    rss: true,
+    termsUrl: 'https://www.bbc.co.uk/usingthebbc/terms/',
+    license: 'BBC-Nutzungsbedingungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    licenseUrl: 'https://www.bbc.co.uk/usingthebbc/terms/',
+    reuseNote:
+      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+  },
+  {
+    id: 'tagesschau',
+    name: 'Tagesschau',
+    category: 'Welt',
+    homepage: 'https://www.tagesschau.de/',
+    feed: 'https://www.tagesschau.de/xml/rss2/',
+    include: /^https:\/\/www\.tagesschau\.de\//i,
+    language: 'de',
+    daily: true,
+    rss: true,
+    termsUrl: 'https://www.tagesschau.de/impressum/',
+    license: 'ARD/tagesschau.de-Nutzungsbedingungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    licenseUrl: 'https://www.tagesschau.de/impressum/',
+    reuseNote:
+      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+  },
+  {
+    id: 'dw',
+    name: 'DW',
+    category: 'Welt',
+    homepage: 'https://www.dw.com/de/',
+    feed: 'https://rss.dw.com/rdf/rss-de-all',
+    include: /^https:\/\/www\.dw\.com\/de\//i,
+    language: 'de',
+    daily: true,
+    rss: true,
+    termsUrl: 'https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025',
+    license: 'DW-Nutzungsbestimmungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    licenseUrl: 'https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025',
+    reuseNote:
+      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+  },
+  {
+    id: 'guardian',
+    name: 'The Guardian',
+    category: 'Welt',
+    homepage: 'https://www.theguardian.com/world',
+    feed: 'https://www.theguardian.com/world/rss',
+    include: /^https:\/\/www\.theguardian\.com\/(?:world|us-news|australia-news|global-development|environment|society|science|technology)\//i,
+    language: 'en',
+    daily: true,
+    rss: true,
+    termsUrl: 'https://www.theguardian.com/help/terms-of-service',
+    license: 'Guardian-Nutzungsbedingungen; nur RSS-Titel und -Kurzbeschreibung, eigene Zusammenfassung',
+    licenseUrl: 'https://www.theguardian.com/help/terms-of-service',
+    reuseNote:
+      'Nur Überschrift und Kurzbeschreibung aus dem öffentlichen RSS-Feed als Recherchegrundlage verwenden. Keine Originaltexte oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
+  },
   {
     id: 'nasa',
     name: 'NASA',
@@ -220,6 +296,32 @@ function clean(text) {
   return (text || '').replace(/\s+/g, ' ').trim();
 }
 
+function normalizeUrl(value) {
+  try {
+    const url = new URL(value);
+    url.hash = '';
+    for (const param of TRACKING_PARAMS) url.searchParams.delete(param);
+    return url.toString();
+  } catch {
+    return value;
+  }
+}
+
+function stripFeedMarkup(value) {
+  const raw = String(value || '');
+  if (!raw) return '';
+  const dom = new JSDOM(`<body>${raw}</body>`);
+  return clean(dom.window.document.body.textContent).slice(0, 1200);
+}
+
+function isRecent(value) {
+  if (!value) return true;
+  const time = Date.parse(value);
+  if (!Number.isFinite(time)) return true;
+  const age = Date.now() - time;
+  return age <= 72 * 60 * 60 * 1000 && age >= -6 * 60 * 60 * 1000;
+}
+
 function cleanArticleTitle(title, fallback) {
   const cleaned = clean(title)
     .replace(
@@ -286,8 +388,8 @@ function collectFeed(xml, source) {
     const rawLink = clean(linkNode?.textContent) || clean(linkNode?.getAttribute('href'));
     if (!rawLink) continue;
 
-    let url = rawLink.split('#')[0];
-    if (source.articleUrl) url = source.articleUrl(url);
+    let url = normalizeUrl(rawLink.split('#')[0]);
+    if (source.articleUrl) url = normalizeUrl(source.articleUrl(url));
     if (source.include && !source.include.test(url)) continue;
     if (EXCLUDE.test(url)) continue;
     if (seen.has(url)) continue;
@@ -296,16 +398,26 @@ function collectFeed(xml, source) {
     if (SOFT_NEWS.test(title)) continue;
     if (SOFT_NEWS.test(url)) continue;
 
+    const description = stripFeedMarkup(
+      node.querySelector('description')?.textContent ||
+        node.querySelector('summary')?.textContent ||
+        node.querySelector('encoded')?.textContent,
+    );
+    if (source.rss && description.length < 60) continue;
+
     const publishedAt = clean(
       node.querySelector('pubDate')?.textContent ||
         node.querySelector('published')?.textContent ||
-        node.querySelector('updated')?.textContent,
+        node.querySelector('updated')?.textContent ||
+        node.querySelector('date')?.textContent,
     );
+    if (source.rss && !isRecent(publishedAt)) continue;
 
     seen.add(url);
     items.push({
       url,
       title,
+      description,
       source: source.name,
       sourceId: source.id,
       categoryHint: source.category,
@@ -342,9 +454,9 @@ async function collectFromSource(source) {
   return collectLinks(await fetchText(source.homepage), source);
 }
 
-export async function collectCandidates(limit = 12) {
-  const active = SOURCES.filter(isSourceEnabled);
-  if (!active.length) throw new Error('Keine aktiven offiziellen Quellen konfiguriert');
+export async function collectCandidates(limit = 12, { dailyOnly = false } = {}) {
+  const active = SOURCES.filter((source) => isSourceEnabled(source) && (!dailyOnly || source.daily));
+  if (!active.length) throw new Error('Keine aktiven Quellen konfiguriert');
 
   const dayOffset = Math.floor(Date.now() / 86400000) % active.length;
   const ordered = [...active.slice(dayOffset), ...active.slice(0, dayOffset)];
@@ -414,6 +526,19 @@ export async function extractArticle(candidate) {
   if (!source) throw new Error(`Unbekannte Quelle: ${candidate.sourceId}`);
 
   if (source.extractor === 'ec') return extractEc(candidate, source);
+
+  if (source.rss) {
+    const text = clean(candidate.description || '');
+    if (text.length < 60) throw new Error('RSS-Kurzbeschreibung zu kurz');
+    return {
+      title: cleanArticleTitle(candidate.title, candidate.title),
+      text: text.slice(0, 2000),
+      language: source.language || 'de',
+      publishedAt: candidate.publishedAt || '',
+      sourceId: source.id,
+      url: candidate.url,
+    };
+  }
 
   const html = await fetchText(candidate.url);
   const dom = new JSDOM(html, { url: candidate.url });

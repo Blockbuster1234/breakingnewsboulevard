@@ -1,4 +1,8 @@
 {
+  "redirects": [
+    { "source": "/weltnachrichten-kurz.html", "destination": "/", "permanent": true },
+    { "source": "/weltnachrichten-kurz", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/breakingnewsboulevard/index.html" },
     { "source": "/index.html", "destination": "/breakingnewsboulevard/index.html" },

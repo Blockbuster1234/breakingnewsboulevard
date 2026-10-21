@@ -140,8 +140,12 @@ function approve(id, flags) {
   const { dir, post, sourceText } = loadDraft(id);
   if (post.slug !== id) fail('Slug stimmt nicht mit dem Entwurfsordner überein');
   if (post.url !== `/posts/${post.slug}.html`) fail('Artikel-URL passt nicht zum Slug');
-  if (!post.title || post.title.length < 15 || post.title.length > 120) fail('Titel fehlt oder hat eine ungültige Länge');
+  const isShort = post.format === 'short';
+  const maxTitle = isShort ? 90 : 120;
+  if (!post.title || post.title.length < 15 || post.title.length > maxTitle) fail('Titel fehlt oder hat eine ungültige Länge');
   if (!post.excerpt) fail('Teaser fehlt');
+  if (isShort && post.excerpt.length > 180) fail('Teaser ist länger als 180 Zeichen');
+  if (isShort && post.source?.mode !== 'rss') fail('Kurzartikel muss aus einer RSS-Quelle stammen');
   if (post.review?.status !== 'draft') fail('Entwurf ist nicht im Status draft');
   if (!post.source?.url?.startsWith('https://') || !post.source?.termsUrl?.startsWith('https://')) {
     fail('Quellen- oder Nutzungsrechte-URL fehlt oder ist ungültig');
@@ -171,19 +175,22 @@ function approve(id, flags) {
   if (host !== allowedHost && !host.endsWith(`.${allowedHost}`)) {
     fail(`Quellen-URL passt nicht zur Quelle: ${host}`);
   }
-  if (!sourceText || sourceText.length < 500) fail('Quelltext für die Prüfung fehlt');
+  const minSourceLength = isShort ? 60 : 500;
+  if (!sourceText || sourceText.length < minSourceLength) fail('Quelltext für die Prüfung fehlt');
 
   const words = countBodyWords(post.body);
-  if (words < 120 || words > 180) fail(`Wortzahl ${words} liegt außerhalb von 120-180`);
+  if (isShort && (words < 45 || words > 80)) fail(`Wortzahl ${words} liegt außerhalb von 45-80`);
+  if (!isShort && (words < 120 || words > 180)) fail(`Wortzahl ${words} liegt außerhalb von 120-180`);
   const quotes = [
     ...extractQuotes(post.title),
     ...extractQuotes(post.excerpt),
     ...extractQuotes(post.body),
   ];
+  if (isShort && quotes.length) fail('Kurzartikel dürfen keine Zitate enthalten');
   if (quotes.length > 1) fail('Mehr als ein Zitat im Artikel');
   if (quotes.some((quote) => countWords(quote) > 25)) fail('Zitat ist länger als 25 Wörter');
   const bodyWithoutQuotes = post.body.replace(/[„“”"«»‚‘‹›][^„“”"«»‚‘‹›]{3,500}[„“”"«»‚‘‹›]/g, ' ');
-  const overlaps = findLongOverlap(bodyWithoutQuotes, sourceText);
+  const overlaps = findLongOverlap(bodyWithoutQuotes, sourceText, isShort ? 6 : 10);
   if (overlaps.length) {
     fail(`Zu enge Übernahme aus der Quelle: ${overlaps.join(' | ')}`);
   }
@@ -205,6 +212,7 @@ function approve(id, flags) {
     );
   }
   const structureIssues = findStructureIssues(post.body);
+  if (isShort && post.imageType !== 'illustration') fail('Kurzartikel benötigen eine KI-Illustration');
   if (structureIssues.length) {
     fail(`Struktur: ${structureIssues.join('; ')}`);
   }

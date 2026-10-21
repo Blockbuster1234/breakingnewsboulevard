@@ -1,4 +1,3 @@
-import { Jimp, JimpMime } from 'jimp';
 import { sleep } from './http.mjs';
 import {
   countBodyWords,
@@ -16,7 +15,8 @@ const OMNI_TEXT_ENDPOINT =
   '/v1/chat/completions';
 const OMNI_TEXT_MODEL = process.env.OMNI_TEXT_MODEL || 'auto/gpt';
 const OMNI_API_KEY = process.env.OMNI_API_KEY || '';
-const IMAGE_ENDPOINT = 'https://image.pollinations.ai/prompt';
+const IMAGE_ENDPOINT = 'https://gen.pollinations.ai/image';
+const IMAGE_MODEL = process.env.POLLINATIONS_IMAGE_MODEL || 'black-forest-labs/flux.1-schnell';
 
 const CATEGORIES = [
   'Welt',
@@ -32,58 +32,31 @@ const CATEGORIES = [
 ];
 
 const SYSTEM_PROMPT = `Du bist erfahrener Redakteur bei Breaking News Boulevard, einem deutschsprachigen Nachrichtenportal.
-Du arbeitest ausschließlich mit offiziellen Primärquellen und schreibst daraus eigenständige, neutrale deutsche Nachrichtenberichte.
-
-Harte Regeln:
-- Nutze ausschließlich Fakten, Namen, Funktionen, Zahlen und Zitate aus dem bereitgestellten Quelltext.
-- Erfinde keine Fakten, Zitate, Zahlen, Orte, Ursachen, Reaktionen oder Zusammenhänge.
-- Übernimm Zahlen, Einheiten und Zeitangaben exakt aus dem Quelltext. Schreibe nicht "Millionen", wenn die Quelle "Milliarden" sagt, und rechne nichts um.
-- Übernimm Amts- und Funktionsbezeichnungen exakt aus dem Quelltext (zum Beispiel "Bundesinnenminister", nicht "Ministerpräsident").
-- Schreibe durchgehend auf Deutsch, auch die Überschrift. Englische Wörter nur in Eigennamen oder direkten Zitaten.
-- Formuliere alles in eigenen Worten. Übernimm nie mehr als 9 aufeinanderfolgende Wörter aus der Quelle. Keine wörtliche Übersetzung und keine enge Umformulierung der Quellstruktur.
-- Schreibe eine kurze eigene Zusammenfassung mit 120-180 Wörtern im Fließtext. Ziel sind 140-160 Wörter; niemals unter 120, nie über 180. Zähle die Wörter vor der Ausgabe. Gliedere den Text in kurze Absätze und 0-1 Zwischenüberschrift. Keine Füllsätze und keine erfundenen Details.
-- Der erste Absatz besteht aus genau einem Satz und beantwortet Was, Wo und Wer. Danach folgt ein Absatz, der erklärt, warum die Meldung wichtig ist – ausschließlich mit Tatsachen, die im Quelltext stehen. Wenn die Quelle keine Bedeutung nennt, nenne konkrete Fakten oder Folgen aus der Quelle; erfinde keine Bewertung.
-- Jeder Satz muss durch den Quelltext gedeckt sein. Nenne nur Fakten aus der Quelle, dichte nichts hinzu und gib keine eigene Einordnung. Verzichte auf Sätze über Bedeutung, Zukunft, Folgen oder Zusammenhänge, wenn sie nicht ausdrücklich in der Quelle stehen.
-- Keine Formulierungen wie "Frühindikator", keine Hinweise auf Dashboards, keine Prognosen, keinen Ausblick, kein Fazit und keine Empfehlungen.
-- Fasse nur 2-4 Kernaussagen zusammen. Gehe nicht Absatz für Absatz durch die Quelle und übersetze nicht Satz für Satz. Lass Details weg, die für die Kernaussage nicht nötig sind.
-- Höchstens ein kurzes wörtliches Zitat mit maximal 25 Wörtern. Das Zitat muss exakt so im Quelltext stehen. Wenn du unsicher bist oder die Quelle fremdsprachig ist: kein Zitat.
-- Die Überschrift muss die zentrale Aussage des Artikels korrekt zusammenfassen. Achte besonders auf Verneinungen und Gegenteile.
-- Vermeide mehrdeutige Pronomen. Nenne bei wichtigen Aussagen die konkreten Akteure.
-- Sachlicher, ruhiger Nachrichtenstil. Keine Meinung, keine Sensationslust, kein Clickbait.
-- Wenn der Quelltext zu dünn ist, schreibe einen kürzeren, korrekten Artikel statt Lücken zu füllen.
-- Nenne die Quelle als Organisation, wo es natürlich passt (zum Beispiel "die Europäische Kommission", "das Statistische Bundesamt" oder "der Bundesgerichtshof").
-- Gib NUR gültiges JSON zurück, ohne Markdown-Zäune und ohne Text außerhalb des JSON-Objekts.
-
-JSON-Format:
-{
-  "title": "max 90 Zeichen, sachliche Überschrift",
-  "excerpt": "max 180 Zeichen, eine Zusammenfassung in einem Satz",
-  "category": "eine von: Welt, Politik, Wirtschaft, Technologie, Wissenschaft, Gesundheit, Klima, Kultur, Sport, Justiz",
-  "body": "120-180 Wörter Fließtext als kurze eigene Zusammenfassung. Erster Absatz: genau ein Satz (Was, Wo, Wer). Zweiter Absatz: warum es wichtig ist, nur mit Fakten aus der Quelle. Absätze durch Leerzeilen getrennt. 0-1 Zwischenüberschrift als Zeile mit '## '.",
-  "imagePrompt": "kurze englische Beschreibung einer symbolischen redaktionellen Illustration. Bevorzuge Architektur, Landschaften, Gegenstände, Lichtstimmungen oder abstrakte Formen. Vermeide Bildschirme, Diagramme, Karten, Zeitungen, Dokumente, Schilder, Flaggen, Menschenmengen und alles mit Schrift. Keine realen Personen, keine Gewalt, kein Text."
-}`;
-
-const BRIEF_SYSTEM_PROMPT = `Du bist Redakteur für die Rubrik "Weltnachrichten kurz" bei Breaking News Boulevard.
 Du erhältst ausschließlich die Überschrift und die Kurzbeschreibung einer Meldung aus einem öffentlichen RSS-Feed.
 
 Harte Regeln:
-- Schreibe eine eigenständige deutsche Kurzmeldung mit den wichtigsten Fakten: Was, Wo und Wer.
+- Schreibe einen eigenständigen deutschen Kurzartikel mit den wichtigsten Fakten: Was, Wo und Wer.
 - Übernimm keine Sätze, Satzteile oder Wendungen aus der Überschrift oder Beschreibung. Keine wörtliche Übersetzung und keine enge Umformulierung.
 - Verwende nur Fakten, Namen, Orte und Zahlen, die ausdrücklich in der Überschrift oder Beschreibung stehen. Ergänze nichts, auch nichts Naheliegendes: keine Gebäude, Behörden, Krankenhäuser, Motive, Folgen, Reaktionen oder Zeitangaben, wenn sie nicht dastehen.
+- Wenn die Quelle keine Bedeutung oder Folgen nennt, erkläre die Bedeutung ausschließlich mit konkreten, belegten Fakten. Erfinde keine Bewertung, Prognose oder einen Ausblick.
+- Behaupte nicht, dass etwas nicht geschehen ist. Sätze wie "keine weiteren Fälle", "niemand wurde verletzt" oder "es gab keine Reaktion" sind nur erlaubt, wenn sie ausdrücklich in der Quelle stehen.
+- Schreibe 55-75 Wörter; niemals mehr als 80 und nicht weniger als 45. Zähle die Wörter vor der Ausgabe.
+- Erster Absatz: genau ein Satz mit Was, Wo und Wer (12-40 Wörter). Zweiter Absatz: ein bis zwei kurze Sätze dazu, warum die Meldung wichtig ist, nur mit Fakten aus der Quelle. Absätze durch eine Leerzeile trennen. Keine Zwischenüberschrift.
 - Nenne die Quelle nicht im Text; sie wird separat als Link angezeigt.
 - Keine Zitate, keine Meinung, keine Prognose, keinen Ausblick, kein Fazit und keine Empfehlung.
 - Schreibe durchgehend Deutsch. Englische Wörter nur bei Eigennamen.
-- Wenn die Angaben zu dünn sind, formuliere kürzer und nur mit belegten Fakten.
-- headline: maximal 8 Wörter, eigene Formulierung, keine Kopie der Quellenüberschrift.
-- text: maximal 35 Wörter, ein bis zwei Sätze, mit Was, Wo und Wer.
-- headline und text zusammen: höchstens 45 Wörter.
+- Die Überschrift muss die zentrale Aussage korrekt zusammenfassen, maximal 90 Zeichen und eine eigene Formulierung sein.
 - Prüfe vor der Ausgabe jede Angabe gegen die Quelle und streiche alles, was nicht ausdrücklich belegt ist.
-- Gib ausschließlich gültiges JSON ohne Markdown zurück.
+- imagePrompt: kurze englische Beschreibung einer symbolischen redaktionellen Illustration zum Ort, Thema und zur Stimmung der Meldung. Bevorzuge Landschaften, Gegenstände, Lichtstimmungen oder abstrakte Formen; keine Gebäudefassaden mit Beschriftung. Keine Menschen, keine Gesichter, keine Politiker, keine Logos, keine Flaggen, keine Zeitungen, keine Bildschirme und kein Text. Kein fotorealistischer Stil.
+- Gib ausschließlich gültiges JSON ohne Markdown-Zäune und ohne Text außerhalb des JSON-Objekts zurück.
 
 JSON-Format:
 {
-  "headline": "kurze eigene Überschrift",
-  "text": "kurze deutsche Meldung mit den wichtigsten Fakten"
+  "title": "max 90 Zeichen, sachliche eigene Überschrift",
+  "excerpt": "max 180 Zeichen, eine Zusammenfassung in einem Satz",
+  "category": "eine von: Welt, Politik, Wirtschaft, Technologie, Wissenschaft, Gesundheit, Klima, Kultur, Sport, Justiz",
+  "body": "45-80 Wörter, zwei Absätze durch Leerzeile getrennt. Erster Absatz: genau ein Satz (Was, Wo, Wer). Zweiter Absatz: warum wichtig, nur mit Fakten aus der Quelle.",
+  "imagePrompt": "kurze englische Beschreibung einer symbolischen redaktionellen Illustration zu Ort, Thema und Stimmung; Landschaften, Gegenstände oder abstrakte Formen statt Gebäudefassaden; keine Menschen, Gesichter, Politiker, Logos, Flaggen, Zeitungen, Bildschirme oder Schrift; nicht fotorealistisch."
 }`;
 
 function parseJson(content) {
@@ -97,6 +70,47 @@ function parseJson(content) {
   if (start === -1 || end === -1 || end <= start) throw new Error('no JSON in model output');
   const json = cleaned.slice(start, end + 1).replace(/[\u0000-\u001F]/g, ' ');
   return JSON.parse(json);
+}
+
+const VERIFY_PROMPT = `Du bist ein strenger Faktenprüfer für einen deutschsprachigen Nachrichtenartikel.
+Du erhältst die Überschrift und die Kurzbeschreibung einer RSS-Meldung sowie einen daraus erstellten deutschen Artikel.
+
+Prüfe den Artikel Satz für Satz gegen die Quelle:
+- Erlaubt sind Übersetzungen, Zusammenfassungen und Formulierungen in eigenen Worten.
+- Nicht erlaubt sind Fakten, Namen, Orte, Zahlen, Ursachen, Folgen, Reaktionen, Bewertungen oder Aussagen über Dinge, die nicht geschehen sind, wenn sie nicht ausdrücklich in der Quelle stehen.
+- Eine Aussage ist auch dann nicht gedeckt, wenn sie plausibel klingt oder allgemein bekannt ist.
+- Nenne nur Sätze, die nicht gedeckt sind. Erfinde keine zusätzlichen Fakten und verlange keine Ergänzungen.
+
+Antworte ausschließlich mit gültigem JSON:
+{
+  "unsupported": ["nicht gedeckter Satz aus dem Artikel"]
+}
+Wenn alle Sätze gedeckt sind, antworte mit {"unsupported": []}.`;
+
+async function verifyShortArticle({ sourceTitle, sourceText, body }) {
+  const messages = [
+    { role: 'system', content: VERIFY_PROMPT },
+    {
+      role: 'user',
+      content: `QUELLE:
+${sourceTitle}
+
+${sourceText.slice(0, 3000)}
+
+ARTIKEL:
+${body}
+
+Prüfe jetzt den Artikel und antworte nur mit dem JSON-Objekt.`,
+    },
+  ];
+  const data = await requestCompletion(messages, 0, 500);
+  const finish = data?.choices?.[0]?.finish_reason;
+  if (finish === 'length') throw new Error('fact-check output truncated');
+  const result = parseJson(data?.choices?.[0]?.message?.content);
+  const unsupported = Array.isArray(result.unsupported)
+    ? result.unsupported.map((item) => String(item).trim()).filter(Boolean)
+    : [];
+  return unsupported.slice(0, 6);
 }
 
 function sanitize(result) {
@@ -117,19 +131,19 @@ function sanitize(result) {
     .replace(/\s+/g, ' ')
     .trim();
 
-  if (title.length < 15 || title.length > 120) throw new Error(`bad title (${title.length})`);
+  if (title.length < 15 || title.length > 90) throw new Error(`bad title (${title.length})`);
   const wordCount = countBodyWords(body);
-  if (wordCount < 120 || wordCount > 180) {
-    throw new Error(`body word count ${wordCount}; erlaubt sind 120-180 Wörter`);
+  if (wordCount < 45 || wordCount > 80) {
+    throw new Error(`body word count ${wordCount}; erlaubt sind 45-80 Wörter`);
   }
-  if (extractQuotes(body).length > 1) throw new Error('mehr als ein Zitat im Text');
+  if (extractQuotes(body).length) throw new Error('Zitate sind im Kurzartikel nicht erlaubt');
   if (/als (ki|sprachmodell)|ich kann (das|dies) nicht|i cannot|language model/i.test(body)) {
     throw new Error('model refused');
   }
 
   return {
     title,
-    excerpt: excerpt.slice(0, 200),
+    excerpt: excerpt.slice(0, 180),
     category,
     body,
     imagePrompt: imagePrompt || title,
@@ -347,7 +361,7 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
         },
       ];
       const temperature = feedback ? 0.25 : 0.5;
-      const data = await requestCompletion(messages, temperature);
+      const data = await requestCompletion(messages, temperature, 1200);
       const finish = data?.choices?.[0]?.finish_reason;
       const content = data?.choices?.[0]?.message?.content;
       if (finish === 'length') throw new Error('model output truncated');
@@ -369,7 +383,8 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
       });
       const structureIssues = findStructureIssues(result.body);
       const bodyWithoutQuotes = result.body.replace(/[„“”"«»‚‘‹›][^„“”"«»‚‘‹›]{3,500}[„“”"«»‚‘‹›]/g, ' ');
-      const overlaps = findLongOverlap(bodyWithoutQuotes, sourceText);
+      const overlaps = findLongOverlap(bodyWithoutQuotes, sourceText, 6);
+      const titleOverlaps = findLongOverlap(result.title, sourceTitle, 5);
 
       const issues = [];
       if (missing.length) {
@@ -390,6 +405,9 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
       if (quoteIssues.length) {
         issues.push(`${quoteIssues.join('; ')}.`);
       }
+      if (titleOverlaps.length) {
+        issues.push(`Die Überschrift übernimmt zu viel aus dem Original: "${titleOverlaps.join('" | "')}". Formuliere sie eigenständig.`);
+      }
       if (overlaps.length) {
         issues.push(
           `Zu lange wörtliche Übereinstimmung mit der Quelle: "${overlaps.join('" | "')}". Formuliere eigenständig.`,
@@ -408,6 +426,20 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
         );
       }
 
+      if (!issues.length) {
+        const unsupported = await verifyShortArticle({
+          sourceTitle,
+          sourceText,
+          body: result.body,
+        });
+        if (!unsupported.length) return result;
+        issues.push(
+          `Diese Sätze sind nicht ausdrücklich durch die Quelle gedeckt: ${unsupported
+            .map((sentence) => `"${sentence}"`)
+            .join(' | ')}. Streiche sie oder ersetze sie durch belegte Fakten.`,
+        );
+      }
+
       if (!issues.length) return result;
 
       feedback = issues.join('\n');
@@ -421,141 +453,24 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
   throw lastError;
 }
 
-function sanitizeBrief(result) {
-  const headline = String(result.headline || '')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-  const text = String(result.text || '')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-
-  if (!headline || !text) throw new Error('Brief ohne Überschrift oder Text');
-  if (headline.length < 8 || headline.length > 100) {
-    throw new Error(`Brief-Überschrift hat ${headline.length} Zeichen; erlaubt sind 8-100`);
-  }
-  if (countWords(headline) > 12) throw new Error('Brief-Überschrift ist länger als 12 Wörter');
-  const wordCount = countWords(`${headline} ${text}`);
-  if (wordCount < 15 || wordCount > 50) {
-    throw new Error(`Kurzmeldung hat ${wordCount} Wörter; erlaubt sind 15-50`);
-  }
-  if (extractQuotes(`${headline} ${text}`).length) {
-    throw new Error('Kurzmeldung enthält ein Zitat; Zitate sind nicht erlaubt');
-  }
-  if (/als (ki|sprachmodell)|ich kann (das|dies) nicht|i cannot|language model/i.test(text)) {
-    throw new Error('model refused');
-  }
-
-  return { headline, text, wordCount };
-}
-
-export async function rewriteBrief({
-  sourceName,
-  sourceTitle,
-  sourceDescription,
-  sourceLanguage = 'en',
-}) {
-  const sourceText = `${sourceTitle}\n\n${sourceDescription}`.slice(0, 1800);
-  const basePrompt = `QUELLE: ${sourceName}
-ÜBERSCHRIFT: ${sourceTitle}
-KURZBESCHREIBUNG:
-${sourceDescription}
-
-Schreibe jetzt die deutsche Kurzmeldung. Gib nur das JSON-Objekt zurück.`;
-
-  let feedback = '';
+async function pollinationsImage(prompt, seed, apiKey) {
+  const params = new URLSearchParams({
+    width: '1024',
+    height: '576',
+    model: IMAGE_MODEL,
+    seed: String(seed),
+  });
+  const url = `${IMAGE_ENDPOINT}/${encodeURIComponent(prompt)}?${params}`;
   let lastError;
 
-  for (let attempt = 0; attempt < 3; attempt += 1) {
-    try {
-      const messages = [
-        { role: 'system', content: BRIEF_SYSTEM_PROMPT },
-        {
-          role: 'user',
-          content: feedback
-            ? `${basePrompt}\n\nKORREKTURHINWEIS:\n${feedback}`
-            : basePrompt,
-        },
-      ];
-      const data = await requestCompletion(messages, feedback ? 0.2 : 0.4, 700);
-      const finish = data?.choices?.[0]?.finish_reason;
-      const content = data?.choices?.[0]?.message?.content;
-      if (finish === 'length') throw new Error('model output truncated');
-
-      const result = sanitizeBrief(parseJson(content));
-      const overlaps = findLongOverlap(`${result.headline}\n${result.text}`, sourceText, 5);
-      const claimIssues = findUnsupportedClaims(result.text, sourceText, {
-        language: 'en',
-      });
-      const issues = [];
-
-      if (overlaps.length) {
-        issues.push(
-          `Diese Wortfolgen stehen zu nah an der Quelle: "${overlaps.join('" | "')}". Formuliere vollständig neu und übernimm keine Satzteile.`,
-        );
-      }
-      if (claimIssues.length) {
-        issues.push(
-          `Nicht durch die Quelle gedeckte Angaben: ${claimIssues
-            .map((item) => `"${item.sentence}" (${item.reasons.join(', ')})`)
-            .join(' | ')}.`,
-        );
-      }
-      if (/\b(Reuters|BBC|Tagesschau|Guardian|Al Jazeera|DW)\b/i.test(result.text)) {
-        issues.push('Nenne die Quelle nicht im Text; die Quellenzeile wird separat angezeigt.');
-      }
-
-      if (!issues.length) return result;
-      feedback = issues.join('\n');
-      lastError = new Error(`Prüfung fehlgeschlagen: ${issues.join(' | ')}`);
-    } catch (error) {
-      lastError = error;
-      feedback = error.message;
-      if (attempt < 2) await sleep(5000 * (attempt + 1));
-    }
-  }
-
-  throw lastError;
-}
-
-const PALETTES = [
-  { a: [12, 27, 51], b: [49, 94, 126], c: [224, 185, 122] },
-  { a: [26, 44, 39], b: [78, 112, 88], c: [214, 166, 108] },
-  { a: [52, 29, 42], b: [112, 65, 73], c: [225, 197, 151] },
-  { a: [24, 32, 48], b: [83, 91, 118], c: [208, 205, 188] },
-];
-
-function hashString(value) {
-  let hash = 2166136261;
-  for (let index = 0; index < value.length; index += 1) {
-    hash ^= value.charCodeAt(index);
-    hash = Math.imul(hash, 16777619);
-  }
-  return hash >>> 0;
-}
-
-function clamp(value) {
-  return Math.max(0, Math.min(255, Math.round(value)));
-}
-
-function mix(a, b, t) {
-  return a + (b - a) * t;
-}
-
-function smoothstep(edge0, edge1, value) {
-  const t = Math.max(0, Math.min(1, (value - edge0) / (edge1 - edge0)));
-  return t * t * (3 - 2 * t);
-}
-
-async function pollinationsImage(prompt, seed) {
-  const url = `${IMAGE_ENDPOINT}/${encodeURIComponent(prompt)}?width=1024&height=576&nologo=true&seed=${seed}`;
-  let lastError;
   for (let attempt = 0; attempt < 2; attempt += 1) {
     let res;
     try {
       res = await fetch(url, {
-        headers: { 'user-agent': 'Mozilla/5.0 BreakingNewsBoulevard/1.0' },
+        headers: {
+          authorization: `Bearer ${apiKey}`,
+          'user-agent': 'BreakingNewsBoulevard/1.0',
+        },
         redirect: 'follow',
         signal: AbortSignal.timeout(90000),
       });
@@ -568,8 +483,10 @@ async function pollinationsImage(prompt, seed) {
       throw lastError;
     }
 
-    if (res.status === 402 || res.status === 429) {
-      lastError = new Error(`image API HTTP ${res.status}`);
+    if (res.status === 401) throw new Error('Pollinations-Key fehlt oder ist ungültig');
+    if (res.status === 402) throw new Error('Pollinations-Guthaben ist aufgebraucht');
+    if (res.status === 429) {
+      lastError = new Error('Pollinations-Rate-Limit erreicht');
       if (attempt === 0) {
         await sleep(46000);
         continue;
@@ -591,90 +508,36 @@ async function pollinationsImage(prompt, seed) {
     const buffer = Buffer.from(await res.arrayBuffer());
     if (buffer.length < 5000) throw new Error(`image too small (${buffer.length} bytes)`);
 
-    const image = await Jimp.read(buffer);
-    image.crop({ x: 0, y: 0, w: image.bitmap.width, h: Math.max(1, image.bitmap.height - 44) });
-    const jpeg = await image.getBuffer(JimpMime.jpeg, { quality: 88 });
-    return { buffer: Buffer.from(jpeg), ext: 'jpg', fallback: false };
+    const ext = type.includes('png') ? 'png' : type.includes('webp') ? 'webp' : 'jpg';
+    return { buffer, ext };
   }
   throw lastError;
 }
 
-async function localFallbackImage(prompt, seed) {
-  const width = 1024;
-  const height = 576;
-  const hash = hashString(`${prompt}:${seed}`);
-  const palette = PALETTES[hash % PALETTES.length];
-  const image = new Jimp({ width, height, color: 0x101827ff });
-  const glowX = 0.18 + ((hash >>> 8) % 64) / 100;
-  const glowY = 0.2 + ((hash >>> 14) % 60) / 100;
-  const band = 0.25 + ((hash >>> 20) % 50) / 100;
+const IMAGE_UNSAFE =
+  /\b(trump|putin|zelensky|merz|merkel|macron|starmer|modi|xi|jinping|netanyahu|khamenei|kadyrow|lukaschenko|navalny|erdogan|orbán|orban|person|people|man|woman|child|children|soldier|politician|president|minister|chancellor|portrait|face|faces|logo|flag|newspaper|screen|text|letters|words)\b/i;
 
-  image.scan(0, 0, width, height, function (x, y, idx) {
-    const nx = x / width;
-    const ny = y / height;
-    const t = clamp((nx * 0.62 + ny * 0.38) * 255) / 255;
-    let r = mix(palette.a[0], palette.b[0], t) + mix(palette.b[0], palette.c[0], t * 0.55);
-    let g = mix(palette.a[1], palette.b[1], t) + mix(palette.b[1], palette.c[1], t * 0.55);
-    let b = mix(palette.a[2], palette.b[2], t) + mix(palette.b[2], palette.c[2], t * 0.55);
-    r /= 2; g /= 2; b /= 2;
-
-    const distance = Math.hypot(nx - glowX, ny - glowY);
-    const glow = Math.max(0, 1 - distance * 2.6) ** 2;
-    r += palette.c[0] * glow * 0.55;
-    g += palette.c[1] * glow * 0.55;
-    b += palette.c[2] * glow * 0.55;
-
-    const wave = Math.sin((nx * 3.2 + ny * 1.4) * Math.PI) * 0.5 + 0.5;
-    const stripe = smoothstep(band, band + 0.06, Math.abs(ny - 0.5) + wave * 0.05);
-    r += palette.c[0] * stripe * 0.12;
-    g += palette.c[1] * stripe * 0.12;
-    b += palette.c[2] * stripe * 0.12;
-
-    const ring = Math.abs(Math.hypot(nx - 0.72, ny - 0.3) - (0.16 + (hash % 9) / 100));
-    const ringGlow = Math.max(0, 1 - ring / 0.012) ** 2;
-    r += palette.c[0] * ringGlow * 0.5;
-    g += palette.c[1] * ringGlow * 0.5;
-    b += palette.c[2] * ringGlow * 0.5;
-
-    const horizon = Math.max(0, 1 - Math.abs(ny - 0.72) / 0.005);
-    r += palette.c[0] * horizon * 0.25;
-    g += palette.c[1] * horizon * 0.25;
-    b += palette.c[2] * horizon * 0.25;
-
-    const hill1 = 0.68 + Math.sin(nx * 7.5 + (hash % 17)) * 0.025 + Math.sin(nx * 17) * 0.012;
-    if (ny > hill1) {
-      const depth = smoothstep(hill1, 1, ny);
-      r = mix(r, palette.a[0] * 0.55, depth * 0.72);
-      g = mix(g, palette.a[1] * 0.55, depth * 0.72);
-      b = mix(b, palette.a[2] * 0.55, depth * 0.72);
-    }
-    const hill2 = 0.79 + Math.sin(nx * 4.5 + (hash % 31)) * 0.035;
-    if (ny > hill2) {
-      const depth = smoothstep(hill2, 1, ny);
-      r = mix(r, 8, depth * 0.82);
-      g = mix(g, 14, depth * 0.82);
-      b = mix(b, 22, depth * 0.82);
-    }
-
-    const grain = (((x * 928371 + y * 364479 + hash) >>> 0) % 9) - 4;
-    image.bitmap.data[idx] = clamp(r + grain);
-    image.bitmap.data[idx + 1] = clamp(g + grain);
-    image.bitmap.data[idx + 2] = clamp(b + grain);
-    image.bitmap.data[idx + 3] = 255;
-  });
-
-  const jpeg = await image.getBuffer(JimpMime.jpeg, { quality: 88 });
-  return { buffer: Buffer.from(jpeg), ext: 'jpg', fallback: true };
+function safeImagePrompt(prompt, category = 'Welt') {
+  let value = String(prompt || '')
+    .replace(/\b(photorealistic|hyperrealistic|realistic|cinematic|photo|photograph)\b/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const withoutNegatives = value.replace(
+    /\b(no|without)\s+(people|persons?|faces?|politicians?|presidents?|ministers?|logos?|flags?|text|words?|letters?|numbers?|signage)\b/gi,
+    ' ',
+  );
+  if (!value || IMAGE_UNSAFE.test(withoutNegatives)) {
+    value = `A symbolic editorial scene about ${category.toLowerCase()} and international news, with landscape, objects, light and abstract forms`;
+  }
+  return value;
 }
 
-export async function generateImage(prompt, seed = Math.floor(Math.random() * 1_000_000_000)) {
-  const finalPrompt = `${prompt}. Symbolic editorial illustration for a news article, cinematic photorealistic style, muted navy and warm cream palette, wide 16:9 composition, no recognizable real people, no graphic violence. Absolutely no lettering, words, numbers, signage, logos or typography anywhere in the image.`;
-  if (process.env.AI_IMAGES === '1') {
-    try {
-      return await pollinationsImage(finalPrompt, seed);
-    } catch (error) {
-      console.warn(`[image] Pollinations failed (${error.message}); using local editorial illustration`);
-    }
+export async function generateImage(prompt, seed = Math.floor(Math.random() * 1_000_000_000), category = 'Welt') {
+  const apiKey = String(process.env.POLLINATIONS_API_KEY || '').trim();
+  if (!apiKey) {
+    throw new Error('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
   }
-  return localFallbackImage(finalPrompt, seed);
+  const artwork = safeImagePrompt(prompt, category);
+  const finalPrompt = `${artwork}. Flat two-dimensional editorial illustration for a news article, silkscreen and gouache poster, solid muted colours, simplified geometric shapes, visible paper grain, wide 16:9 composition. The picture is entirely illustrated, with no photographic or 3D rendering and no depth of field. The artwork contains no people, no faces, no politicians, no flags, no lettering, no words, no numbers, no labels, no signage, no logos and no typography.`;
+  return pollinationsImage(finalPrompt, seed, apiKey);
 }

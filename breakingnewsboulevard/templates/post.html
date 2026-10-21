@@ -91,7 +91,7 @@
   <div class="topbar">
     <div class="topbar-inner">
       <span>Breaking News Boulevard</span>
-      <span class="ai">KI-gestützter Bericht · automatisch geprüft</span>
+      <span class="ai">KI-gestützter Artikel · Quelle verlinkt</span>
     </div>
   </div>
 
@@ -112,7 +112,7 @@
       <time datetime="{{DATE_ISO}}">{{DATE_HUMAN}}</time>
     </div>
 
-    <p class="source-top"><span>Originalquelle</span><a href="{{SOURCE_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_NAME}}</a></p>
+    <p class="source-top">Quelle: <a href="{{SOURCE_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_NAME}}</a></p>
 
 {{CORRECTION_NOTE}}
 
@@ -126,10 +126,10 @@
     </div>
 
     <div class="source-box">
-      <strong>Originalquelle</strong>
+      <strong>Quelle</strong>
       <p>Dieser Artikel ist eine eigenständige Zusammenfassung von <a href="{{SOURCE_URL}}" target="_blank" rel="noopener noreferrer">{{SOURCE_NAME}}</a>. Dort finden Sie den vollständigen Originaltext.</p>
-      <p class="source-note">Originaltitel: {{SOURCE_TITLE}}</p>
-      <p class="source-note">Original veröffentlicht: {{SOURCE_PUBLISHED}}</p>
+      <p class="source-note">Titel der Quelle: {{SOURCE_TITLE}}</p>
+      <p class="source-note">Veröffentlicht: {{SOURCE_PUBLISHED}}</p>
       <p>{{SOURCE_CREDIT}}</p>
       <p>{{SOURCE_LICENSE}}</p>
       <p class="source-note">{{SOURCE_REUSE_NOTE}}</p>
@@ -137,12 +137,12 @@
 
     <p class="review-note">{{REVIEW_NOTE}}</p>
 
-    <p class="disclaimer"><strong>So entsteht dieser Artikel:</strong> Ein KI-Modell hat die offizielle Quelle in eigenen Worten zusammengefasst; das Bild ist {{IMAGE_KIND}}, kein Beweisfoto des Ereignisses. Namen, Funktionen, Zahlen und Fakten wurden vor der Veröffentlichung automatisch gegen die Quelle geprüft. Bei sich entwickelnden Ereignissen prüfe bitte die Originalquelle.</p>
+    <p class="disclaimer"><strong>KI-Hinweis:</strong> Dieser Artikel wurde mit einem KI-Modell auf Basis der verlinkten Quelle erstellt und vor der Veröffentlichung automatisch geprüft. Das Bild ist {{IMAGE_KIND}}. Namen, Funktionen, Zahlen und Fakten wurden gegen die Quelle geprüft; bei sich entwickelnden Ereignissen prüfe bitte die Originalquelle.</p>
   </article>
 
   <footer>
     <div class="footer-inner">
-      <p><a href="/">Breaking News Boulevard</a> — echte Berichterstattung, täglich neu geschrieben. <span class="ai-note">Bilder sind frei lizenzierte Fotos oder redaktionelle Illustrationen.</span></p>
+      <p><a href="/">Breaking News Boulevard</a> — Weltnachrichten, täglich in eigenen Worten. <span class="ai-note">Bilder sind KI-generierte Illustrationen, keine Beweisfotos des Geschehens.</span></p>
       <p class="legal-links"><a href="/impressum">Impressum</a><span>·</span><a href="/datenschutz">Datenschutz</a></p>
     </div>
   </footer>

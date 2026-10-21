@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '47 6 * * *'
   workflow_dispatch:
+    inputs:
+      count:
+        description: 'Anzahl der Entwürfe (1-6)'
+        required: false
+        default: '6'
 
 permissions:
   contents: write
@@ -19,7 +24,7 @@ defaults:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,11 +43,9 @@ jobs:
         run: npm run legal:check || echo "::warning title=Rechtstexte::Impressum oder Datenschutz enthalten noch Platzhalter."
 
       - name: Generate daily drafts
-        run: npm run generate:daily
-
-      - name: Generate world news briefs
-        continue-on-error: true
-        run: npm run briefs:daily
+        env:
+          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+        run: npm run generate:daily -- --count ${{ inputs.count || '6' }}
 
       - name: Auto-approve and publish
         env:
@@ -56,7 +59,7 @@ jobs:
         run: |
           git config user.name "Breaking News Boulevard Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/posts.json data/briefs.json posts index.html weltnachrichten-kurz.html js/posts.js sitemap.xml
+          git add data/posts.json posts index.html js/posts.js sitemap.xml
           if git diff --cached --quiet; then
             echo "Keine Änderungen zu committen."
             exit 0

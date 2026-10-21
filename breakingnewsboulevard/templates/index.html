@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Breaking News Boulevard — Weltnachrichten, täglich neu</title>
-  <meta name="description" content="Aktuelle Weltnachrichten aus offiziellen und frei lizenzierten Primärquellen, eigenständig zusammengefasst, automatisch geprüft und mit Quellenlink zu jedem Artikel.">
+  <meta name="description" content="Aktuelle Weltnachrichten aus RSS- und Primärquellen: sechs kurze Artikel pro Tag, in eigenen Worten zusammengefasst, mit KI-Illustration und Quellenlink.">
   <link rel="canonical" href="https://www.breakingnewsboulevard.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Breaking News Boulevard">
   <meta property="og:title" content="Breaking News Boulevard">
-  <meta property="og:description" content="Weltnachrichten, täglich neu. KI-gestützte Artikel mit freien Fotos oder redaktionellen Illustrationen und Link zur Originalquelle.">
+  <meta property="og:description" content="Weltnachrichten, täglich neu. Sechs kurze KI-gestützte Artikel mit redaktionellen Illustrationen und Link zur Originalquelle.">
   <meta property="og:url" content="https://www.breakingnewsboulevard.com/">
   <meta name="theme-color" content="#111318">
   <style>
@@ -165,47 +165,6 @@
     .side-item:hover h4 { color: var(--accent); }
 
 
-    .briefs { padding: 28px 0 30px; border-bottom: 1px solid var(--line); }
-    .briefs .section-head { margin-bottom: 16px; }
-    .section-head a { color: var(--accent); text-decoration: none; }
-    .section-head a:hover { text-decoration: underline; }
-    .brief-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0 28px;
-    }
-    .brief-card {
-      padding: 14px 0;
-      border-bottom: 1px solid var(--line);
-      break-inside: avoid;
-    }
-    .brief-card h3 {
-      font-family: var(--serif);
-      font-size: 1.04rem;
-      line-height: 1.3;
-      margin: 0 0 5px;
-    }
-    .brief-card p {
-      color: #4c4f55;
-      font-size: 0.88rem;
-      line-height: 1.55;
-      margin: 0 0 7px;
-    }
-    .brief-meta { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.02em; }
-    .brief-source {
-      color: var(--muted);
-      font-size: 0.72rem;
-      letter-spacing: 0.02em;
-    }
-    .brief-source a { color: var(--accent); font-weight: 600; text-decoration: none; }
-    .brief-source a:hover { text-decoration: underline; }
-    .brief-empty { color: var(--muted); font-size: 0.9rem; margin: 0; }
-    .brief-note {
-      color: var(--muted);
-      font-size: 0.7rem;
-      line-height: 1.5;
-      margin: 12px 0 0;
-    }
     .latest { padding: 30px 0 34px; }
     .section-head {
       display: flex;
@@ -288,7 +247,6 @@
       .nav { justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; }
       .nav button { white-space: nowrap; }
       .grid { grid-template-columns: 1fr; }
-      .brief-grid { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; }
       .side-item { grid-template-columns: 84px 1fr; }
       .side-item img { width: 84px; height: 58px; }
@@ -299,19 +257,18 @@
   <div class="topbar">
     <div class="topbar-inner">
       <span>{{DATE_HUMAN}}</span>
-      <span class="ai">KI-gestützte Redaktion · offizielle Quellen, automatisch geprüft</span>
+      <span class="ai">KI-gestützte Redaktion · Quellen verlinkt, automatisch geprüft</span>
     </div>
   </div>
 
   <header class="masthead">
     <a class="logo" href="/">Breaking News <span>Boulevard</span></a>
-    <p class="tagline">Weltnachrichten aus offiziellen Quellen – in eigenen Worten</p>
+    <p class="tagline">Weltnachrichten aus RSS- und Primärquellen – in eigenen Worten</p>
     <nav class="nav" id="nav" aria-label="Rubriken"></nav>
   </header>
 
   <main>
     <section class="lead" id="lead"></section>
-    <section class="briefs" id="briefs">{{BRIEFS_HOME}}</section>
     <section class="latest" id="latestSection">
       <div class="section-head">
         <h2>Neueste Artikel</h2>
@@ -326,12 +283,12 @@
     <div class="footer-inner">
       <div>
         <div class="footer-brand">Breaking News Boulevard</div>
-        <p>Unabhängiger, KI-gestützter Weltnachrichtenüberblick auf Basis offizieller und frei lizenzierter Primärquellen. Jeder Artikel ist eine eigenständige Zusammenfassung, nennt die tatsächlich verwendete Originalquelle und wird vor Veröffentlichung automatisch geprüft.</p>
+        <p>Unabhängiger, KI-gestützter Weltnachrichtenüberblick auf Basis öffentlicher RSS-Feeds und geprüfter Primärquellen. Jeder Artikel ist eine eigenständige Zusammenfassung, nennt die tatsächlich verwendete Quelle und wird vor Veröffentlichung automatisch geprüft.</p>
       </div>
       <div class="disclosure">
-        <p class="ai-note"><strong>Transparenz:</strong> Die Artikel werden mit KI erstellt, gegen den Quelltext geprüft und automatisch validiert. Bilder sind frei lizenzierte Fotos oder redaktionelle Illustrationen, keine Beweisfotos des Geschehens. Für vollständigen Kontext lies bitte immer die Originalquelle.</p>
+        <p class="ai-note"><strong>Transparenz:</strong> Die Artikel werden mit KI erstellt, gegen die Quelle geprüft und automatisch validiert. Bilder sind KI-generierte Illustrationen, keine Beweisfotos des Geschehens. Für vollständigen Kontext lies bitte immer die verlinkte Quelle.</p>
         <p>© {{YEAR}} Breaking News Boulevard</p>
-        <p class="legal-links"><a href="/weltnachrichten-kurz.html">Weltnachrichten kurz</a><span>·</span><a href="/impressum">Impressum</a><span>·</span><a href="/datenschutz">Datenschutz</a></p>
+        <p class="legal-links"><a href="/impressum">Impressum</a><span>·</span><a href="/datenschutz">Datenschutz</a></p>
       </div>
     </div>
   </footer>
@@ -377,7 +334,7 @@
           ${image ? `<img src="${esc(image)}" alt="" loading="lazy">` : ''}
           <div>
             <h4>${esc(post.title)}</h4>
-            <div class="meta">${esc(post.category)}<span class="dot">·</span>${esc(fmt(post.date))}</div>
+            <div class="meta">${esc(post.category)}<span class="dot">·</span>${esc(fmt(post.date))}${post.source ? `<span class="dot">·</span>Quelle: ${esc(post.source.name || post.source)}` : ''}</div>
           </div>
         </a>`;
       }
@@ -389,7 +346,7 @@
           <span class="kicker">${esc(post.category)}</span>
           <h3><a href="${esc(post.url)}">${esc(post.title)}</a></h3>
           <p>${esc(post.excerpt)}</p>
-          <div class="meta">${esc(fmt(post.date))}${post.source ? `<span class="dot">·</span><a href="${esc(post.sourceUrl || '#')}" target="_blank" rel="noopener noreferrer">${esc(post.source.name || post.source)}</a>` : ''}</div>
+          <div class="meta">${esc(fmt(post.date))}${post.source ? `<span class="dot">·</span>Quelle: <a href="${esc(post.sourceUrl || '#')}" target="_blank" rel="noopener noreferrer">${esc(post.source.name || post.source)}</a>` : ''}</div>
         </article>`;
       }
 
