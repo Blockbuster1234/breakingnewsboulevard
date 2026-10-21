@@ -8,7 +8,12 @@ import {
   isSimilarTitle,
   isSourceEnabled,
 } from './lib/news.mjs';
-import { rewriteArticle, generateImage, pollinationsKey } from './lib/ai.mjs';
+import {
+  FatalGenerationError,
+  generateImage,
+  pollinationsKey,
+  rewriteArticle,
+} from './lib/ai.mjs';
 import { rebuildSite, slugify } from './lib/render.mjs';
 import { sleep } from './lib/http.mjs';
 
@@ -297,6 +302,7 @@ async function main() {
 
       if (created < count) await sleep(8000);
     } catch (error) {
+      if (error instanceof FatalGenerationError) throw error;
       console.warn(`[skip] ${candidate.url} — ${error.message}`);
       if (created < count) await sleep(5000);
     }

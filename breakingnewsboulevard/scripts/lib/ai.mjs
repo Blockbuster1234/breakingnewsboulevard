@@ -9,6 +9,8 @@ import {
   normalizeForMatch,
 } from './text.mjs';
 
+export class FatalGenerationError extends Error {}
+
 const POLLINATIONS_TEXT_ENDPOINT = 'https://gen.pollinations.ai/v1/chat/completions';
 const POLLINATIONS_TEXT_MODEL =
   process.env.POLLINATIONS_TEXT_MODEL || 'deepseek/deepseek-v4.1-flash';
@@ -330,7 +332,7 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
   }
 
   const apiKey = pollinationsKey();
-  if (!apiKey) throw new Error('POLLINATIONS_API_KEY fehlt; Text kann nicht erzeugt werden');
+  if (!apiKey) throw new FatalGenerationError('POLLINATIONS_API_KEY fehlt; Text kann nicht erzeugt werden');
 
   let lastError;
   for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -359,8 +361,11 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
       throw lastError;
     }
 
-    if (res.status === 401) throw new Error('Pollinations-Key ungültig; ein Secret Key (sk_...) ist nötig');
-    if (res.status === 402) throw new Error('Pollinations-Guthaben ist aufgebraucht');
+    if (res.status === 401 || res.status === 403) {
+      const body = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 180);
+      throw new FatalGenerationError(`Pollinations-Key ungültig oder ohne Modellrechte (${res.status})${body ? `: ${body}` : ''}`);
+    }
+    if (res.status === 402) throw new FatalGenerationError('Pollinations-Guthaben ist aufgebraucht');
     if (res.status === 429 || res.status >= 500) {
       lastError = new Error(`text API HTTP ${res.status}`);
       if (attempt < 2) {
@@ -496,6 +501,7 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
       feedback = issues.join('\n');
       lastError = new Error(`Prüfung fehlgeschlagen: ${issues.join(' | ')}`);
     } catch (error) {
+      if (error instanceof FatalGenerationError) throw error;
       lastError = error;
       feedback = error.message;
       if (attempt < 2) await sleep(6000 * (attempt + 1));
@@ -534,8 +540,11 @@ async function pollinationsImage(prompt, seed, apiKey) {
       throw lastError;
     }
 
-    if (res.status === 401) throw new Error('Pollinations-Key ungültig; ein Secret Key (sk_...) ist nötig');
-    if (res.status === 402) throw new Error('Pollinations-Guthaben ist aufgebraucht');
+    if (res.status === 401 || res.status === 403) {
+      const body = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 180);
+      throw new FatalGenerationError(`Pollinations-Key ungültig oder ohne Modellrechte (${res.status})${body ? `: ${body}` : ''}`);
+    }
+    if (res.status === 402) throw new FatalGenerationError('Pollinations-Guthaben ist aufgebraucht');
     if (res.status === 429) {
       lastError = new Error('Pollinations-Rate-Limit erreicht');
       if (attempt === 0) {
@@ -586,7 +595,7 @@ function safeImagePrompt(prompt, category = 'Welt') {
 export async function generateImage(prompt, seed = Math.floor(Math.random() * 1_000_000_000), category = 'Welt') {
   const apiKey = pollinationsKey();
   if (!apiKey) {
-    throw new Error('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
+    throw new FatalGenerationError('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
   }
   const artwork = safeImagePrompt(prompt, category);
   const finalPrompt = `${artwork}. Flat two-dimensional editorial illustration for a news article, silkscreen and gouache poster, solid muted colours, simplified geometric shapes, visible paper grain, wide 16:9 composition. The picture is entirely illustrated, with no photographic or 3D rendering and no depth of field. The artwork contains no people, no faces, no politicians, no flags, no lettering, no words, no numbers, no labels, no signage, no logos and no typography.`;
