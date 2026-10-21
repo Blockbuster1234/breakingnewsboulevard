@@ -49,6 +49,8 @@
 
     figure.hero { margin: 24px 0 30px; }
     figure.hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; background: #ddd; }
+    figure.hero figcaption { font-family: var(--sans); font-size: 0.72rem; line-height: 1.5; color: var(--muted); margin-top: 7px; }
+    figure.hero figcaption a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
 
     .prose { font-family: var(--serif); font-size: 1.13rem; line-height: 1.75; color: #22242a; }
     .prose p { margin: 0 0 1.25em; }
@@ -64,6 +66,7 @@
     .source-box a { color: var(--accent); font-weight: 600; }
     .source-note { color: var(--muted); font-size: 0.8rem; }
     .review-note { font-family: var(--sans); font-size: 0.8rem; line-height: 1.5; color: var(--muted); margin: 0 0 18px; }
+    .correction-note { font-family: var(--sans); font-size: 0.8rem; line-height: 1.55; color: #7a3b12; background: #fff4e5; border-left: 3px solid #c66a1b; padding: 10px 13px; margin: 0 0 18px; }
     .disclaimer { font-family: var(--sans); font-size: 0.78rem; line-height: 1.6; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; margin-top: 26px; }
     .disclaimer strong { color: var(--ink); }
 
@@ -111,8 +114,11 @@
 
     <p class="source-top"><span>Originalquelle</span><a href="https://ec.europa.eu/commission/presscorner/detail/de/ip_26_2210" target="_blank" rel="noopener noreferrer">Europäische Kommission</a></p>
 
+
+
     <figure class="hero">
       <img src="/posts/2026-10-20-eu-kommission-bestaetigt-einigung-ueber-neues-bio-regelwerk-hero.jpg" alt="EU-Kommission begrüßt Einigung über neues Bio-Regelwerk" fetchpriority="high">
+      <figcaption>Illustration: Breaking News Boulevard · Lizenz: Eigene redaktionelle Illustration</figcaption>
     </figure>
 
     <div class="prose">
@@ -138,12 +144,12 @@
 
     <p class="review-note">Dieser Artikel wurde vor Veröffentlichung automatisch geprüft.</p>
 
-    <p class="disclaimer"><strong>So entsteht dieser Artikel:</strong> Ein KI-Modell hat die offizielle Quelle in eigenen Worten zusammengefasst; die Illustration ist eine redaktionelle Illustration, kein Foto des Ereignisses. Namen, Funktionen, Zahlen und Fakten wurden vor der Veröffentlichung automatisch gegen die Quelle geprüft. Bei sich entwickelnden Ereignissen prüfe bitte die Originalquelle.</p>
+    <p class="disclaimer"><strong>So entsteht dieser Artikel:</strong> Ein KI-Modell hat die offizielle Quelle in eigenen Worten zusammengefasst; das Bild ist eine redaktionelle Illustration, kein Beweisfoto des Ereignisses. Namen, Funktionen, Zahlen und Fakten wurden vor der Veröffentlichung automatisch gegen die Quelle geprüft. Bei sich entwickelnden Ereignissen prüfe bitte die Originalquelle.</p>
   </article>
 
   <footer>
     <div class="footer-inner">
-      <p><a href="/">Breaking News Boulevard</a> — echte Berichterstattung, täglich neu geschrieben. <span class="ai-note">Bilder sind redaktionelle Illustrationen.</span></p>
+      <p><a href="/">Breaking News Boulevard</a> — echte Berichterstattung, täglich neu geschrieben. <span class="ai-note">Bilder sind frei lizenzierte Fotos oder redaktionelle Illustrationen.</span></p>
       <p class="legal-links"><a href="/impressum">Impressum</a><span>·</span><a href="/datenschutz">Datenschutz</a></p>
     </div>
   </footer>

@@ -9,6 +9,7 @@ import {
   isSourceEnabled,
 } from './lib/news.mjs';
 import { rewriteArticle, generateImage } from './lib/ai.mjs';
+import { findArticleImage } from './lib/images.mjs';
 import { rebuildSite, slugify } from './lib/render.mjs';
 import { sleep } from './lib/http.mjs';
 
@@ -104,6 +105,18 @@ function buildCredit(source, article) {
   if (source.id === 'ec-press') {
     return 'Quelle: Europäische Kommission; Lizenz CC BY 4.0; Änderungen vorgenommen.';
   }
+  if (source.id === 'nasa') {
+    return 'Quelle: NASA; NASA Media Usage Guidelines; Quellenangabe.';
+  }
+  if (source.id === 'us-cisa') {
+    return 'Quelle: US Cybersecurity and Infrastructure Security Agency (CISA), US-Regierung; Public Domain.';
+  }
+  if (source.id === 'uk-gov') {
+    return 'Quelle: UK Government; Open Government Licence v3.0.';
+  }
+  if (source.id === 'wikinews') {
+    return 'Quelle: Wikinews (englisch), Autoren; Lizenz CC BY 4.0 (ältere Artikel ggf. CC BY 2.5).';
+  }
   return `Quelle: ${source.name}.`;
 }
 
@@ -117,6 +130,7 @@ function sourceMeta(source, candidate, article) {
     licenseUrl: source.licenseUrl,
     credit: buildCredit(source, article),
     reuseNote: source.reuseNote,
+    language: source.language || 'de',
     publishedAt: article.publishedAt || candidate.publishedAt || '',
   };
 }
@@ -131,7 +145,7 @@ function saveDraft(post, article, image) {
 }
 
 async function main() {
-  const count = Math.max(0, Number(argValue('--count', '3')) || 0);
+  const count = Math.max(0, Number(argValue('--count', '2')) || 0);
   const posts = loadPosts();
   const drafts = loadDrafts();
 
@@ -191,8 +205,37 @@ async function main() {
         continue;
       }
 
-      console.log(`[image] ${rewritten.imagePrompt}`);
-      const image = await generateImage(rewritten.imagePrompt);
+      let image;
+      let imageMeta;
+      const photo = await findArticleImage({
+        title: article.title,
+        sourceName: source.name,
+      });
+      if (photo) {
+        image = { buffer: photo.buffer, ext: photo.ext };
+        imageMeta = {
+          imageCredit: photo.credit,
+          imageLicense: photo.license,
+          imageLicenseUrl: photo.licenseUrl,
+          imageSourceUrl: photo.sourceUrl,
+          imageType: 'photo',
+          imageProvider: photo.provider,
+          imageAlt: photo.alt || article.title,
+        };
+        console.log(`[image] freies Foto: ${photo.provider} / ${photo.license}`);
+      } else {
+        console.log(`[image] kein freies Foto; Illustration: ${rewritten.imagePrompt}`);
+        image = await generateImage(rewritten.imagePrompt);
+        imageMeta = {
+          imageCredit: 'Breaking News Boulevard',
+          imageLicense: 'Eigene redaktionelle Illustration',
+          imageLicenseUrl: '',
+          imageSourceUrl: '',
+          imageType: 'illustration',
+          imageProvider: 'Jimp',
+          imageAlt: rewritten.title,
+        };
+      }
 
       const slug = uniqueSlug(rewritten.title, date, [...posts, ...drafts]);
       const post = {
@@ -208,6 +251,7 @@ async function main() {
         source: sourceMeta(source, candidate, article),
         body: rewritten.body,
         imagePrompt: rewritten.imagePrompt,
+        ...imageMeta,
         wordCount: rewritten.wordCount,
         sourcePublishedAt: article.publishedAt || candidate.publishedAt || '',
         createdAt: new Date().toISOString(),

@@ -8,7 +8,100 @@ const EXCLUDE =
 const SOFT_NEWS =
   /\b(harry|meghan|sussex|royals?|kardashian|celebrity|celebrities|actor|actress|singer|rapper|movie|film|tv show|reality tv|netflix|oscars?|grammys?|eurovision|fashion|beauty pageant|wedding|divorce|dating|football|soccer|premier league|champions league|olympic|tennis|golf|cricket|formula 1|boxing|ufc)\b/i;
 
+async function collectWikinews(source) {
+  const params = new URLSearchParams({
+    action: 'query',
+    list: 'categorymembers',
+    cmtitle: 'Category:Published',
+    cmtype: 'page',
+    cmsort: 'timestamp',
+    cmdir: 'desc',
+    cmlimit: '20',
+    format: 'json',
+  });
+  const data = JSON.parse(
+    await fetchText(`https://en.wikinews.org/w/api.php?${params}`, {
+      headers: { accept: 'application/json' },
+    }),
+  );
+  return (data?.query?.categorymembers || [])
+    .map((entry) => {
+      const title = cleanTitle(clean(entry.title));
+      const url = `https://en.wikinews.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}`;
+      return {
+        url,
+        title,
+        source: source.name,
+        sourceId: source.id,
+        categoryHint: source.category,
+        language: source.language,
+        publishedAt: '',
+      };
+    })
+    .filter((item) => {
+      if (item.title.length < 25 || item.title.length > 180) return false;
+      if (SOFT_NEWS.test(item.title) || SOFT_NEWS.test(item.url)) return false;
+      return true;
+    });
+}
+
 export const SOURCES = [
+  {
+    id: 'nasa',
+    name: 'NASA',
+    category: 'Wissenschaft',
+    homepage: 'https://www.nasa.gov/news-release/',
+    feed: 'https://www.nasa.gov/news-release/feed/',
+    include:
+      /^https:\/\/www\.nasa\.gov\/(?:news-release|general|centers-and-facilities|missions|organizations)\//i,
+    language: 'en',
+    termsUrl: 'https://www.nasa.gov/nasa-brand-center/images-and-media/',
+    license: 'NASA Media Usage Guidelines – keine Standardlizenz; Quellenangabe NASA',
+    licenseUrl: 'https://www.nasa.gov/nasa-brand-center/images-and-media/',
+    reuseNote:
+      'NASA-Inhalte sind in den USA grundsätzlich nicht urheberrechtlich geschützt und dürfen für informative bzw. redaktionelle Zwecke verwendet werden. NASA als Quelle nennen; keine NASA-Logos oder Endorsement-Andeutung. Fotos und Inhalte Dritter sind ausgenommen; NASA-Marken sind geschützt.',
+  },
+  {
+    id: 'us-cisa',
+    name: 'US-Regierung – CISA',
+    category: 'Technologie',
+    homepage: 'https://www.cisa.gov/news-events/news',
+    feed: 'https://www.cisa.gov/news.xml',
+    include: /\/news-events\/news\//i,
+    language: 'en',
+    termsUrl: 'https://www.usa.gov/government-copyright',
+    license: 'Public Domain (US Government work, 17 U.S.C. § 105)',
+    licenseUrl: 'https://www.usa.gov/government-copyright',
+    reuseNote:
+      'Nur Werke von US-Regierungsbediensteten. Keine Inhalte Dritter, Logos oder geschützten Fotos übernehmen; Quellenangabe erforderlich.',
+  },
+  {
+    id: 'uk-gov',
+    name: 'UK Government',
+    category: 'Politik',
+    homepage: 'https://www.gov.uk/government/latest',
+    feed: 'https://www.gov.uk/search/news-and-communications.atom',
+    include: /\/government\/(?:news|speeches)\//i,
+    language: 'en',
+    termsUrl: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/',
+    license: 'Open Government Licence v3.0',
+    licenseUrl: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/',
+    reuseNote:
+      'Enthält Informationen des öffentlichen Sektors unter der Open Government Licence v3.0. Quellenangabe und Lizenzlink erforderlich.',
+  },
+  {
+    id: 'wikinews',
+    name: 'Wikinews',
+    category: 'Welt',
+    homepage: 'https://en.wikinews.org/wiki/Main_Page',
+    collect: collectWikinews,
+    language: 'en',
+    termsUrl: 'https://en.wikinews.org/wiki/Wikinews:Copyright',
+    license: 'CC BY 4.0 (ab 16.12.2024; ältere Artikel CC BY 2.5)',
+    licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+    reuseNote:
+      'Autoren von Wikinews nennen; Link zur Quelle und zur Lizenz erforderlich. Für ältere Artikel gilt CC BY 2.5.',
+  },
   {
     id: 'ec-press',
     name: 'Europäische Kommission',
@@ -63,8 +156,14 @@ export const BLOCKED_SOURCES = [
     name: 'UN News',
     termsUrl: 'https://www.un.org/en/about-us/copyright',
     reason:
-      'News-Material darf laut UN nur mit Quellenangabe und nach Benachrichtigung der UN genutzt werden; die allgemeinen Terms erlauben standardmäßig keine Derivate.',
+      'UN News erlaubt die Nutzung von News-Material nur mit Quellenangabe und vorheriger Benachrichtigung der UN; keine Standardlizenz für automatische Übernahme. Deshalb nicht aktiviert.',
     requiresNotification: true,
+  },
+  {
+    name: 'Weltgesundheitsorganisation (WHO)',
+    termsUrl: 'https://www.who.int/about/policies/publishing/copyright',
+    reason:
+      'WHO-Inhalte stehen unter CC BY-NC-SA 3.0 IGO und dürfen nur nicht-kommerziell genutzt werden. Wegen dieser Einschränkung wurde die Quelle deaktiviert.',
   },
   {
     name: 'Deutsche Bundesbank',
@@ -75,9 +174,15 @@ export const BLOCKED_SOURCES = [
   },
   {
     name: 'Bundesregierung',
-    termsUrl: 'https://www.bundesregierung.de/breg-de/service/nutzungsbedingungen',
+    termsUrl: 'https://www.bundesregierung.de/breg-de/impressum',
     reason:
-      'Keine belastbare Erlaubnis für Text-Reuse gefunden; die Nutzungsbedingungen- und Impressum-Seiten lieferten 404. Bild-AGB gelten nur für Pressefotos.',
+      'Keine klare Lizenz für die Übernahme von Pressemitteilungstexten gefunden; die Inhalte sind urheberrechtlich geschützt. Bild-AGB gelten nur für Pressefotos. Deshalb nicht aktiviert.',
+  },
+  {
+    name: 'Europäische Weltraumorganisation (ESA)',
+    termsUrl: 'https://www.esa.int/Services/Terms_and_conditions',
+    reason:
+      'Die ESA-Terms erlauben keine Redistribution und keine Derivate ohne vorherige schriftliche Zustimmung. Damit ist eine eigenständige Zusammenfassung nicht freigegeben.',
   },
   {
     name: 'Bundesverfassungsgericht',
@@ -116,10 +221,13 @@ function clean(text) {
 }
 
 function cleanArticleTitle(title, fallback) {
-  const cleaned = clean(title).replace(
-    /^Presse\s*:\s*Pressemitteilungen aus dem Jahr \d{4}\s*[-–]\s*/i,
-    '',
-  );
+  const cleaned = clean(title)
+    .replace(
+      /^Presse\s*:\s*Pressemitteilungen aus dem Jahr \d{4}\s*[-–]\s*/i,
+      '',
+    )
+    .replace(/\s+[-|–]\s+(NASA|CISA|WHO|UK Government|Wikinews)\s*$/i, '')
+    .trim();
   return cleaned || fallback;
 }
 
@@ -227,6 +335,7 @@ export function isSimilarTitle(a, b) {
 }
 
 async function collectFromSource(source) {
+  if (source.collect) return source.collect(source);
   if (source.feed) {
     return collectFeed(await fetchText(source.feed), source);
   }
@@ -237,11 +346,13 @@ export async function collectCandidates(limit = 12) {
   const active = SOURCES.filter(isSourceEnabled);
   if (!active.length) throw new Error('Keine aktiven offiziellen Quellen konfiguriert');
 
-  const results = await Promise.allSettled(active.map((source) => collectFromSource(source)));
+  const dayOffset = Math.floor(Date.now() / 86400000) % active.length;
+  const ordered = [...active.slice(dayOffset), ...active.slice(0, dayOffset)];
+  const results = await Promise.allSettled(ordered.map((source) => collectFromSource(source)));
 
   results.forEach((result, index) => {
     if (result.status === 'rejected') {
-      console.warn(`[news] ${active[index].name} failed: ${result.reason.message}`);
+      console.warn(`[news] ${ordered[index].name} failed: ${result.reason.message}`);
     }
   });
 

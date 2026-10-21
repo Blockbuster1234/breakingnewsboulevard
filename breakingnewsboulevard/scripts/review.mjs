@@ -2,7 +2,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { rebuildSite, writePostPage } from './lib/render.mjs';
 import { SOURCES } from './lib/news.mjs';
-import { countBodyWords, countWords, extractQuotes, findLongOverlap, normalizeForMatch } from './lib/text.mjs';
+import {
+  countBodyWords,
+  countWords,
+  extractQuotes,
+  findLongOverlap,
+  findStructureIssues,
+  findUnsupportedClaims,
+  normalizeForMatch,
+} from './lib/text.mjs';
 
 const ROOT = process.cwd();
 const DATA_FILE = path.join(ROOT, 'data', 'posts.json');
@@ -10,7 +18,17 @@ const POSTS_DIR = path.join(ROOT, 'posts');
 const REVIEW_DIR = path.join(ROOT, 'review', 'queue');
 const APPROVED_DIR = path.join(ROOT, 'review', 'approved');
 const REJECTED_DIR = path.join(ROOT, 'review', 'rejected');
-const CHECKS = ['names', 'roles', 'numbers', 'facts', 'timeliness', 'source', 'quote'];
+const CHECKS = [
+  'names',
+  'roles',
+  'numbers',
+  'facts',
+  'timeliness',
+  'source',
+  'quote',
+  'grounding',
+  'structure',
+];
 
 function fail(message) {
   console.error(`[review] ${message}`);
@@ -133,6 +151,16 @@ function approve(id, flags) {
   if (!post.source.title) fail('Originaltitel fehlt');
   if (!post.source.credit) fail('Quellenangabe fehlt');
   if (!post.source.license) fail('Lizenzangabe fehlt');
+  if (!post.source.licenseUrl?.startsWith('https://')) fail('Lizenz-URL der Quelle fehlt');
+  if (!post.imageCredit) fail('Bildurheber fehlt');
+  if (!post.imageLicense) fail('Bildlizenz fehlt');
+  if (!['photo', 'illustration'].includes(post.imageType)) fail('Bildtyp fehlt oder ist ungültig');
+  if (post.imageType === 'photo' && !post.imageLicenseUrl?.startsWith('https://')) {
+    fail('Lizenz-URL des Fotos fehlt');
+  }
+  if (post.imageType === 'photo' && !post.imageSourceUrl?.startsWith('https://')) {
+    fail('Bildquelle fehlt');
+  }
   let host;
   try {
     host = new URL(post.source.url).hostname.replace(/^www\./, '');
@@ -165,6 +193,20 @@ function approve(id, flags) {
     return !normalized || !sourceNorm.includes(normalized);
   })) {
     fail('Zitat steht nicht exakt im Quelltext');
+  }
+  const claimIssues = findUnsupportedClaims(post.body, sourceText, {
+    language: post.source?.language || 'de',
+  });
+  if (claimIssues.length) {
+    fail(
+      `Nicht durch die Quelle gedeckte Sätze: ${claimIssues
+        .map((item) => `"${item.sentence}" (${item.reasons.join(', ')})`)
+        .join(' | ')}`,
+    );
+  }
+  const structureIssues = findStructureIssues(post.body);
+  if (structureIssues.length) {
+    fail(`Struktur: ${structureIssues.join('; ')}`);
   }
 
   const posts = loadPosts();
@@ -243,6 +285,6 @@ if (command === 'list') {
   reject(id, flags);
 } else {
   console.log(
-    'Nutzung: node scripts/review.mjs list | show <id> | approve <id> --reviewer "Name" --checks names,roles,numbers,facts,timeliness,source,quote | reject <id> --reason "..."',
+    'Nutzung: node scripts/review.mjs list | show <id> | approve <id> --reviewer "Name" --checks names,roles,numbers,facts,timeliness,source,quote,grounding,structure | reject <id> --reason "..."',
   );
 }

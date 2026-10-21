@@ -1,0 +1,106 @@
+{
+  "updatedAt": "2026-10-21T09:06:14.034Z",
+  "days": [
+    {
+      "date": "2026-10-21",
+      "items": [
+        {
+          "id": "2026-10-21-guardian-4031aa1963",
+          "headline": "Nigeria meldet Ebola-Fall aus Uganda",
+          "text": "Eine Frau, die aus Uganda nach Abuja kam, wurde dort positiv getestet. Das Gesundheitsministerium bestätigt den Fall in der Hauptstadt.",
+          "wordCount": 25,
+          "sourceId": "guardian",
+          "sourceName": "The Guardian",
+          "sourceVia": "",
+          "sourceUrl": "https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest",
+          "publishedAt": "2026-10-21T00:14:55.000Z",
+          "createdAt": "2026-10-21T08:50:41.199Z"
+        },
+        {
+          "id": "2026-10-21-guardian-800e7aa026",
+          "headline": "Polizei beschlagnahmt Hepatitis‑Vaccine in Guinea‑Bissau",
+          "text": "Polizeibeamte rauben in Guinea‑Bissau die Büros von Forschern, die im Streit um Studien zu afrikanischen Neugeborenen stehen, und nehmen Hepatitis‑B‑Vaccine ab.",
+          "wordCount": 31,
+          "sourceId": "guardian",
+          "sourceName": "The Guardian",
+          "sourceVia": "",
+          "sourceUrl": "https://www.theguardian.com/world/2026/oct/20/rfk-jr-vaccine-researchers-offices-raided-guinea-bissau",
+          "publishedAt": "2026-10-20T19:18:03.000Z",
+          "createdAt": "2026-10-21T08:52:34.270Z"
+        },
+        {
+          "id": "2026-10-21-bbc-8d3d5afb15",
+          "headline": "US-Delegierter landet in St. Petersburg",
+          "text": "Steve Witkoff kommt nach St. Petersburg, um Vorschläge zur Beendigung des Ukraine-Konflikts mit Russland zu besprechen.",
+          "wordCount": 21,
+          "sourceId": "bbc",
+          "sourceName": "BBC",
+          "sourceVia": "",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o",
+          "publishedAt": "2026-10-21T08:18:53.000Z",
+          "createdAt": "2026-10-21T08:53:44.486Z"
+        },
+        {
+          "id": "2026-10-21-reuters-c714a3fdc9",
+          "headline": "EU-Behörde warnt: Webseiten könnten offline gehen",
+          "text": "Die EU-Behörde warnt, dass Webseiten wegen PHP‑Sicherheitslücken vorübergehend offline gehen könnten, während Patches entwickelt werden.",
+          "wordCount": 22,
+          "sourceId": "reuters",
+          "sourceName": "Reuters",
+          "sourceVia": "Google News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNemhoUnNZdUg4Sk9JMjJQU25mTUZSX2lHc1JTNTFpNGlTcWxRRDctcFNCcVZiTUhYQ211YnNjSnRvYTYyS29VNFFKcHE4VGFMcHMxTGNwa3NmVUFNamNnektGaU9BbURibzdIY2hHUlpMbEwtNWhrOG9BenJvYkllVnNfakVVRU5yRzRjdDBjQXc2OEwtS1RwZVZhaWhoRWtlalVmU0xOQm5SbmUyeGVGeGgzUkE2XzRtbFBKdTJnUTJoRWdV?oc=5",
+          "publishedAt": "2026-10-21T07:28:50.000Z",
+          "createdAt": "2026-10-21T08:54:52.290Z"
+        },
+        {
+          "id": "2026-10-21-tagesschau-c06e06cd83",
+          "headline": "Emma Magazin nach 50 Jahren eingestellt",
+          "text": "Alice Schwarzer beendet das feministische Magazin Emma nach fünf Jahrzehnten, ohne wirtschaftliche Gründe.",
+          "wordCount": 19,
+          "sourceId": "tagesschau",
+          "sourceName": "Tagesschau",
+          "sourceVia": "",
+          "sourceUrl": "https://www.tagesschau.de/kultur/emma-magazin-ende-100.html",
+          "publishedAt": "2026-10-21T08:40:09.000Z",
+          "createdAt": "2026-10-21T08:56:00.900Z"
+        },
+        {
+          "id": "2026-10-21-aljazeera-648c533e64",
+          "headline": "Paris‑Geschäfte leiden durch Protestgewalt",
+          "text": "In Paris haben Ladenbesitzer, darunter auch mit Migrationshintergrund, Verluste durch Gewalt am vergangenen Wochenende erlitten.",
+          "wordCount": 20,
+          "sourceId": "aljazeera",
+          "sourceName": "Al Jazeera",
+          "sourceVia": "",
+          "sourceUrl": "https://www.aljazeera.com/news/2026/10/21/its-hard-for-us-paris-small-businesses-bear-brunt-of-protest-violence",
+          "publishedAt": "2026-10-21T07:56:14.000Z",
+          "createdAt": "2026-10-21T08:57:07.198Z"
+        },
+        {
+          "id": "2026-10-21-bbc-524d17dbf4",
+          "headline": "Zelensky und Witkoff in Oslo umarmt",
+          "text": "Der ukrainische Präsident Zelensky umarmte Steve Witkoff in Oslo, was die Zweifel an der US-Politik gegenüber der Ukraine nicht beseitigt.",
+          "wordCount": 26,
+          "sourceId": "bbc",
+          "sourceName": "BBC",
+          "sourceVia": "",
+          "sourceUrl": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro",
+          "publishedAt": "2026-10-20T20:00:57.000Z",
+          "createdAt": "2026-10-21T09:05:02.386Z"
+        },
+        {
+          "id": "2026-10-21-reuters-04ab6540da",
+          "headline": "Starlink-Zugang in Ukraine liegt bei Musk",
+          "text": "Der Senator Rubio betont, dass die Entscheidung über den Starlink-Zugang in der Ukraine ausschließlich Elon Musk trifft, nicht die US-Regierung.",
+          "wordCount": 26,
+          "sourceId": "reuters",
+          "sourceName": "Reuters",
+          "sourceVia": "Google News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZHFiRnNfU1ZqdEFSWG9fQV93dDJCNVQ0NTh2bF9WRmtQcERCbFZlQ3ZVRllOeWVjejY2RGZhNjJzVjV5U19lMUhZV3ZpNTZpcElSbGFaY0dpTUxEaGx4eElobk9qakZXZ3g5LVZqaHV0QTZ3eElMSGdjQzdqT3Y1alVuVDh4NV9RZF9ycmc1bkUyeTVTTnFvVzdUUVFnWXRDb29aQk13YU1OeFBNQ3BFQ2tNRjlCTWFIX2c?oc=5",
+          "publishedAt": "2026-10-21T05:54:00.000Z",
+          "createdAt": "2026-10-21T09:06:11.974Z"
+        }
+      ]
+    }
+  ]
+}

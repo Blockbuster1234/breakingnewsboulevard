@@ -5,6 +5,8 @@ import {
   countWords,
   extractQuotes,
   findLongOverlap,
+  findStructureIssues,
+  findUnsupportedClaims,
   normalizeForMatch,
 } from './text.mjs';
 
@@ -39,7 +41,10 @@ Harte Regeln:
 - Übernimm Amts- und Funktionsbezeichnungen exakt aus dem Quelltext (zum Beispiel "Bundesinnenminister", nicht "Ministerpräsident").
 - Schreibe durchgehend auf Deutsch, auch die Überschrift. Englische Wörter nur in Eigennamen oder direkten Zitaten.
 - Formuliere alles in eigenen Worten. Übernimm nie mehr als 9 aufeinanderfolgende Wörter aus der Quelle. Keine wörtliche Übersetzung und keine enge Umformulierung der Quellstruktur.
-- Schreibe eine kurze eigene Zusammenfassung mit 120-180 Wörtern im Fließtext. Ziel sind 140-160 Wörter; niemals unter 120, nie über 180. Zähle die Wörter vor der Ausgabe. Gliedere den Text in kurze Absätze und 0-2 Zwischenüberschriften. Keine Füllsätze und keine erfundenen Details.
+- Schreibe eine kurze eigene Zusammenfassung mit 120-180 Wörtern im Fließtext. Ziel sind 140-160 Wörter; niemals unter 120, nie über 180. Zähle die Wörter vor der Ausgabe. Gliedere den Text in kurze Absätze und 0-1 Zwischenüberschrift. Keine Füllsätze und keine erfundenen Details.
+- Der erste Absatz besteht aus genau einem Satz und beantwortet Was, Wo und Wer. Danach folgt ein Absatz, der erklärt, warum die Meldung wichtig ist – ausschließlich mit Tatsachen, die im Quelltext stehen. Wenn die Quelle keine Bedeutung nennt, nenne konkrete Fakten oder Folgen aus der Quelle; erfinde keine Bewertung.
+- Jeder Satz muss durch den Quelltext gedeckt sein. Nenne nur Fakten aus der Quelle, dichte nichts hinzu und gib keine eigene Einordnung. Verzichte auf Sätze über Bedeutung, Zukunft, Folgen oder Zusammenhänge, wenn sie nicht ausdrücklich in der Quelle stehen.
+- Keine Formulierungen wie "Frühindikator", keine Hinweise auf Dashboards, keine Prognosen, keinen Ausblick, kein Fazit und keine Empfehlungen.
 - Fasse nur 2-4 Kernaussagen zusammen. Gehe nicht Absatz für Absatz durch die Quelle und übersetze nicht Satz für Satz. Lass Details weg, die für die Kernaussage nicht nötig sind.
 - Höchstens ein kurzes wörtliches Zitat mit maximal 25 Wörtern. Das Zitat muss exakt so im Quelltext stehen. Wenn du unsicher bist oder die Quelle fremdsprachig ist: kein Zitat.
 - Die Überschrift muss die zentrale Aussage des Artikels korrekt zusammenfassen. Achte besonders auf Verneinungen und Gegenteile.
@@ -54,8 +59,31 @@ JSON-Format:
   "title": "max 90 Zeichen, sachliche Überschrift",
   "excerpt": "max 180 Zeichen, eine Zusammenfassung in einem Satz",
   "category": "eine von: Welt, Politik, Wirtschaft, Technologie, Wissenschaft, Gesundheit, Klima, Kultur, Sport, Justiz",
-  "body": "120-180 Wörter Fließtext als kurze eigene Zusammenfassung. Absätze durch Leerzeilen getrennt. 0-2 Zwischenüberschriften als Zeilen mit '## '.",
+  "body": "120-180 Wörter Fließtext als kurze eigene Zusammenfassung. Erster Absatz: genau ein Satz (Was, Wo, Wer). Zweiter Absatz: warum es wichtig ist, nur mit Fakten aus der Quelle. Absätze durch Leerzeilen getrennt. 0-1 Zwischenüberschrift als Zeile mit '## '.",
   "imagePrompt": "kurze englische Beschreibung einer symbolischen redaktionellen Illustration. Bevorzuge Architektur, Landschaften, Gegenstände, Lichtstimmungen oder abstrakte Formen. Vermeide Bildschirme, Diagramme, Karten, Zeitungen, Dokumente, Schilder, Flaggen, Menschenmengen und alles mit Schrift. Keine realen Personen, keine Gewalt, kein Text."
+}`;
+
+const BRIEF_SYSTEM_PROMPT = `Du bist Redakteur für die Rubrik "Weltnachrichten kurz" bei Breaking News Boulevard.
+Du erhältst ausschließlich die Überschrift und die Kurzbeschreibung einer Meldung aus einem öffentlichen RSS-Feed.
+
+Harte Regeln:
+- Schreibe eine eigenständige deutsche Kurzmeldung mit den wichtigsten Fakten: Was, Wo und Wer.
+- Übernimm keine Sätze, Satzteile oder Wendungen aus der Überschrift oder Beschreibung. Keine wörtliche Übersetzung und keine enge Umformulierung.
+- Verwende nur Fakten, Namen, Orte und Zahlen, die ausdrücklich in der Überschrift oder Beschreibung stehen. Ergänze nichts, auch nichts Naheliegendes: keine Gebäude, Behörden, Krankenhäuser, Motive, Folgen, Reaktionen oder Zeitangaben, wenn sie nicht dastehen.
+- Nenne die Quelle nicht im Text; sie wird separat als Link angezeigt.
+- Keine Zitate, keine Meinung, keine Prognose, keinen Ausblick, kein Fazit und keine Empfehlung.
+- Schreibe durchgehend Deutsch. Englische Wörter nur bei Eigennamen.
+- Wenn die Angaben zu dünn sind, formuliere kürzer und nur mit belegten Fakten.
+- headline: maximal 8 Wörter, eigene Formulierung, keine Kopie der Quellenüberschrift.
+- text: maximal 35 Wörter, ein bis zwei Sätze, mit Was, Wo und Wer.
+- headline und text zusammen: höchstens 45 Wörter.
+- Prüfe vor der Ausgabe jede Angabe gegen die Quelle und streiche alles, was nicht ausdrücklich belegt ist.
+- Gib ausschließlich gültiges JSON ohne Markdown zurück.
+
+JSON-Format:
+{
+  "headline": "kurze eigene Überschrift",
+  "text": "kurze deutsche Meldung mit den wichtigsten Fakten"
 }`;
 
 function parseJson(content) {
@@ -336,6 +364,10 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
       const roleIssues = sourceLocale === 'de' ? findRoleIssues(result.body, sourceText) : [];
       const languageIssues = findLanguageIssues(result);
       const quoteIssues = findQuoteIssues(result, sourceText);
+      const claimIssues = findUnsupportedClaims(result.body, sourceText, {
+        language: sourceLanguage,
+      });
+      const structureIssues = findStructureIssues(result.body);
       const bodyWithoutQuotes = result.body.replace(/[„“”"«»‚‘‹›][^„“”"«»‚‘‹›]{3,500}[„“”"«»‚‘‹›]/g, ' ');
       const overlaps = findLongOverlap(bodyWithoutQuotes, sourceText);
 
@@ -363,6 +395,18 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
           `Zu lange wörtliche Übereinstimmung mit der Quelle: "${overlaps.join('" | "')}". Formuliere eigenständig.`,
         );
       }
+      if (claimIssues.length) {
+        issues.push(
+          `Nicht durch die Quelle gedeckte Sätze: ${claimIssues
+            .map((item) => `"${item.sentence}" (${item.reasons.join(', ')})`)
+            .join(' | ')}. Entferne eigene Einordnungen; formuliere nur Fakten aus dem Quelltext.`,
+        );
+      }
+      if (structureIssues.length) {
+        issues.push(
+          `Struktur: ${structureIssues.join('; ')}. Beginne mit einem Lead-Satz (Was, Wo, Wer) und danach einem Absatz zur Bedeutung mit Fakten aus der Quelle.`,
+        );
+      }
 
       if (!issues.length) return result;
 
@@ -374,6 +418,104 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
       if (attempt < 2) await sleep(6000 * (attempt + 1));
     }
   }
+  throw lastError;
+}
+
+function sanitizeBrief(result) {
+  const headline = String(result.headline || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const text = String(result.text || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (!headline || !text) throw new Error('Brief ohne Überschrift oder Text');
+  if (headline.length < 8 || headline.length > 100) {
+    throw new Error(`Brief-Überschrift hat ${headline.length} Zeichen; erlaubt sind 8-100`);
+  }
+  if (countWords(headline) > 12) throw new Error('Brief-Überschrift ist länger als 12 Wörter');
+  const wordCount = countWords(`${headline} ${text}`);
+  if (wordCount < 15 || wordCount > 50) {
+    throw new Error(`Kurzmeldung hat ${wordCount} Wörter; erlaubt sind 15-50`);
+  }
+  if (extractQuotes(`${headline} ${text}`).length) {
+    throw new Error('Kurzmeldung enthält ein Zitat; Zitate sind nicht erlaubt');
+  }
+  if (/als (ki|sprachmodell)|ich kann (das|dies) nicht|i cannot|language model/i.test(text)) {
+    throw new Error('model refused');
+  }
+
+  return { headline, text, wordCount };
+}
+
+export async function rewriteBrief({
+  sourceName,
+  sourceTitle,
+  sourceDescription,
+  sourceLanguage = 'en',
+}) {
+  const sourceText = `${sourceTitle}\n\n${sourceDescription}`.slice(0, 1800);
+  const basePrompt = `QUELLE: ${sourceName}
+ÜBERSCHRIFT: ${sourceTitle}
+KURZBESCHREIBUNG:
+${sourceDescription}
+
+Schreibe jetzt die deutsche Kurzmeldung. Gib nur das JSON-Objekt zurück.`;
+
+  let feedback = '';
+  let lastError;
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const messages = [
+        { role: 'system', content: BRIEF_SYSTEM_PROMPT },
+        {
+          role: 'user',
+          content: feedback
+            ? `${basePrompt}\n\nKORREKTURHINWEIS:\n${feedback}`
+            : basePrompt,
+        },
+      ];
+      const data = await requestCompletion(messages, feedback ? 0.2 : 0.4, 700);
+      const finish = data?.choices?.[0]?.finish_reason;
+      const content = data?.choices?.[0]?.message?.content;
+      if (finish === 'length') throw new Error('model output truncated');
+
+      const result = sanitizeBrief(parseJson(content));
+      const overlaps = findLongOverlap(`${result.headline}\n${result.text}`, sourceText, 5);
+      const claimIssues = findUnsupportedClaims(result.text, sourceText, {
+        language: 'en',
+      });
+      const issues = [];
+
+      if (overlaps.length) {
+        issues.push(
+          `Diese Wortfolgen stehen zu nah an der Quelle: "${overlaps.join('" | "')}". Formuliere vollständig neu und übernimm keine Satzteile.`,
+        );
+      }
+      if (claimIssues.length) {
+        issues.push(
+          `Nicht durch die Quelle gedeckte Angaben: ${claimIssues
+            .map((item) => `"${item.sentence}" (${item.reasons.join(', ')})`)
+            .join(' | ')}.`,
+        );
+      }
+      if (/\b(Reuters|BBC|Tagesschau|Guardian|Al Jazeera|DW)\b/i.test(result.text)) {
+        issues.push('Nenne die Quelle nicht im Text; die Quellenzeile wird separat angezeigt.');
+      }
+
+      if (!issues.length) return result;
+      feedback = issues.join('\n');
+      lastError = new Error(`Prüfung fehlgeschlagen: ${issues.join(' | ')}`);
+    } catch (error) {
+      lastError = error;
+      feedback = error.message;
+      if (attempt < 2) await sleep(5000 * (attempt + 1));
+    }
+  }
+
   throw lastError;
 }
 

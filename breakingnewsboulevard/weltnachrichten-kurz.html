@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weltnachrichten kurz — Breaking News Boulevard</title>
+  <meta name="description" content="Weltnachrichten kurz: bis zu zehn KI-zusammengefasste Meldungen pro Tag aus öffentlichen RSS-Feeds, mit verlinkter Quelle und ohne übernommene Originaltexte oder Fotos.">
+  <link rel="canonical" href="https://www.breakingnewsboulevard.com/weltnachrichten-kurz.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Breaking News Boulevard">
+  <meta property="og:title" content="Weltnachrichten kurz">
+  <meta property="og:description" content="Bis zu zehn kurze Weltnachrichten pro Tag, KI-zusammengefasst und mit verlinkter Quelle.">
+  <meta property="og:url" content="https://www.breakingnewsboulevard.com/weltnachrichten-kurz.html">
+  <meta name="theme-color" content="#111318">
+  <style>
+    :root {
+      --ink: #14151a;
+      --paper: #fbfaf7;
+      --accent: #c62828;
+      --muted: #6d7178;
+      --line: #e5e0d6;
+      --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .topbar {
+      background: var(--ink);
+      color: #f4f1ea;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .topbar-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .topbar .ai { color: #f0b7b7; }
+    .masthead {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px 20px 0;
+      text-align: center;
+    }
+    .logo {
+      display: inline-block;
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5.4vw, 3.6rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); font-style: italic; }
+    .tagline {
+      margin: 10px 0 18px;
+      color: var(--muted);
+      font-size: 0.74rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      border-top: 1px solid var(--line);
+      border-bottom: 2px solid var(--ink);
+      padding: 8px 0;
+    }
+    .nav a {
+      color: var(--ink);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 7px 13px;
+      border-radius: 999px;
+    }
+    .nav a:hover { background: #f0ece3; }
+    .nav a.active { background: var(--ink); color: #fff; }
+    main { max-width: 960px; margin: 0 auto; padding: 28px 20px 42px; }
+    .intro {
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    .intro h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.15;
+      margin: 0 0 8px;
+    }
+    .intro p {
+      color: #4c4f55;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin: 0 0 6px;
+      max-width: 720px;
+    }
+    .intro .updated {
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .brief-day { padding: 24px 0 6px; }
+    .brief-day + .brief-day { border-top: 1px solid var(--line); }
+    .brief-day-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .brief-day-head h2 {
+      font-family: var(--serif);
+      font-size: 1.18rem;
+      margin: 0;
+    }
+    .brief-day-head span {
+      color: var(--muted);
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+    }
+    .brief-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 28px;
+    }
+    .brief-card {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      break-inside: avoid;
+    }
+    .brief-card h3 {
+      font-family: var(--serif);
+      font-size: 1.04rem;
+      line-height: 1.3;
+      margin: 0 0 5px;
+    }
+    .brief-card p {
+      color: #4c4f55;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      margin: 0 0 7px;
+    }
+    .brief-meta { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.02em; }
+    .brief-source a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .brief-source a:hover { text-decoration: underline; }
+    .brief-empty {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      padding: 24px 0;
+    }
+    .brief-note {
+      color: var(--muted);
+      font-size: 0.72rem;
+      line-height: 1.6;
+      margin: 18px 0 0;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    footer { border-top: 2px solid var(--ink); background: #f4f1ea; }
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 26px 20px 34px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.6;
+    }
+    .footer-brand {
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .footer-inner p { margin: 0 0 8px; }
+    .footer-inner .ai-note { color: #4c4f55; }
+    .legal-links a { color: var(--ink); text-decoration: none; }
+    .legal-links a:hover { text-decoration: underline; }
+    .legal-links span { padding: 0 7px; color: #a39e94; }
+    @media (max-width: 700px) {
+      .topbar-inner { flex-direction: column; gap: 3px; align-items: center; }
+      .brief-list { grid-template-columns: 1fr; }
+      .brief-day-head { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Mittwoch, 21. Oktober 2026</span>
+      <span class="ai">KI-zusammengefasste Kurzmeldungen · Quellen verlinkt</span>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <a class="logo" href="/">Breaking News <span>Boulevard</span></a>
+    <p class="tagline">Weltnachrichten aus offiziellen Quellen – in eigenen Worten</p>
+    <nav class="nav" aria-label="Seiten">
+      <a href="/">Startseite</a>
+      <a href="/weltnachrichten-kurz.html" class="active" aria-current="page">Weltnachrichten kurz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Weltnachrichten kurz</h1>
+      <p>Bis zu zehn Meldungen pro Tag, zusammengefasst auf Basis öffentlicher RSS-Feeds von BBC, Reuters, Tagesschau, Al Jazeera, DW und The Guardian. Jede Meldung ist eine eigenständige deutsche Zusammenfassung mit den wichtigsten Fakten; die Quelle steht direkt darunter.</p>
+      <p class="updated">Zuletzt aktualisiert: 21.10.2026, 11:06</p>
+    </section>
+    <section class="brief-day">
+        <div class="brief-day-head">
+          <h2>Mittwoch, 21. Oktober 2026</h2>
+          <span>8 Meldungen</span>
+        </div>
+        <div class="brief-list">
+        <article class="brief-card">
+          <h3>Nigeria meldet Ebola-Fall aus Uganda</h3>
+          <p>Eine Frau, die aus Uganda nach Abuja kam, wurde dort positiv getestet. Das Gesundheitsministerium bestätigt den Fall in der Hauptstadt.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest" target="_blank" rel="noopener noreferrer">The Guardian</a></span></div>
+        </article>
+        <article class="brief-card">
+          <h3>Polizei beschlagnahmt Hepatitis‑Vaccine in Guinea‑Bissau</h3>
+          <p>Polizeibeamte rauben in Guinea‑Bissau die Büros von Forschern, die im Streit um Studien zu afrikanischen Neugeborenen stehen, und nehmen Hepatitis‑B‑Vaccine ab.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://www.theguardian.com/world/2026/oct/20/rfk-jr-vaccine-researchers-offices-raided-guinea-bissau" target="_blank" rel="noopener noreferrer">The Guardian</a></span></div>
+        </article>
+        <article class="brief-card">
+          <h3>US-Delegierter landet in St. Petersburg</h3>
+          <p>Steve Witkoff kommt nach St. Petersburg, um Vorschläge zur Beendigung des Ukraine-Konflikts mit Russland zu besprechen.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o" target="_blank" rel="noopener noreferrer">BBC</a></span></div>
+        </article>
+        <article class="brief-card">
+          <h3>EU-Behörde warnt: Webseiten könnten offline gehen</h3>
+          <p>Die EU-Behörde warnt, dass Webseiten wegen PHP‑Sicherheitslücken vorübergehend offline gehen könnten, während Patches entwickelt werden.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNemhoUnNZdUg4Sk9JMjJQU25mTUZSX2lHc1JTNTFpNGlTcWxRRDctcFNCcVZiTUhYQ211YnNjSnRvYTYyS29VNFFKcHE4VGFMcHMxTGNwa3NmVUFNamNnektGaU9BbURibzdIY2hHUlpMbEwtNWhrOG9BenJvYkllVnNfakVVRU5yRzRjdDBjQXc2OEwtS1RwZVZhaWhoRWtlalVmU0xOQm5SbmUyeGVGeGgzUkE2XzRtbFBKdTJnUTJoRWdV?oc=5" target="_blank" rel="noopener noreferrer">Reuters (via Google News)</a></span></div>
+        </article>
+        <article class="brief-card">
+          <h3>Emma Magazin nach 50 Jahren eingestellt</h3>
+          <p>Alice Schwarzer beendet das feministische Magazin Emma nach fünf Jahrzehnten, ohne wirtschaftliche Gründe.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://www.tagesschau.de/kultur/emma-magazin-ende-100.html" target="_blank" rel="noopener noreferrer">Tagesschau</a></span></div>
+        </article>
+        <article class="brief-card">
+          <h3>Paris‑Geschäfte leiden durch Protestgewalt</h3>
+          <p>In Paris haben Ladenbesitzer, darunter auch mit Migrationshintergrund, Verluste durch Gewalt am vergangenen Wochenende erlitten.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://www.aljazeera.com/news/2026/10/21/its-hard-for-us-paris-small-businesses-bear-brunt-of-protest-violence" target="_blank" rel="noopener noreferrer">Al Jazeera</a></span></div>
+        </article>
+        <article class="brief-card">
+          <h3>Zelensky und Witkoff in Oslo umarmt</h3>
+          <p>Der ukrainische Präsident Zelensky umarmte Steve Witkoff in Oslo, was die Zweifel an der US-Politik gegenüber der Ukraine nicht beseitigt.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://www.bbc.co.uk/news/articles/ckrey51jrgnro" target="_blank" rel="noopener noreferrer">BBC</a></span></div>
+        </article>
+        <article class="brief-card">
+          <h3>Starlink-Zugang in Ukraine liegt bei Musk</h3>
+          <p>Der Senator Rubio betont, dass die Entscheidung über den Starlink-Zugang in der Ukraine ausschließlich Elon Musk trifft, nicht die US-Regierung.</p>
+          <div class="brief-meta"><span class="brief-source">Quelle: <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQZHFiRnNfU1ZqdEFSWG9fQV93dDJCNVQ0NTh2bF9WRmtQcERCbFZlQ3ZVRllOeWVjejY2RGZhNjJzVjV5U19lMUhZV3ZpNTZpcElSbGFaY0dpTUxEaGx4eElobk9qakZXZ3g5LVZqaHV0QTZ3eElMSGdjQzdqT3Y1alVuVDh4NV9RZF9ycmc1bkUyeTVTTnFvVzdUUVFnWXRDb29aQk13YU1OeFBNQ3BFQ2tNRjlCTWFIX2c?oc=5" target="_blank" rel="noopener noreferrer">Reuters (via Google News)</a></span></div>
+        </article>
+        </div>
+      </section>
+    <p class="brief-note">Transparenz: Die Kurzmeldungen werden mit KI aus Überschrift und Kurzbeschreibung der jeweiligen RSS-Quelle erstellt und vor Veröffentlichung automatisch geprüft. Es werden keine Originaltexte, Originalüberschriften oder Fotos der Nachrichtenseiten übernommen. Für den vollständigen Zusammenhang lies bitte die verlinkte Originalquelle.</p>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Breaking News Boulevard</div>
+      <p>Unabhängiger, KI-gestützter Weltnachrichtenüberblick. Kurzmeldungen basieren auf öffentlichen RSS-Feeds; die verwendete Quelle ist bei jeder Meldung verlinkt.</p>
+      <p class="ai-note"><strong>Transparenz:</strong> Dieser Bereich wird mit KI erstellt. Bei Reuters führt der Quellenlink über Google News, weil Reuters keinen eigenen öffentlichen RSS-Feed mehr anbietet.</p>
+      <p>© 2026 Breaking News Boulevard</p>
+      <p class="legal-links"><a href="/">Startseite</a><span>·</span><a href="/impressum">Impressum</a><span>·</span><a href="/datenschutz">Datenschutz</a></p>
+    </div>
+  </footer>
+</body>
+</html>

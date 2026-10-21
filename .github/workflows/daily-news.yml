@@ -2,7 +2,7 @@ name: Daily Autonomous News
 
 on:
   schedule:
-    - cron: '15 6 * * *'
+    - cron: '47 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -19,7 +19,7 @@ defaults:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,10 +37,16 @@ jobs:
       - name: Legal readiness
         run: npm run legal:check || echo "::warning title=Rechtstexte::Impressum oder Datenschutz enthalten noch Platzhalter."
 
-      - name: Generate one draft
-        run: npm run generate:one
+      - name: Generate daily drafts
+        run: npm run generate:daily
+
+      - name: Generate world news briefs
+        continue-on-error: true
+        run: npm run briefs:daily
 
       - name: Auto-approve and publish
+        env:
+          AUTO_PUBLISH: ${{ vars.AUTO_PUBLISH || 'true' }}
         run: npm run auto:publish
 
       - name: Validate published site
@@ -50,7 +56,7 @@ jobs:
         run: |
           git config user.name "Breaking News Boulevard Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/posts.json posts index.html js/posts.js sitemap.xml
+          git add data/posts.json data/briefs.json posts index.html weltnachrichten-kurz.html js/posts.js sitemap.xml
           if git diff --cached --quiet; then
             echo "Keine Änderungen zu committen."
             exit 0

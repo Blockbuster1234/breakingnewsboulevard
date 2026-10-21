@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "generate:daily": "node scripts/generate.mjs --count 3",
+    "generate:daily": "node scripts/generate.mjs --count 2",
     "sources:check": "node scripts/check-sources.mjs",
     "review:list": "node scripts/review.mjs list",
     "review:show": "node scripts/review.mjs show",
@@ -15,7 +15,8 @@
     "test": "node scripts/check.mjs",
     "build": "echo 'Static site — no build step'",
     "generate:one": "node scripts/generate.mjs --count 1",
-    "auto:publish": "node scripts/auto-publish.mjs"
+    "auto:publish": "node scripts/auto-publish.mjs",
+    "briefs:daily": "node scripts/generate-briefs.mjs"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",
