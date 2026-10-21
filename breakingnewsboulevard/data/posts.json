@@ -1,5 +1,109 @@
 [
   {
+    "slug": "2026-10-21-nasa-startet-sr-1-freedom-erster-fissionbetriebener-weltraumfahrzeug",
+    "title": "NASA startet SR‑1 Freedom: erster fissionbetriebener Weltraumfahrzeug",
+    "excerpt": "NASA kündigt Fortschritte beim Kernkraftmodul des SR‑1 Freedom an, das 2028 mit nuklearer Elektrizität zum Mars fliegen soll.",
+    "date": "2026-10-21",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-10-21-nasa-startet-sr-1-freedom-erster-fissionbetriebener-weltraumfahrzeug.html",
+    "image": "/posts/2026-10-21-nasa-startet-sr-1-freedom-erster-fissionbetriebener-weltraumfahrzeug-hero.jpg",
+    "images": [
+      "/posts/2026-10-21-nasa-startet-sr-1-freedom-erster-fissionbetriebener-weltraumfahrzeug-hero.jpg"
+    ],
+    "source": {
+      "name": "NASA",
+      "title": "NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module",
+      "url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/",
+      "termsUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "license": "NASA Media Usage Guidelines – keine Standardlizenz; Quellenangabe NASA",
+      "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "credit": "Quelle: NASA; NASA Media Usage Guidelines; Quellenangabe.",
+      "reuseNote": "NASA-Inhalte sind in den USA grundsätzlich nicht urheberrechtlich geschützt und dürfen für informative bzw. redaktionelle Zwecke verwendet werden. NASA als Quelle nennen; keine NASA-Logos oder Endorsement-Andeutung. Fotos und Inhalte Dritter sind ausgenommen; NASA-Marken sind geschützt.",
+      "language": "en",
+      "publishedAt": "Tue, 20 Oct 2026 18:11:33 +0000"
+    },
+    "body": "NASA hat bei der „Ignition“-Veranstaltung bekannt gegeben, dass das Space Reactor‑1 (SR‑1) Freedom, ein fissionbetriebenes Raumfahrzeug, für den Mars und darüber hinaus entwickelt wird. Das Projekt soll 2028 starten und die erste nukleare elektrische Antriebstechnologie im Weltraum demonstrieren.\n\nDer Kernkraftmodul wird von Sierra Lobo Inc. mit einem geschlossenen Brayton‑Zyklus‑System ausgestattet, das Wärme aus dem Kernreaktor in elektrische Energie umwandelt. Das System wird im Rahmen des Space Flight Systems Development and Operations Contract III von 2024 am NASA‑Glenn‑Research‑Center in Cleveland entwickelt. Der Reaktor selbst wird vom Idaho National Laboratory des Department of Energy entworfen. NASA und DOE führen umfassende Sicherheitsprüfungen durch, wobei der Reaktor erst nach Verlassen der Erdumlaufbahn aktiv wird. Das SR‑1 Freedom wird die SkyFall‑Wissenschaftsmission mit drei Mars‑Hubschraubern transportieren, um Daten zu sammeln und potenzielle Wasserquellen zu identifizieren.",
+    "imagePrompt": "A futuristic spacecraft silhouette against a starry backdrop, with subtle glow indicating nuclear power",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Eigene redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Jimp",
+    "imageAlt": "NASA startet SR‑1 Freedom: erster fissionbetriebener Weltraumfahrzeug",
+    "wordCount": 140,
+    "sourcePublishedAt": "Tue, 20 Oct 2026 18:11:33 +0000",
+    "createdAt": "2026-10-21T09:57:20.299Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-10-21T10:00:43.317Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
+    "slug": "2026-10-21-cisa-warnt-vor-chinesischer-cyberfirma-die-kritische-infrastrukturen-weltweit-angreift",
+    "title": "CISA warnt vor chinesischer Cyberfirma, die kritische Infrastrukturen weltweit angreift",
+    "excerpt": "CISA, FBI, NSA und internationale Partner warnen, dass die chinesische Firma Integrity Tech Bedrohungsakteure mit Botnets, VPNs und anderen Tools unterstützt, um kritische Infrastrukturen zu kompromit",
+    "date": "2026-10-21",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-10-21-cisa-warnt-vor-chinesischer-cyberfirma-die-kritische-infrastrukturen-weltweit-angreift.html",
+    "image": "/posts/2026-10-21-cisa-warnt-vor-chinesischer-cyberfirma-die-kritische-infrastrukturen-weltweit-angreift-hero.jpg",
+    "images": [
+      "/posts/2026-10-21-cisa-warnt-vor-chinesischer-cyberfirma-die-kritische-infrastrukturen-weltweit-angreift-hero.jpg"
+    ],
+    "source": {
+      "name": "US-Regierung – CISA",
+      "title": "CISA, FBI, NSA and International Partners Warn of China-based Cybersecurity Company Enabling Threat Actors to Target Multiple Critical Infrastructure Sectors Worldwide",
+      "url": "https://www.cisa.gov/news-events/news/cisa-fbi-nsa-and-international-partners-warn-china-based-cybersecurity-company-enabling-threat",
+      "termsUrl": "https://www.usa.gov/government-copyright",
+      "license": "Public Domain (US Government work, 17 U.S.C. § 105)",
+      "licenseUrl": "https://www.usa.gov/government-copyright",
+      "credit": "Quelle: US Cybersecurity and Infrastructure Security Agency (CISA), US-Regierung; Public Domain.",
+      "reuseNote": "Nur Werke von US-Regierungsbediensteten. Keine Inhalte Dritter, Logos oder geschützten Fotos übernehmen; Quellenangabe erforderlich.",
+      "language": "en",
+      "publishedAt": "Thu, 08 Oct 26 12:00:00 +0000"
+    },
+    "body": "CISA, FBI, NSA und internationale Partner haben heute ein gemeinsames Cybersecurity Advisory veröffentlicht, in dem die chinesische Firma Integrity Technology Group (Integrity Tech) als Enabler für Angriffe auf kritische Infrastrukturen weltweit genannt wird. Die Warnung bezieht sich auf Aktivitäten in Nordamerika, Südostasien und Afrika, bei denen Botnets, VPN-Infrastruktur und „living off the land“-Techniken eingesetzt werden.\n\nDie Behörden betonen, dass Integrity Tech, mit Verbindungen zum chinesischen Staat, Tools entwickelt, hostet und Netzwerke kompromittiert. Angreifer nutzen Techniken, die mit Flax Typhoon, Ethereal Panda und Red Juliett in Verbindung stehen, und zielen auf unüberwachte Edge‑Geräte, um langfristigen Zugriff zu sichern. Die Mitigationen umfassen das Patchen bekannter CVEs und das Schützen von Edge‑Infrastrukturen.\n\n## Zwischenüberschrift\n\nDie Warnung richtet sich insbesondere an Organisationen in kritischen Sektoren wie Regierung, Fertigung, Gesundheitswesen, Strafverfolgung und Bildung, und fordert sie auf, die Empfehlungen umzusetzen und verdächtige Aktivitäten dem FBI zu melden.",
+    "imagePrompt": "A dark, abstract network of glowing lines against a deep blue background, symbolizing cyber threats and security.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Eigene redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Jimp",
+    "imageAlt": "CISA warnt vor chinesischer Cyberfirma, die kritische Infrastrukturen weltweit angreift",
+    "wordCount": 143,
+    "sourcePublishedAt": "Thu, 08 Oct 26 12:00:00 +0000",
+    "createdAt": "2026-10-21T09:39:26.537Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-10-21T10:00:42.673Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-10-20-erzeugerpreise-steigen-im-september-2026-um-6-7-gegenueber-vorjahr",
     "title": "Erzeugerpreise steigen im September 2026 um 6,7 % gegenüber Vorjahr",
     "excerpt": "Die Erzeugerpreise gewerblicher Produkte stiegen im September 2026 um 6,7 % im Vergleich zu September 2025, der stärkste Anstieg seit März 2023.",
