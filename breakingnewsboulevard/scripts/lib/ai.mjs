@@ -20,7 +20,7 @@ const OMNI_TEXT_ENDPOINT =
 const OMNI_TEXT_MODEL = process.env.OMNI_TEXT_MODEL || 'auto/gpt';
 const OMNI_API_KEY = process.env.OMNI_API_KEY || '';
 const IMAGE_ENDPOINT = 'https://gen.pollinations.ai/image';
-const IMAGE_MODEL = process.env.POLLINATIONS_IMAGE_MODEL || 'black-forest-labs/flux.1-schnell';
+const IMAGE_MODEL = process.env.POLLINATIONS_IMAGE_MODEL || 'openai/gpt-image-2';
 
 export function pollinationsKey() {
   return String(process.env.POLLINATIONS_API_KEY || '')
@@ -115,7 +115,7 @@ ${body}
 Prüfe jetzt den Artikel und antworte nur mit dem JSON-Objekt.`,
     },
   ];
-  const data = await requestCompletion(messages, 0, 500);
+  const data = await requestCompletion(messages, 0, 1200);
   const finish = data?.choices?.[0]?.finish_reason;
   if (finish === 'length') throw new Error('fact-check output truncated');
   const result = parseJson(data?.choices?.[0]?.message?.content);
@@ -417,7 +417,7 @@ Schreibe jetzt den eigenständigen deutschen Artikel. Gib nur das JSON-Objekt zu
         },
       ];
       const temperature = feedback ? 0.25 : 0.5;
-      const data = await requestCompletion(messages, temperature, 1200);
+      const data = await requestCompletion(messages, temperature, 3000);
       const finish = data?.choices?.[0]?.finish_reason;
       const content = data?.choices?.[0]?.message?.content;
       if (finish === 'length') throw new Error('model output truncated');

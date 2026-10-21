@@ -22,8 +22,8 @@ Breaking News Boulevard fasst täglich sechs aktuelle Meldungen aus öffentliche
 - Zahlen, Einheiten, Zeitangaben und Amtsbezeichnungen exakt aus der Quelle übernehmen.
 - Bei dünner Quellenlage wird die Meldung übersprungen.
 - Jeder Artikel zeigt sichtbar „Quelle: Name“ mit Link und einen KI-Hinweis.
-- Bilder: pro Artikel eine KI-generierte redaktionelle Illustration über `gen.pollinations.ai` mit dem Modell `black-forest-labs/flux.1-schnell`. Dafür ist `POLLINATIONS_API_KEY` als GitHub Secret nötig; ohne Key bricht die Generierung ab. Bildthema aus Ort, Thema und Stimmung der Meldung; immer Illustration, nie fotorealistisch; keine echten Personen, Politiker, bekannten Gesichter, Logos oder Text im Bild.
-- Unter jedem Bild steht „KI-generierte Illustration: Pollinations / FLUX.1 schnell“. Es gibt keinen lokalen Bild-Fallback; bei einem API-Fehler wird der betroffene Artikel übersprungen.
+- Bilder: pro Artikel eine KI-generierte redaktionelle Illustration über `gen.pollinations.ai` mit dem Modell `openai/gpt-image-2`. Dafür ist `POLLINATIONS_API_KEY` als GitHub Secret nötig; ohne Key bricht die Generierung ab. Bildthema aus Ort, Thema und Stimmung der Meldung; immer Illustration, nie fotorealistisch; keine echten Personen, Politiker, bekannten Gesichter, Logos oder Text im Bild.
+- Unter jedem Bild steht „KI-generierte Illustration: Pollinations / GPT Image 2“. Es gibt keinen lokalen Bild-Fallback; bei einem API-Fehler wird der betroffene Artikel übersprungen.
 - Texte und Faktenprüfung laufen über `gen.pollinations.ai` mit `deepseek/deepseek-v4.1-flash` und demselben `POLLINATIONS_API_KEY`; das langsame IP-Limit der Classic-API entfällt.
 - Keine Originalfotos der Nachrichtenseiten verwenden.
 

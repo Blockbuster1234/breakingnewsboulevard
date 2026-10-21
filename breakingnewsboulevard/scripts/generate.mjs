@@ -259,15 +259,15 @@ async function main() {
       console.log(`[image] KI-Illustration: ${rewritten.imagePrompt}`);
       const image = await generateImage(rewritten.imagePrompt, undefined, rewritten.category);
       const imageMeta = {
-        imageCredit: 'Pollinations / FLUX.1 schnell',
-        imageLicense: 'KI-generiert mit Pollinations (FLUX.1 schnell)',
+        imageCredit: 'Pollinations / GPT Image 2',
+        imageLicense: 'KI-generiert mit Pollinations (GPT Image 2)',
         imageLicenseUrl: '',
         imageSourceUrl: '',
         imageType: 'illustration',
         imageProvider: 'Pollinations',
         imageAlt: `KI-generierte Illustration: ${rewritten.title}`,
       };
-      console.log(`[image] Pollinations / FLUX.1 schnell (${image.ext})`);
+      console.log(`[image] Pollinations / GPT Image 2 (${image.ext})`);
 
       const slug = uniqueSlug(rewritten.title, date, [...posts, ...drafts]);
       const post = {
