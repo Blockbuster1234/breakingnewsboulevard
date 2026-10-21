@@ -381,7 +381,14 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
       throw lastError;
     }
     if (!res.ok) throw new Error(`text API HTTP ${res.status}`);
-    return await res.json();
+    const data = await res.json();
+    const content = String(data?.choices?.[0]?.message?.content || '');
+    if (/doesn.t have enough credits|not enough credits|complete a quest|top up.{0,40}(pollen|credits|balance)/i.test(content)) {
+      throw new FatalGenerationError(
+        'Pollinations-Guthaben ist aufgebraucht. Bitte unter https://enter.pollinations.ai/top-up aufladen oder eine Quest abschließen.',
+      );
+    }
+    return data;
   }
   throw lastError || new Error('keine Textantwort erhalten');
 }
