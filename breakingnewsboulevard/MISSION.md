@@ -24,7 +24,7 @@ Breaking News Boulevard fasst täglich sechs aktuelle Meldungen in eigenständig
 - Jeder Artikel zeigt sichtbar „Quelle: Name“ mit Link und einen KI-Hinweis.
 - Bilder: pro Artikel eine KI-generierte redaktionelle Illustration über die kostenlose Pollinations-Classic-API (`image.pollinations.ai`) mit dem offenen Modell `flux`. Dafür ist kein API-Key nötig; das kleine Anbieter-Wasserzeichen wird beim Speichern am unteren Rand abgeschnitten. Bildthema aus Ort, Thema und Stimmung der Meldung; immer Illustration, nie fotorealistisch; keine echten Personen, Politiker, bekannten Gesichter, Logos oder Text im Bild.
 - Unter jedem Bild steht „KI-generierte Illustration: Pollinations / FLUX.1 [schnell]“. Es gibt keinen lokalen Bild-Fallback; bei einem API-Fehler wird der betroffene Artikel übersprungen.
-- Texte und Faktenprüfung laufen kostenlos über das Pollinations-Classic-Modell `openai` (gpt-oss-20b). Optional wird bei gesetztem `GEMINI_API_KEY` (Google AI Studio, kostenlos) zuerst Gemini (`gemini-2.5-flash-lite`) genutzt; bei Limit oder Fehler erfolgt automatisch der Fallback auf das kostenlose Pollinations-Modell.
+- Texte und Faktenprüfung laufen bevorzugt über Groq (`GROQ_API_KEY`, Llama 3.3 70B, kostenlos, 30 Anfragen/Minute); damit erzeugt der geplante Lauf sechs Artikel. Ohne Groq-Key wird Gemini (`gemini-2.5-flash-lite`, kostenlos) genutzt; der geplante Lauf erzeugt dann einen Artikel. Ohne beide Keys greift das kostenlose Pollinations-Modell `openai` (gpt-oss-20b).
 - Keine Originalfotos der Nachrichtenseiten verwenden.
 
 ## Veröffentlichung

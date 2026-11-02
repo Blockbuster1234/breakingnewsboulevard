@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: 'Anzahl der Entwürfe (1-6)'
+        description: 'Anzahl der Entwürfe (1-6, leer = automatisch)'
         required: false
-        default: '1'
+        default: ''
 
 permissions:
   contents: write
@@ -44,11 +44,17 @@ jobs:
 
       - name: Generate daily drafts
         env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FREE_TEXT_MODEL: openai
           FREE_IMAGE_MODEL: flux
-        # Free Gemini quota is tight on GitHub's shared runners: scheduled runs publish one article.
-        run: npm run generate:daily -- --count ${{ inputs.count || '1' }}
+        # Groq free tier allows six articles; Gemini free tier is capped at one per run.
+        run: |
+          COUNT="${{ inputs.count }}"
+          if [ -z "$COUNT" ]; then
+            if [ -n "$GROQ_API_KEY" ]; then COUNT=6; else COUNT=1; fi
+          fi
+          npm run generate:daily -- --count "$COUNT"
 
       - name: Auto-approve and publish
         env:

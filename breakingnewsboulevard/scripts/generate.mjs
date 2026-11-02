@@ -190,9 +190,11 @@ async function main() {
     return;
   }
 
-  const textProvider = process.env.GEMINI_API_KEY
-    ? `Gemini (${process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash'}, kostenlos)`
-    : 'Pollinations Classic (kostenlos, gpt-oss-20b)';
+  const textProvider = process.env.GROQ_API_KEY
+    ? `Groq (${process.env.GROQ_TEXT_MODEL || 'llama-3.3-70b-versatile'}, kostenlos)`
+    : process.env.GEMINI_API_KEY
+      ? `Gemini (${process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash-lite'}, kostenlos)`
+      : 'Pollinations Classic (kostenlos, gpt-oss-20b)';
   console.log(`[text] ${textProvider}`);
   console.log('[image] Pollinations Classic (kostenlos, FLUX.1 [schnell])');
 

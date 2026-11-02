@@ -30,6 +30,11 @@ const GEMINI_API_KEY = String(process.env.GEMINI_API_KEY || '').trim();
 const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash-lite';
 const GEMINI_MIN_INTERVAL_MS = Math.max(1000, Number(process.env.GEMINI_MIN_INTERVAL_MS || 6000));
 let nextGeminiAt = 0;
+const GROQ_API_KEY = String(process.env.GROQ_API_KEY || '').trim();
+const GROQ_ENDPOINT = 'https://api.groq.com/openai/v1/chat/completions';
+const GROQ_TEXT_MODEL = process.env.GROQ_TEXT_MODEL || 'llama-3.3-70b-versatile';
+const GROQ_MIN_INTERVAL_MS = Math.max(500, Number(process.env.GROQ_MIN_INTERVAL_MS || 2000));
+let nextGroqAt = 0;
 const USE_PAID_POLLINATIONS = /^(1|true|yes|on)$/i.test(
   String(process.env.USE_PAID_POLLINATIONS || ''),
 );
@@ -50,6 +55,16 @@ async function paceGemini() {
   const wait = nextGeminiAt - Date.now();
   if (wait > 0) await sleep(wait);
   nextGeminiAt = Date.now() + GEMINI_MIN_INTERVAL_MS;
+}
+
+function groqKey() {
+  return cleanKey(GROQ_API_KEY);
+}
+
+async function paceGroq() {
+  const wait = nextGroqAt - Date.now();
+  if (wait > 0) await sleep(wait);
+  nextGroqAt = Date.now() + GROQ_MIN_INTERVAL_MS;
 }
 
 export function pollinationsKey() {
@@ -553,6 +568,65 @@ async function freePollinationsCompletion(messages, temperature, maxTokens) {
   throw lastError || new Error('keine kostenlose Textantwort erhalten');
 }
 
+async function groqCompletion(messages, temperature, maxTokens) {
+  const key = groqKey();
+  if (!key) throw new Error('GROQ_API_KEY fehlt');
+  let lastError;
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    await paceGroq();
+    let res;
+    try {
+      res = await fetch(GROQ_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          authorization: `Bearer ${key}`,
+        },
+        body: JSON.stringify({
+          model: GROQ_TEXT_MODEL,
+          messages,
+          temperature,
+          max_tokens: maxTokens,
+          response_format: { type: 'json_object' },
+        }),
+        signal: AbortSignal.timeout(120000),
+      });
+    } catch (error) {
+      lastError = error;
+      if (attempt < 2) {
+        await sleep(2000 * (attempt + 1));
+        continue;
+      }
+      throw lastError;
+    }
+
+    if (res.status === 429 || res.status >= 500) {
+      lastError = new Error(`Groq HTTP ${res.status}`);
+      if (attempt < 2) {
+        const retryAfter = Number(res.headers.get('retry-after'));
+        const wait = Number.isFinite(retryAfter) && retryAfter > 0
+          ? Math.min(retryAfter * 1000, 60000)
+          : 8000 * (attempt + 1);
+        console.warn(`[text] Groq HTTP ${res.status}, warte ${Math.round(wait / 1000)}s`);
+        await sleep(wait);
+        continue;
+      }
+      throw lastError;
+    }
+    if (!res.ok) {
+      const detail = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 220);
+      throw new Error(`Groq HTTP ${res.status}${detail ? `: ${detail}` : ''}`);
+    }
+
+    const data = await res.json();
+    const content = String(data?.choices?.[0]?.message?.content || '').trim();
+    if (!content) throw new Error('Groq lieferte keinen Text');
+    return data;
+  }
+  throw lastError || new Error('keine Groq-Antwort erhalten');
+}
+
 async function requestCompletion(messages, temperature, maxTokens = 4000) {
   if (OMNI_API_KEY) {
     try {
@@ -575,6 +649,10 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
     } catch (error) {
       console.warn(`[text] OmniRoute fehlgeschlagen (${error.message}), nutze kostenloses Modell`);
     }
+  }
+
+  if (groqKey()) {
+    return groqCompletion(messages, temperature, maxTokens);
   }
 
   if (geminiKey()) {
