@@ -27,7 +27,9 @@ const FREE_TEXT_MODEL = process.env.FREE_TEXT_MODEL || 'openai';
 const FREE_IMAGE_ENDPOINT = 'https://image.pollinations.ai/prompt';
 const FREE_IMAGE_MODEL = process.env.FREE_IMAGE_MODEL || 'flux';
 const GEMINI_API_KEY = String(process.env.GEMINI_API_KEY || '').trim();
-const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash';
+const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash-lite';
+const GEMINI_MIN_INTERVAL_MS = Math.max(1000, Number(process.env.GEMINI_MIN_INTERVAL_MS || 6000));
+let nextGeminiAt = 0;
 const USE_PAID_POLLINATIONS = /^(1|true|yes|on)$/i.test(
   String(process.env.USE_PAID_POLLINATIONS || ''),
 );
@@ -42,6 +44,12 @@ function cleanKey(value) {
 
 function geminiKey() {
   return cleanKey(GEMINI_API_KEY);
+}
+
+async function paceGemini() {
+  const wait = nextGeminiAt - Date.now();
+  if (wait > 0) await sleep(wait);
+  nextGeminiAt = Date.now() + GEMINI_MIN_INTERVAL_MS;
 }
 
 export function pollinationsKey() {
@@ -353,6 +361,7 @@ async function geminiCompletion(messages, temperature, maxTokens) {
   let lastError;
 
   for (let attempt = 0; attempt < 3; attempt += 1) {
+    await paceGemini();
     let res;
     try {
       res = await fetch(endpoint, {
@@ -375,8 +384,8 @@ async function geminiCompletion(messages, temperature, maxTokens) {
       if (attempt < 2) {
         const retryAfter = Number(res.headers.get('retry-after'));
         const wait = Number.isFinite(retryAfter) && retryAfter > 0
-          ? Math.min(retryAfter * 1000, 60000)
-          : 8000 * (attempt + 1);
+          ? Math.max(retryAfter * 1000, 60000)
+          : 60000 * (attempt + 1);
         console.warn(`[text] Gemini HTTP ${res.status}, warte ${Math.round(wait / 1000)}s`);
         await sleep(wait);
         continue;
@@ -569,11 +578,7 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
   }
 
   if (geminiKey()) {
-    try {
-      return await geminiCompletion(messages, temperature, maxTokens);
-    } catch (error) {
-      console.warn(`[text] Gemini fehlgeschlagen (${error.message}), nutze kostenloses Pollinations-Modell`);
-    }
+    return geminiCompletion(messages, temperature, maxTokens);
   }
 
   if (USE_PAID_POLLINATIONS && pollinationsKey()) {
