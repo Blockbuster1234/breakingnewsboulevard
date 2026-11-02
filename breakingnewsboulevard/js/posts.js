@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu",
+    "title": "Commonwealth-Gipfel: Briten lehnten Reparations-Agenda ab, stimmen aber Dialog zu",
+    "excerpt": "Britische Vertreter sollen darauf bestanden haben, dass Reparationen für Sklaverei nicht auf der Agenda des Commonwealth-Gipfels in Antigua und Barbuda erscheinen, stimmten aber ei",
+    "date": "2026-11-02",
+    "category": "Politik",
+    "url": "/posts/2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu.html",
+    "image": "/posts/2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu-hero.jpg",
+    "images": [
+      "/posts/2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/01/uk-was-vehement-slavery-reparations-should-not-be-on-commonwealth-summit-agenda"
+  },
+  {
     "slug": "2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei",
     "title": "Russland lässt US-Bürger Stephen Hubbard frei",
     "excerpt": "Der 74-jährige frühere Lehrer Stephen Hubbard ist von Russland freigelassen worden; Trump zufolge war kein Austausch nötig.",
