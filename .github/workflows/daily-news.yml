@@ -44,7 +44,9 @@ jobs:
 
       - name: Generate daily drafts
         env:
-          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FREE_TEXT_MODEL: openai
+          FREE_IMAGE_MODEL: flux
         run: npm run generate:daily -- --count ${{ inputs.count || '6' }}
 
       - name: Auto-approve and publish

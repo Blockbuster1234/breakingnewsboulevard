@@ -1,3 +1,4 @@
+import { Jimp, JimpMime } from 'jimp';
 import { sleep } from './http.mjs';
 import {
   countBodyWords,
@@ -21,13 +22,30 @@ const OMNI_TEXT_MODEL = process.env.OMNI_TEXT_MODEL || 'auto/gpt';
 const OMNI_API_KEY = process.env.OMNI_API_KEY || '';
 const IMAGE_ENDPOINT = 'https://gen.pollinations.ai/image';
 const IMAGE_MODEL = process.env.POLLINATIONS_IMAGE_MODEL || 'openai/gpt-image-2';
+const FREE_TEXT_ENDPOINT = 'https://text.pollinations.ai/openai';
+const FREE_TEXT_MODEL = process.env.FREE_TEXT_MODEL || 'openai';
+const FREE_IMAGE_ENDPOINT = 'https://image.pollinations.ai/prompt';
+const FREE_IMAGE_MODEL = process.env.FREE_IMAGE_MODEL || 'flux';
+const GEMINI_API_KEY = String(process.env.GEMINI_API_KEY || '').trim();
+const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash';
+const USE_PAID_POLLINATIONS = /^(1|true|yes|on)$/i.test(
+  String(process.env.USE_PAID_POLLINATIONS || ''),
+);
 
-export function pollinationsKey() {
-  return String(process.env.POLLINATIONS_API_KEY || '')
+function cleanKey(value) {
+  return String(value || '')
     .trim()
     .replace(/^["']|["']$/g, '')
     .replace(/^Bearer\s+/i, '')
     .replace(/\s+/g, '');
+}
+
+function geminiKey() {
+  return cleanKey(GEMINI_API_KEY);
+}
+
+export function pollinationsKey() {
+  return cleanKey(process.env.POLLINATIONS_API_KEY);
 }
 
 const CATEGORIES = [
@@ -307,34 +325,96 @@ function findQuoteIssues(result, sourceText) {
   return [];
 }
 
-async function requestCompletion(messages, temperature, maxTokens = 4000) {
-  if (OMNI_API_KEY) {
+async function geminiCompletion(messages, temperature, maxTokens) {
+  const key = geminiKey();
+  if (!key) throw new Error('GEMINI_API_KEY fehlt');
+
+  const system = messages
+    .filter((message) => message.role === 'system')
+    .map((message) => String(message.content || ''))
+    .join('\n\n');
+  const contents = messages
+    .filter((message) => message.role !== 'system')
+    .map((message) => ({
+      role: message.role === 'assistant' ? 'model' : 'user',
+      parts: [{ text: String(message.content || '') }],
+    }));
+  const body = {
+    contents,
+    generationConfig: {
+      temperature,
+      maxOutputTokens: maxTokens,
+      responseMimeType: 'application/json',
+    },
+  };
+  if (system) body.systemInstruction = { parts: [{ text: system }] };
+
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_TEXT_MODEL}:generateContent?key=${encodeURIComponent(key)}`;
+  let lastError;
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    let res;
     try {
-      const res = await fetch(OMNI_TEXT_ENDPOINT, {
+      res = await fetch(endpoint, {
         method: 'POST',
-        headers: {
-          'content-type': 'application/json',
-          authorization: `Bearer ${OMNI_API_KEY}`,
-        },
-        body: JSON.stringify({
-          model: OMNI_TEXT_MODEL,
-          messages,
-          temperature,
-          max_tokens: maxTokens,
-        }),
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(body),
         signal: AbortSignal.timeout(180000),
       });
-      if (res.ok) return await res.json();
-      console.warn(`[text] OmniRoute HTTP ${res.status}, nutze Pollinations`);
     } catch (error) {
-      console.warn(`[text] OmniRoute fehlgeschlagen (${error.message}), nutze Pollinations`);
+      lastError = error;
+      if (attempt < 2) {
+        await sleep(4000 * (attempt + 1));
+        continue;
+      }
+      throw lastError;
     }
+
+    if (res.status === 429 || res.status >= 500) {
+      lastError = new Error(`Gemini HTTP ${res.status}`);
+      if (attempt < 2) {
+        const retryAfter = Number(res.headers.get('retry-after'));
+        const wait = Number.isFinite(retryAfter) && retryAfter > 0
+          ? Math.min(retryAfter * 1000, 60000)
+          : 8000 * (attempt + 1);
+        console.warn(`[text] Gemini HTTP ${res.status}, warte ${Math.round(wait / 1000)}s`);
+        await sleep(wait);
+        continue;
+      }
+      throw lastError;
+    }
+    if (!res.ok) {
+      const detail = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 220);
+      throw new Error(`Gemini HTTP ${res.status}${detail ? `: ${detail}` : ''}`);
+    }
+
+    const data = await res.json();
+    const candidate = data?.candidates?.[0];
+    const content = (candidate?.content?.parts || [])
+      .map((part) => String(part?.text || ''))
+      .join('')
+      .trim();
+    if (!content) {
+      const reason = data?.promptFeedback?.blockReason || candidate?.finishReason || 'unbekannt';
+      throw new Error(`Gemini ohne Text (${reason})`);
+    }
+    return {
+      choices: [
+        {
+          message: { role: 'assistant', content },
+          finish_reason: candidate?.finishReason === 'MAX_TOKENS' ? 'length' : 'stop',
+        },
+      ],
+    };
   }
+  throw lastError || new Error('keine Gemini-Antwort erhalten');
+}
 
+async function paidPollinationsCompletion(messages, temperature, maxTokens) {
   const apiKey = pollinationsKey();
-  if (!apiKey) throw new FatalGenerationError('POLLINATIONS_API_KEY fehlt; Text kann nicht erzeugt werden');
-
+  if (!apiKey) throw new Error('POLLINATIONS_API_KEY fehlt');
   let lastError;
+
   for (let attempt = 0; attempt < 3; attempt += 1) {
     let res;
     try {
@@ -362,11 +442,11 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
       throw lastError;
     }
 
+    if (res.status === 402) throw new Error('Pollinations-Guthaben ist aufgebraucht');
     if (res.status === 401 || res.status === 403) {
       const body = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 180);
-      throw new FatalGenerationError(`Pollinations-Key ungültig oder ohne Modellrechte (${res.status})${body ? `: ${body}` : ''}`);
+      throw new Error(`Pollinations-Key ungültig oder ohne Modellrechte (${res.status})${body ? `: ${body}` : ''}`);
     }
-    if (res.status === 402) throw new FatalGenerationError('Pollinations-Guthaben ist aufgebraucht');
     if (res.status === 429 || res.status >= 500) {
       lastError = new Error(`text API HTTP ${res.status}`);
       if (attempt < 2) {
@@ -381,16 +461,130 @@ async function requestCompletion(messages, temperature, maxTokens = 4000) {
       throw lastError;
     }
     if (!res.ok) throw new Error(`text API HTTP ${res.status}`);
+
     const data = await res.json();
     const content = String(data?.choices?.[0]?.message?.content || '');
     if (/doesn.t have enough credits|not enough credits|complete a quest|top up.{0,40}(pollen|credits|balance)/i.test(content)) {
-      throw new FatalGenerationError(
-        'Pollinations-Guthaben ist aufgebraucht. Bitte unter https://enter.pollinations.ai/top-up aufladen oder eine Quest abschließen.',
-      );
+      throw new Error('Pollinations-Guthaben ist aufgebraucht');
     }
     return data;
   }
   throw lastError || new Error('keine Textantwort erhalten');
+}
+
+async function freePollinationsCompletion(messages, temperature, maxTokens) {
+  let lastError;
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    let res;
+    try {
+      res = await fetch(FREE_TEXT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          model: FREE_TEXT_MODEL,
+          messages,
+          temperature,
+          max_tokens: Math.max(maxTokens, 8192),
+          reasoning_effort: 'low',
+        }),
+        signal: AbortSignal.timeout(180000),
+      });
+    } catch (error) {
+      lastError = error;
+      if (attempt < 2) {
+        await sleep(5000 * (attempt + 1));
+        continue;
+      }
+      throw lastError;
+    }
+
+    if (res.status === 402) {
+      const raw = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 180);
+      const retry = /retry after (\d+)\s*s/i.exec(raw);
+      const wait = retry ? Number(retry[1]) * 1000 + 2000 : 50000;
+      lastError = new Error(`kostenloses Modell-Limit: ${raw}`);
+      if (attempt < 2) {
+        console.warn(`[text] freies Modell-Limit, warte ${Math.round(wait / 1000)}s`);
+        await sleep(wait);
+        continue;
+      }
+      throw lastError;
+    }
+    if (res.status === 429 || res.status >= 500) {
+      lastError = new Error(`free text API HTTP ${res.status}`);
+      if (attempt < 2) {
+        const retryAfter = Number(res.headers.get('retry-after'));
+        const wait = Number.isFinite(retryAfter) && retryAfter > 0
+          ? Math.min(retryAfter * 1000, 60000)
+          : 12000 * (attempt + 1);
+        console.warn(`[text] freies Modell HTTP ${res.status}, warte ${Math.round(wait / 1000)}s`);
+        await sleep(wait);
+        continue;
+      }
+      throw lastError;
+    }
+    if (!res.ok) {
+      const detail = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 220);
+      throw new Error(`free text API HTTP ${res.status}${detail ? `: ${detail}` : ''}`);
+    }
+
+    const data = await res.json();
+    const content = String(data?.choices?.[0]?.message?.content || '').trim();
+    if (!content) {
+      lastError = new Error('freies Modell lieferte keinen Text');
+      if (attempt < 2) {
+        await sleep(5000 * (attempt + 1));
+        continue;
+      }
+      throw lastError;
+    }
+    return data;
+  }
+  throw lastError || new Error('keine kostenlose Textantwort erhalten');
+}
+
+async function requestCompletion(messages, temperature, maxTokens = 4000) {
+  if (OMNI_API_KEY) {
+    try {
+      const res = await fetch(OMNI_TEXT_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          authorization: `Bearer ${OMNI_API_KEY}`,
+        },
+        body: JSON.stringify({
+          model: OMNI_TEXT_MODEL,
+          messages,
+          temperature,
+          max_tokens: maxTokens,
+        }),
+        signal: AbortSignal.timeout(180000),
+      });
+      if (res.ok) return await res.json();
+      console.warn(`[text] OmniRoute HTTP ${res.status}, nutze kostenloses Modell`);
+    } catch (error) {
+      console.warn(`[text] OmniRoute fehlgeschlagen (${error.message}), nutze kostenloses Modell`);
+    }
+  }
+
+  if (geminiKey()) {
+    try {
+      return await geminiCompletion(messages, temperature, maxTokens);
+    } catch (error) {
+      console.warn(`[text] Gemini fehlgeschlagen (${error.message}), nutze kostenloses Pollinations-Modell`);
+    }
+  }
+
+  if (USE_PAID_POLLINATIONS && pollinationsKey()) {
+    try {
+      return await paidPollinationsCompletion(messages, temperature, maxTokens);
+    } catch (error) {
+      console.warn(`[text] Bezahltes Pollinations fehlgeschlagen (${error.message}), nutze kostenloses Modell`);
+    }
+  }
+
+  return freePollinationsCompletion(messages, temperature, maxTokens);
 }
 
 export async function rewriteArticle({
@@ -582,6 +776,83 @@ async function pollinationsImage(prompt, seed, apiKey) {
   throw lastError;
 }
 
+async function freePollinationsImage(prompt, seed) {
+  const models = [FREE_IMAGE_MODEL, FREE_IMAGE_MODEL === 'flux' ? 'turbo' : 'flux'];
+  let lastError;
+
+  for (const model of models) {
+    const params = new URLSearchParams({
+      width: '1024',
+      height: '640',
+      model,
+      seed: String(seed),
+      nologo: 'true',
+    });
+    const url = `${FREE_IMAGE_ENDPOINT}/${encodeURIComponent(prompt)}?${params}`;
+
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      let res;
+      try {
+        res = await fetch(url, {
+          headers: { 'user-agent': 'BreakingNewsBoulevard/1.0' },
+          redirect: 'follow',
+          signal: AbortSignal.timeout(150000),
+        });
+      } catch (error) {
+        lastError = error;
+        if (attempt === 0) {
+          await sleep(5000);
+          continue;
+        }
+        break;
+      }
+
+      if (res.status === 402) {
+        lastError = new Error(`kostenloses Bildmodell ${model} nicht verfügbar`);
+        break;
+      }
+      if (res.status === 429 || res.status >= 500) {
+        lastError = new Error(`kostenlose Bild-API HTTP ${res.status}`);
+        if (attempt === 0) {
+          await sleep(15000);
+          continue;
+        }
+        break;
+      }
+      if (!res.ok) {
+        lastError = new Error(`kostenlose Bild-API HTTP ${res.status}`);
+        break;
+      }
+
+      const type = res.headers.get('content-type') || '';
+      if (!type.startsWith('image/')) {
+        lastError = new Error(`unerwarteter Bild-Typ ${type}`);
+        break;
+      }
+      const raw = Buffer.from(await res.arrayBuffer());
+      if (raw.length < 5000) {
+        lastError = new Error(`Bild zu klein (${raw.length} Bytes)`);
+        break;
+      }
+
+      const image = await Jimp.read(raw);
+      const cropPx = Math.max(0, Math.round(image.bitmap.height * 0.1));
+      if (cropPx > 0) image.crop({ x: 0, y: 0, w: image.bitmap.width, h: image.bitmap.height - cropPx });
+      const buffer = Buffer.from(await image.getBuffer(JimpMime.jpeg, { quality: 88 }));
+      const modelLabel = model === 'flux' ? 'FLUX.1 [schnell]' : 'Turbo';
+      return {
+        buffer,
+        ext: 'jpg',
+        provider: 'Pollinations',
+        credit: `Pollinations / ${modelLabel}`,
+        license: `KI-generiert mit Pollinations (${modelLabel})`,
+      };
+    }
+  }
+
+  throw lastError || new Error('kostenlose Illustration konnte nicht erzeugt werden');
+}
+
 const IMAGE_UNSAFE =
   /\b(trump|putin|zelensky|merz|merkel|macron|starmer|modi|xi|jinping|netanyahu|khamenei|kadyrow|lukaschenko|navalny|erdogan|orbán|orban|person|people|man|woman|child|children|soldier|politician|president|minister|chancellor|portrait|face|faces|logo|flag|newspaper|screen|text|letters|words)\b/i;
 
@@ -601,11 +872,18 @@ function safeImagePrompt(prompt, category = 'Welt') {
 }
 
 export async function generateImage(prompt, seed = Math.floor(Math.random() * 1_000_000_000), category = 'Welt') {
-  const apiKey = pollinationsKey();
-  if (!apiKey) {
-    throw new FatalGenerationError('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
-  }
   const artwork = safeImagePrompt(prompt, category);
-  const finalPrompt = `${artwork}. Flat two-dimensional editorial illustration for a news article, silkscreen and gouache poster, solid muted colours, simplified geometric shapes, visible paper grain, wide 16:9 composition. The picture is entirely illustrated, with no photographic or 3D rendering and no depth of field. The artwork contains no people, no faces, no politicians, no flags, no lettering, no words, no numbers, no labels, no signage, no logos and no typography.`;
-  return pollinationsImage(finalPrompt, seed, apiKey);
+  const finalPrompt = `${artwork}. Flat two-dimensional editorial illustration for a news article, vector poster and silkscreen print, solid muted colours, simplified geometric shapes, strong ink outlines, visible paper grain, wide 16:9 composition. The picture is entirely illustrated, with no photography, no realism, no 3D rendering and no depth of field. The artwork contains no people, no faces, no politicians, no flags, no lettering, no words, no numbers, no labels, no signage, no logos and no typography.`;
+
+  if (USE_PAID_POLLINATIONS && pollinationsKey()) {
+    const image = await pollinationsImage(finalPrompt, seed, pollinationsKey());
+    return {
+      ...image,
+      provider: 'Pollinations',
+      credit: 'Pollinations / GPT Image 2',
+      license: 'KI-generiert mit Pollinations (GPT Image 2)',
+    };
+  }
+
+  return freePollinationsImage(finalPrompt, seed);
 }

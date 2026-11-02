@@ -11,7 +11,6 @@ import {
 import {
   FatalGenerationError,
   generateImage,
-  pollinationsKey,
   rewriteArticle,
 } from './lib/ai.mjs';
 import { rebuildSite, slugify } from './lib/render.mjs';
@@ -191,16 +190,11 @@ async function main() {
     return;
   }
 
-  const apiKey = pollinationsKey();
-  if (!apiKey) {
-    throw new Error('POLLINATIONS_API_KEY fehlt; KI-Illustrationen können nicht erzeugt werden');
-  }
-  const keyType = apiKey.startsWith('sk_')
-    ? 'Secret Key'
-    : apiKey.startsWith('pk_')
-      ? 'Publishable/App Key'
-      : 'unbekannter Typ';
-  console.log(`[key] ${keyType} (${apiKey.length} Zeichen)`);
+  const textProvider = process.env.GEMINI_API_KEY
+    ? `Gemini (${process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash'}, kostenlos)`
+    : 'Pollinations Classic (kostenlos, gpt-oss-20b)';
+  console.log(`[text] ${textProvider}`);
+  console.log('[image] Pollinations Classic (kostenlos, FLUX.1 [schnell])');
 
   const activeSources = SOURCES.filter((source) => isSourceEnabled(source) && source.daily);
   console.log(
@@ -259,15 +253,15 @@ async function main() {
       console.log(`[image] KI-Illustration: ${rewritten.imagePrompt}`);
       const image = await generateImage(rewritten.imagePrompt, undefined, rewritten.category);
       const imageMeta = {
-        imageCredit: 'Pollinations / GPT Image 2',
-        imageLicense: 'KI-generiert mit Pollinations (GPT Image 2)',
+        imageCredit: image.credit,
+        imageLicense: image.license,
         imageLicenseUrl: '',
         imageSourceUrl: '',
         imageType: 'illustration',
-        imageProvider: 'Pollinations',
+        imageProvider: image.provider,
         imageAlt: `KI-generierte Illustration: ${rewritten.title}`,
       };
-      console.log(`[image] Pollinations / GPT Image 2 (${image.ext})`);
+      console.log(`[image] ${image.credit} (${image.ext})`);
 
       const slug = uniqueSlug(rewritten.title, date, [...posts, ...drafts]);
       const post = {

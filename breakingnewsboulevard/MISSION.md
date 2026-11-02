@@ -22,9 +22,9 @@ Breaking News Boulevard fasst täglich sechs aktuelle Meldungen in eigenständig
 - Zahlen, Einheiten, Zeitangaben und Amtsbezeichnungen exakt aus der Quelle übernehmen.
 - Bei dünner Quellenlage wird die Meldung übersprungen.
 - Jeder Artikel zeigt sichtbar „Quelle: Name“ mit Link und einen KI-Hinweis.
-- Bilder: pro Artikel eine KI-generierte redaktionelle Illustration über `gen.pollinations.ai` mit dem Modell `openai/gpt-image-2`. Dafür ist `POLLINATIONS_API_KEY` als GitHub Secret nötig; ohne Key bricht die Generierung ab. Bildthema aus Ort, Thema und Stimmung der Meldung; immer Illustration, nie fotorealistisch; keine echten Personen, Politiker, bekannten Gesichter, Logos oder Text im Bild.
-- Unter jedem Bild steht „KI-generierte Illustration: Pollinations / GPT Image 2“. Es gibt keinen lokalen Bild-Fallback; bei einem API-Fehler wird der betroffene Artikel übersprungen.
-- Texte und Faktenprüfung laufen über `gen.pollinations.ai` mit `deepseek/deepseek-v4.1-flash` und demselben `POLLINATIONS_API_KEY`; das langsame IP-Limit der Classic-API entfällt.
+- Bilder: pro Artikel eine KI-generierte redaktionelle Illustration über die kostenlose Pollinations-Classic-API (`image.pollinations.ai`) mit dem offenen Modell `flux`. Dafür ist kein API-Key nötig; das kleine Anbieter-Wasserzeichen wird beim Speichern am unteren Rand abgeschnitten. Bildthema aus Ort, Thema und Stimmung der Meldung; immer Illustration, nie fotorealistisch; keine echten Personen, Politiker, bekannten Gesichter, Logos oder Text im Bild.
+- Unter jedem Bild steht „KI-generierte Illustration: Pollinations / FLUX.1 [schnell]“. Es gibt keinen lokalen Bild-Fallback; bei einem API-Fehler wird der betroffene Artikel übersprungen.
+- Texte und Faktenprüfung laufen kostenlos über das Pollinations-Classic-Modell `openai` (gpt-oss-20b). Optional wird bei gesetztem `GEMINI_API_KEY` (Google AI Studio, kostenlos) zuerst Gemini (`gemini-2.5-flash`) genutzt; bei Limit oder Fehler erfolgt automatisch der Fallback auf das kostenlose Pollinations-Modell.
 - Keine Originalfotos der Nachrichtenseiten verwenden.
 
 ## Veröffentlichung
