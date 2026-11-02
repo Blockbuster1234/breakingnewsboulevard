@@ -63,7 +63,7 @@ if (Array.isArray(posts)) {
     check(Boolean(post.imageProvider), `${label}: Bildanbieter fehlt`);
     check(Boolean(post.imageAlt), `${label}: Bild-Alttext fehlt`);
     check(['photo', 'illustration'].includes(post.imageType), `${label}: Bildtyp fehlt oder ist ungültig`);
-    if (isShort) check(post.imageType === 'illustration', `${label}: Kurzartikel benötigt eine KI-Illustration`);
+    if (isShort) check(post.imageType === 'illustration', `${label}: Kurzartikel benötigt eine Illustration`);
     if (post.imageType === 'photo') {
       check(Boolean(post.imageLicenseUrl?.startsWith('https://')), `${label}: Lizenz-URL des Fotos fehlt`);
       check(Boolean(post.imageSourceUrl?.startsWith('https://')), `${label}: Bildquelle fehlt`);
@@ -113,8 +113,8 @@ if (Array.isArray(posts)) {
     if (isShort && fs.existsSync(articlePath)) {
       const html = fs.readFileSync(articlePath, 'utf8');
       check(html.includes('Quelle:'), `${label}: sichtbarer Quellenhinweis fehlt`);
-      check(html.includes('KI-generierte Illustration'), `${label}: Bildhinweis fehlt`);
-      check(html.includes('KI-Hinweis:'), `${label}: KI-Hinweis fehlt`);
+      check(html.includes('Symbolbild'), `${label}: Bildhinweis fehlt`);
+      check(html.includes('Hinweis:'), `${label}: Transparenzhinweis fehlt`);
     }
 
     check(Boolean(post.image?.startsWith('/posts/')), `${label}: Bild-URL ungültig`);

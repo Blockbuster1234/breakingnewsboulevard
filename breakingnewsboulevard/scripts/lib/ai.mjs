@@ -26,6 +26,8 @@ const FREE_TEXT_ENDPOINT = 'https://text.pollinations.ai/openai';
 const FREE_TEXT_MODEL = process.env.FREE_TEXT_MODEL || 'openai';
 const FREE_IMAGE_ENDPOINT = 'https://image.pollinations.ai/prompt';
 const FREE_IMAGE_MODEL = process.env.FREE_IMAGE_MODEL || 'flux';
+const FREE_IMAGE_MIN_INTERVAL_MS = Math.max(1000, Number(process.env.FREE_IMAGE_MIN_INTERVAL_MS || 60000));
+let nextFreeImageAt = 0;
 const GEMINI_API_KEY = String(process.env.GEMINI_API_KEY || '').trim();
 const GEMINI_TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-2.5-flash-lite';
 const GEMINI_MIN_INTERVAL_MS = Math.max(1000, Number(process.env.GEMINI_MIN_INTERVAL_MS || 6000));
@@ -86,6 +88,7 @@ const CATEGORIES = [
 
 const SYSTEM_PROMPT = `Du bist erfahrener Redakteur bei Breaking News Boulevard, einem deutschsprachigen Nachrichtenportal.
 Du erhältst den vollständigen Text einer aktuellen Meldung als Recherchegrundlage.
+Schreibe wie eine professionelle Nachrichtenredaktion: klar, sachlich, natürliche deutsche Sätze, aktive Verben; keine Floskeln und keine Meta-Sätze über den Schreibprozess.
 
 Harte Regeln:
 - Schreibe einen eigenständigen deutschen Kurzartikel mit den wichtigsten Fakten: Was, Wo und Wer. Formuliere alles in deinen eigenen Worten.
@@ -100,7 +103,7 @@ Harte Regeln:
 - Schreibe durchgehend Deutsch. Englische Wörter nur bei Eigennamen.
 - Die Überschrift muss die zentrale Aussage korrekt zusammenfassen, maximal 90 Zeichen und eine eigene Formulierung sein.
 - Prüfe vor der Ausgabe jede Angabe gegen den vollständigen Quelltext und streiche alles, was nicht ausdrücklich belegt ist.
-- imagePrompt: kurze englische Beschreibung einer symbolischen redaktionellen Illustration zum Ort, Thema und zur Stimmung der Meldung. Bevorzuge Landschaften, Gegenstände, Lichtstimmungen oder abstrakte Formen; keine Gebäudefassaden mit Beschriftung. Keine Menschen, keine Gesichter, keine Politiker, keine Logos, keine Flaggen, keine Zeitungen, keine Bildschirme und kein Text. Kein fotorealistischer Stil.
+- imagePrompt: kurze englische Beschreibung einer redaktionellen Illustration, die konkret zu dieser Meldung passt: nenne Ort, Hauptmotiv/Handlung und Tageszeit/Stimmung. Keine generischen Phrasen wie "world news", "international politics" oder "global tension". Bevorzuge konkrete Landschaften, Gegenstände oder Situationen; keine Gebäudefassaden mit Beschriftung, keine Menschen, keine Gesichter, keine Politiker, keine Logos, keine Flaggen, keine Zeitungen, keine Bildschirme und keinen Text. Kein fotorealistischer Stil.
 - Gib ausschließlich gültiges JSON ohne Markdown-Zäune und ohne Text außerhalb des JSON-Objekts zurück.
 
 JSON-Format:
@@ -109,7 +112,7 @@ JSON-Format:
   "excerpt": "max 180 Zeichen, eine Zusammenfassung in einem Satz",
   "category": "eine von: Welt, Politik, Wirtschaft, Technologie, Wissenschaft, Gesundheit, Klima, Kultur, Sport, Justiz",
   "body": "45-80 Wörter, zwei Absätze durch Leerzeile getrennt. Erster Absatz: genau ein Satz (Was, Wo, Wer). Zweiter Absatz: warum wichtig, nur mit Fakten aus der Quelle.",
-  "imagePrompt": "kurze englische Beschreibung einer symbolischen redaktionellen Illustration zu Ort, Thema und Stimmung; Landschaften, Gegenstände oder abstrakte Formen statt Gebäudefassaden; keine Menschen, Gesichter, Politiker, Logos, Flaggen, Zeitungen, Bildschirme oder Schrift; nicht fotorealistisch."
+  "imagePrompt": "kurze englische Beschreibung einer konkreten redaktionellen Illustration zu Ort, Hauptmotiv und Stimmung der Meldung; keine generischen Phrasen; keine Menschen, Gesichter, Politiker, Logos, Flaggen, Zeitungen, Bildschirme oder Schrift; nicht fotorealistisch."
 }`;
 
 function parseJson(content) {
@@ -859,6 +862,12 @@ async function pollinationsImage(prompt, seed, apiKey) {
   throw lastError;
 }
 
+async function paceFreeImage() {
+  const wait = nextFreeImageAt - Date.now();
+  if (wait > 0) await sleep(wait);
+  nextFreeImageAt = Date.now() + FREE_IMAGE_MIN_INTERVAL_MS;
+}
+
 async function freePollinationsImage(prompt, seed) {
   const models = [FREE_IMAGE_MODEL, FREE_IMAGE_MODEL === 'flux' ? 'turbo' : 'flux'];
   let lastError;
@@ -874,6 +883,7 @@ async function freePollinationsImage(prompt, seed) {
     const url = `${FREE_IMAGE_ENDPOINT}/${encodeURIComponent(prompt)}?${params}`;
 
     for (let attempt = 0; attempt < 2; attempt += 1) {
+      await paceFreeImage();
       let res;
       try {
         res = await fetch(url, {
@@ -890,11 +900,20 @@ async function freePollinationsImage(prompt, seed) {
         break;
       }
 
-      if (res.status === 402) {
-        lastError = new Error(`kostenloses Bildmodell ${model} nicht verfügbar`);
+      if (res.status === 402 || res.status === 429) {
+        const raw = (await res.text().catch(() => '')).replace(/\s+/g, ' ').slice(0, 200);
+        lastError = new Error(`kostenlose Bild-API HTTP ${res.status}: ${raw}`);
+        const retry = /retry after (\d+)\s*s/i.exec(raw);
+        const unavailable = /unavailable|not available|model/i.test(raw) && !/limit|rate|queue/i.test(raw);
+        if (!unavailable && attempt < 2) {
+          const wait = retry ? Number(retry[1]) * 1000 + 2000 : 60000;
+          console.warn(`[image] ${model} Limit, warte ${Math.round(wait / 1000)}s`);
+          await sleep(wait);
+          continue;
+        }
         break;
       }
-      if (res.status === 429 || res.status >= 500) {
+      if (res.status >= 500) {
         lastError = new Error(`kostenlose Bild-API HTTP ${res.status}`);
         if (attempt === 0) {
           await sleep(15000);
@@ -954,19 +973,26 @@ function safeImagePrompt(prompt, category = 'Welt') {
   return value;
 }
 
-export async function generateImage(prompt, seed = Math.floor(Math.random() * 1_000_000_000), category = 'Welt') {
+export async function generateImage(prompt, seed = Math.floor(Math.random() * 1_000_000_000), category = 'Welt', storyTitle = '') {
   const artwork = safeImagePrompt(prompt, category);
-  const finalPrompt = `${artwork}. Flat two-dimensional editorial illustration for a news article, vector poster and silkscreen print, solid muted colours, simplified geometric shapes, strong ink outlines, visible paper grain, wide 16:9 composition. The picture is entirely illustrated, with no photography, no realism, no 3D rendering and no depth of field. The artwork contains no people, no faces, no politicians, no flags, no lettering, no words, no numbers, no labels, no signage, no logos and no typography.`;
+  const storyHint = String(storyTitle || '')
+    .replace(/\b(trump|putin|zelensky|merz|merkel|macron|starmer|modi|xi|jinping|netanyahu|khamenei|kadyrow|lukaschenko|navalny|erdogan|orbán|orban|person|people|man|woman|child|children|soldier|politician|president|minister|chancellor|portrait|face|faces|logo|flag|newspaper|screen|text|letters|words)\b/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 160);
+  const context = storyHint ? ` Story context: ${storyHint}.` : '';
+  const finalPrompt = `${artwork}. Serious editorial illustration for a news magazine, concrete to the story, painterly realism with depth and cinematic light, muted colours, symbolic and clear.${context} The picture is entirely illustrated: no photography, no real people, no faces, no politicians, no flags, no lettering, no words, no numbers, no labels, no signage, no logos and no typography.`;
+  const meta = {
+    provider: 'Breaking News Boulevard',
+    credit: 'Breaking News Boulevard',
+    license: 'Redaktionelle Illustration',
+  };
 
   if (USE_PAID_POLLINATIONS && pollinationsKey()) {
     const image = await pollinationsImage(finalPrompt, seed, pollinationsKey());
-    return {
-      ...image,
-      provider: 'Pollinations',
-      credit: 'Pollinations / GPT Image 2',
-      license: 'KI-generiert mit Pollinations (GPT Image 2)',
-    };
+    return { ...image, ...meta };
   }
 
-  return freePollinationsImage(finalPrompt, seed);
+  const image = await freePollinationsImage(finalPrompt, seed);
+  return { ...image, ...meta };
 }

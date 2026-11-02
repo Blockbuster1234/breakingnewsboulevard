@@ -1,19 +1,5 @@
 const posts = [
   {
-    "slug": "2026-11-02-russischer-angriff-auf-hilfszentrum-in-komyschuwacha-fordert-24-tote",
-    "title": "Russischer Angriff auf Hilfszentrum in Komyschuwacha fordert 24 Tote",
-    "excerpt": "Bei einem russischen Bombenangriff auf ein Zentrum für humanitäre Hilfe in der ukrainischen Ortschaft Komyschuwacha sind 24 Menschen ums Leben gekommen.",
-    "date": "2026-11-02",
-    "category": "Welt",
-    "url": "/posts/2026-11-02-russischer-angriff-auf-hilfszentrum-in-komyschuwacha-fordert-24-tote.html",
-    "image": "/posts/2026-11-02-russischer-angriff-auf-hilfszentrum-in-komyschuwacha-fordert-24-tote-hero.jpg",
-    "images": [
-      "/posts/2026-11-02-russischer-angriff-auf-hilfszentrum-in-komyschuwacha-fordert-24-tote-hero.jpg"
-    ],
-    "source": "BBC",
-    "sourceUrl": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o"
-  },
-  {
     "slug": "2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu",
     "title": "Commonwealth-Gipfel: Briten lehnten Reparations-Agenda ab, stimmen aber Dialog zu",
     "excerpt": "Britische Vertreter sollen darauf bestanden haben, dass Reparationen für Sklaverei nicht auf der Agenda des Commonwealth-Gipfels in Antigua und Barbuda erscheinen, stimmten aber ei",
@@ -26,20 +12,6 @@ const posts = [
     ],
     "source": "The Guardian",
     "sourceUrl": "https://www.theguardian.com/world/2026/nov/01/uk-was-vehement-slavery-reparations-should-not-be-on-commonwealth-summit-agenda"
-  },
-  {
-    "slug": "2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei",
-    "title": "Russland lässt US-Bürger Stephen Hubbard frei",
-    "excerpt": "Der 74-jährige frühere Lehrer Stephen Hubbard ist von Russland freigelassen worden; Trump zufolge war kein Austausch nötig.",
-    "date": "2026-10-21",
-    "category": "Politik",
-    "url": "/posts/2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei.html",
-    "image": "/posts/2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei-hero.jpg",
-    "images": [
-      "/posts/2026-10-21-russland-laesst-us-buerger-stephen-hubbard-frei-hero.jpg"
-    ],
-    "source": "BBC",
-    "sourceUrl": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o"
   },
   {
     "slug": "2026-10-21-schwer-kranke-haeftlinge-in-florida-sollen-in-afrikanische-laender-abgeschoben-werden",

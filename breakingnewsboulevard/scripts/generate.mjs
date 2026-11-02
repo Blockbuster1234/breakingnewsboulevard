@@ -253,7 +253,7 @@ async function main() {
       }
 
       console.log(`[image] KI-Illustration: ${rewritten.imagePrompt}`);
-      const image = await generateImage(rewritten.imagePrompt, undefined, rewritten.category);
+      const image = await generateImage(rewritten.imagePrompt, undefined, rewritten.category, rewritten.title);
       const imageMeta = {
         imageCredit: image.credit,
         imageLicense: image.license,
@@ -261,7 +261,7 @@ async function main() {
         imageSourceUrl: '',
         imageType: 'illustration',
         imageProvider: image.provider,
-        imageAlt: `KI-generierte Illustration: ${rewritten.title}`,
+        imageAlt: `Symbolbild: ${rewritten.title}`,
       };
       console.log(`[image] ${image.credit} (${image.ext})`);
 

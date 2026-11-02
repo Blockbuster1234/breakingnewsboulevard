@@ -121,7 +121,7 @@ export function writePostPage(post) {
     ? `<a href="${escapeHtml(post.imageSourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.imageProvider || 'Bildquelle')}</a>`
     : '';
   const imageCaption = [
-    `${post.imageType === 'photo' ? 'Foto' : 'KI-generierte Illustration'}: ${escapeHtml(post.imageCredit || 'Breaking News Boulevard')}`,
+    `${post.imageType === 'photo' ? 'Foto' : 'Symbolbild'}: ${escapeHtml(post.imageCredit || 'Breaking News Boulevard')}`,
     imageLicenseHtml ? `${post.imageType === 'photo' ? 'Lizenz: ' : ''}${imageLicenseHtml}` : '',
     imageSourceHtml,
   ]
@@ -129,7 +129,7 @@ export function writePostPage(post) {
     .join(' · ');
   const imageKind = post.imageType === 'photo'
     ? 'ein frei lizenziertes Foto'
-    : 'eine KI-generierte Illustration, kein Beweisfoto des Ereignisses';
+    : 'ein Symbolbild, kein Beweisfoto des Ereignisses';
   const correctionNote = post.correctionNote
     ? `<p class="correction-note">${escapeHtml(post.correctionNote)}</p>`
     : '';

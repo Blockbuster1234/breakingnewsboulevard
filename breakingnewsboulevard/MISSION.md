@@ -3,7 +3,7 @@
 Breaking News Boulevard fasst täglich sechs aktuelle Meldungen in eigenständigen deutschen Kurzartikeln zusammen. RSS dient nur zur Auswahl der Meldung; die Faktenbasis ist der verlinkte Volltext. Jeder Artikel wird vor Veröffentlichung automatisch gegen Quelle und Format geprüft.
 
 ## Quellen
-- Tägliche Quellen: BBC, Tagesschau, DW und The Guardian. Kein Al Jazeera.
+- Tägliche Quellen: Tagesschau, DW und The Guardian. Kein Al Jazeera, kein BBC.
 - Zusätzlich bleiben die geprüften Primärquellen NASA, CISA/US-Regierung, UK Government, Wikinews, Europäische Kommission, Destatis und Bundesgerichtshof in der Registry.
 - UN News, WHO, ESA und Bundesregierung sind wegen unklarer bzw. restriktiver Nutzungsrechte gesperrt; die WHO ist wegen der nicht-kommerziellen Lizenz CC BY-NC-SA 3.0 IGO deaktiviert.
 - Nur Quellen aus der aktiven Registry in `scripts/lib/news.mjs` verwenden.
@@ -21,9 +21,9 @@ Breaking News Boulevard fasst täglich sechs aktuelle Meldungen in eigenständig
 - Keine erfundenen Fakten, Namen, Funktionen, Zahlen, Orte oder Zusammenhänge.
 - Zahlen, Einheiten, Zeitangaben und Amtsbezeichnungen exakt aus der Quelle übernehmen.
 - Bei dünner Quellenlage wird die Meldung übersprungen.
-- Jeder Artikel zeigt sichtbar „Quelle: Name“ mit Link und einen KI-Hinweis.
-- Bilder: pro Artikel eine KI-generierte redaktionelle Illustration über die kostenlose Pollinations-Classic-API (`image.pollinations.ai`) mit dem offenen Modell `flux`. Dafür ist kein API-Key nötig; das kleine Anbieter-Wasserzeichen wird beim Speichern am unteren Rand abgeschnitten. Bildthema aus Ort, Thema und Stimmung der Meldung; immer Illustration, nie fotorealistisch; keine echten Personen, Politiker, bekannten Gesichter, Logos oder Text im Bild.
-- Unter jedem Bild steht „KI-generierte Illustration: Pollinations / FLUX.1 [schnell]“. Es gibt keinen lokalen Bild-Fallback; bei einem API-Fehler wird der betroffene Artikel übersprungen.
+- Jeder Artikel zeigt sichtbar „Quelle: Name“ mit Link und den Hinweis „Symbolbild“.
+- Bilder: pro Artikel eine redaktionelle Illustration über die kostenlose Pollinations-Classic-API (`image.pollinations.ai`, Modell `flux`); kein API-Key nötig, das Anbieter-Wasserzeichen wird abgeschnitten. Das Motiv muss konkret zu Ort, Hauptmotiv und Stimmung der Meldung passen; keine generischen Themen. Keine echten Personen, Politiker, Gesichter, Logos oder Text im Bild. Die Bilder sind Symbolbilder, keine Beweisfotos.
+- Unter jedem Bild steht „Symbolbild: Breaking News Boulevard“. Die Erstellung mit generativer Bildsoftware ist im Impressum offengelegt. Bei einem API-Fehler wird der betroffene Artikel übersprungen.
 - Texte und Faktenprüfung laufen bevorzugt über Groq (`GROQ_API_KEY`, Llama 3.3 70B, kostenlos, 30 Anfragen/Minute); damit erzeugt der geplante Lauf sechs Artikel. Ohne Groq-Key wird Gemini (`gemini-2.5-flash-lite`, kostenlos) genutzt; der geplante Lauf erzeugt dann einen Artikel. Ohne beide Keys greift das kostenlose Pollinations-Modell `openai` (gpt-oss-20b).
 - Keine Originalfotos der Nachrichtenseiten verwenden.
 

@@ -59,22 +59,6 @@ async function collectWikinews(source) {
 
 export const SOURCES = [
   {
-    id: 'bbc',
-    name: 'BBC',
-    category: 'Welt',
-    homepage: 'https://www.bbc.co.uk/news/world',
-    feed: 'https://feeds.bbci.co.uk/news/world/rss.xml',
-    include: /^https:\/\/www\.bbc\.(?:co\.uk|com)\/news\//i,
-    language: 'en',
-    daily: true,
-    rss: true,
-    termsUrl: 'https://www.bbc.co.uk/usingthebbc/terms/',
-    license: 'BBC-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung',
-    licenseUrl: 'https://www.bbc.co.uk/usingthebbc/terms/',
-    reuseNote:
-      'Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.',
-  },
-  {
     id: 'tagesschau',
     name: 'Tagesschau',
     category: 'Welt',
