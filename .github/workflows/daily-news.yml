@@ -8,7 +8,7 @@ on:
       count:
         description: 'Anzahl der Entwürfe (1-6)'
         required: false
-        default: '6'
+        default: '1'
 
 permissions:
   contents: write
@@ -47,7 +47,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FREE_TEXT_MODEL: openai
           FREE_IMAGE_MODEL: flux
-        run: npm run generate:daily -- --count ${{ inputs.count || '6' }}
+        # Free Gemini quota is tight on GitHub's shared runners: scheduled runs publish one article.
+        run: npm run generate:daily -- --count ${{ inputs.count || '1' }}
 
       - name: Auto-approve and publish
         env:
