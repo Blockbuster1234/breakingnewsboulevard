@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor",
+    "title": "Brasilien legt Fahrplan für Ausstieg aus fossilen Brennstoffen vor",
+    "excerpt": "Brasilien hat den weltweit ersten globalen Fahrplan für den Ausstieg aus fossilen Brennstoffen veröffentlicht. Er soll Ländern helfen, ihre Abhängigkeit zu verringern und die Wirts",
+    "date": "2026-11-03",
+    "category": "Klima",
+    "url": "/posts/2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor.html",
+    "image": "/posts/2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor-hero.jpg",
+    "images": [
+      "/posts/2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels"
+  },
+  {
     "slug": "2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu",
     "title": "Commonwealth-Gipfel: Briten lehnten Reparations-Agenda ab, stimmen aber Dialog zu",
     "excerpt": "Britische Vertreter sollen darauf bestanden haben, dass Reparationen für Sklaverei nicht auf der Agenda des Commonwealth-Gipfels in Antigua und Barbuda erscheinen, stimmten aber ei",

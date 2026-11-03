@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor",
+    "title": "Brasilien legt Fahrplan für Ausstieg aus fossilen Brennstoffen vor",
+    "excerpt": "Brasilien hat den weltweit ersten globalen Fahrplan für den Ausstieg aus fossilen Brennstoffen veröffentlicht. Er soll Ländern helfen, ihre Abhängigkeit zu verringern und die Wirts",
+    "date": "2026-11-03",
+    "category": "Klima",
+    "url": "/posts/2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor.html",
+    "image": "/posts/2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor-hero.jpg",
+    "images": [
+      "/posts/2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "Brazil publishes first global ‘roadmap’ for phasing out fossil fuels",
+      "url": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Tue, 03 Nov 2026 13:00:07 GMT"
+    },
+    "body": "Brasilien hat den ersten globalen Fahrplan für den Ausstieg aus fossilen Brennstoffen vorgelegt.\n\nDie Regierung in Brasília betont, dass Länder ihre Wirtschaft stärken und Armut bekämpfen können, während sie sich von Kohle, Öl und Gas lösen. Die Dokumente sollen die Umsetzung bereits vereinbarter Klimaziele erleichtern. Sie enthalten keine Fristen oder Meilensteine, sondern überlassen es den Ländern, ihre Abhängigkeit zu analysieren und geeignete Maßnahmen zu wählen.",
+    "imagePrompt": "Stylized map of South America with glowing green lines representing renewable energy pathways and subtle outlines of rainforest.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Brasilien legt Fahrplan für Ausstieg aus fossilen Brennstoffen vor",
+    "wordCount": 65,
+    "sourcePublishedAt": "Tue, 03 Nov 2026 13:00:07 GMT",
+    "createdAt": "2026-11-03T14:43:47.681Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-03T14:43:48.488Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu",
     "title": "Commonwealth-Gipfel: Briten lehnten Reparations-Agenda ab, stimmen aber Dialog zu",
     "excerpt": "Britische Vertreter sollen darauf bestanden haben, dass Reparationen für Sklaverei nicht auf der Agenda des Commonwealth-Gipfels in Antigua und Barbuda erscheinen, stimmten aber ei",
