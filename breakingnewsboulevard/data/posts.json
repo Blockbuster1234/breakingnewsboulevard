@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst",
+    "title": "Grizzly-Angriff in Kanada: Mutter tot, Tochter vermisst",
+    "excerpt": "In British Columbia, Kanada, wurden eine Mutter tot aufgefunden und ihre Tochter nach einem mutmaßlichen Grizzly-Angriff vermisst. Die Suche läuft weiter.",
+    "date": "2026-11-04",
+    "category": "Welt",
+    "url": "/posts/2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst.html",
+    "image": "/posts/2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst-hero.jpg",
+    "images": [
+      "/posts/2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "One dead and another missing in suspected grizzly bear attack in Canada",
+      "url": "https://www.theguardian.com/world/2026/nov/03/grizzly-bear-attack-canada",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Tue, 03 Nov 2026 22:08:50 GMT"
+    },
+    "body": "Eine Mutter kam ums Leben, ihre Tochter wird nach einem mutmaßlichen Grizzly-Angriff in British Columbia vermisst.\n\nEinsatzkräfte fanden die Leiche der Frau am Sonntag während der Suchaktion nahe Bella Coola. Die Suche nach der 19-jährigen Tochter dauert an. Der Vorfall ereignete sich im Wandergebiet Snooka West. Grizzlybären sind in der Region, die als Great Bear Rainforest bekannt ist, häufig anzutreffen.",
+    "imagePrompt": "Dense green forest with a faint trail leading into it, late afternoon light filtering through the trees, a sense of quiet and unease.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Grizzly-Angriff in Kanada: Mutter tot, Tochter vermisst",
+    "wordCount": 60,
+    "sourcePublishedAt": "Tue, 03 Nov 2026 22:08:50 GMT",
+    "createdAt": "2026-11-04T14:55:50.048Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-04T14:55:51.756Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor",
     "title": "Brasilien legt Fahrplan für Ausstieg aus fossilen Brennstoffen vor",
     "excerpt": "Brasilien hat den weltweit ersten globalen Fahrplan für den Ausstieg aus fossilen Brennstoffen veröffentlicht. Er soll Ländern helfen, ihre Abhängigkeit zu verringern und die Wirts",

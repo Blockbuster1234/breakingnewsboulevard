@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst",
+    "title": "Grizzly-Angriff in Kanada: Mutter tot, Tochter vermisst",
+    "excerpt": "In British Columbia, Kanada, wurden eine Mutter tot aufgefunden und ihre Tochter nach einem mutmaßlichen Grizzly-Angriff vermisst. Die Suche läuft weiter.",
+    "date": "2026-11-04",
+    "category": "Welt",
+    "url": "/posts/2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst.html",
+    "image": "/posts/2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst-hero.jpg",
+    "images": [
+      "/posts/2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/03/grizzly-bear-attack-canada"
+  },
+  {
     "slug": "2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor",
     "title": "Brasilien legt Fahrplan für Ausstieg aus fossilen Brennstoffen vor",
     "excerpt": "Brasilien hat den weltweit ersten globalen Fahrplan für den Ausstieg aus fossilen Brennstoffen veröffentlicht. Er soll Ländern helfen, ihre Abhängigkeit zu verringern und die Wirts",
