@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-05-hubert-aiwanger-bestuerzung-nach-tod-des-freie-waehler-chefs",
+    "title": "Hubert Aiwanger: Bestürzung nach Tod des Freie-Wähler-Chefs",
+    "excerpt": "Der bayerische Wirtschaftsminister Hubert Aiwanger wurde leblos in einem Berliner Hotel aufgefunden. Die Staatsanwaltschaft schließt Fremdverschulden vorläufig aus.",
+    "date": "2026-11-05",
+    "category": "Politik",
+    "url": "/posts/2026-11-05-hubert-aiwanger-bestuerzung-nach-tod-des-freie-waehler-chefs.html",
+    "image": "/posts/2026-11-05-hubert-aiwanger-bestuerzung-nach-tod-des-freie-waehler-chefs-hero.jpg",
+    "images": [
+      "/posts/2026-11-05-hubert-aiwanger-bestuerzung-nach-tod-des-freie-waehler-chefs-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/echtes-mannsbild-best%C3%BCrzung-nach-hubert-aiwangers-tod/a-79863355"
+  },
+  {
     "slug": "2026-11-04-grizzly-angriff-in-kanada-mutter-tot-tochter-vermisst",
     "title": "Grizzly-Angriff in Kanada: Mutter tot, Tochter vermisst",
     "excerpt": "In British Columbia, Kanada, wurden eine Mutter tot aufgefunden und ihre Tochter nach einem mutmaßlichen Grizzly-Angriff vermisst. Die Suche läuft weiter.",
