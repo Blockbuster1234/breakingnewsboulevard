@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika",
+    "title": "ANC erleidet schwere Schlappe bei Kommunalwahlen in Südafrika",
+    "excerpt": "Die ANC verliert massiv an Zustimmung bei den Kommunalwahlen in Südafrika. Die Partei fiel landesweit unter ein Drittel der Stimmen.",
+    "date": "2026-11-06",
+    "category": "Welt",
+    "url": "/posts/2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika.html",
+    "image": "/posts/2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika-hero.jpg",
+    "images": [
+      "/posts/2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "ANC faces bruising defeat in South African local elections with 80% of ballots counted",
+      "url": "https://www.theguardian.com/world/2026/nov/06/anc-faces-defeat-south-african-local-elections",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Fri, 06 Nov 2026 12:48:37 GMT"
+    },
+    "body": "Die südafrikanische Regierungspartei ANC steht vor einer deutlichen Niederlage bei den Kommunalwahlen.\n\nMit über 80% der ausgezählten Stimmen liegt die Partei landesweit bei nur 31,8%. Die Wahl markiert einen weiteren Schritt im Bedeutungsverlust des ANC, der Südafrika seit 1994 regiert. Die Partei verliert voraussichtlich ihre Mehrheit in den Provinzen Gauteng und KwaZulu-Natal.",
+    "imagePrompt": "South African landscape with voting ballot boxes and scattered leaves under a cloudy sky, muted colors, illustrative style.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: ANC erleidet schwere Schlappe bei Kommunalwahlen in Südafrika",
+    "wordCount": 53,
+    "sourcePublishedAt": "Fri, 06 Nov 2026 12:48:37 GMT",
+    "createdAt": "2026-11-06T14:39:41.748Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-06T14:39:42.275Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-05-hubert-aiwanger-bestuerzung-nach-tod-des-freie-waehler-chefs",
     "title": "Hubert Aiwanger: Bestürzung nach Tod des Freie-Wähler-Chefs",
     "excerpt": "Der bayerische Wirtschaftsminister Hubert Aiwanger wurde leblos in einem Berliner Hotel aufgefunden. Die Staatsanwaltschaft schließt Fremdverschulden vorläufig aus.",

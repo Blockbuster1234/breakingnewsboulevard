@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika",
+    "title": "ANC erleidet schwere Schlappe bei Kommunalwahlen in Südafrika",
+    "excerpt": "Die ANC verliert massiv an Zustimmung bei den Kommunalwahlen in Südafrika. Die Partei fiel landesweit unter ein Drittel der Stimmen.",
+    "date": "2026-11-06",
+    "category": "Welt",
+    "url": "/posts/2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika.html",
+    "image": "/posts/2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika-hero.jpg",
+    "images": [
+      "/posts/2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/06/anc-faces-defeat-south-african-local-elections"
+  },
+  {
     "slug": "2026-11-05-hubert-aiwanger-bestuerzung-nach-tod-des-freie-waehler-chefs",
     "title": "Hubert Aiwanger: Bestürzung nach Tod des Freie-Wähler-Chefs",
     "excerpt": "Der bayerische Wirtschaftsminister Hubert Aiwanger wurde leblos in einem Berliner Hotel aufgefunden. Die Staatsanwaltschaft schließt Fremdverschulden vorläufig aus.",
