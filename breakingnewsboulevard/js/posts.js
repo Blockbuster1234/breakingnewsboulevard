@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-07-kenianischer-sektenfuehrer-wegen-mordes-an-190-kindern-zu-200-jahren-haft-verurteilt",
+    "title": "Kenianischer Sektenführer wegen Mordes an 190 Kindern zu 200 Jahren Haft verurteilt",
+    "excerpt": "Ein Gericht in Mombasa verurteilte Paul Mackenzie, Anführer einer apokalyptischen Sekte, zu 200 Jahren Haft für den Tod von 190 Kindern und einem Erwachsenen durch Verhungern und d",
+    "date": "2026-11-07",
+    "category": "Justiz",
+    "url": "/posts/2026-11-07-kenianischer-sektenfuehrer-wegen-mordes-an-190-kindern-zu-200-jahren-haft-verurteilt.html",
+    "image": "/posts/2026-11-07-kenianischer-sektenfuehrer-wegen-mordes-an-190-kindern-zu-200-jahren-haft-verurteilt-hero.jpg",
+    "images": [
+      "/posts/2026-11-07-kenianischer-sektenfuehrer-wegen-mordes-an-190-kindern-zu-200-jahren-haft-verurteilt-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie"
+  },
+  {
     "slug": "2026-11-06-anc-erleidet-schwere-schlappe-bei-kommunalwahlen-in-suedafrika",
     "title": "ANC erleidet schwere Schlappe bei Kommunalwahlen in Südafrika",
     "excerpt": "Die ANC verliert massiv an Zustimmung bei den Kommunalwahlen in Südafrika. Die Partei fiel landesweit unter ein Drittel der Stimmen.",
