@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt",
+    "title": "DDR-Spionagechef Wolf: Denkmal in Moskau enthüllt",
+    "excerpt": "Der frühere Chef der DDR-Auslandsspionage, Markus Wolf, wird in Moskau mit einer Gedenktafel geehrt. Der russische Geheimdienst lobte seine Verdienste.",
+    "date": "2026-11-08",
+    "category": "Welt",
+    "url": "/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt.html",
+    "image": "/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt-hero.jpg",
+    "images": [
+      "/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "DDR-Spionagechef Markus Wolf: Russland setzt ihm ein Denkmal",
+      "url": "https://www.dw.com/de/moskau-gedenktafel-erinnert-an-ddr-spionagechef-wolf/a-79890319",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-08T13:02:00Z"
+    },
+    "body": "In Moskau wurde eine Gedenktafel für Markus Wolf, den ehemaligen Leiter der DDR-Auslandsspionage, enthüllt.\n\nDer russische Auslandsgeheimdienst brachte ein Bronze-Relief an einem Haus an, in dem Wolf lebte. Er wird für seine Rolle im Kalten Krieg und als Schriftsteller gewürdigt. Die Ehrung erinnert an Wolfs fast 30-jährige Tätigkeit als Chef der Hauptverwaltung Aufklärung der Staatssicherheit und seine Führung von rund 4000 Spionen.",
+    "imagePrompt": "Bronze relief plaque on a historic building facade in Moscow, commemorating a historical figure, overcast sky, muted colors.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: DDR-Spionagechef Wolf: Denkmal in Moskau enthüllt",
+    "wordCount": 62,
+    "sourcePublishedAt": "2026-11-08T13:02:00Z",
+    "createdAt": "2026-11-08T13:56:28.687Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-08T13:56:29.306Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-07-kenianischer-sektenfuehrer-wegen-mordes-an-190-kindern-zu-200-jahren-haft-verurteilt",
     "title": "Kenianischer Sektenführer wegen Mordes an 190 Kindern zu 200 Jahren Haft verurteilt",
     "excerpt": "Ein Gericht in Mombasa verurteilte Paul Mackenzie, Anführer einer apokalyptischen Sekte, zu 200 Jahren Haft für den Tod von 190 Kindern und einem Erwachsenen durch Verhungern und d",

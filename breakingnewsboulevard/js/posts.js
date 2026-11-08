@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt",
+    "title": "DDR-Spionagechef Wolf: Denkmal in Moskau enthüllt",
+    "excerpt": "Der frühere Chef der DDR-Auslandsspionage, Markus Wolf, wird in Moskau mit einer Gedenktafel geehrt. Der russische Geheimdienst lobte seine Verdienste.",
+    "date": "2026-11-08",
+    "category": "Welt",
+    "url": "/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt.html",
+    "image": "/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt-hero.jpg",
+    "images": [
+      "/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/moskau-gedenktafel-erinnert-an-ddr-spionagechef-wolf/a-79890319"
+  },
+  {
     "slug": "2026-11-07-kenianischer-sektenfuehrer-wegen-mordes-an-190-kindern-zu-200-jahren-haft-verurteilt",
     "title": "Kenianischer Sektenführer wegen Mordes an 190 Kindern zu 200 Jahren Haft verurteilt",
     "excerpt": "Ein Gericht in Mombasa verurteilte Paul Mackenzie, Anführer einer apokalyptischen Sekte, zu 200 Jahren Haft für den Tod von 190 Kindern und einem Erwachsenen durch Verhungern und d",
