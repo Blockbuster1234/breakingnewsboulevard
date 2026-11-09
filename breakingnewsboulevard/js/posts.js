@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-09-weidel-und-wagenknecht-vorwuerfe-gegen-rumaenen-wegen-sozialmissbrauch",
+    "title": "Weidel und Wagenknecht: Vorwürfe gegen Rumänen wegen Sozialmissbrauch",
+    "excerpt": "Alice Weidel und Sahra Wagenknecht werfen Rumänen Sozialmissbrauch vor. Die Aussagen lösen in Rumänien und Deutschland Empörung aus und führen zu Protesten.",
+    "date": "2026-11-09",
+    "category": "Justiz",
+    "url": "/posts/2026-11-09-weidel-und-wagenknecht-vorwuerfe-gegen-rumaenen-wegen-sozialmissbrauch.html",
+    "image": "/posts/2026-11-09-weidel-und-wagenknecht-vorwuerfe-gegen-rumaenen-wegen-sozialmissbrauch-hero.jpg",
+    "images": [
+      "/posts/2026-11-09-weidel-und-wagenknecht-vorwuerfe-gegen-rumaenen-wegen-sozialmissbrauch-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/die-hetze-von-afd-und-bsw-gegen-angebliche-rum%C3%A4nische-sozialschmarotzer-emp%C3%B6rt-rum%C3%A4nische-politiker-und-rum%C3%A4nen-in-deutschland/a-79899421"
+  },
+  {
     "slug": "2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt",
     "title": "DDR-Spionagechef Wolf: Denkmal in Moskau enthüllt",
     "excerpt": "Der frühere Chef der DDR-Auslandsspionage, Markus Wolf, wird in Moskau mit einer Gedenktafel geehrt. Der russische Geheimdienst lobte seine Verdienste.",
