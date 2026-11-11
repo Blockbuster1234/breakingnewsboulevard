@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-11-bombendrohungen-hunderte-schulen-in-italien-und-nordirland-betroffen",
+    "title": "Bombendrohungen: Hunderte Schulen in Italien und Nordirland betroffen",
+    "excerpt": "Hunderte Schulen in Italien und Nordirland erhielten E-Mails mit Bombendrohungen. In Schottland gab es ähnliche Drohungen. Behörden sehen keine konkrete Gefahr.",
+    "date": "2026-11-11",
+    "category": "Justiz",
+    "url": "/posts/2026-11-11-bombendrohungen-hunderte-schulen-in-italien-und-nordirland-betroffen.html",
+    "image": "/posts/2026-11-11-bombendrohungen-hunderte-schulen-in-italien-und-nordirland-betroffen-hero.jpg",
+    "images": [
+      "/posts/2026-11-11-bombendrohungen-hunderte-schulen-in-italien-und-nordirland-betroffen-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/italien-schottland-und-nordirland-schulen-nach-bombenalarm-evakuiert/a-79919504"
+  },
+  {
     "slug": "2026-11-09-weidel-und-wagenknecht-vorwuerfe-gegen-rumaenen-wegen-sozialmissbrauch",
     "title": "Weidel und Wagenknecht: Vorwürfe gegen Rumänen wegen Sozialmissbrauch",
     "excerpt": "Alice Weidel und Sahra Wagenknecht werfen Rumänen Sozialmissbrauch vor. Die Aussagen lösen in Rumänien und Deutschland Empörung aus und führen zu Protesten.",
