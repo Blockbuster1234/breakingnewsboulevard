@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-12-journalist-in-ecuador-erschossen-pressefreiheit-unter-druck",
+    "title": "Journalist in Ecuador erschossen – Pressefreiheit unter Druck",
+    "excerpt": "Ein Journalist wurde in Ecuador erschossen. Sein Tod unterstreicht die verschlechterten Bedingungen für Medienschaffende im Land.",
+    "date": "2026-11-12",
+    "category": "Justiz",
+    "url": "/posts/2026-11-12-journalist-in-ecuador-erschossen-pressefreiheit-unter-druck.html",
+    "image": "/posts/2026-11-12-journalist-in-ecuador-erschossen-pressefreiheit-unter-druck-hero.jpg",
+    "images": [
+      "/posts/2026-11-12-journalist-in-ecuador-erschossen-pressefreiheit-unter-druck-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/11/ecuador-journalist-killing"
+  },
+  {
     "slug": "2026-11-11-bombendrohungen-hunderte-schulen-in-italien-und-nordirland-betroffen",
     "title": "Bombendrohungen: Hunderte Schulen in Italien und Nordirland betroffen",
     "excerpt": "Hunderte Schulen in Italien und Nordirland erhielten E-Mails mit Bombendrohungen. In Schottland gab es ähnliche Drohungen. Behörden sehen keine konkrete Gefahr.",
