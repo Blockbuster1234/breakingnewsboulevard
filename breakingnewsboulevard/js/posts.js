@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-14-usa-schlagen-nato-beitritt-der-ukraine-gegen-gebietsverzicht-vor",
+    "title": "USA schlagen NATO-Beitritt der Ukraine gegen Gebietsverzicht vor",
+    "excerpt": "US-Unterhändler sollen der Ukraine einen NATO-Beitritt angeboten haben, falls Kiew auf Gebiete verzichtet. Präsident Selenskyj schließt eine Volksabstimmung nicht aus.",
+    "date": "2026-11-14",
+    "category": "Welt",
+    "url": "/posts/2026-11-14-usa-schlagen-nato-beitritt-der-ukraine-gegen-gebietsverzicht-vor.html",
+    "image": "/posts/2026-11-14-usa-schlagen-nato-beitritt-der-ukraine-gegen-gebietsverzicht-vor-hero.jpg",
+    "images": [
+      "/posts/2026-11-14-usa-schlagen-nato-beitritt-der-ukraine-gegen-gebietsverzicht-vor-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/ukraine-usa-nato-gebietsverzicht-100.html"
+  },
+  {
     "slug": "2026-11-12-journalist-in-ecuador-erschossen-pressefreiheit-unter-druck",
     "title": "Journalist in Ecuador erschossen – Pressefreiheit unter Druck",
     "excerpt": "Ein Journalist wurde in Ecuador erschossen. Sein Tod unterstreicht die verschlechterten Bedingungen für Medienschaffende im Land.",
