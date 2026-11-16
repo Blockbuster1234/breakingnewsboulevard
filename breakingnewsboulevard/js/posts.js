@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-16-seltenes-november-tornado-trifft-delaware",
+    "title": "Seltenes November-Tornado trifft Delaware",
+    "excerpt": "Ein EF1-Tornado zog südöstlich von Newark in Delaware durch die Salem Woods Nachbarschaft und verursachte Schäden an Häusern und Fahrzeugen.",
+    "date": "2026-11-16",
+    "category": "Klima",
+    "url": "/posts/2026-11-16-seltenes-november-tornado-trifft-delaware.html",
+    "image": "/posts/2026-11-16-seltenes-november-tornado-trifft-delaware-hero.jpg",
+    "images": [
+      "/posts/2026-11-16-seltenes-november-tornado-trifft-delaware-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/environment/2026/nov/16/delaware-hit-by-rare-november-tornado"
+  },
+  {
     "slug": "2026-11-14-usa-schlagen-nato-beitritt-der-ukraine-gegen-gebietsverzicht-vor",
     "title": "USA schlagen NATO-Beitritt der Ukraine gegen Gebietsverzicht vor",
     "excerpt": "US-Unterhändler sollen der Ukraine einen NATO-Beitritt angeboten haben, falls Kiew auf Gebiete verzichtet. Präsident Selenskyj schließt eine Volksabstimmung nicht aus.",

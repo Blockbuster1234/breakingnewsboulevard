@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-16-seltenes-november-tornado-trifft-delaware",
+    "title": "Seltenes November-Tornado trifft Delaware",
+    "excerpt": "Ein EF1-Tornado zog südöstlich von Newark in Delaware durch die Salem Woods Nachbarschaft und verursachte Schäden an Häusern und Fahrzeugen.",
+    "date": "2026-11-16",
+    "category": "Klima",
+    "url": "/posts/2026-11-16-seltenes-november-tornado-trifft-delaware.html",
+    "image": "/posts/2026-11-16-seltenes-november-tornado-trifft-delaware-hero.jpg",
+    "images": [
+      "/posts/2026-11-16-seltenes-november-tornado-trifft-delaware-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "Delaware hit by rare November tornado",
+      "url": "https://www.theguardian.com/environment/2026/nov/16/delaware-hit-by-rare-november-tornado",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Mon, 16 Nov 2026 09:27:06 GMT"
+    },
+    "body": "Ein EF1-Tornado traf südöstlich von Newark in Delaware die Salem Woods Nachbarschaft.\n\nDer Tornado war 160 Meter breit und hinterließ eine Spur von 7,1 Kilometern mit Windgeschwindigkeiten von bis zu 161 km/h. Fenster und Dächer von Häusern wurden beschädigt, ein großes Hotelschild fiel auf Autos und ein Lastwagen kippte um. Dies ist erst das zweite Mal seit 1950, dass Delaware im November von Tornados betroffen ist.",
+    "imagePrompt": "Aerial view of a suburban neighborhood with damaged roofs and fallen trees under a stormy, overcast sky.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Seltenes November-Tornado trifft Delaware",
+    "wordCount": 68,
+    "sourcePublishedAt": "Mon, 16 Nov 2026 09:27:06 GMT",
+    "createdAt": "2026-11-16T16:32:14.995Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-16T16:32:15.500Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-14-usa-schlagen-nato-beitritt-der-ukraine-gegen-gebietsverzicht-vor",
     "title": "USA schlagen NATO-Beitritt der Ukraine gegen Gebietsverzicht vor",
     "excerpt": "US-Unterhändler sollen der Ukraine einen NATO-Beitritt angeboten haben, falls Kiew auf Gebiete verzichtet. Präsident Selenskyj schließt eine Volksabstimmung nicht aus.",
