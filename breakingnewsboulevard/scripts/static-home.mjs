@@ -4,10 +4,14 @@
  * Vorteil: Suchmaschinen und Besucher ohne JavaScript sehen alle Artikel
  * als echte Links. Die Startseite ersetzt die Liste beim Laden per
  * JavaScript - es wird also nichts doppelt angezeigt.
+ *
+ * Zusaetzlich wird die Anzahl der Karten im JavaScript hochgesetzt,
+ * damit auch mit JavaScript mehr Artikel sichtbar sind.
  */
 import { readFile, writeFile } from 'node:fs/promises';
 
 const LIMIT = 40;
+const CARD_CAP = 40;
 
 const esc = (value) =>
   String(value ?? '')
@@ -69,6 +73,10 @@ const main = async () => {
   }
   const block = '<div class="grid" id="grid">\n' + posts.map(cardMarkup).join('\n') + '\n      </div>';
   let next = html.replace(grid, block);
+
+  // Mehr Karten auch fuer Besucher mit JavaScript.
+  next = next.replace(/rest\.slice\(\s*3\s*,\s*\d+\s*\)/g, 'rest.slice(3, ' + CARD_CAP + ')');
+
   if (!next.includes('application/rss+xml')) {
     next = next.replace(
       '</head>',
@@ -76,7 +84,7 @@ const main = async () => {
     );
   }
   await writeFile('index.html', next);
-  console.log('[static] ' + posts.length + ' Artikel fest in index.html eingebaut');
+  console.log('[static] ' + posts.length + ' Artikel fest in index.html eingebaut, Karten-Limit ' + CARD_CAP);
 };
 
 main().catch((error) => {
