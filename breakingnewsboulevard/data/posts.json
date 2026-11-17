@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten",
+    "title": "Trump hält in Asien kurze Gipfeltreffen mit Verbündeten",
+    "excerpt": "US-Präsident Donald Trump reiste durch Asien, traf sich in kurzer Zeit mit Indien, Australien, Japan, Thailand, ASEAN-Staaten und traf anschließend bei APEC in Shenzhen auf Xi Jinp",
+    "date": "2026-11-17",
+    "category": "Politik",
+    "url": "/posts/2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten.html",
+    "image": "/posts/2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Trump auf Gipfel-Marathon in Asien - Symbolik statt Substanz?",
+      "url": "https://www.tagesschau.de/ausland/asien/trump-asien-reise-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Tue, 17 Nov 2026 10:49:58 +0100"
+    },
+    "body": "Donald Trump reiste in Asien und traf sich in kurzer Zeit mit Indien, Australien und Japan, mit 55 Minuten pro Gipfel.\n\nAnschließend traf er sich mit Thailand, 20 Minuten, und mit dem ASEAN-Gipfel, 40 Minuten, bevor er nach China weiterflog. Bei APEC in Shenzhen traf er Xi Jinping, Wladimir Putin und möglicherweise Kim Jong Un. Kurzzeitige Treffen mit engen Zeitfenstern wurden für die Verbündeten festgelegt, während China KI-Chip-Ausfuhrregeln verschärft wurden.",
+    "imagePrompt": "Asian conference setting with a small table, a flag of China on one side, a flag of the United States on the other, dim evening light, no people visible",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Trump hält in Asien kurze Gipfeltreffen mit Verbündeten",
+    "wordCount": 70,
+    "sourcePublishedAt": "Tue, 17 Nov 2026 10:49:58 +0100",
+    "createdAt": "2026-11-17T11:30:55.597Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-17T11:30:56.212Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger",
     "title": "Pope Leo fordert Gerechtigkeit für im Amazonas getötete Umweltverteidiger",
     "excerpt": "Pope Leo XIV fordert in Pucallpa, Peru, Gerechtigkeit für Umweltverteidiger, die im Amazonasgebiet getötet wurden, und weist auf 57 Morde seit 2010 hin.",

@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten",
+    "title": "Trump hält in Asien kurze Gipfeltreffen mit Verbündeten",
+    "excerpt": "US-Präsident Donald Trump reiste durch Asien, traf sich in kurzer Zeit mit Indien, Australien, Japan, Thailand, ASEAN-Staaten und traf anschließend bei APEC in Shenzhen auf Xi Jinp",
+    "date": "2026-11-17",
+    "category": "Politik",
+    "url": "/posts/2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten.html",
+    "image": "/posts/2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/asien/trump-asien-reise-100.html"
+  },
+  {
     "slug": "2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger",
     "title": "Pope Leo fordert Gerechtigkeit für im Amazonas getötete Umweltverteidiger",
     "excerpt": "Pope Leo XIV fordert in Pucallpa, Peru, Gerechtigkeit für Umweltverteidiger, die im Amazonasgebiet getötet wurden, und weist auf 57 Morde seit 2010 hin.",
