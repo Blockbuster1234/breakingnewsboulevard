@@ -48,15 +48,18 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FREE_TEXT_MODEL: openai
           FREE_IMAGE_MODEL: flux
-        # Haengt ein KI-Anbieter, bricht "timeout" den Versuch ab und ein zweiter startet automatisch.
+        # Versuch 1 laeuft mit dem normalen Anbieter. Haengt der Anbieter
+        # (z. B. Gemini HTTP 429), bricht "timeout" ab; Versuch 2 laeuft ohne
+        # Gemini-Schluessel ueber den kostenlosen Textdienst und liefert
+        # trotzdem den Artikel des Tages.
         run: |
           COUNT="${{ inputs.count }}"
           if [ -z "$COUNT" ]; then
             if [ -n "$GROQ_API_KEY" ]; then COUNT=6; else COUNT=1; fi
           fi
-          if ! timeout 15m npm run generate:daily -- --count "$COUNT"; then
-            echo "::warning title=Generierung::Erster Versuch abgebrochen - zweiter Versuch mit 1 Artikel."
-            timeout 6m npm run generate:daily -- --count 1
+          if ! timeout 12m npm run generate:daily -- --count "$COUNT"; then
+            echo "::warning title=Generierung::Erster Versuch abgebrochen - zweiter Versuch ueber den kostenlosen Textdienst."
+            GEMINI_API_KEY="" timeout 8m npm run generate:daily -- --count 1
           fi
 
       - name: Auto-approve and publish
