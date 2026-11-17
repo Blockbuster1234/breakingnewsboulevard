@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber",
+    "title": "Deutschland plant Pilot-Abschiebezentrum in Ruanda für 100 ausreisepflichtige Asylbewerber",
+    "excerpt": "Bundesinnenminister Alexander Dobrindt präsentiert bei einer Migrationskonferenz in Wien das Vorhaben, ein Abschiebezentrum in Ruanda für 100 Menschen einzurichten, die in Deutschl",
+    "date": "2026-11-17",
+    "category": "Justiz",
+    "url": "/posts/2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber.html",
+    "image": "/posts/2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/abgelehnte-asylbewerber-sollen-nach-ruanda-abgeschoben-werden/a-79962582"
+  },
+  {
     "slug": "2026-11-17-trump-haelt-in-asien-kurze-gipfeltreffen-mit-verbuendeten",
     "title": "Trump hält in Asien kurze Gipfeltreffen mit Verbündeten",
     "excerpt": "US-Präsident Donald Trump reiste durch Asien, traf sich in kurzer Zeit mit Indien, Australien, Japan, Thailand, ASEAN-Staaten und traf anschließend bei APEC in Shenzhen auf Xi Jinp",
