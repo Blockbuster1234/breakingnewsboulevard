@@ -64,11 +64,15 @@ jobs:
       - name: Validate published site
         run: npm test
 
+      - name: Build RSS feed
+        continue-on-error: true
+        run: npm run feed
+
       - name: Commit and push
         run: |
           git config user.name "Breaking News Boulevard Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/posts.json posts index.html js/posts.js sitemap.xml
+          git add data/posts.json posts index.html js/posts.js sitemap.xml feed.xml
           if git diff --cached --quiet; then
             echo "Keine Änderungen zu committen."
             exit 0
