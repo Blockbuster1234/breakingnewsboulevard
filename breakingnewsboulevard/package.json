@@ -12,6 +12,7 @@
     "review:approve": "node scripts/review.mjs approve",
     "review:reject": "node scripts/review.mjs reject",
     "legal:check": "node scripts/legal.mjs",
+    "feed": "node scripts/feed.mjs",
     "test": "node scripts/check.mjs",
     "build": "echo 'Static site — no build step'",
     "generate:one": "node scripts/generate.mjs --count 1",
