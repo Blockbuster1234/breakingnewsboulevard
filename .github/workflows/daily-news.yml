@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       count:
-        description: 'Anzahl der Entwürfe (1-6, leer = automatisch)'
+        description: 'Anzahl der Entwuerfe (1-6, leer = automatisch)'
         required: false
         default: ''
 
@@ -48,19 +48,19 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FREE_TEXT_MODEL: openai
           FREE_IMAGE_MODEL: flux
-        # Versuch 1 laeuft mit dem normalen Anbieter. Haengt der Anbieter
-        # (z. B. Gemini HTTP 429), bricht "timeout" ab; Versuch 2 laeuft ohne
-        # Gemini-Schluessel ueber den kostenlosen Textdienst und liefert
-        # trotzdem den Artikel des Tages.
+        # Versuch 1 laeuft OHNE Gemini-Schluessel ueber den kostenlosen
+        # Textdienst, weil Gemini oft HTTP 429 liefert (Tageskontingent voll).
+        # Klappt das nicht, laeuft Versuch 2 mit Gemini-Schluessel.
         run: |
           COUNT="${{ inputs.count }}"
           if [ -z "$COUNT" ]; then
             if [ -n "$GROQ_API_KEY" ]; then COUNT=6; else COUNT=1; fi
           fi
-          if ! timeout 12m npm run generate:daily -- --count "$COUNT"; then
-            echo "::warning title=Generierung::Erster Versuch abgebrochen - zweiter Versuch ueber den kostenlosen Textdienst."
-            GEMINI_API_KEY="" timeout 8m npm run generate:daily -- --count 1
+          if GEMINI_API_KEY="" timeout 10m npm run generate:daily -- --count "$COUNT"; then
+            exit 0
           fi
+          echo "::warning title=Generierung::Kostenloser Textdienst hat nicht geliefert - Versuch mit Gemini."
+          timeout 8m npm run generate:daily -- --count 1
 
       - name: Auto-approve and publish
         env:
