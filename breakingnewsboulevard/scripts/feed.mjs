@@ -13,6 +13,15 @@ const esc = (value = '') =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
+const describe = (post = {}) => {
+  const raw = String(post.excerpt || post.title || '').trim();
+  if (raw.length <= 180) return raw;
+  const cut = raw.slice(0, 180);
+  const lastSpace = cut.lastIndexOf(' ');
+  const clipped = (lastSpace > 80 ? cut.slice(0, lastSpace) : cut).replace(/[\s,;:.-]+$/, '');
+  return clipped + '…';
+};
+
 if (!fs.existsSync(POSTS)) {
   console.error('[feed] data/posts.json fehlt - kein Feed erzeugt.');
   process.exit(0);
@@ -42,7 +51,7 @@ const items = posts
       '      <pubDate>' + pubDate + '</pubDate>',
     ];
     if (post.category) lines.push('      <category>' + esc(post.category) + '</category>');
-    lines.push('      <description>' + esc(post.excerpt) + '</description>');
+    lines.push('      <description>' + esc(describe(post)) + '</description>');
     if (image) {
       lines.push('      <enclosure url="' + esc(image) + '" type="image/jpeg" length="0" />');
     }
