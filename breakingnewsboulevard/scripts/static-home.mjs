@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 /**
- * 1) Ersetzt die Symbolbilder durch KI-Bilder, die den Artikel zeigen.
- * 2) Baut aus js/posts.js eine statische Artikel-Liste in index.html ein.
- *
- * Beides laeuft nach dem Veroeffentlichen und vor dem Commit.
+ * 1) KI-Bild passend zum Artikel, mit Ausweich-Quellen.
+ * 2) Statische Startseite in index.html.
  */
 import { readFile, writeFile } from 'node:fs/promises';
 
@@ -13,6 +11,8 @@ const IMAGE_API = 'https://image.pollinations.ai/prompt';
 const IMAGE_STYLE = 'story-v1';
 const IMAGE_LIMIT = Number(process.env.FIX_IMAGES_MAX || 2);
 const MARKER_FILE = 'posts/image-style.json';
+const START = Date.now();
+const BUDGET_MS = 8 * 60 * 1000;
 
 const esc = (value) =>
   String(value ?? '')
@@ -45,23 +45,54 @@ const readPosts = async () => {
 
 const clean = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
 
-const scenePrompt = (post) => {
-  const title = clean(post.title);
-  const excerpt = clean(post.excerpt).slice(0, 220);
-  const category = clean(post.category) || 'Nachrichten';
-  return [
+const scenePrompt = (post) =>
+  [
     'Realistic editorial news photograph that shows this exact story:',
-    title + '.',
-    excerpt,
-    'Show the concrete real-world scene and objects of the story, people only seen from behind or at a distance, natural daylight, documentary press photography, shallow depth of field, 16:9.',
+    clean(post.title) + '.',
+    clean(post.excerpt).slice(0, 220),
+    'Show the concrete real-world scene and objects of the story, people only seen from behind or at a distance, natural daylight, documentary press photography, 16:9.',
     'No text, no words, no lettering, no logos, no watermark, no recognizable politicians, no flags with emblems.'
   ].join(' ');
-};
 
 const seedOf = (value) => {
   let hash = 7;
   for (const char of String(value)) hash = (hash * 31 + char.charCodeAt(0)) % 2147483647;
   return hash;
+};
+
+const ROUTES = [
+  (url) => url,
+  (url) => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url),
+  (url) => 'https://corsproxy.io/?url=' + encodeURIComponent(url)
+];
+
+const grab = async (url) => {
+  for (let i = 0; i < ROUTES.length; i++) {
+    if (Date.now() - START > BUDGET_MS) {
+      console.warn('[image] Zeitbudget aufgebraucht');
+      return null;
+    }
+    try {
+      const res = await fetch(ROUTES[i](url), {
+        headers: { accept: 'image/jpeg,image/png,*/*' },
+        signal: AbortSignal.timeout(90000)
+      });
+      if (!res.ok) {
+        console.warn('[image] Quelle ' + (i + 1) + ': HTTP ' + res.status);
+        continue;
+      }
+      const buffer = Buffer.from(await res.arrayBuffer());
+      if (buffer.length < 8000) {
+        console.warn('[image] Quelle ' + (i + 1) + ': Bild zu klein (' + buffer.length + ' B)');
+        continue;
+      }
+      console.log('[image] Quelle ' + (i + 1) + ' geliefert');
+      return buffer;
+    } catch (error) {
+      console.warn('[image] Quelle ' + (i + 1) + ': ' + error.message);
+    }
+  }
+  return null;
 };
 
 const refreshImages = async (posts) => {
@@ -77,27 +108,28 @@ const refreshImages = async (posts) => {
   let changed = 0;
   for (const post of open) {
     const target = String(post.image).replace(/^\//, '');
-    const url =
-      IMAGE_API +
-      '/' +
-      encodeURIComponent(scenePrompt(post)) +
-      '?width=1280&height=720&model=flux&nologo=true&seed=' +
-      seedOf(post.slug);
-    try {
-      const response = await fetch(url, {
-        headers: { accept: 'image/jpeg' },
-        signal: AbortSignal.timeout(150000)
-      });
-      if (!response.ok) throw new Error('HTTP ' + response.status);
-      const buffer = Buffer.from(await response.arrayBuffer());
-      if (buffer.length < 20000) throw new Error('Bild zu klein (' + buffer.length + ' B)');
-      await writeFile(target, buffer);
-      marker[post.slug] = IMAGE_STYLE;
-      changed += 1;
-      console.log('[image] neues Bild passend zum Artikel: ' + post.slug);
-    } catch (error) {
-      console.warn('[image] ' + post.slug + ': ' + error.message);
+    const prompt = encodeURIComponent(scenePrompt(post));
+    let buffer = null;
+    for (const model of ['flux', 'turbo']) {
+      const url =
+        IMAGE_API +
+        '/' +
+        prompt +
+        '?width=1152&height=648&model=' +
+        model +
+        '&nologo=true&referrer=breakingnewsboulevard.com&seed=' +
+        seedOf(post.slug);
+      buffer = await grab(url);
+      if (buffer) break;
     }
+    if (!buffer) {
+      console.warn('[image] ' + post.slug + ': keine Quelle lieferte ein Bild');
+      continue;
+    }
+    await writeFile(target, buffer);
+    marker[post.slug] = IMAGE_STYLE;
+    changed += 1;
+    console.log('[image] neues Bild passend zum Artikel: ' + post.slug);
   }
   if (changed) await writeFile(MARKER_FILE, JSON.stringify(marker, null, 2) + '\n');
   return changed;
@@ -136,7 +168,8 @@ const main = async () => {
   if (!grid.test(html)) {
     throw new Error('index.html: <div class="grid" id="grid"> nicht gefunden');
   }
-  const block = '<div class="grid" id="grid">\n' + posts.map(cardMarkup).join('\n') + '\n      </div>';
+  const block =
+    '<div class="grid" id="grid">\n' + posts.map(cardMarkup).join('\n') + '\n      </div>';
   let next = html.replace(grid, block);
   next = next.replace(/rest\.slice\(\s*3\s*,\s*\d+\s*\)/g, 'rest.slice(3, ' + CARD_CAP + ')');
 
