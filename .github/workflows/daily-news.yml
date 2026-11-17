@@ -2,7 +2,14 @@ name: Daily Autonomous News
 
 on:
   schedule:
-    - cron: '47 6 * * *'
+    # Alle 3 Stunden ein Versuch: der kostenlose KI-Dienst ist oft kurz
+    # ueberlastet, mit mehreren Versuchen am Tag klappt es zuverlaessig.
+    - cron: '47 5 * * *'
+    - cron: '47 8 * * *'
+    - cron: '47 11 * * *'
+    - cron: '47 14 * * *'
+    - cron: '47 17 * * *'
+    - cron: '47 20 * * *'
   workflow_dispatch:
     inputs:
       count:
@@ -49,8 +56,7 @@ jobs:
           FREE_TEXT_MODEL: openai
           FREE_IMAGE_MODEL: flux
         # Versuch 1 laeuft OHNE Gemini-Schluessel ueber den kostenlosen
-        # Textdienst, weil Gemini oft HTTP 429 liefert (Tageskontingent voll).
-        # Klappt das nicht, laeuft Versuch 2 mit Gemini-Schluessel.
+        # Textdienst. Klappt das nicht, laeuft Versuch 2 mit Gemini.
         run: |
           COUNT="${{ inputs.count }}"
           if [ -z "$COUNT" ]; then
