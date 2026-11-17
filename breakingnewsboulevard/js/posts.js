@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen",
+    "title": "Baboons aus Simon’s Town in Tierpark verlegt, Proteste folgen",
+    "excerpt": "Eine 44‑Personen-Truppe Baboons wurde aus Simon’s Town in ein Wildtierzentrum verlegt, was heftige Proteste auslöste.",
+    "date": "2026-11-17",
+    "category": "Justiz",
+    "url": "/posts/2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen.html",
+    "image": "/posts/2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/16/cape-town-baboons-relocation-protests"
+  },
+  {
     "slug": "2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda",
     "title": "Fünf EU-Staaten planen Migrationszentren in Ruanda",
     "excerpt": "Deutschland, Österreich, Niederlande, Dänemark und Griechenland wollen ein Pilotprojekt für Migranten ohne Aufenthaltsrecht starten.",

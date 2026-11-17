@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen",
+    "title": "Baboons aus Simon’s Town in Tierpark verlegt, Proteste folgen",
+    "excerpt": "Eine 44‑Personen-Truppe Baboons wurde aus Simon’s Town in ein Wildtierzentrum verlegt, was heftige Proteste auslöste.",
+    "date": "2026-11-17",
+    "category": "Justiz",
+    "url": "/posts/2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen.html",
+    "image": "/posts/2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "Relocation of Cape Town baboons to sanctuary ignites heated protests",
+      "url": "https://www.theguardian.com/world/2026/nov/16/cape-town-baboons-relocation-protests",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Mon, 16 Nov 2026 10:19:08 GMT"
+    },
+    "body": "Eine Gruppe von 44 Baboons der Waterfall-Truppe wurde in Simon’s Town nach einem Wildlife Sanctuary verlegt.\n\nBei der Verlegung versuchten Demonstranten, die Transportfahrzeuge zu stoppen; einer sprühte einen Feuerlöscher. Die SCP-Organisation forderte, die Fahrzeuge nicht zu blockieren, und betonte den Stress der Baboons. Am Sonntag versammelten sich mehrere Personen in Stille vor dem Tierzentrum, während die Stadt erklärte, die Verlegung sei erfolgreich, die Tiere 24/7 überwacht und weiblichen Baboons Kontrazeptiva verabreicht.",
+    "imagePrompt": "Coastal suburb with a fenced enclosure holding baboons, dusk, tense atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Baboons aus Simon’s Town in Tierpark verlegt, Proteste folgen",
+    "wordCount": 72,
+    "sourcePublishedAt": "Mon, 16 Nov 2026 10:19:08 GMT",
+    "createdAt": "2026-11-17T07:28:57.971Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-17T07:28:58.449Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda",
     "title": "Fünf EU-Staaten planen Migrationszentren in Ruanda",
     "excerpt": "Deutschland, Österreich, Niederlande, Dänemark und Griechenland wollen ein Pilotprojekt für Migranten ohne Aufenthaltsrecht starten.",
