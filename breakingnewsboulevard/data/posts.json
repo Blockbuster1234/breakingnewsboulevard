@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda",
+    "title": "Fünf EU-Staaten planen Migrationszentren in Ruanda",
+    "excerpt": "Deutschland, Österreich, Niederlande, Dänemark und Griechenland wollen ein Pilotprojekt für Migranten ohne Aufenthaltsrecht starten.",
+    "date": "2026-11-17",
+    "category": "Welt",
+    "url": "/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda.html",
+    "image": "/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
+      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Mon, 16 Nov 2026 16:21:40 GMT"
+    },
+    "body": "Fünf EU-Staaten planen die Einrichtung von Rückkehrzentren in Ruanda für Migranten ohne Aufenthaltsrecht.\n\nDeutschland, Österreich, die Niederlande, Dänemark und Griechenland wollen damit die illegale Migration eindämmen. Das Pilotprojekt soll ab Anfang nächsten Jahres mit 100 Personen getestet werden, deren Asylanträge abgelehnt wurden oder die kein Aufenthaltsrecht besitzen.",
+    "imagePrompt": "Stylized illustration of a map of Europe with arrows pointing towards Rwanda, muted colors, abstract shapes, daytime.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Fünf EU-Staaten planen Migrationszentren in Ruanda",
+    "wordCount": 47,
+    "sourcePublishedAt": "Mon, 16 Nov 2026 16:21:40 GMT",
+    "createdAt": "2026-11-17T01:09:47.470Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-17T01:09:48.267Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-16-seltenes-november-tornado-trifft-delaware",
     "title": "Seltenes November-Tornado trifft Delaware",
     "excerpt": "Ein EF1-Tornado zog südöstlich von Newark in Delaware durch die Salem Woods Nachbarschaft und verursachte Schäden an Häusern und Fahrzeugen.",

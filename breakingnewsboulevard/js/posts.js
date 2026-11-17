@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda",
+    "title": "Fünf EU-Staaten planen Migrationszentren in Ruanda",
+    "excerpt": "Deutschland, Österreich, Niederlande, Dänemark und Griechenland wollen ein Pilotprojekt für Migranten ohne Aufenthaltsrecht starten.",
+    "date": "2026-11-17",
+    "category": "Welt",
+    "url": "/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda.html",
+    "image": "/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda"
+  },
+  {
     "slug": "2026-11-16-seltenes-november-tornado-trifft-delaware",
     "title": "Seltenes November-Tornado trifft Delaware",
     "excerpt": "Ein EF1-Tornado zog südöstlich von Newark in Delaware durch die Salem Woods Nachbarschaft und verursachte Schäden an Häusern und Fahrzeugen.",
