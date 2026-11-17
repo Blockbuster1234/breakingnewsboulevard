@@ -8,11 +8,13 @@ import { readFile, writeFile } from 'node:fs/promises';
 const LIMIT = 40;
 const CARD_CAP = 40;
 const IMAGE_API = 'https://image.pollinations.ai/prompt';
-const IMAGE_STYLE = 'story-v1';
+const IMAGE_STYLE = 'story-v2';
 const IMAGE_LIMIT = Number(process.env.FIX_IMAGES_MAX || 2);
 const MARKER_FILE = 'posts/image-style.json';
 const START = Date.now();
 const BUDGET_MS = 8 * 60 * 1000;
+const IMAGE_WIDTH = 1536;
+const IMAGE_HEIGHT = 864;
 
 const esc = (value) =>
   String(value ?? '')
@@ -47,11 +49,11 @@ const clean = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
 
 const scenePrompt = (post) =>
   [
-    'Realistic editorial news photograph that shows this exact story:',
+    'One single realistic editorial news photograph, one scene, one frame, documentary press photography, sharp focus, high detail, natural daylight, 16:9:',
     clean(post.title) + '.',
-    clean(post.excerpt).slice(0, 220),
-    'Show the concrete real-world scene and objects of the story, people only seen from behind or at a distance, natural daylight, documentary press photography, 16:9.',
-    'No text, no words, no lettering, no logos, no watermark, no recognizable politicians, no flags with emblems.'
+    clean(post.excerpt).slice(0, 200),
+    'Show the real world place and objects of the story. At most one person, only from behind or far away, never a face facing the camera. No collage, no split screen, no picture in picture, no repeated person, no twins, no duplicated figures, no mirrored people, no montage.',
+    'No text, no words, no letters, no logos, no watermark, no recognizable politicians, no flags with emblems.'
   ].join(' ');
 
 const seedOf = (value) => {
@@ -82,11 +84,11 @@ const grab = async (url) => {
         continue;
       }
       const buffer = Buffer.from(await res.arrayBuffer());
-      if (buffer.length < 8000) {
+      if (buffer.length < 20000) {
         console.warn('[image] Quelle ' + (i + 1) + ': Bild zu klein (' + buffer.length + ' B)');
         continue;
       }
-      console.log('[image] Quelle ' + (i + 1) + ' geliefert');
+      console.log('[image] Quelle ' + (i + 1) + ' geliefert (' + buffer.length + ' B)');
       return buffer;
     } catch (error) {
       console.warn('[image] Quelle ' + (i + 1) + ': ' + error.message);
@@ -115,9 +117,13 @@ const refreshImages = async (posts) => {
         IMAGE_API +
         '/' +
         prompt +
-        '?width=1152&height=648&model=' +
+        '?width=' +
+        IMAGE_WIDTH +
+        '&height=' +
+        IMAGE_HEIGHT +
+        '&model=' +
         model +
-        '&nologo=true&referrer=breakingnewsboulevard.com&seed=' +
+        '&nologo=true&safe=true&referrer=breakingnewsboulevard.com&seed=' +
         seedOf(post.slug);
       buffer = await grab(url);
       if (buffer) break;
