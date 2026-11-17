@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger",
+    "title": "Pope Leo fordert Gerechtigkeit für im Amazonas getötete Umweltverteidiger",
+    "excerpt": "Pope Leo XIV fordert in Pucallpa, Peru, Gerechtigkeit für Umweltverteidiger, die im Amazonasgebiet getötet wurden, und weist auf 57 Morde seit 2010 hin.",
+    "date": "2026-11-17",
+    "category": "Politik",
+    "url": "/posts/2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger.html",
+    "image": "/posts/2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/16/pope-leo-speech-peru-justice-for-amazon-activists-environment"
+  },
+  {
     "slug": "2026-11-17-japan-meldet-russische-jets-im-luftraum-nahe-fukuoka",
     "title": "Japan meldet russische Jets im Luftraum nahe Fukuoka",
     "excerpt": "Japan meldet, dass zwei mutmaßlich russische Flugzeuge in den Luftraum nahe Fukuoka eingedrungen sind und ließ Abfangjäger aufsteigen.",

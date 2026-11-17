@@ -277,6 +277,15 @@
       </div>
       <div class="grid" id="grid">
         <article class="card">
+          <a class="card-link" href="/posts/2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger.html">
+            <img src="/posts/2026-11-17-pope-leo-fordert-gerechtigkeit-fuer-im-amazonas-getoetete-umweltverteidiger-hero.jpg" alt="Pope Leo fordert Gerechtigkeit für im Amazonas getötete Umweltverteidiger" loading="lazy" width="640" height="360">
+            <span class="kicker">Politik</span>
+            <h3>Pope Leo fordert Gerechtigkeit für im Amazonas getötete Umweltverteidiger</h3>
+            <p>Pope Leo XIV fordert in Pucallpa, Peru, Gerechtigkeit für Umweltverteidiger, die im Amazonasgebiet getötet wurden, und weist auf 57 Morde seit 2010 hin.</p>
+            <span class="meta">17. November 2026</span>
+          </a>
+        </article>
+        <article class="card">
           <a class="card-link" href="/posts/2026-11-17-japan-meldet-russische-jets-im-luftraum-nahe-fukuoka.html">
             <img src="/posts/2026-11-17-japan-meldet-russische-jets-im-luftraum-nahe-fukuoka-hero.jpg" alt="Japan meldet russische Jets im Luftraum nahe Fukuoka" loading="lazy" width="640" height="360">
             <span class="kicker">Wirtschaft</span>
@@ -545,7 +554,7 @@
 
         const [featured, ...rest] = list;
         const side = rest.slice(0, 3);
-        const cards = rest.slice(3, 15);
+        const cards = rest.slice(3, 40);
 
         lead.innerHTML = featureMarkup(featured) +
           (side.length ? `<aside class="side"><h3>Weitere Schlagzeilen</h3><div class="side-list">${side.map(sideMarkup).join('')}</div></aside>` : '');
