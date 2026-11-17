@@ -31,7 +31,7 @@ defaults:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -52,9 +52,7 @@ jobs:
       - name: Generate daily drafts
         continue-on-error: true
         env:
-          # Bewusst KEIN GEMINI_API_KEY und KEIN GROQ_API_KEY:
-          # es wird nur der kostenlose Text- und Bilddienst genutzt,
-          # damit das kostenlose Google-Kontingent nicht verbraucht wird.
+          # Nur der kostenlose Text- und Bilddienst, kein bezahlter Key.
           FREE_TEXT_MODEL: openai
           FREE_IMAGE_MODEL: flux
         run: |
@@ -72,7 +70,15 @@ jobs:
         continue-on-error: true
         run: npm run feed
 
-      - name: Statische Startseite und Artikelbilder
+      - name: Artikelbilder 1 von 3
+        continue-on-error: true
+        run: node scripts/static-home.mjs
+
+      - name: Artikelbilder 2 von 3
+        continue-on-error: true
+        run: node scripts/static-home.mjs
+
+      - name: Artikelbilder 3 von 3
         continue-on-error: true
         run: node scripts/static-home.mjs
 
