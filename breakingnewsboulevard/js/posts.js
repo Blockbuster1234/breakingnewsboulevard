@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-17-japan-meldet-russische-jets-im-luftraum-nahe-fukuoka",
+    "title": "Japan meldet russische Jets im Luftraum nahe Fukuoka",
+    "excerpt": "Japan meldet, dass zwei mutmaßlich russische Flugzeuge in den Luftraum nahe Fukuoka eingedrungen sind und ließ Abfangjäger aufsteigen.",
+    "date": "2026-11-17",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-17-japan-meldet-russische-jets-im-luftraum-nahe-fukuoka.html",
+    "image": "/posts/2026-11-17-japan-meldet-russische-jets-im-luftraum-nahe-fukuoka-hero.jpg",
+    "images": [
+      "/posts/2026-11-17-japan-meldet-russische-jets-im-luftraum-nahe-fukuoka-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/asien/japan-russland-luftraumverletzung-100.html"
+  },
+  {
     "slug": "2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen",
     "title": "Baboons aus Simon’s Town in Tierpark verlegt, Proteste folgen",
     "excerpt": "Eine 44‑Personen-Truppe Baboons wurde aus Simon’s Town in ein Wildtierzentrum verlegt, was heftige Proteste auslöste.",
