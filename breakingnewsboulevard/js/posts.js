@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an",
+    "title": "St Kitts und Nevis kündigt Ende des CBI-Programms an",
+    "excerpt": "St Kitts und Nevis beendet das 42‑jährige Bürgerrechtsprogramm nach EU‑Drohen, was die Wirtschaft stark beeinflussen dürfte.",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an.html",
+    "image": "/posts/2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/17/st-kitts-nevis-citizenship-investment"
+  },
+  {
     "slug": "2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber",
     "title": "Deutschland plant Pilot-Abschiebezentrum in Ruanda für 100 ausreisepflichtige Asylbewerber",
     "excerpt": "Bundesinnenminister Alexander Dobrindt präsentiert bei einer Migrationskonferenz in Wien das Vorhaben, ein Abschiebezentrum in Ruanda für 100 Menschen einzurichten, die in Deutschl",

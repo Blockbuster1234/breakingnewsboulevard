@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an",
+    "title": "St Kitts und Nevis kündigt Ende des CBI-Programms an",
+    "excerpt": "St Kitts und Nevis beendet das 42‑jährige Bürgerrechtsprogramm nach EU‑Drohen, was die Wirtschaft stark beeinflussen dürfte.",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an.html",
+    "image": "/posts/2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "Caribbean nations fear economic impact of shuttering citizenship program after EU threats",
+      "url": "https://www.theguardian.com/world/2026/nov/17/st-kitts-nevis-citizenship-investment",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Tue, 17 Nov 2026 21:49:29 GMT"
+    },
+    "body": "St Kitts und Nevis kündigt das Aufhören des 42‑jährigen CBI‑Programms an, nachdem die EU die Abschaffung von visafreiem Zugang droht.\n\nDer Premier von Nevis, Mark Brantley, kritisiert die Entscheidung und betont, dass das Programm Milliarden einbrachte und wesentliche Einnahmen lieferte. Die EU hatte den Ländern, darunter St Kitts und Nevis, bis zum 1. Juni 2028 Zeit, das Programm aufzugeben.",
+    "imagePrompt": "Caribbean island with a small harbor, a faded flag on a pole, and a sunset sky, depicting a quiet, reflective mood",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: St Kitts und Nevis kündigt Ende des CBI-Programms an",
+    "wordCount": 61,
+    "sourcePublishedAt": "Tue, 17 Nov 2026 21:49:29 GMT",
+    "createdAt": "2026-11-18T02:53:56.775Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-18T02:53:57.508Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber",
     "title": "Deutschland plant Pilot-Abschiebezentrum in Ruanda für 100 ausreisepflichtige Asylbewerber",
     "excerpt": "Bundesinnenminister Alexander Dobrindt präsentiert bei einer Migrationskonferenz in Wien das Vorhaben, ein Abschiebezentrum in Ruanda für 100 Menschen einzurichten, die in Deutschl",
