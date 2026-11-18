@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine",
+    "title": "EU plantiert 45 Milliarden‑Euro‑Kredit für die Ukraine",
+    "excerpt": "Die EU-Kommission schlägt einen 45 Milliarden‑Euro‑Kredit vor, um die Ukraine mit 20 Milliarden für den Haushalt und 25 Milliarden für Militärhilfen zu unterstützen.",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine.html",
+    "image": "/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/eu-ukraine-unsterstuetzung-100.html"
+  },
+  {
     "slug": "2026-11-18-icj-prueft-voelkermordvorwurf-gegen-myanmar-moegliche-us-sanktionen-gegen-richter",
     "title": "ICJ prüft Völkermordvorwurf gegen Myanmar – mögliche US-Sanktionen gegen Richter",
     "excerpt": "Der Internationale Gerichtshof prüft am Donnerstag, ob Myanmar Völkermord gegen die Rohingya begangen hat. Die Entscheidung könnte US-Sanktionen gegen die 15 Richter auslösen, daru",

@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine",
+    "title": "EU plantiert 45 Milliarden‑Euro‑Kredit für die Ukraine",
+    "excerpt": "Die EU-Kommission schlägt einen 45 Milliarden‑Euro‑Kredit vor, um die Ukraine mit 20 Milliarden für den Haushalt und 25 Milliarden für Militärhilfen zu unterstützen.",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine.html",
+    "image": "/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Neuer EU-Kredit für Ukraine: \"Wir sind entschlossener denn je\"",
+      "url": "https://www.tagesschau.de/ausland/europa/eu-ukraine-unsterstuetzung-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Wed, 18 Nov 2026 19:02:26 +0100"
+    },
+    "body": "Die EU-Kommission plant einen Kredit von 45 Milliarden Euro für die Ukraine, wovon 20 Milliarden für den Haushalt und 25 Milliarden für Militärhilfen bestimmt sind.\n\nDie Ukraine benötigt 70 Milliarden Euro, um den aktuellen Bedarf zu decken. Einige EU‑Mitgliedsstaaten lehnen die Beteiligung ab, was die Finanzierung erschwert.",
+    "imagePrompt": "A stylized map of Europe with a highlighted line connecting Brussels to Kyiv, set in early morning light, showing a subtle, hopeful atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: EU plantiert 45 Milliarden‑Euro‑Kredit für die Ukraine",
+    "wordCount": 48,
+    "sourcePublishedAt": "Wed, 18 Nov 2026 19:02:26 +0100",
+    "createdAt": "2026-11-18T19:41:36.789Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-18T19:41:37.629Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-18-icj-prueft-voelkermordvorwurf-gegen-myanmar-moegliche-us-sanktionen-gegen-richter",
     "title": "ICJ prüft Völkermordvorwurf gegen Myanmar – mögliche US-Sanktionen gegen Richter",
     "excerpt": "Der Internationale Gerichtshof prüft am Donnerstag, ob Myanmar Völkermord gegen die Rohingya begangen hat. Die Entscheidung könnte US-Sanktionen gegen die 15 Richter auslösen, daru",
