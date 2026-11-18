@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke",
+    "title": "Ukraine zerstört Brückenbogen der Kertsch-Brücke",
+    "excerpt": "Ukraine zerstört Brückenbogen der Kertsch-Brücke und unterbricht damit die Schiffsverbindung zwischen Schwarzem und Asowschem Meer.",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke.html",
+    "image": "/posts/2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/angriff-auf-die-krim-br%C3%BCcke-welche-folgen-kyjiws-operation-hat/a-79979350"
+  },
+  {
     "slug": "2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen",
     "title": "APEC-Gipfel: Xi, Trump und Putin treffen sich erstmals in Shenzhen",
     "excerpt": "Am APEC-Gipfel in Shenzhen trafen sich Xi Jinping, Donald Trump und Wladimir Putin erstmals zu einem Dreiergespräch.",

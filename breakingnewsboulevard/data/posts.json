@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke",
+    "title": "Ukraine zerstört Brückenbogen der Kertsch-Brücke",
+    "excerpt": "Ukraine zerstört Brückenbogen der Kertsch-Brücke und unterbricht damit die Schiffsverbindung zwischen Schwarzem und Asowschem Meer.",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke.html",
+    "image": "/posts/2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Welche militärischen, wirtschaftlichen und politischen Folgen die Beschädigung der Krim-Brücke hat",
+      "url": "https://www.dw.com/de/angriff-auf-die-krim-br%C3%BCcke-welche-folgen-kyjiws-operation-hat/a-79979350",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-18T15:26:00Z"
+    },
+    "body": "Ukraine schlug in Nacht auf Kertsch-Brücke ein Brückenbogen ein Meer ab und unterbrach die Schiffsverbindung zwischen Schwarzem und Asowschem Meer.\n\nRussland stellte den Verkehr auf der Brücke vorübergehend ein, setzte den Zugverkehr später wieder fort und leitete ein Strafverfahren wegen Terroranschlag ein. Der Angriff dauerte etwa einen Monat und umfasste sieben Phasen, beginnend mit Abschaltung der Luftabwehr.",
+    "imagePrompt": "A nighttime illustration of a partially collapsed bridge over a narrow strait, with waves crashing against the broken arch, a calm gray sky overhead.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Ukraine zerstört Brückenbogen der Kertsch-Brücke",
+    "wordCount": 57,
+    "sourcePublishedAt": "2026-11-18T15:26:00Z",
+    "createdAt": "2026-11-18T23:43:17.904Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-18T23:43:18.592Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen",
     "title": "APEC-Gipfel: Xi, Trump und Putin treffen sich erstmals in Shenzhen",
     "excerpt": "Am APEC-Gipfel in Shenzhen trafen sich Xi Jinping, Donald Trump und Wladimir Putin erstmals zu einem Dreiergespräch.",
