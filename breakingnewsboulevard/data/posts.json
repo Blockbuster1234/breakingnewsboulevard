@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit",
+    "title": "HVG kämpft nach Orban-Änderung um Aufmerksamkeit",
+    "excerpt": "Die Wochenzeitung HVG in Budapest berichtet, dass die neuen Arbeitsbedingungen schwieriger sind und sie mehr Mühe haben, Aufmerksamkeit zu gewinnen, während Premier Magyar täglich ",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit.html",
+    "image": "/posts/2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Nach 16 Jahren Regierungszeit von Premier Viktor Orban: Worum unabhängige Medien in Ungarn jetzt kämpfen",
+      "url": "https://www.dw.com/de/nach-dem-ende-der-16-j%C3%A4hrigen-regierungszeit-von-premier-viktor-orban-und-dem-wahlsieg-peter-magyars-worum-unabh%C3%A4ngige-medien-in-ungarn-jetzt-k%C3%A4mpfen/a-79979918",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-18T14:11:00Z"
+    },
+    "body": "Die Wochenzeitung HVG hat ihre Büros im dreistöckigen Gebäude am linken Donauufer von Budapest.\n\nDie Journalisten berichten, dass die Arbeitsbedingungen nun schwieriger sind und sie mehr Mühe haben, Aufmerksamkeit zu gewinnen, weil Premier Magyar täglich Nachrichten selbst produziert. Die Zuschauer verfolgen nun häufig Livestreams aus dem Parlament, insbesondere wenn Magyar spricht, während vorher kaum Interesse bestand.",
+    "imagePrompt": "A modern office building on the left bank of the Danube in Budapest, with a terrace overlooking the river, early autumn light, calm atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: HVG kämpft nach Orban-Änderung um Aufmerksamkeit",
+    "wordCount": 56,
+    "sourcePublishedAt": "2026-11-18T14:11:00Z",
+    "createdAt": "2026-11-18T14:41:27.028Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-18T14:41:27.630Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an",
     "title": "St Kitts und Nevis kündigt Ende des CBI-Programms an",
     "excerpt": "St Kitts und Nevis beendet das 42‑jährige Bürgerrechtsprogramm nach EU‑Drohen, was die Wirtschaft stark beeinflussen dürfte.",

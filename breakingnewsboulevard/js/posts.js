@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit",
+    "title": "HVG kämpft nach Orban-Änderung um Aufmerksamkeit",
+    "excerpt": "Die Wochenzeitung HVG in Budapest berichtet, dass die neuen Arbeitsbedingungen schwieriger sind und sie mehr Mühe haben, Aufmerksamkeit zu gewinnen, während Premier Magyar täglich ",
+    "date": "2026-11-18",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit.html",
+    "image": "/posts/2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/nach-dem-ende-der-16-j%C3%A4hrigen-regierungszeit-von-premier-viktor-orban-und-dem-wahlsieg-peter-magyars-worum-unabh%C3%A4ngige-medien-in-ungarn-jetzt-k%C3%A4mpfen/a-79979918"
+  },
+  {
     "slug": "2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an",
     "title": "St Kitts und Nevis kündigt Ende des CBI-Programms an",
     "excerpt": "St Kitts und Nevis beendet das 42‑jährige Bürgerrechtsprogramm nach EU‑Drohen, was die Wirtschaft stark beeinflussen dürfte.",
