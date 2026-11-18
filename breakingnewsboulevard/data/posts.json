@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen",
+    "title": "APEC-Gipfel: Xi, Trump und Putin treffen sich erstmals in Shenzhen",
+    "excerpt": "Am APEC-Gipfel in Shenzhen trafen sich Xi Jinping, Donald Trump und Wladimir Putin erstmals zu einem Dreiergespräch.",
+    "date": "2026-11-18",
+    "category": "Politik",
+    "url": "/posts/2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen.html",
+    "image": "/posts/2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Xi, Trump und Putin: Drei Perspektiven, viele Differenzen",
+      "url": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Wed, 18 Nov 2026 20:43:17 +0100"
+    },
+    "body": "Am APEC-Gipfel in Shenzhen trafen sich Xi Jinping, Donald Trump und Wladimir Putin erstmals zu einem Dreiergespräch.\n\nDas Treffen ist historisch, da bisher nur bilaterale Gespräche stattfanden. Die drei Staatschefs diskutierten atomare Abrüstung, den Iran und die Ukraine, wobei ihre Positionen zu diesen Themen deutlich voneinander abwichen.",
+    "imagePrompt": "Shenzhen harbor at dusk, cranes and shipping lanes visible, no people, calm atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: APEC-Gipfel: Xi, Trump und Putin treffen sich erstmals in Shenzhen",
+    "wordCount": 47,
+    "sourcePublishedAt": "Wed, 18 Nov 2026 20:43:17 +0100",
+    "createdAt": "2026-11-18T22:32:26.450Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-18T22:32:26.984Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine",
     "title": "EU plantiert 45 Milliarden‑Euro‑Kredit für die Ukraine",
     "excerpt": "Die EU-Kommission schlägt einen 45 Milliarden‑Euro‑Kredit vor, um die Ukraine mit 20 Milliarden für den Haushalt und 25 Milliarden für Militärhilfen zu unterstützen.",

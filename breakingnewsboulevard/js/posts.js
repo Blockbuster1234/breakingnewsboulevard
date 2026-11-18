@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen",
+    "title": "APEC-Gipfel: Xi, Trump und Putin treffen sich erstmals in Shenzhen",
+    "excerpt": "Am APEC-Gipfel in Shenzhen trafen sich Xi Jinping, Donald Trump und Wladimir Putin erstmals zu einem Dreiergespräch.",
+    "date": "2026-11-18",
+    "category": "Politik",
+    "url": "/posts/2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen.html",
+    "image": "/posts/2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/asien/apec-treffen-xi-putin-trump-themen-100.html"
+  },
+  {
     "slug": "2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine",
     "title": "EU plantiert 45 Milliarden‑Euro‑Kredit für die Ukraine",
     "excerpt": "Die EU-Kommission schlägt einen 45 Milliarden‑Euro‑Kredit vor, um die Ukraine mit 20 Milliarden für den Haushalt und 25 Milliarden für Militärhilfen zu unterstützen.",
