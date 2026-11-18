@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-18-icj-prueft-voelkermordvorwurf-gegen-myanmar-moegliche-us-sanktionen-gegen-richter",
+    "title": "ICJ prüft Völkermordvorwurf gegen Myanmar – mögliche US-Sanktionen gegen Richter",
+    "excerpt": "Der Internationale Gerichtshof prüft am Donnerstag, ob Myanmar Völkermord gegen die Rohingya begangen hat. Die Entscheidung könnte US-Sanktionen gegen die 15 Richter auslösen, daru",
+    "date": "2026-11-18",
+    "category": "Welt",
+    "url": "/posts/2026-11-18-icj-prueft-voelkermordvorwurf-gegen-myanmar-moegliche-us-sanktionen-gegen-richter.html",
+    "image": "/posts/2026-11-18-icj-prueft-voelkermordvorwurf-gegen-myanmar-moegliche-us-sanktionen-gegen-richter-hero.jpg",
+    "images": [
+      "/posts/2026-11-18-icj-prueft-voelkermordvorwurf-gegen-myanmar-moegliche-us-sanktionen-gegen-richter-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/18/us-sanctions-icj-judges-myanmar-genocide-ruling-israel-gaza-court"
+  },
+  {
     "slug": "2026-11-18-hvg-kaempft-nach-orban-anderung-um-aufmerksamkeit",
     "title": "HVG kämpft nach Orban-Änderung um Aufmerksamkeit",
     "excerpt": "Die Wochenzeitung HVG in Budapest berichtet, dass die neuen Arbeitsbedingungen schwieriger sind und sie mehr Mühe haben, Aufmerksamkeit zu gewinnen, während Premier Magyar täglich ",
