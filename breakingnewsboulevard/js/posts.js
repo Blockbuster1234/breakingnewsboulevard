@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine",
+    "title": "Wadephul optimistisch: Chance auf Frieden für Ukraine",
+    "excerpt": "Außenminister Johann Wadephul äußert sich nach Treffen in Berlin und Shenzhen optimistisch über Fortschritte im Ukraine-Friedensprozess.",
+    "date": "2026-11-19",
+    "category": "Politik",
+    "url": "/posts/2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine.html",
+    "image": "/posts/2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/newsticker/liveblog-apec-gipfel-xi-trump-putin-100.html"
+  },
+  {
     "slug": "2026-11-19-ein-viertel-der-frauen-weltweit-kann-im-eheverhaeltnis-keinen-sex-verweigern",
     "title": "Ein Viertel der Frauen weltweit kann im Eheverhältnis keinen Sex verweigern",
     "excerpt": "Ein UN-Report zeigt, dass 45 % in Westafrika und 33 % in Ostafrika sowie arabischen Staaten keine Zustimmung zu Sex im Ehe- oder Partnerschaftsverhältnis geben können.",
