@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten",
+    "title": "Florida-Pastor verurteilt wegen Attentat auf haitianischen Präsidenten",
+    "excerpt": "Christian Emmanuel Sanon aus Florida wurde in Miami wegen der 2021-Entführung und Ermordung von Haitianer Präsident Jovenel Moïse verurteilt.",
+    "date": "2026-11-19",
+    "category": "Justiz",
+    "url": "/posts/2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten.html",
+    "image": "/posts/2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/18/florida-pastor-guilty-haiti-president-assassination"
+  },
+  {
     "slug": "2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke",
     "title": "Ukraine zerstört Brückenbogen der Kertsch-Brücke",
     "excerpt": "Ukraine zerstört Brückenbogen der Kertsch-Brücke und unterbricht damit die Schiffsverbindung zwischen Schwarzem und Asowschem Meer.",

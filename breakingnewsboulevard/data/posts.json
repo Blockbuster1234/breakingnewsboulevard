@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten",
+    "title": "Florida-Pastor verurteilt wegen Attentat auf haitianischen Präsidenten",
+    "excerpt": "Christian Emmanuel Sanon aus Florida wurde in Miami wegen der 2021-Entführung und Ermordung von Haitianer Präsident Jovenel Moïse verurteilt.",
+    "date": "2026-11-19",
+    "category": "Justiz",
+    "url": "/posts/2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten.html",
+    "image": "/posts/2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "Florida pastor found guilty over 2021 assassination of Haitian president",
+      "url": "https://www.theguardian.com/us-news/2026/nov/18/florida-pastor-guilty-haiti-president-assassination",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Wed, 18 Nov 2026 22:31:41 GMT"
+    },
+    "body": "Ein Pastor aus Florida, Christian Emmanuel Sanon, wurde in Miami wegen des 2021-Attentats auf den haitianischen Präsidenten Jovenel Moïse verurteilt.\n\nEr wurde wegen Verschwörung zur Ermordung von Moïse, sowie wegen Verschwörung zur Entführung oder Tötung einer Person außerhalb der USA verurteilt. Die Anklage enthielt acht Punkte, darunter die Beschaffung von Mitteln und die Organisation von Reisen nach Haiti.",
+    "imagePrompt": "A dimly lit church interior in Florida with a cross and a Bible on a wooden table, evening atmosphere.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Florida-Pastor verurteilt wegen Attentat auf haitianischen Präsidenten",
+    "wordCount": 58,
+    "sourcePublishedAt": "Wed, 18 Nov 2026 22:31:41 GMT",
+    "createdAt": "2026-11-19T02:08:00.265Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-19T02:08:01.260Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-18-ukraine-zerstoert-brueckenbogen-der-kertsch-bruecke",
     "title": "Ukraine zerstört Brückenbogen der Kertsch-Brücke",
     "excerpt": "Ukraine zerstört Brückenbogen der Kertsch-Brücke und unterbricht damit die Schiffsverbindung zwischen Schwarzem und Asowschem Meer.",
