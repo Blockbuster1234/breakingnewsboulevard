@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat",
+    "title": "Infantino, Diallo und Tashima kandidieren in Rabat",
+    "excerpt": "Drei Männer kämpfen um die FIFA-Präsidentschaft in Rabat, Marokko, am 18. März 2027.",
+    "date": "2026-11-19",
+    "category": "Sport",
+    "url": "/posts/2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat.html",
+    "image": "/posts/2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/infantino-diallo-tashima-wer-f%C3%BChrt-die-fifa-ab-2027/a-79991151"
+  },
+  {
     "slug": "2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine",
     "title": "Wadephul optimistisch: Chance auf Frieden für Ukraine",
     "excerpt": "Außenminister Johann Wadephul äußert sich nach Treffen in Berlin und Shenzhen optimistisch über Fortschritte im Ukraine-Friedensprozess.",

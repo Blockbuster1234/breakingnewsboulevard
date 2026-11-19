@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat",
+    "title": "Infantino, Diallo und Tashima kandidieren in Rabat",
+    "excerpt": "Drei Männer kämpfen um die FIFA-Präsidentschaft in Rabat, Marokko, am 18. März 2027.",
+    "date": "2026-11-19",
+    "category": "Sport",
+    "url": "/posts/2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat.html",
+    "image": "/posts/2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "FIFA-Wahl 2027: Infantino unter Druck - zwei Herausforderer wollen den Weltfußball neu ausrichten",
+      "url": "https://www.dw.com/de/infantino-diallo-tashima-wer-f%C3%BChrt-die-fifa-ab-2027/a-79991151",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-19T13:32:00Z"
+    },
+    "body": "Gianni Infantino, Philippe Diallo und Kozo Tashima treten in Rabat, Marokko, am 18.\n\nMärz 2027 als Kandidaten für die FIFA-Präsidentschaft an. Infantino ist seit 2016 Präsident der FIFA und gilt als Favorit, weil 211 Mitgliedsverbände ihm finanzielle Förderungen zuschreiben. Diallo, Präsident der französischen FFF, wird von der UEFA unterstützt, während Tashima, ehemaliger Leiter des japanischen JFA, Reformen und Transparenz fordert. Die Wahl wird in Rabat stattfinden, und die Kandidaten streben unterschiedliche Richtungen für den Weltfußball an.",
+    "imagePrompt": "Rabat cityscape at dusk, football stadium silhouette, calm evening atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Infantino, Diallo und Tashima kandidieren in Rabat",
+    "wordCount": 76,
+    "sourcePublishedAt": "2026-11-19T13:32:00Z",
+    "createdAt": "2026-11-19T22:40:01.718Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-19T22:40:02.516Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine",
     "title": "Wadephul optimistisch: Chance auf Frieden für Ukraine",
     "excerpt": "Außenminister Johann Wadephul äußert sich nach Treffen in Berlin und Shenzhen optimistisch über Fortschritte im Ukraine-Friedensprozess.",
