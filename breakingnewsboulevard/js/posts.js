@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-19-suedafrikas-baobab-rettung-fuenf-riesige-baeume-werden-im-timbavati-reserve-neu-gepflanzt",
+    "title": "Südafrikas Baobab-Rettung: fünf riesige Bäume werden im Timbavati-Reserve neu gepflanzt",
+    "excerpt": "Umweltaktivisten pflanzen fünf jahrhundertealte Baobabs, die ohne Genehmigung nach Georgia exportiert werden wollten, im Timbavati-Reserve neu.",
+    "date": "2026-11-19",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-19-suedafrikas-baobab-rettung-fuenf-riesige-baeume-werden-im-timbavati-reserve-neu-gepflanzt.html",
+    "image": "/posts/2026-11-19-suedafrikas-baobab-rettung-fuenf-riesige-baeume-werden-im-timbavati-reserve-neu-gepflanzt-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-suedafrikas-baobab-rettung-fuenf-riesige-baeume-werden-im-timbavati-reserve-neu-gepflanzt-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/environment/2026/nov/19/baobab-five-trees-south-africa-dug-up-export-blocked-georgia-aoe"
+  },
+  {
     "slug": "2026-11-19-florida-pastor-verurteilt-wegen-attentat-auf-haitianischen-praesidenten",
     "title": "Florida-Pastor verurteilt wegen Attentat auf haitianischen Präsidenten",
     "excerpt": "Christian Emmanuel Sanon aus Florida wurde in Miami wegen der 2021-Entführung und Ermordung von Haitianer Präsident Jovenel Moïse verurteilt.",
