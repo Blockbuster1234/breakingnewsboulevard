@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-19-ein-viertel-der-frauen-weltweit-kann-im-eheverhaeltnis-keinen-sex-verweigern",
+    "title": "Ein Viertel der Frauen weltweit kann im Eheverhältnis keinen Sex verweigern",
+    "excerpt": "Ein UN-Report zeigt, dass 45 % in Westafrika und 33 % in Ostafrika sowie arabischen Staaten keine Zustimmung zu Sex im Ehe- oder Partnerschaftsverhältnis geben können.",
+    "date": "2026-11-19",
+    "category": "Gesundheit",
+    "url": "/posts/2026-11-19-ein-viertel-der-frauen-weltweit-kann-im-eheverhaeltnis-keinen-sex-verweigern.html",
+    "image": "/posts/2026-11-19-ein-viertel-der-frauen-weltweit-kann-im-eheverhaeltnis-keinen-sex-verweigern-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-ein-viertel-der-frauen-weltweit-kann-im-eheverhaeltnis-keinen-sex-verweigern-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/global-development/2026/nov/19/women-girls-rights-rape-sexual-violence-africa-marriage-unfpa"
+  },
+  {
     "slug": "2026-11-19-suedafrikas-baobab-rettung-fuenf-riesige-baeume-werden-im-timbavati-reserve-neu-gepflanzt",
     "title": "Südafrikas Baobab-Rettung: fünf riesige Bäume werden im Timbavati-Reserve neu gepflanzt",
     "excerpt": "Umweltaktivisten pflanzen fünf jahrhundertealte Baobabs, die ohne Genehmigung nach Georgia exportiert werden wollten, im Timbavati-Reserve neu.",
