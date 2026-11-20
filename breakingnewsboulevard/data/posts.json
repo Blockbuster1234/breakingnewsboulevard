@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt",
+    "title": "Depardieu und Houellebecq wegen Gruppenvergewaltigung angeklagt",
+    "excerpt": "Gérard Depardieu und Michel Houellebecq stehen wegen einer 2018 in einem Wellness‑Hotel in der Normandie begangenen Gruppenvergewaltigung im Fokus einer neuen Anzeige.",
+    "date": "2026-11-20",
+    "category": "Justiz",
+    "url": "/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt.html",
+    "image": "/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Anzeige gegen Depardieu und Houellebecq wegen Vergewaltigungsvorwurf",
+      "url": "https://www.tagesschau.de/ausland/europa/frankreich-vergewaltigungsvorwuerfe-depardieu-houellebecq-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Fri, 20 Nov 2026 19:25:36 +0100"
+    },
+    "body": "Gérard Depardieu und Michel Houellebecq wurden wegen einer angeblichen Gruppenvergewaltigung im Wellness‑Hotel an der Normandie im Dezember 2018 angeklagt.\n\nDie Anzeige bezieht sich auf Vorwürfe, die laut Mediapart bei Dreharbeiten zum Film Thalasso entstanden sind. Die Ermittlungen laufen, da eine betroffene Schauspielerin sieben Jahre nach der Tat Anzeige erstattet hat.",
+    "imagePrompt": "A coastal wellness hotel interior at dusk, with a dimly lit suite and a solitary bed, conveying a tense, clandestine atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Depardieu und Houellebecq wegen Gruppenvergewaltigung angeklagt",
+    "wordCount": 51,
+    "sourcePublishedAt": "Fri, 20 Nov 2026 19:25:36 +0100",
+    "createdAt": "2026-11-20T19:17:15.417Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-20T19:17:16.079Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-20-polen-meldet-luftraumverletzung-durch-russische-raketen-und-drohne",
     "title": "Polen meldet Luftraumverletzung durch russische Raketen und Drohne",
     "excerpt": "Polen berichtet, drei russische Objekte – zwei Raketen und eine Düsendrohne – stießen in den polnischen Luftraum ein und fielen nieder.",

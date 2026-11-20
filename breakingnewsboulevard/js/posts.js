@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt",
+    "title": "Depardieu und Houellebecq wegen Gruppenvergewaltigung angeklagt",
+    "excerpt": "Gérard Depardieu und Michel Houellebecq stehen wegen einer 2018 in einem Wellness‑Hotel in der Normandie begangenen Gruppenvergewaltigung im Fokus einer neuen Anzeige.",
+    "date": "2026-11-20",
+    "category": "Justiz",
+    "url": "/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt.html",
+    "image": "/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/frankreich-vergewaltigungsvorwuerfe-depardieu-houellebecq-100.html"
+  },
+  {
     "slug": "2026-11-20-polen-meldet-luftraumverletzung-durch-russische-raketen-und-drohne",
     "title": "Polen meldet Luftraumverletzung durch russische Raketen und Drohne",
     "excerpt": "Polen berichtet, drei russische Objekte – zwei Raketen und eine Düsendrohne – stießen in den polnischen Luftraum ein und fielen nieder.",
