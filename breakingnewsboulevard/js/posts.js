@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-20-polen-meldet-luftraumverletzung-durch-russische-raketen-und-drohne",
+    "title": "Polen meldet Luftraumverletzung durch russische Raketen und Drohne",
+    "excerpt": "Polen berichtet, drei russische Objekte – zwei Raketen und eine Düsendrohne – stießen in den polnischen Luftraum ein und fielen nieder.",
+    "date": "2026-11-20",
+    "category": "Welt",
+    "url": "/posts/2026-11-20-polen-meldet-luftraumverletzung-durch-russische-raketen-und-drohne.html",
+    "image": "/posts/2026-11-20-polen-meldet-luftraumverletzung-durch-russische-raketen-und-drohne-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-polen-meldet-luftraumverletzung-durch-russische-raketen-und-drohne-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/raketeneinschlag-nato-generalsekret%C3%A4r-sagt-polen-unterst%C3%BCtzung-zu/a-80004889"
+  },
+  {
     "slug": "2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen",
     "title": "Kalifornische Küstenwarnungen wegen rekordhohen Wellen",
     "excerpt": "Kalifornien warnt vor Wellen über 30 Fuß, Monterey‑Buoy meldet 34,1 Fuß, Strände geschlossen.",
