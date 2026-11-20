@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich",
+    "title": "EGMR bestätigt Menschenrechtskonformität der Corona-Impfpflicht in Frankreich",
+    "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat die einrichtungsbezogene Impfpflicht in Frankreich als menschenrechtskonform verurteilt.",
+    "date": "2026-11-20",
+    "category": "Justiz",
+    "url": "/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich.html",
+    "image": "/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "EGMR-Urteil: Corona-Impfpflichten waren menschenrechtskonform",
+      "url": "https://www.tagesschau.de/ausland/europa/egmr-corona-impfpflicht-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Thu, 19 Nov 2026 16:24:28 +0100"
+    },
+    "body": "Der Europäische Gerichtshof für Menschenrechte (EGMR) hat entschieden, dass die einrichtungsbezogene Corona-Impfpflicht in Frankreich menschenrechtskonform war.\n\nDie Entscheidung bestätigt, dass Staaten bei Pandemien weitreichende Maßnahmen ergreifen dürfen, um besonders gefährdete Beschäftigte zu schützen. Ein Schweizer Richter äußerte jedoch ein abweichendes Sondervotum. Die Kläger waren Feuerwehrmann und zwei Krankenhausangestellte, die wegen fehlender Impfung von ihrer Arbeit freigestellt und unbezahlt wurden.",
+    "imagePrompt": "A quiet hospital corridor at dusk, a single medical staff locker with a closed door, no people visible",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: EGMR bestätigt Menschenrechtskonformität der Corona-Impfpflicht in Frankreich",
+    "wordCount": 59,
+    "sourcePublishedAt": "Thu, 19 Nov 2026 16:24:28 +0100",
+    "createdAt": "2026-11-20T01:59:49.666Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-20T01:59:50.329Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-19-awa-tribe-tritt-aus-isolation-in-maranhao-auf",
     "title": "Awá‑Tribe tritt aus Isolation in Maranhão auf",
     "excerpt": "Zwanzig Awá‑Indigene treten aus Isolation in der brasilianischen Amazonasregion ein und treffen in einem Dorf auf Regierungs­personal.",

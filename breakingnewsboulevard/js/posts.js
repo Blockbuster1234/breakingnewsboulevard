@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich",
+    "title": "EGMR bestätigt Menschenrechtskonformität der Corona-Impfpflicht in Frankreich",
+    "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat die einrichtungsbezogene Impfpflicht in Frankreich als menschenrechtskonform verurteilt.",
+    "date": "2026-11-20",
+    "category": "Justiz",
+    "url": "/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich.html",
+    "image": "/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/egmr-corona-impfpflicht-100.html"
+  },
+  {
     "slug": "2026-11-19-awa-tribe-tritt-aus-isolation-in-maranhao-auf",
     "title": "Awá‑Tribe tritt aus Isolation in Maranhão auf",
     "excerpt": "Zwanzig Awá‑Indigene treten aus Isolation in der brasilianischen Amazonasregion ein und treffen in einem Dorf auf Regierungs­personal.",

@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Thu, 19 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EGMR bestätigt Menschenrechtskonformität der Corona-Impfpflicht in Frankreich</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich.html</guid>
+      <pubDate>Fri, 20 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Justiz</category>
+      <description>Der Europäische Gerichtshof für Menschenrechte hat die einrichtungsbezogene Impfpflicht in Frankreich als menschenrechtskonform verurteilt.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Awá‑Tribe tritt aus Isolation in Maranhão auf</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-19-awa-tribe-tritt-aus-isolation-in-maranhao-auf.html</link>
@@ -267,15 +276,6 @@
       <category>Klima</category>
       <description>Brasilien hat den weltweit ersten globalen Fahrplan für den Ausstieg aus fossilen Brennstoffen veröffentlicht. Er soll Ländern helfen, ihre Abhängigkeit zu verringern und die Wirts</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-03-brasilien-legt-fahrplan-fuer-ausstieg-aus-fossilen-brennstoffen-vor-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Commonwealth-Gipfel: Briten lehnten Reparations-Agenda ab, stimmen aber Dialog zu</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu.html</guid>
-      <pubDate>Mon, 02 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Politik</category>
-      <description>Britische Vertreter sollen darauf bestanden haben, dass Reparationen für Sklaverei nicht auf der Agenda des Commonwealth-Gipfels in Antigua und Barbuda erscheinen, stimmten aber ei</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-02-commonwealth-gipfel-briten-lehnten-reparations-agenda-ab-stimmen-aber-dialog-zu-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
