@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen",
+    "title": "Kalifornische Küstenwarnungen wegen rekordhohen Wellen",
+    "excerpt": "Kalifornien warnt vor Wellen über 30 Fuß, Monterey‑Buoy meldet 34,1 Fuß, Strände geschlossen.",
+    "date": "2026-11-20",
+    "category": "Welt",
+    "url": "/posts/2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen.html",
+    "image": "/posts/2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state"
+  },
+  {
     "slug": "2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich",
     "title": "EGMR bestätigt Menschenrechtskonformität der Corona-Impfpflicht in Frankreich",
     "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat die einrichtungsbezogene Impfpflicht in Frankreich als menschenrechtskonform verurteilt.",

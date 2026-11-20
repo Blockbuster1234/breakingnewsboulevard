@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen",
+    "title": "Kalifornische Küstenwarnungen wegen rekordhohen Wellen",
+    "excerpt": "Kalifornien warnt vor Wellen über 30 Fuß, Monterey‑Buoy meldet 34,1 Fuß, Strände geschlossen.",
+    "date": "2026-11-20",
+    "category": "Welt",
+    "url": "/posts/2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen.html",
+    "image": "/posts/2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-kalifornische-kuestenwarnungen-wegen-rekordhohen-wellen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "California’s coastal communities on alert as biggest waves in years hit state",
+      "url": "https://www.theguardian.com/us-news/2026/nov/20/california-coastal-communities-alert-big-waves-hit-state",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Fri, 20 Nov 2026 09:03:20 GMT"
+    },
+    "body": "Am vergangenen Wochenende wurden in Kalifornien mehrere Küstenwarnungen ausgerufen, nachdem sich niedriger Druck auf der Nordpazifikregion ausbreitete und große Wellen von über 30 Fuß (9 m) erreichten, darunter ein Messwert von 34,1 Fuß am Monterey‑Buoy.\n\nDie Warnungen gelten bis Freitagabend; erwartet werden Wellen von 10–18 Fuß, mit lokalen Spitzen von 18–22 Fuß an den Stränden von San Luis Obispo und Santa Barbara. Gleichzeitig bringen die Stürme starken Regen, Schneefall und Wind in den Westen der USA.",
+    "imagePrompt": "A coastal scene at dusk with a large wave approaching a pier, waves crashing against a rocky shoreline, a calm sky in the background",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Kalifornische Küstenwarnungen wegen rekordhohen Wellen",
+    "wordCount": 80,
+    "sourcePublishedAt": "Fri, 20 Nov 2026 09:03:20 GMT",
+    "createdAt": "2026-11-20T14:25:44.687Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-20T14:25:45.171Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-20-egmr-bestaetigt-menschenrechtskonformitaet-der-corona-impfpflicht-in-frankreich",
     "title": "EGMR bestätigt Menschenrechtskonformität der Corona-Impfpflicht in Frankreich",
     "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat die einrichtungsbezogene Impfpflicht in Frankreich als menschenrechtskonform verurteilt.",
