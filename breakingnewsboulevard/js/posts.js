@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-19-awa-tribe-tritt-aus-isolation-in-maranhao-auf",
+    "title": "Awá‑Tribe tritt aus Isolation in Maranhão auf",
+    "excerpt": "Zwanzig Awá‑Indigene treten aus Isolation in der brasilianischen Amazonasregion ein und treffen in einem Dorf auf Regierungs­personal.",
+    "date": "2026-11-19",
+    "category": "Welt",
+    "url": "/posts/2026-11-19-awa-tribe-tritt-aus-isolation-in-maranhao-auf.html",
+    "image": "/posts/2026-11-19-awa-tribe-tritt-aus-isolation-in-maranhao-auf-hero.jpg",
+    "images": [
+      "/posts/2026-11-19-awa-tribe-tritt-aus-isolation-in-maranhao-auf-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/17/brazil-amazon-isolated-indigenous-people"
+  },
+  {
     "slug": "2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat",
     "title": "Infantino, Diallo und Tashima kandidieren in Rabat",
     "excerpt": "Drei Männer kämpfen um die FIFA-Präsidentschaft in Rabat, Marokko, am 18. März 2027.",
