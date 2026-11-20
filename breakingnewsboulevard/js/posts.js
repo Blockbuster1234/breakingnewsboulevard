@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf",
+    "title": "Dänemark weist russischen Verteidigungsattaché aus nach Anschlagsvorwurf",
+    "excerpt": "Dänemark hat einen russischen Verteidigungsattaché ausgewiesen, nachdem zwei Männer wegen eines versuchten Mordes an Rapper Kyivstoner angeklagt wurden.",
+    "date": "2026-11-20",
+    "category": "Justiz",
+    "url": "/posts/2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf.html",
+    "image": "/posts/2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/daenemark-attentatsversuch-100.html"
+  },
+  {
     "slug": "2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt",
     "title": "Depardieu und Houellebecq wegen Gruppenvergewaltigung angeklagt",
     "excerpt": "Gérard Depardieu und Michel Houellebecq stehen wegen einer 2018 in einem Wellness‑Hotel in der Normandie begangenen Gruppenvergewaltigung im Fokus einer neuen Anzeige.",

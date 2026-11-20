@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf",
+    "title": "Dänemark weist russischen Verteidigungsattaché aus nach Anschlagsvorwurf",
+    "excerpt": "Dänemark hat einen russischen Verteidigungsattaché ausgewiesen, nachdem zwei Männer wegen eines versuchten Mordes an Rapper Kyivstoner angeklagt wurden.",
+    "date": "2026-11-20",
+    "category": "Justiz",
+    "url": "/posts/2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf.html",
+    "image": "/posts/2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Mutmaßlicher Anschlagsplan: Dänen weisen russischen Diplomaten aus",
+      "url": "https://www.tagesschau.de/ausland/europa/daenemark-attentatsversuch-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Fri, 20 Nov 2026 22:28:00 +0100"
+    },
+    "body": "Dänemark hat einen russischen Verteidigungsattaché aus dem Land ausgewiesen, nachdem zwei dänische Männer wegen eines versuchten Mordes an dem ukrainisch-amerikanischen Rapper Kyivstoner angeklagt wurden.\n\nDie beiden Verdächtigen sitzen in Untersuchungshaft; die Ermittlungen prüfen Verbindungen zu einer verbotenen dänischen Gruppierung, die angeblich Kontakt zu Russland gesucht hat. Der geplante Anschlag sollte am 25. September in Charlottenlund stattfinden, wurde aber abgesagt, und am selben Tag wurden zwei Handfeuerwaffen und Messer in einem gestoppten Auto gefunden.",
+    "imagePrompt": "A dimly lit street in Charlottenlund at dusk, a police car with flashing lights parked beside a stopped vehicle, a small crowd of uniformed officers surrounding it",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Dänemark weist russischen Verteidigungsattaché aus nach Anschlagsvorwurf",
+    "wordCount": 73,
+    "sourcePublishedAt": "Fri, 20 Nov 2026 22:28:00 +0100",
+    "createdAt": "2026-11-20T22:00:39.399Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-20T22:00:40.228Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt",
     "title": "Depardieu und Houellebecq wegen Gruppenvergewaltigung angeklagt",
     "excerpt": "Gérard Depardieu und Michel Houellebecq stehen wegen einer 2018 in einem Wellness‑Hotel in der Normandie begangenen Gruppenvergewaltigung im Fokus einer neuen Anzeige.",
