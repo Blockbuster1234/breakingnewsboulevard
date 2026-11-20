@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag",
+    "title": "GenZ‑Proteste in 73 deutschen Städten zum Kinderrechten-Tag",
+    "excerpt": "GenZ‑Proteste in 73 deutschen Städten fanden am Internationalen Tag der Kinderrechte statt, nachdem junge Menschen in Europa wegen fehlender politischer Beteiligung auf die Straße ",
+    "date": "2026-11-20",
+    "category": "Politik",
+    "url": "/posts/2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag.html",
+    "image": "/posts/2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Laut Weltbevölkerungsbericht ist die GenZ verunsichert. Sie hat viele Gründe, auf die Straße zu gehen",
+      "url": "https://www.dw.com/de/weltbev%C3%B6lkerungsbericht-die-genz-ist-gebildet-aber-verunsichert/a-80003564",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-20T19:22:00Z"
+    },
+    "body": "In Deutschland haben GenZ‑Proteste in 73 Städten am Internationalen Tag der Kinderrechte stattgefunden, nachdem junge Menschen in Europa wegen fehlender politischer Beteiligung auf die Straße gingen.\n\nDer Weltbevölkerungsbericht der Vereinten Nationen und der Deutschen Stiftung Weltbevölkerung zeigte, dass 78 % der Jugendlichen weltweit einen mittleren Schulabschluss erreichen, die Jobsuche jedoch schwieriger wird und informelle Beschäftigungsverhältnisse zunehmen.",
+    "imagePrompt": "A city street in Germany at dusk, with a crowd of young people holding signs, the mood tense and determined",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: GenZ‑Proteste in 73 deutschen Städten zum Kinderrechten-Tag",
+    "wordCount": 56,
+    "sourcePublishedAt": "2026-11-20T19:22:00Z",
+    "createdAt": "2026-11-20T23:25:23.665Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-20T23:25:24.445Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf",
     "title": "Dänemark weist russischen Verteidigungsattaché aus nach Anschlagsvorwurf",
     "excerpt": "Dänemark hat einen russischen Verteidigungsattaché ausgewiesen, nachdem zwei Männer wegen eines versuchten Mordes an Rapper Kyivstoner angeklagt wurden.",

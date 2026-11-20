@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag",
+    "title": "GenZ‑Proteste in 73 deutschen Städten zum Kinderrechten-Tag",
+    "excerpt": "GenZ‑Proteste in 73 deutschen Städten fanden am Internationalen Tag der Kinderrechte statt, nachdem junge Menschen in Europa wegen fehlender politischer Beteiligung auf die Straße ",
+    "date": "2026-11-20",
+    "category": "Politik",
+    "url": "/posts/2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag.html",
+    "image": "/posts/2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag-hero.jpg",
+    "images": [
+      "/posts/2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/weltbev%C3%B6lkerungsbericht-die-genz-ist-gebildet-aber-verunsichert/a-80003564"
+  },
+  {
     "slug": "2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf",
     "title": "Dänemark weist russischen Verteidigungsattaché aus nach Anschlagsvorwurf",
     "excerpt": "Dänemark hat einen russischen Verteidigungsattaché ausgewiesen, nachdem zwei Männer wegen eines versuchten Mordes an Rapper Kyivstoner angeklagt wurden.",
