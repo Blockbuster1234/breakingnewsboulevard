@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus",
+    "title": "Erdbeben der Stärke 6,7 erschüttert Zentrum Perus",
+    "excerpt": "Ein 6,7‑starkes Erdbeben erschütterte das Zentrum Perus in der Nacht zum Samstag.",
+    "date": "2026-11-21",
+    "category": "Welt",
+    "url": "/posts/2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus.html",
+    "image": "/posts/2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Schweres Erdbeben erschüttert Peru",
+      "url": "https://www.dw.com/de/schweres-erdbeben-ersch%C3%BCttert-peru/a-80008949",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-21T10:53:00Z"
+    },
+    "body": "Ein Erdbeben der Stärke 6,7 erschütterte das Zentrum Perus in der Nacht zum Samstag, laut dem Institut für Geophysik (IGP).\n\nDas Hypozentrum lag 30 km nordwestlich der Anden‑Region Junín, 129 km tief. In der Nähe wurden Wohnhäuser leicht beschädigt, Stromausfälle und Verkehrsbeeinträchtigungen gemeldet. Erschütterungen waren auch in Lima, Huánuco und Callao spürbar. In Limas Touristenviertel Miraflores mussten Hunderte Menschen Gebäude verlassen.",
+    "imagePrompt": "night scene of a Peruvian town with subtle tremors, a few buildings slightly tilted, distant Andes mountains, muted lighting",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Erdbeben der Stärke 6,7 erschüttert Zentrum Perus",
+    "wordCount": 63,
+    "sourcePublishedAt": "2026-11-21T10:53:00Z",
+    "createdAt": "2026-11-21T16:36:13.106Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-21T16:36:13.844Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-21-hacker-dringen-in-fbi-und-landwirtschaftsministeriums-computer-ein",
     "title": "Hacker dringen in FBI- und Landwirtschaftsministeriums-Computer ein",
     "excerpt": "Hacker drangen in Computersysteme des FBI und des US-Landwirtschaftsministeriums ein, berichtet die Medien.",

@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus",
+    "title": "Erdbeben der Stärke 6,7 erschüttert Zentrum Perus",
+    "excerpt": "Ein 6,7‑starkes Erdbeben erschütterte das Zentrum Perus in der Nacht zum Samstag.",
+    "date": "2026-11-21",
+    "category": "Welt",
+    "url": "/posts/2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus.html",
+    "image": "/posts/2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/schweres-erdbeben-ersch%C3%BCttert-peru/a-80008949"
+  },
+  {
     "slug": "2026-11-21-hacker-dringen-in-fbi-und-landwirtschaftsministeriums-computer-ein",
     "title": "Hacker dringen in FBI- und Landwirtschaftsministeriums-Computer ein",
     "excerpt": "Hacker drangen in Computersysteme des FBI und des US-Landwirtschaftsministeriums ein, berichtet die Medien.",
