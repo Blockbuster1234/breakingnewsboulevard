@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-21-hacker-dringen-in-fbi-und-landwirtschaftsministeriums-computer-ein",
+    "title": "Hacker dringen in FBI- und Landwirtschaftsministeriums-Computer ein",
+    "excerpt": "Hacker drangen in Computersysteme des FBI und des US-Landwirtschaftsministeriums ein, berichtet die Medien.",
+    "date": "2026-11-21",
+    "category": "Justiz",
+    "url": "/posts/2026-11-21-hacker-dringen-in-fbi-und-landwirtschaftsministeriums-computer-ein.html",
+    "image": "/posts/2026-11-21-hacker-dringen-in-fbi-und-landwirtschaftsministeriums-computer-ein-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-hacker-dringen-in-fbi-und-landwirtschaftsministeriums-computer-ein-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/us-berichte-wieder-hackerangriff-auf-fbi/a-80009259"
+  },
+  {
     "slug": "2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt",
     "title": "Vier Männer wegen organisierter Vergewaltigung gegen Joanne Young verurteilt",
     "excerpt": "Vier Männer wurden in Winchester wegen drogenbasierter, organisierter sexueller Übergriffe gegen Joanne Young verurteilt.",
