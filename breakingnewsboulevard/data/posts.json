@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung",
+    "title": "Dordrecht: Anwohner protestieren gegen Chemours wegen PFAS‑Verunreinigung",
+    "excerpt": "Seit 2016 demonstrieren Bewohner in Dordrecht vor der Chemours‑Fabrik, weil sie PFAS‑Verunreinigungen in Böden, Wasser und Nahrung fürchten.",
+    "date": "2026-11-21",
+    "category": "Justiz",
+    "url": "/posts/2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung.html",
+    "image": "/posts/2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Niederlande: Handfester Protest gegen PFAS-Verseuchung",
+      "url": "https://www.tagesschau.de/ausland/europa/niederlande-protest-gegen-pfas-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Sat, 21 Nov 2026 20:54:06 +0100"
+    },
+    "body": "In Dordrecht, Niederlande, protestieren seit 2016 Anwohner gegen die Chemiefabrik Chemours, die dort Fluorkunststoffe wie Teflon herstellt.\n\nJeden Samstag legen die Demonstranten Erde und Leitungswasser vor die Werkstore, weil sie glauben, dass die Umgebung durch PFAS‑Verunreinigungen gefährdet ist. Das staatliche Gesundheitsinstitut RIVM rät Bewohnern, kein selbst gezogenes Obst, Gemüse oder Eier zu verzehren.",
+    "imagePrompt": "Dordrecht street with empty protest area, buckets of soil and water on ground, dusk",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Dordrecht: Anwohner protestieren gegen Chemours wegen PFAS‑Verunreinigung",
+    "wordCount": 54,
+    "sourcePublishedAt": "Sat, 21 Nov 2026 20:54:06 +0100",
+    "createdAt": "2026-11-21T20:47:41.392Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-21T20:47:42.050Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben",
     "title": "Anthropic‑KI behauptet, Riemannsche Vermutung gelöst zu haben",
     "excerpt": "Levent Alpöge von Anthropic behauptet, Claude hätte die Riemannsche Vermutung bewiesen.",

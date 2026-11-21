@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung",
+    "title": "Dordrecht: Anwohner protestieren gegen Chemours wegen PFAS‑Verunreinigung",
+    "excerpt": "Seit 2016 demonstrieren Bewohner in Dordrecht vor der Chemours‑Fabrik, weil sie PFAS‑Verunreinigungen in Böden, Wasser und Nahrung fürchten.",
+    "date": "2026-11-21",
+    "category": "Justiz",
+    "url": "/posts/2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung.html",
+    "image": "/posts/2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/niederlande-protest-gegen-pfas-100.html"
+  },
+  {
     "slug": "2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben",
     "title": "Anthropic‑KI behauptet, Riemannsche Vermutung gelöst zu haben",
     "excerpt": "Levent Alpöge von Anthropic behauptet, Claude hätte die Riemannsche Vermutung bewiesen.",
