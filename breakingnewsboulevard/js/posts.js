@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben",
+    "title": "Anthropic‑KI behauptet, Riemannsche Vermutung gelöst zu haben",
+    "excerpt": "Levent Alpöge von Anthropic behauptet, Claude hätte die Riemannsche Vermutung bewiesen.",
+    "date": "2026-11-21",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben.html",
+    "image": "/posts/2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wissen/forschung/anthropic-riemannsche-vermutung-loesung-100.html"
+  },
+  {
     "slug": "2026-11-21-erdbeben-der-staerke-6-7-erschuettert-zentrum-perus",
     "title": "Erdbeben der Stärke 6,7 erschüttert Zentrum Perus",
     "excerpt": "Ein 6,7‑starkes Erdbeben erschütterte das Zentrum Perus in der Nacht zum Samstag.",
