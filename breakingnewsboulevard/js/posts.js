@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt",
+    "title": "Vier Männer wegen organisierter Vergewaltigung gegen Joanne Young verurteilt",
+    "excerpt": "Vier Männer wurden in Winchester wegen drogenbasierter, organisierter sexueller Übergriffe gegen Joanne Young verurteilt.",
+    "date": "2026-11-21",
+    "category": "Justiz",
+    "url": "/posts/2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt.html",
+    "image": "/posts/2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/joanne-young-100.html"
+  },
+  {
     "slug": "2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag",
     "title": "GenZ‑Proteste in 73 deutschen Städten zum Kinderrechten-Tag",
     "excerpt": "GenZ‑Proteste in 73 deutschen Städten fanden am Internationalen Tag der Kinderrechte statt, nachdem junge Menschen in Europa wegen fehlender politischer Beteiligung auf die Straße ",

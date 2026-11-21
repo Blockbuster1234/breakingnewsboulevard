@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Fri, 20 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Vier Männer wegen organisierter Vergewaltigung gegen Joanne Young verurteilt</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt.html</guid>
+      <pubDate>Sat, 21 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Justiz</category>
+      <description>Vier Männer wurden in Winchester wegen drogenbasierter, organisierter sexueller Übergriffe gegen Joanne Young verurteilt.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-21-vier-maenner-wegen-organisierter-vergewaltigung-gegen-joanne-young-verurteilt-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>GenZ‑Proteste in 73 deutschen Städten zum Kinderrechten-Tag</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-20-genz-proteste-in-73-deutschen-staedten-zum-kinderrechten-tag.html</link>
@@ -267,15 +276,6 @@
       <category>Justiz</category>
       <description>Alice Weidel und Sahra Wagenknecht werfen Rumänen Sozialmissbrauch vor. Die Aussagen lösen in Rumänien und Deutschland Empörung aus und führen zu Protesten.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-09-weidel-und-wagenknecht-vorwuerfe-gegen-rumaenen-wegen-sozialmissbrauch-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>DDR-Spionagechef Wolf: Denkmal in Moskau enthüllt</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt.html</guid>
-      <pubDate>Sun, 08 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Welt</category>
-      <description>Der frühere Chef der DDR-Auslandsspionage, Markus Wolf, wird in Moskau mit einer Gedenktafel geehrt. Der russische Geheimdienst lobte seine Verdienste.</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-08-ddr-spionagechef-wolf-denkmal-in-moskau-enthuellt-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
