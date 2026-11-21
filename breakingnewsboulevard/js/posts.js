@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-21-un-konferenz-in-genf-blockiert-verbot-von-killerrobotern",
+    "title": "UN‑Konferenz in Genf blockiert Verbot von Killerrobotern",
+    "excerpt": "Auf der UN‑Konferenz in Genf konnten die 128 Vertragsstaaten kein verbindliches Verbot von vollautonomen Waffen beschließen, da die USA, Russland, Israel, Belarus und Großbritannie",
+    "date": "2026-11-21",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-21-un-konferenz-in-genf-blockiert-verbot-von-killerrobotern.html",
+    "image": "/posts/2026-11-21-un-konferenz-in-genf-blockiert-verbot-von-killerrobotern-hero.jpg",
+    "images": [
+      "/posts/2026-11-21-un-konferenz-in-genf-blockiert-verbot-von-killerrobotern-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/un-waffenkonvention-einsatz-von-killerrobotern-bleibt-unklar/a-80008965"
+  },
+  {
     "slug": "2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung",
     "title": "Dordrecht: Anwohner protestieren gegen Chemours wegen PFAS‑Verunreinigung",
     "excerpt": "Seit 2016 demonstrieren Bewohner in Dordrecht vor der Chemours‑Fabrik, weil sie PFAS‑Verunreinigungen in Böden, Wasser und Nahrung fürchten.",
