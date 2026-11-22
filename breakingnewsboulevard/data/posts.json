@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine",
+    "title": "TK-Chef kritisiert Geld für schnellere Arzttermine",
+    "excerpt": "Jens Baas aus Berlin sagt, dass mehr Geld nicht zu mehr Arztterminen führt und fordert ein neues System.",
+    "date": "2026-11-22",
+    "category": "Gesundheit",
+    "url": "/posts/2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine.html",
+    "image": "/posts/2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine-hero.jpg",
+    "images": [
+      "/posts/2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "TK-Chef Baas: Mehr Geld schafft keine Arzttermine",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/bericht-aus-berlin-arzttermine-baas-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Sun, 22 Nov 2026 20:24:22 +0100"
+    },
+    "body": "Der Techniker Krankenkassen-Chef Jens Baas kritisierte im Bericht aus Berlin die Idee, dass mehr Geld für schnellere Arzttermine sorgt, und forderte ein neues System.\n\nEr verweist auf ein 2019 Gesetz, das Ärzten für rasche Termine Extrageld zusicherte, und betont, dass trotz Milliarden Euro die Wartezeiten gestiegen seien. Baas fordert Alternativen wie Apps, Apotheken oder andere Wege, um Patienten besser zu steuern und Kosten zu senken.",
+    "imagePrompt": "Berlin street at dusk, a medical clinic sign visible, no people, calm atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: TK-Chef kritisiert Geld für schnellere Arzttermine",
+    "wordCount": 65,
+    "sourcePublishedAt": "Sun, 22 Nov 2026 20:24:22 +0100",
+    "createdAt": "2026-11-22T20:58:08.068Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-22T20:58:08.864Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff",
     "title": "Explosion auf russischem Schiff in Benghazi durch drohnenähnlichen Angriff",
     "excerpt": "Explosion auf russischem Schiff in Benghazi, Libyen, wird verdächtig durch Drohnenangriff verursacht, berichtet die östliche libysche Regierung.",

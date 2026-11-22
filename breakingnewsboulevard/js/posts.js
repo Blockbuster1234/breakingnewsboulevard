@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine",
+    "title": "TK-Chef kritisiert Geld für schnellere Arzttermine",
+    "excerpt": "Jens Baas aus Berlin sagt, dass mehr Geld nicht zu mehr Arztterminen führt und fordert ein neues System.",
+    "date": "2026-11-22",
+    "category": "Gesundheit",
+    "url": "/posts/2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine.html",
+    "image": "/posts/2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine-hero.jpg",
+    "images": [
+      "/posts/2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/inland/innenpolitik/bericht-aus-berlin-arzttermine-baas-100.html"
+  },
+  {
     "slug": "2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff",
     "title": "Explosion auf russischem Schiff in Benghazi durch drohnenähnlichen Angriff",
     "excerpt": "Explosion auf russischem Schiff in Benghazi, Libyen, wird verdächtig durch Drohnenangriff verursacht, berichtet die östliche libysche Regierung.",
