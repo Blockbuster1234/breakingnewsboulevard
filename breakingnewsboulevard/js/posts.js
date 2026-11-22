@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-22-costa-rica-s-grynspan-im-fokus-des-un-sicherheitsrat-votes",
+    "title": "Costa Rica’s Grynspan im Fokus des UN-Sicherheitsrat-Votes",
+    "excerpt": "Rebeca Grynspan, die Kandidatin aus Costa Rica, steht vor einem entscheidenden Sicherheitsrat-Abstimmung, die ihre Chancen auf das Amt des UN-Botschafters beeinflussen könnte.",
+    "date": "2026-11-22",
+    "category": "Welt",
+    "url": "/posts/2026-11-22-costa-rica-s-grynspan-im-fokus-des-un-sicherheitsrat-votes.html",
+    "image": "/posts/2026-11-22-costa-rica-s-grynspan-im-fokus-des-un-sicherheitsrat-votes-hero.jpg",
+    "images": [
+      "/posts/2026-11-22-costa-rica-s-grynspan-im-fokus-des-un-sicherheitsrat-votes-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/20/race-to-be-next-un-secretary-general-exposes-divisions-among-world-powers"
+  },
+  {
     "slug": "2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine",
     "title": "TK-Chef kritisiert Geld für schnellere Arzttermine",
     "excerpt": "Jens Baas aus Berlin sagt, dass mehr Geld nicht zu mehr Arztterminen führt und fordert ein neues System.",
