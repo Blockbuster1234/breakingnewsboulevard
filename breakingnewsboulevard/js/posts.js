@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-22-cop31-in-antalya-keine-gemeinsame-abschlusserklaerung",
+    "title": "COP31 in Antalya: Keine gemeinsame Abschlusserklärung",
+    "excerpt": "Bei der COP31 in Antalya haben Delegationen keine gemeinsame Abschlusserklärung angenommen.",
+    "date": "2026-11-22",
+    "category": "Welt",
+    "url": "/posts/2026-11-22-cop31-in-antalya-keine-gemeinsame-abschlusserklaerung.html",
+    "image": "/posts/2026-11-22-cop31-in-antalya-keine-gemeinsame-abschlusserklaerung-hero.jpg",
+    "images": [
+      "/posts/2026-11-22-cop31-in-antalya-keine-gemeinsame-abschlusserklaerung-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/un-klimakonferenz-cop31-ist-in-antalya-gescheitert/a-80012944"
+  },
+  {
     "slug": "2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik",
     "title": "ICE‑Stelle in Texas force‑füttert Hungerstreik",
     "excerpt": "Ein 32-jähriger kubanischer Asylsuchender wurde in Texas gefordert, sich mittels Nahrungszufuhr zu ernähren, nachdem er seit drei Monaten hungerte.",
