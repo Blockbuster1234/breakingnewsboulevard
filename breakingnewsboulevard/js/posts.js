@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff",
+    "title": "Explosion auf russischem Schiff in Benghazi durch drohnenähnlichen Angriff",
+    "excerpt": "Explosion auf russischem Schiff in Benghazi, Libyen, wird verdächtig durch Drohnenangriff verursacht, berichtet die östliche libysche Regierung.",
+    "date": "2026-11-22",
+    "category": "Welt",
+    "url": "/posts/2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff.html",
+    "image": "/posts/2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff-hero.jpg",
+    "images": [
+      "/posts/2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya"
+  },
+  {
     "slug": "2026-11-22-cop31-in-antalya-keine-gemeinsame-abschlusserklaerung",
     "title": "COP31 in Antalya: Keine gemeinsame Abschlusserklärung",
     "excerpt": "Bei der COP31 in Antalya haben Delegationen keine gemeinsame Abschlusserklärung angenommen.",
