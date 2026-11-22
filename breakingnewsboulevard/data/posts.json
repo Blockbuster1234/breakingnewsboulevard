@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik",
+    "title": "ICE‑Stelle in Texas force‑füttert Hungerstreik",
+    "excerpt": "Ein 32-jähriger kubanischer Asylsuchender wurde in Texas gefordert, sich mittels Nahrungszufuhr zu ernähren, nachdem er seit drei Monaten hungerte.",
+    "date": "2026-11-22",
+    "category": "Justiz",
+    "url": "/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik.html",
+    "image": "/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik-hero.jpg",
+    "images": [
+      "/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "‘Weak and dizzy’: the secretive ICE force-feeding tactics that ended a Cuban father’s hunger strike",
+      "url": "https://www.theguardian.com/us-news/2026/nov/20/ice-cuba-hunger-strike-force-feeding",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Fri, 20 Nov 2026 11:00:31 GMT"
+    },
+    "body": "Ein kubanischer Asylsuchender, Luis Alejandro Cora Pérez, 32, wurde in einem ICE‑Zulager in Port Isabel, Texas, mit einer Nahrungszufuhr über einen Nasen‑Tracheal‑Schlauch behandelt, nachdem er drei Monate ohne Nahrung blieb.\n\nAm 30. Oktober erhielt ICE gerichtliche Genehmigung, ihn zu force‑füttern. Der Vorgang wurde von Pérez als traumatisch beschrieben.\\nDie Entscheidung wurde von einem Bundesrichter genehmigt, nachdem ICE die Notwendigkeit der Nahrungszufuhr begründet hatte.",
+    "imagePrompt": "A dimly lit detention center corridor with a medical isolation cell and a large metal feeding tube hanging from the ceiling, early morning light filtering through a small window",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: ICE‑Stelle in Texas force‑füttert Hungerstreik",
+    "wordCount": 67,
+    "sourcePublishedAt": "Fri, 20 Nov 2026 11:00:31 GMT",
+    "createdAt": "2026-11-22T00:52:21.576Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-22T00:52:22.390Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-21-un-konferenz-in-genf-blockiert-verbot-von-killerrobotern",
     "title": "UN‑Konferenz in Genf blockiert Verbot von Killerrobotern",
     "excerpt": "Auf der UN‑Konferenz in Genf konnten die 128 Vertragsstaaten kein verbindliches Verbot von vollautonomen Waffen beschließen, da die USA, Russland, Israel, Belarus und Großbritannie",

@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik",
+    "title": "ICE‑Stelle in Texas force‑füttert Hungerstreik",
+    "excerpt": "Ein 32-jähriger kubanischer Asylsuchender wurde in Texas gefordert, sich mittels Nahrungszufuhr zu ernähren, nachdem er seit drei Monaten hungerte.",
+    "date": "2026-11-22",
+    "category": "Justiz",
+    "url": "/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik.html",
+    "image": "/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik-hero.jpg",
+    "images": [
+      "/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/20/ice-cuba-hunger-strike-force-feeding"
+  },
+  {
     "slug": "2026-11-21-un-konferenz-in-genf-blockiert-verbot-von-killerrobotern",
     "title": "UN‑Konferenz in Genf blockiert Verbot von Killerrobotern",
     "excerpt": "Auf der UN‑Konferenz in Genf konnten die 128 Vertragsstaaten kein verbindliches Verbot von vollautonomen Waffen beschließen, da die USA, Russland, Israel, Belarus und Großbritannie",

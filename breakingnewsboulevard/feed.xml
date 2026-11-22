@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Sat, 21 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>ICE‑Stelle in Texas force‑füttert Hungerstreik</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik.html</guid>
+      <pubDate>Sun, 22 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Justiz</category>
+      <description>Ein 32-jähriger kubanischer Asylsuchender wurde in Texas gefordert, sich mittels Nahrungszufuhr zu ernähren, nachdem er seit drei Monaten hungerte.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-22-ice-stelle-in-texas-force-fuettert-hungerstreik-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>UN‑Konferenz in Genf blockiert Verbot von Killerrobotern</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-21-un-konferenz-in-genf-blockiert-verbot-von-killerrobotern.html</link>
@@ -267,15 +276,6 @@
       <category>Justiz</category>
       <description>Eine 44‑Personen-Truppe Baboons wurde aus Simon’s Town in ein Wildtierzentrum verlegt, was heftige Proteste auslöste.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-17-baboons-aus-simon-s-town-in-tierpark-verlegt-proteste-folgen-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Fünf EU-Staaten planen Migrationszentren in Ruanda</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda.html</guid>
-      <pubDate>Tue, 17 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Welt</category>
-      <description>Deutschland, Österreich, Niederlande, Dänemark und Griechenland wollen ein Pilotprojekt für Migranten ohne Aufenthaltsrecht starten.</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-17-fuenf-eu-staaten-planen-migrationszentren-in-ruanda-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
