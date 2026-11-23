@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff",
+    "title": "Russland plant Satelliten mit nuklearem Sprengstoff",
+    "excerpt": "Russland soll in diesem Jahr einen Satelliten namens Sputnik‑S mit nuklearem Sprengstoff in die Erdumlaufbahn bringen, so westliche Geheimdienste. Der Start könnte bis Dezember erf",
+    "date": "2026-11-23",
+    "category": "Welt",
+    "url": "/posts/2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff.html",
+    "image": "/posts/2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Atombombe im All: Was Russland vorhaben soll - und was das für den Westen bedeutet",
+      "url": "https://www.dw.com/de/atombombe-im-all-was-russland-vorhaben-soll-und-was-das-f%C3%BCr-den-westen-bedeutet/a-80026072",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-23T19:43:00Z"
+    },
+    "body": "Russland plant, den Satelliten Sputnik‑S, der nuklearen Sprengstoff enthält, innerhalb dieses Jahres in die Erdumlaufbahn zu bringen.\n\nWestliche Geheimdienste schätzen einen Start bis Dezember. Russland weist die Anschuldigungen als Propaganda zurück. Die Warnungen wurden an NATO‑Staaten und deutsche Bundeswehrexperten weitergeleitet. Die mögliche Stationierung einer nuklearen Waffe im All würde die Bedrohungslage erheblich verändern, da eine Explosion im Orbit große Teile der Satellitenflotte außer Gefecht setzen könnte.",
+    "imagePrompt": "A satellite launch pad in a desert at dusk, with a rocket visible but no people, reflecting tension",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Russland plant Satelliten mit nuklearem Sprengstoff",
+    "wordCount": 68,
+    "sourcePublishedAt": "2026-11-23T19:43:00Z",
+    "createdAt": "2026-11-23T20:41:49.340Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-23T20:41:50.109Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten",
     "title": "OBI und Toom planen Zusammenschluss von über 600 Baumärkten",
     "excerpt": "OBI und Toom beabsichtigen, ihre Geschäfte zu fusionieren, wobei die Toom-Märkte künftig unter der Marke OBI laufen sollen, und REWE erhält rund 30 % an der OBI Group Holding.",

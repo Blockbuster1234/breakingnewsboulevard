@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff",
+    "title": "Russland plant Satelliten mit nuklearem Sprengstoff",
+    "excerpt": "Russland soll in diesem Jahr einen Satelliten namens Sputnik‑S mit nuklearem Sprengstoff in die Erdumlaufbahn bringen, so westliche Geheimdienste. Der Start könnte bis Dezember erf",
+    "date": "2026-11-23",
+    "category": "Welt",
+    "url": "/posts/2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff.html",
+    "image": "/posts/2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/atombombe-im-all-was-russland-vorhaben-soll-und-was-das-f%C3%BCr-den-westen-bedeutet/a-80026072"
+  },
+  {
     "slug": "2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten",
     "title": "OBI und Toom planen Zusammenschluss von über 600 Baumärkten",
     "excerpt": "OBI und Toom beabsichtigen, ihre Geschäfte zu fusionieren, wobei die Toom-Märkte künftig unter der Marke OBI laufen sollen, und REWE erhält rund 30 % an der OBI Group Holding.",
