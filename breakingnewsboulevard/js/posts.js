@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten",
+    "title": "OBI und Toom planen Zusammenschluss von über 600 Baumärkten",
+    "excerpt": "OBI und Toom beabsichtigen, ihre Geschäfte zu fusionieren, wobei die Toom-Märkte künftig unter der Marke OBI laufen sollen, und REWE erhält rund 30 % an der OBI Group Holding.",
+    "date": "2026-11-23",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten.html",
+    "image": "/posts/2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wirtschaft/unternehmen/obi-toom-fusion-100.html"
+  },
+  {
     "slug": "2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck",
     "title": "Südkoreas Bildungsminister tritt nach KI-Betrugsskandal zurück",
     "excerpt": "Der Bildungsminister Choi Kyo-jin resigniert, nachdem ein KI‑gestützter Betrug die Vorbereitung auf die Suneung erschütterte.",

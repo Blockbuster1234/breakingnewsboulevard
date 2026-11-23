@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten",
+    "title": "OBI und Toom planen Zusammenschluss von über 600 Baumärkten",
+    "excerpt": "OBI und Toom beabsichtigen, ihre Geschäfte zu fusionieren, wobei die Toom-Märkte künftig unter der Marke OBI laufen sollen, und REWE erhält rund 30 % an der OBI Group Holding.",
+    "date": "2026-11-23",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten.html",
+    "image": "/posts/2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-obi-und-toom-planen-zusammenschluss-von-ueber-600-baumaerkten-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "OBI und Toom wollen fusionieren",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/obi-toom-fusion-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Mon, 23 Nov 2026 16:09:32 +0100"
+    },
+    "body": "OBI und Toom planen die Fusion ihrer mehr als 600 Geschäfte in Deutschland, wobei die Marke Toom entfällt und die Filialen unter OBI geführt werden.\n\nDas Bundeskartellamt muss die Transaktion noch genehmigen, und REWE soll 30 % an der OBI Group Holding erhalten. Die Umstellung soll zwölf bis 18 Monate dauern.",
+    "imagePrompt": "a map of Germany with clustered icons representing over 600 Baumarkt stores, sunlit background, daytime",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: OBI und Toom planen Zusammenschluss von über 600 Baumärkten",
+    "wordCount": 50,
+    "sourcePublishedAt": "Mon, 23 Nov 2026 16:09:32 +0100",
+    "createdAt": "2026-11-23T16:42:07.164Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-23T16:42:07.652Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck",
     "title": "Südkoreas Bildungsminister tritt nach KI-Betrugsskandal zurück",
     "excerpt": "Der Bildungsminister Choi Kyo-jin resigniert, nachdem ein KI‑gestützter Betrug die Vorbereitung auf die Suneung erschütterte.",
