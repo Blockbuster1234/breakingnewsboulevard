@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck",
+    "title": "Südkoreas Bildungsminister tritt nach KI-Betrugsskandal zurück",
+    "excerpt": "Der Bildungsminister Choi Kyo-jin resigniert, nachdem ein KI‑gestützter Betrug die Vorbereitung auf die Suneung erschütterte.",
+    "date": "2026-11-23",
+    "category": "Justiz",
+    "url": "/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck.html",
+    "image": "/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck-hero.jpg"
+    ],
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams"
+  },
+  {
     "slug": "2026-11-22-costa-rica-s-grynspan-im-fokus-des-un-sicherheitsrat-votes",
     "title": "Costa Rica’s Grynspan im Fokus des UN-Sicherheitsrat-Votes",
     "excerpt": "Rebeca Grynspan, die Kandidatin aus Costa Rica, steht vor einem entscheidenden Sicherheitsrat-Abstimmung, die ihre Chancen auf das Amt des UN-Botschafters beeinflussen könnte.",

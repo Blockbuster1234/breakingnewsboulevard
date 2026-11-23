@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Sun, 22 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Südkoreas Bildungsminister tritt nach KI-Betrugsskandal zurück</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck.html</guid>
+      <pubDate>Mon, 23 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Justiz</category>
+      <description>Der Bildungsminister Choi Kyo-jin resigniert, nachdem ein KI‑gestützter Betrug die Vorbereitung auf die Suneung erschütterte.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Costa Rica’s Grynspan im Fokus des UN-Sicherheitsrat-Votes</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-22-costa-rica-s-grynspan-im-fokus-des-un-sicherheitsrat-votes.html</link>
@@ -267,15 +276,6 @@
       <category>Wirtschaft</category>
       <description>St Kitts und Nevis beendet das 42‑jährige Bürgerrechtsprogramm nach EU‑Drohen, was die Wirtschaft stark beeinflussen dürfte.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-18-st-kitts-und-nevis-kuendigt-ende-des-cbi-programms-an-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Deutschland plant Pilot-Abschiebezentrum in Ruanda für 100 ausreisepflichtige Asylbewerber</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber.html</guid>
-      <pubDate>Tue, 17 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Justiz</category>
-      <description>Bundesinnenminister Alexander Dobrindt präsentiert bei einer Migrationskonferenz in Wien das Vorhaben, ein Abschiebezentrum in Ruanda für 100 Menschen einzurichten, die in Deutschl</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-17-deutschland-plant-pilot-abschiebezentrum-in-ruanda-fuer-100-ausreisepflichtige-asylbewerber-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

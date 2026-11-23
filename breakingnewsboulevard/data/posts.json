@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck",
+    "title": "Südkoreas Bildungsminister tritt nach KI-Betrugsskandal zurück",
+    "excerpt": "Der Bildungsminister Choi Kyo-jin resigniert, nachdem ein KI‑gestützter Betrug die Vorbereitung auf die Suneung erschütterte.",
+    "date": "2026-11-23",
+    "category": "Justiz",
+    "url": "/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck.html",
+    "image": "/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-suedkoreas-bildungsminister-tritt-nach-ki-betrugsskandal-zurueck-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "The Guardian",
+      "title": "South Korean minister quits after AI cheating scandal engulfs university exams",
+      "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+      "termsUrl": "https://www.theguardian.com/help/terms-of-service",
+      "license": "Guardian-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.theguardian.com/help/terms-of-service",
+      "credit": "Quelle: The Guardian; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "en",
+      "mode": "full",
+      "publishedAt": "Sun, 22 Nov 2026 12:12:07 GMT"
+    },
+    "body": "Der Bildungsminister Südkoreas, Choi Kyo-jin, trat zurück, nachdem ein KI‑gestütztes Betrugs‑Schandfleck die Vorbereitung auf die Suneung, die wichtigsten Universitätsprüfungen, erschütterte.\n\nDer Betrüger gab zu, mit einer Mikrokamera und einem Smartphone die Prüfungsfragen zu fotografieren und die Antworten über ein KI‑System abzurufen. Die Regierung kündigte an, dass bei der Suneung sämtliche elektronischen Geräte abgegeben und überprüft werden, und dass bei festgestelltem Betrug eine zehnjährige Prüfungsverbotsfrist sowie strafrechtliche Konsequenzen drohen.",
+    "imagePrompt": "A quiet exam hall at dusk, students seated with pencils, a single light source illuminating the desks, no people visible",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Südkoreas Bildungsminister tritt nach KI-Betrugsskandal zurück",
+    "wordCount": 71,
+    "sourcePublishedAt": "Sun, 22 Nov 2026 12:12:07 GMT",
+    "createdAt": "2026-11-23T01:16:51.341Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-23T01:16:52.101Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-22-costa-rica-s-grynspan-im-fokus-des-un-sicherheitsrat-votes",
     "title": "Costa Rica’s Grynspan im Fokus des UN-Sicherheitsrat-Votes",
     "excerpt": "Rebeca Grynspan, die Kandidatin aus Costa Rica, steht vor einem entscheidenden Sicherheitsrat-Abstimmung, die ihre Chancen auf das Amt des UN-Botschafters beeinflussen könnte.",
