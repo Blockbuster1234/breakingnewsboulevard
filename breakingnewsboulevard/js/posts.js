@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck",
+    "title": "Jensen Huang kehrt als CEO von Nvidia zurück",
+    "excerpt": "Jensen Huang wird erneut CEO von Nvidia, nachdem er kurzzeitig zurückgetreten war, und der US-Präsident Trump gibt zu, Einfluss genommen zu haben.",
+    "date": "2026-11-23",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck.html",
+    "image": "/posts/2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wirtschaft/huang-nvidia-chef-trump-demokraten-100.html"
+  },
+  {
     "slug": "2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff",
     "title": "Russland plant Satelliten mit nuklearem Sprengstoff",
     "excerpt": "Russland soll in diesem Jahr einen Satelliten namens Sputnik‑S mit nuklearem Sprengstoff in die Erdumlaufbahn bringen, so westliche Geheimdienste. Der Start könnte bis Dezember erf",

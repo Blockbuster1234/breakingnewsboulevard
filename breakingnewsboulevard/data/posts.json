@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck",
+    "title": "Jensen Huang kehrt als CEO von Nvidia zurück",
+    "excerpt": "Jensen Huang wird erneut CEO von Nvidia, nachdem er kurzzeitig zurückgetreten war, und der US-Präsident Trump gibt zu, Einfluss genommen zu haben.",
+    "date": "2026-11-23",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck.html",
+    "image": "/posts/2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck-hero.jpg",
+    "images": [
+      "/posts/2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Nvidia setzt Jensen Huang wieder als Chef ein - auf Druck Trumps?",
+      "url": "https://www.tagesschau.de/wirtschaft/huang-nvidia-chef-trump-demokraten-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Mon, 23 Nov 2026 20:07:24 +0100"
+    },
+    "body": "Jensen Huang kehrt als CEO von Nvidia zurück, nachdem er kurzzeitig zurückgetreten war, und der US-Präsident Trump gibt zu, Einfluss genommen zu haben.\n\nDie Entscheidung erfolgte einstimmig durch den Verwaltungsrat. Der Rücktritt und die Wiedereinsetzung könnten für Trump noch Folgen haben, da Demokraten die Rolle unter die Lupe nehmen wollen.",
+    "imagePrompt": "a corporate boardroom with a conference table, a laptop, and a flag of the United States in the background, late afternoon light",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Jensen Huang kehrt als CEO von Nvidia zurück",
+    "wordCount": 50,
+    "sourcePublishedAt": "Mon, 23 Nov 2026 20:07:24 +0100",
+    "createdAt": "2026-11-23T22:57:39.120Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-23T22:57:39.919Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-23-russland-plant-satelliten-mit-nuklearem-sprengstoff",
     "title": "Russland plant Satelliten mit nuklearem Sprengstoff",
     "excerpt": "Russland soll in diesem Jahr einen Satelliten namens Sputnik‑S mit nuklearem Sprengstoff in die Erdumlaufbahn bringen, so westliche Geheimdienste. Der Start könnte bis Dezember erf",
