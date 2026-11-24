@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026",
+    "title": "Erhöhte Gesundheitsangst in Deutschland 2026",
+    "excerpt": "In einer Forsa-Umfrage gaben 70 % der Befragten an, Krebs als größte Sorge zu empfinden, während 57 % Angst vor Alzheimer haben.",
+    "date": "2026-11-24",
+    "category": "Gesundheit",
+    "url": "/posts/2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026.html",
+    "image": "/posts/2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/angst-vor-schweren-krankheiten-in-deutschland-w%C3%A4chst/a-80018197"
+  },
+  {
     "slug": "2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen",
     "title": "Feuer in indonesischer Süßwarenfabrik: 32 vermisst, 24 Leichensäcke geborgen",
     "excerpt": "Ein verheerendes Feuer in der Süßwarenfabrik PT Fonusa Agung Mulia in Cikande, Banten, forderte 32 vermisste Personen, während 24 Leichensäcke aus den Trümmern geborgen wurden.",

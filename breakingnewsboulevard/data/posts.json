@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026",
+    "title": "Erhöhte Gesundheitsangst in Deutschland 2026",
+    "excerpt": "In einer Forsa-Umfrage gaben 70 % der Befragten an, Krebs als größte Sorge zu empfinden, während 57 % Angst vor Alzheimer haben.",
+    "date": "2026-11-24",
+    "category": "Gesundheit",
+    "url": "/posts/2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026.html",
+    "image": "/posts/2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Angst vor Krebs, Demenz und Depressionen: Warum sich immer mehr Menschen in Deutschland Sorgen machen",
+      "url": "https://www.dw.com/de/angst-vor-schweren-krankheiten-in-deutschland-w%C3%A4chst/a-80018197",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-23T10:59:00Z"
+    },
+    "body": "70 % der in Deutschland befragten Personen nennen Krebs als größte Sorge, 57 % fürchten Alzheimer und andere Demenzerkrankungen.\n\nDie Befragung ergab zudem, dass 39 % Angst vor psychischen Erkrankungen haben, ein Höchststand seit 2010. Diese Zahlen zeigen einen Anstieg der Gesundheitsangst, insbesondere bei jungen Menschen, und verdeutlichen die wachsende Besorgnis um schwere Krankheiten.",
+    "imagePrompt": "A quiet German city street at dusk, a lone streetlamp casting a warm glow, with a subtle silhouette of a person walking alone, reflecting a mood of contemplation",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Erhöhte Gesundheitsangst in Deutschland 2026",
+    "wordCount": 51,
+    "sourcePublishedAt": "2026-11-23T10:59:00Z",
+    "createdAt": "2026-11-24T05:11:49.391Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-24T05:11:50.159Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen",
     "title": "Feuer in indonesischer Süßwarenfabrik: 32 vermisst, 24 Leichensäcke geborgen",
     "excerpt": "Ein verheerendes Feuer in der Süßwarenfabrik PT Fonusa Agung Mulia in Cikande, Banten, forderte 32 vermisste Personen, während 24 Leichensäcke aus den Trümmern geborgen wurden.",
