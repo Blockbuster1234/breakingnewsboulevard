@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten",
+    "title": "NATO‑Tagung in Berlin: Ukraine‑Beitritt bleibt umstritten",
+    "excerpt": "NATO‑Parlamentarier in Berlin lehnten den Ukraine‑Beitritt trotz Präsident Selenskys Appell ab.",
+    "date": "2026-11-24",
+    "category": "Politik",
+    "url": "/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten.html",
+    "image": "/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "NATO-Treffen in Berlin: Keine Einstimmigkeit zu einem Beitritt der Ukraine",
+      "url": "https://www.dw.com/de/nato-treffen-in-berlin-keine-einstimmigkeit-zu-einem-beitritt-der-ukraine/a-80022579",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-23T18:23:00Z"
+    },
+    "body": "Wolodymyr Selenskyj begrüßte die Delegierten der NATO‑Parlamentarier in Berlin und forderte mehr Patriot‑Systeme sowie einen Beitritt der Ukraine.\n\nDie Tagung in Berlin verurteilte die Forderung und erklärte, dass die Ukraine zwar eine Beitritts‑Perspektive habe, aber keine Einstimmigkeit unter den Mitgliedern bestehe. Die Entscheidung über einen Beitritt liegt bei der NATO.",
+    "imagePrompt": "Berlin parliament building at dusk, empty hall with a single spotlight on a podium",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: NATO‑Tagung in Berlin: Ukraine‑Beitritt bleibt umstritten",
+    "wordCount": 53,
+    "sourcePublishedAt": "2026-11-23T18:23:00Z",
+    "createdAt": "2026-11-24T02:00:17.962Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-24T02:00:18.746Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck",
     "title": "Jensen Huang kehrt als CEO von Nvidia zurück",
     "excerpt": "Jensen Huang wird erneut CEO von Nvidia, nachdem er kurzzeitig zurückgetreten war, und der US-Präsident Trump gibt zu, Einfluss genommen zu haben.",

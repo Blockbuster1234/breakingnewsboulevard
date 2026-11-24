@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten",
+    "title": "NATO‑Tagung in Berlin: Ukraine‑Beitritt bleibt umstritten",
+    "excerpt": "NATO‑Parlamentarier in Berlin lehnten den Ukraine‑Beitritt trotz Präsident Selenskys Appell ab.",
+    "date": "2026-11-24",
+    "category": "Politik",
+    "url": "/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten.html",
+    "image": "/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/nato-treffen-in-berlin-keine-einstimmigkeit-zu-einem-beitritt-der-ukraine/a-80022579"
+  },
+  {
     "slug": "2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck",
     "title": "Jensen Huang kehrt als CEO von Nvidia zurück",
     "excerpt": "Jensen Huang wird erneut CEO von Nvidia, nachdem er kurzzeitig zurückgetreten war, und der US-Präsident Trump gibt zu, Einfluss genommen zu haben.",

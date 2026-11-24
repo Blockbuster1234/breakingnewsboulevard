@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Mon, 23 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>NATO‑Tagung in Berlin: Ukraine‑Beitritt bleibt umstritten</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten.html</guid>
+      <pubDate>Tue, 24 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Politik</category>
+      <description>NATO‑Parlamentarier in Berlin lehnten den Ukraine‑Beitritt trotz Präsident Selenskys Appell ab.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Jensen Huang kehrt als CEO von Nvidia zurück</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-23-jensen-huang-kehrt-als-ceo-von-nvidia-zurueck.html</link>
@@ -267,15 +276,6 @@
       <category>Politik</category>
       <description>Am APEC-Gipfel in Shenzhen trafen sich Xi Jinping, Donald Trump und Wladimir Putin erstmals zu einem Dreiergespräch.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-18-apec-gipfel-xi-trump-und-putin-treffen-sich-erstmals-in-shenzhen-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>EU plantiert 45 Milliarden‑Euro‑Kredit für die Ukraine</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine.html</guid>
-      <pubDate>Wed, 18 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Wirtschaft</category>
-      <description>Die EU-Kommission schlägt einen 45 Milliarden‑Euro‑Kredit vor, um die Ukraine mit 20 Milliarden für den Haushalt und 25 Milliarden für Militärhilfen zu unterstützen.</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-18-eu-plantiert-45-milliarden-euro-kredit-fuer-die-ukraine-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
