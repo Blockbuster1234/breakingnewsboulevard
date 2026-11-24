@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen",
+    "title": "Feuer in indonesischer Süßwarenfabrik: 32 vermisst, 24 Leichensäcke geborgen",
+    "excerpt": "Ein verheerendes Feuer in der Süßwarenfabrik PT Fonusa Agung Mulia in Cikande, Banten, forderte 32 vermisste Personen, während 24 Leichensäcke aus den Trümmern geborgen wurden.",
+    "date": "2026-11-24",
+    "category": "Welt",
+    "url": "/posts/2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen.html",
+    "image": "/posts/2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Verheerender Fabrikbrand in Indonesien: Dutzende Vermisste - Identifizierung der Opfer dauert Wochen",
+      "url": "https://www.dw.com/de/indonesien-dutzende-vermisste-nach-brand-in-s%C3%BC%C3%9Fwarenfabrik/a-80020954",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-23T13:37:00Z"
+    },
+    "body": "Ein verheerendes Feuer erschütterte die Süßwarenfabrik PT Fonusa Agung Mulia in Cikande, Banten, Indonesien, und forderte bislang 32 vermisste Personen.\n\nDie Brandruine wurde vollständig gelöscht, doch 24 Leichensäcke wurden aus den Trümmern geborgen, wobei die Überreste zu stark zerstört sind, um sie äußerlich zu identifizieren. Spezialisten arbeiten an DNA- und Fingerabdruckanalysen, die mehrere Wochen dauern können. Hunderte Einsatzkräfte suchen weiterhin nach den vermissten Personen, während 29 Überlebende gemeldet wurden.",
+    "imagePrompt": "industrial ruin in a factory, scattered debris and a single fire extinguisher on a dusty floor, late afternoon light casting long shadows",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Feuer in indonesischer Süßwarenfabrik: 32 vermisst, 24 Leichensäcke geborgen",
+    "wordCount": 69,
+    "sourcePublishedAt": "2026-11-23T13:37:00Z",
+    "createdAt": "2026-11-24T03:43:45.884Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-24T03:43:46.690Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten",
     "title": "NATO‑Tagung in Berlin: Ukraine‑Beitritt bleibt umstritten",
     "excerpt": "NATO‑Parlamentarier in Berlin lehnten den Ukraine‑Beitritt trotz Präsident Selenskys Appell ab.",

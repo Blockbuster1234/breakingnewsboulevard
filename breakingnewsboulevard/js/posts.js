@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen",
+    "title": "Feuer in indonesischer Süßwarenfabrik: 32 vermisst, 24 Leichensäcke geborgen",
+    "excerpt": "Ein verheerendes Feuer in der Süßwarenfabrik PT Fonusa Agung Mulia in Cikande, Banten, forderte 32 vermisste Personen, während 24 Leichensäcke aus den Trümmern geborgen wurden.",
+    "date": "2026-11-24",
+    "category": "Welt",
+    "url": "/posts/2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen.html",
+    "image": "/posts/2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-feuer-in-indonesischer-suesswarenfabrik-32-vermisst-24-leichensaecke-geborgen-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/indonesien-dutzende-vermisste-nach-brand-in-s%C3%BC%C3%9Fwarenfabrik/a-80020954"
+  },
+  {
     "slug": "2026-11-24-nato-tagung-in-berlin-ukraine-beitritt-bleibt-umstritten",
     "title": "NATO‑Tagung in Berlin: Ukraine‑Beitritt bleibt umstritten",
     "excerpt": "NATO‑Parlamentarier in Berlin lehnten den Ukraine‑Beitritt trotz Präsident Selenskys Appell ab.",
