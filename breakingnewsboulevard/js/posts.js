@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen",
+    "title": "Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen",
+    "excerpt": "Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen, die Fotos und Videos aufnehmen können, ohne dass andere Menschen es bemerken.",
+    "date": "2026-11-24",
+    "category": "Justiz",
+    "url": "/posts/2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen.html",
+    "image": "/posts/2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/inland/gesellschaft/smart-glasses-klage-verbraucherschutz-100.html"
+  },
+  {
     "slug": "2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen",
     "title": "EGMR erlaubt Pushbacks an polnisch-belarusischer Grenze in Ausnahmefällen",
     "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat entschieden, dass Pushbacks an der polnisch-belarusischen Grenze in Ausnahmefällen zulässig sind, wenn Flüchtlinge von Belarus un",

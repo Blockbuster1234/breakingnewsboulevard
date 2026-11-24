@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen",
+    "title": "Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen",
+    "excerpt": "Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen, die Fotos und Videos aufnehmen können, ohne dass andere Menschen es bemerken.",
+    "date": "2026-11-24",
+    "category": "Justiz",
+    "url": "/posts/2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen.html",
+    "image": "/posts/2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Verbraucherschützer haben die smarte Brille im Blick",
+      "url": "https://www.tagesschau.de/inland/gesellschaft/smart-glasses-klage-verbraucherschutz-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Tue, 24 Nov 2026 20:06:34 +0100"
+    },
+    "body": "Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen, die Fotos und Videos aufnehmen können, ohne dass andere Menschen es bemerken.\n\nDie Klage richtet sich auf fehlende Information über die Nutzung im öffentlichen Raum und mögliche Bußgelder. Die Brillen enthalten Kameras, Mikrofone und KI, und ein blinkendes Licht signalisiert Aufnahmen. Verbraucher schützer fordern Unterlassung und betonen Datenschutzrisiken für Nutzer und Unbeteiligte.",
+    "imagePrompt": "A street scene at dusk with a person wearing a sleek black smart glasses, a small blinking light on the frame, and a subtle glow indicating recording, no people visible",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen",
+    "wordCount": 62,
+    "sourcePublishedAt": "Tue, 24 Nov 2026 20:06:34 +0100",
+    "createdAt": "2026-11-24T19:45:49.149Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-24T19:45:49.813Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen",
     "title": "EGMR erlaubt Pushbacks an polnisch-belarusischer Grenze in Ausnahmefällen",
     "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat entschieden, dass Pushbacks an der polnisch-belarusischen Grenze in Ausnahmefällen zulässig sind, wenn Flüchtlinge von Belarus un",
