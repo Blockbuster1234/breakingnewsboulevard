@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen",
+    "title": "EGMR erlaubt Pushbacks an polnisch-belarusischer Grenze in Ausnahmefällen",
+    "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat entschieden, dass Pushbacks an der polnisch-belarusischen Grenze in Ausnahmefällen zulässig sind, wenn Flüchtlinge von Belarus un",
+    "date": "2026-11-24",
+    "category": "Justiz",
+    "url": "/posts/2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen.html",
+    "image": "/posts/2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Menschenrechtsgerichtshof: Pushbacks in Ausnahmefällen zulässig",
+      "url": "https://www.tagesschau.de/ausland/europa/egmr-pushbacks-belarus-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Tue, 24 Nov 2026 17:24:25 +0100"
+    },
+    "body": "Der Europäische Gerichtshof für Menschenrechte hat entschieden, dass Pushbacks an der polnisch-belarusischen Grenze in Ausnahmefällen zulässig sind, wenn Flüchtlinge von Belarus und Russland gezielt als Druckmittel eingesetzt werden.\n\nDas Urteil bestätigt, dass Pushbacks grundsätzlich gegen die Menschenrechtskonvention verstoßen, jedoch Ausnahmen erlauben, wenn ein anderer Staat Flüchtlinge absichtlich über die Grenze schickt. Dennoch müssen besonders schutzbedürftige Personen wie Kinder, ältere Menschen oder Kranke nicht einfach zurückgeschickt werden.",
+    "imagePrompt": "Polish border checkpoint in a forest, soldiers with rifles, dusk, tense atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: EGMR erlaubt Pushbacks an polnisch-belarusischer Grenze in Ausnahmefällen",
+    "wordCount": 66,
+    "sourcePublishedAt": "Tue, 24 Nov 2026 17:24:25 +0100",
+    "createdAt": "2026-11-24T16:33:10.889Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-24T16:33:11.727Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026",
     "title": "Erhöhte Gesundheitsangst in Deutschland 2026",
     "excerpt": "In einer Forsa-Umfrage gaben 70 % der Befragten an, Krebs als größte Sorge zu empfinden, während 57 % Angst vor Alzheimer haben.",

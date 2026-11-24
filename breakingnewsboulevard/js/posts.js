@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen",
+    "title": "EGMR erlaubt Pushbacks an polnisch-belarusischer Grenze in Ausnahmefällen",
+    "excerpt": "Der Europäische Gerichtshof für Menschenrechte hat entschieden, dass Pushbacks an der polnisch-belarusischen Grenze in Ausnahmefällen zulässig sind, wenn Flüchtlinge von Belarus un",
+    "date": "2026-11-24",
+    "category": "Justiz",
+    "url": "/posts/2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen.html",
+    "image": "/posts/2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-egmr-erlaubt-pushbacks-an-polnisch-belarusischer-grenze-in-ausnahmefaellen-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/egmr-pushbacks-belarus-100.html"
+  },
+  {
     "slug": "2026-11-24-erhoehte-gesundheitsangst-in-deutschland-2026",
     "title": "Erhöhte Gesundheitsangst in Deutschland 2026",
     "excerpt": "In einer Forsa-Umfrage gaben 70 % der Befragten an, Krebs als größte Sorge zu empfinden, während 57 % Angst vor Alzheimer haben.",
