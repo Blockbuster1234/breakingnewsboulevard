@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-24-steinmeier-ruft-deutsche-unternehmen-auf-in-afrika-zu-investieren",
+    "title": "Steinmeier ruft deutsche Unternehmen auf, in Afrika zu investieren",
+    "excerpt": "Bundespräsident Steinmeier fordert deutsche Firmen in Accra mehr Investitionen in Afrika, wo nur 1,8 % der Exporte landen.",
+    "date": "2026-11-24",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-24-steinmeier-ruft-deutsche-unternehmen-auf-in-afrika-zu-investieren.html",
+    "image": "/posts/2026-11-24-steinmeier-ruft-deutsche-unternehmen-auf-in-afrika-zu-investieren-hero.jpg",
+    "images": [
+      "/posts/2026-11-24-steinmeier-ruft-deutsche-unternehmen-auf-in-afrika-zu-investieren-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/afrika/steinmeier-deutsch-afrikanischer-wirtschaftsgipfel-100.html"
+  },
+  {
     "slug": "2026-11-24-verbraucherschuetzer-klagen-gegen-meta-und-ray-ban-wegen-smarten-brillen",
     "title": "Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen",
     "excerpt": "Verbraucherschützer klagen gegen Meta und Ray‑Ban wegen smarten Brillen, die Fotos und Videos aufnehmen können, ohne dass andere Menschen es bemerken.",
