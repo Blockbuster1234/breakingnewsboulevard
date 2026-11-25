@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim",
+    "title": "Russland greift ukrainische Brücken an – Auswirkungen auf Kiew und Krim",
+    "excerpt": "Russland bombardiert Brücken in Kiew, Odessa und Saporischschja, während die Ukraine die Krim-Brücke teilweise zerstört, was die russische Logistik im Süden der Ukraine erschwert.",
+    "date": "2026-11-25",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim.html",
+    "image": "/posts/2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/europa/ukraine-russland-bruecken-krieg-100.html"
+  },
+  {
     "slug": "2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen",
     "title": "Israelischer Soldat tötet Hamas-Sicherheitschef im Gazastreifen",
     "excerpt": "Ein israelischer Soldat tötet Naim Abu Nahal, Sicherheitschef der Hamas, im Gazastreifen.",

@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim",
+    "title": "Russland greift ukrainische Brücken an – Auswirkungen auf Kiew und Krim",
+    "excerpt": "Russland bombardiert Brücken in Kiew, Odessa und Saporischschja, während die Ukraine die Krim-Brücke teilweise zerstört, was die russische Logistik im Süden der Ukraine erschwert.",
+    "date": "2026-11-25",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim.html",
+    "image": "/posts/2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Brücken-Krieg: Gefahr für Kiew, Probleme für Russlands Logistik",
+      "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-bruecken-krieg-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Wed, 25 Nov 2026 02:40:52 +0100"
+    },
+    "body": "Russland hat Brücken in Kiew, Odessa und Saporischschja wiederholt angegriffen, während die Ukraine die Krim-Brücke teilweise zerstört hat.\n\nDie Angriffe zielen darauf ab, die Zivilbevölkerung zu belasten und die russische Logistik zu stören. Die Zerstörung der Krim-Brücke erschwert die Versorgung der russischen Truppen im Süden der Ukraine. Die Angriffe führen zu Verkehrschaos und langen Staus.",
+    "imagePrompt": "A war-torn bridge over a river at dusk, with debris and a partially collapsed arch, reflecting the conflict in Ukraine",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Russland greift ukrainische Brücken an – Auswirkungen auf Kiew und Krim",
+    "wordCount": 55,
+    "sourcePublishedAt": "Wed, 25 Nov 2026 02:40:52 +0100",
+    "createdAt": "2026-11-25T03:48:25.946Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-25T03:48:26.556Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen",
     "title": "Israelischer Soldat tötet Hamas-Sicherheitschef im Gazastreifen",
     "excerpt": "Ein israelischer Soldat tötet Naim Abu Nahal, Sicherheitschef der Hamas, im Gazastreifen.",
