@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-25-lkw-unfall-in-gizeh-verursacht-grossbrand-30-tote",
+    "title": "Lkw-Unfall in Gizeh verursacht Großbrand, 30 Tote",
+    "excerpt": "Ein mit Gasflaschen beladener Lkw geriet in Gizeh auf einer Autobahn in einen Unfall, der einen Großbrand auslöste, bei dem mindestens 30 Menschen ums Leben kamen.",
+    "date": "2026-11-25",
+    "category": "Justiz",
+    "url": "/posts/2026-11-25-lkw-unfall-in-gizeh-verursacht-grossbrand-30-tote.html",
+    "image": "/posts/2026-11-25-lkw-unfall-in-gizeh-verursacht-grossbrand-30-tote-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-lkw-unfall-in-gizeh-verursacht-grossbrand-30-tote-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/afrika/aegypten-brand-gizeh-tote-100.html"
+  },
+  {
     "slug": "2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution",
     "title": "Expertenkommission fordert strengere Regeln für Prostitution",
     "excerpt": "Die schwarz-rote Koalition soll Prostitution neu regeln, indem eine Expertenkommission 51 Maßnahmen vorschlägt, um Zwang, Ausbeutung und Menschenhandel zu bekämpfen.",
