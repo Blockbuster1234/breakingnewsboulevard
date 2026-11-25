@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution",
+    "title": "Expertenkommission fordert strengere Regeln für Prostitution",
+    "excerpt": "Die schwarz-rote Koalition soll Prostitution neu regeln, indem eine Expertenkommission 51 Maßnahmen vorschlägt, um Zwang, Ausbeutung und Menschenhandel zu bekämpfen.",
+    "date": "2026-11-25",
+    "category": "Justiz",
+    "url": "/posts/2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution.html",
+    "image": "/posts/2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html"
+  },
+  {
     "slug": "2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner",
     "title": "Frauen 35‑55: TK-Studie zeigt höhere Krankheitsrate als Männer",
     "excerpt": "Die Techniker Krankenkasse hat in einer Online-Umfrage ergeben, dass Frauen im Alter von 35 bis 55 Jahren ihren Gesundheitszustand häufiger als schlecht bewerten und mehr Krankheit",

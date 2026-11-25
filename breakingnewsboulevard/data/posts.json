@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution",
+    "title": "Expertenkommission fordert strengere Regeln für Prostitution",
+    "excerpt": "Die schwarz-rote Koalition soll Prostitution neu regeln, indem eine Expertenkommission 51 Maßnahmen vorschlägt, um Zwang, Ausbeutung und Menschenhandel zu bekämpfen.",
+    "date": "2026-11-25",
+    "category": "Justiz",
+    "url": "/posts/2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution.html",
+    "image": "/posts/2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-expertenkommission-fordert-strengere-regeln-fuer-prostitution-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Expertenkommission fordert schärfere Regeln für Prostitution",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Wed, 25 Nov 2026 20:14:28 +0100"
+    },
+    "body": "Eine zwölfköpfige Expertenkommission aus Wissenschaft, Strafverfolgung und Sozialarbeit hat 51 Maßnahmen zur strengeren Regulierung der Prostitution in Deutschland vorgeschlagen.\n\nDie Kommission fordert unter anderem, dass Sexkauf nur bei Anmeldung der Prostituierten erlaubt sein soll, und schlägt die strafrechtliche Ahndung von Bordellbetreibern und Kunden vor, die nicht angemeldete Prostituierte nutzen. Die Vorschläge sollen die Schutzmöglichkeiten für Prostituierte erhöhen und den Menschenhandel eindämmen.",
+    "imagePrompt": "A deserted street at dusk, a lone illuminated sign of a closed brothel, a rainy alleyway with wet pavement, subdued mood",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Expertenkommission fordert strengere Regeln für Prostitution",
+    "wordCount": 61,
+    "sourcePublishedAt": "Wed, 25 Nov 2026 20:14:28 +0100",
+    "createdAt": "2026-11-25T20:45:52.151Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-25T20:45:52.906Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner",
     "title": "Frauen 35‑55: TK-Studie zeigt höhere Krankheitsrate als Männer",
     "excerpt": "Die Techniker Krankenkasse hat in einer Online-Umfrage ergeben, dass Frauen im Alter von 35 bis 55 Jahren ihren Gesundheitszustand häufiger als schlecht bewerten und mehr Krankheit",
