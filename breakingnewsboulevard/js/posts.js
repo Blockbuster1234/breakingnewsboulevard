@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner",
+    "title": "Frauen 35‑55: TK-Studie zeigt höhere Krankheitsrate als Männer",
+    "excerpt": "Die Techniker Krankenkasse hat in einer Online-Umfrage ergeben, dass Frauen im Alter von 35 bis 55 Jahren ihren Gesundheitszustand häufiger als schlecht bewerten und mehr Krankheit",
+    "date": "2026-11-25",
+    "category": "Gesundheit",
+    "url": "/posts/2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner.html",
+    "image": "/posts/2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wirtschaft/gesundheit-frauen-wechseljahre-arbeitsplatz-100.html"
+  },
+  {
     "slug": "2026-11-25-polizeipatrouille-in-rio-schuetzt-frauen-vor-gewalt",
     "title": "Polizeipatrouille in Rio schützt Frauen vor Gewalt",
     "excerpt": "Die Spezialeinheit der brasilianischen Polizei patrouilliert in Rio de Janeiro, um gefährdete Frauen zu überwachen und Notrufgeräte bereitzustellen.",

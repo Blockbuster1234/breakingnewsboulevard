@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner",
+    "title": "Frauen 35‑55: TK-Studie zeigt höhere Krankheitsrate als Männer",
+    "excerpt": "Die Techniker Krankenkasse hat in einer Online-Umfrage ergeben, dass Frauen im Alter von 35 bis 55 Jahren ihren Gesundheitszustand häufiger als schlecht bewerten und mehr Krankheit",
+    "date": "2026-11-25",
+    "category": "Gesundheit",
+    "url": "/posts/2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner.html",
+    "image": "/posts/2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-frauen-35-55-tk-studie-zeigt-hoehere-krankheitsrate-als-maenner-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "TK-Gesundheitsreport Weiblich, mittelalt, leistungsstark - öfter krank?",
+      "url": "https://www.tagesschau.de/wirtschaft/gesundheit-frauen-wechseljahre-arbeitsplatz-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Wed, 25 Nov 2026 18:37:52 +0100"
+    },
+    "body": "Die Techniker Krankenkasse (TK) hat in einer Online-Umfrage festgestellt, dass Frauen zwischen 35 und 55 Jahren ihren allgemeinen Gesundheitszustand häufiger als schlecht einordnen als Männer (11 % gegenüber 9 %).\n\nDie TK‑Analyse der Abrechnungsdaten zeigt, dass Frauen in dieser Altersgruppe mehr Krankheitstage aufweisen als Männer, wobei psychische Erkrankungen bei Frauen häufiger als Atemwegsbeschwerden auftreten.",
+    "imagePrompt": "A mid‑morning office corridor with a closed door, a calendar on the wall showing a red marked day, subtle light filtering through blinds",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Frauen 35‑55: TK-Studie zeigt höhere Krankheitsrate als Männer",
+    "wordCount": 53,
+    "sourcePublishedAt": "Wed, 25 Nov 2026 18:37:52 +0100",
+    "createdAt": "2026-11-25T18:58:21.183Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-25T18:58:21.914Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-25-polizeipatrouille-in-rio-schuetzt-frauen-vor-gewalt",
     "title": "Polizeipatrouille in Rio schützt Frauen vor Gewalt",
     "excerpt": "Die Spezialeinheit der brasilianischen Polizei patrouilliert in Rio de Janeiro, um gefährdete Frauen zu überwachen und Notrufgeräte bereitzustellen.",
