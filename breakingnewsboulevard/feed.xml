@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Tue, 24 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Israelischer Soldat tötet Hamas-Sicherheitschef im Gazastreifen</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen.html</guid>
+      <pubDate>Wed, 25 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Justiz</category>
+      <description>Ein israelischer Soldat tötet Naim Abu Nahal, Sicherheitschef der Hamas, im Gazastreifen.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Steinmeier ruft deutsche Unternehmen auf, in Afrika zu investieren</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-24-steinmeier-ruft-deutsche-unternehmen-auf-in-afrika-zu-investieren.html</link>
@@ -267,15 +276,6 @@
       <category>Sport</category>
       <description>Drei Männer kämpfen um die FIFA-Präsidentschaft in Rabat, Marokko, am 18. März 2027.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-19-infantino-diallo-und-tashima-kandidieren-in-rabat-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Wadephul optimistisch: Chance auf Frieden für Ukraine</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine.html</guid>
-      <pubDate>Thu, 19 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Politik</category>
-      <description>Außenminister Johann Wadephul äußert sich nach Treffen in Berlin und Shenzhen optimistisch über Fortschritte im Ukraine-Friedensprozess.</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-19-wadephul-optimistisch-chance-auf-frieden-fuer-ukraine-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

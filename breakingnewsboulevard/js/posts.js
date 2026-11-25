@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen",
+    "title": "Israelischer Soldat tötet Hamas-Sicherheitschef im Gazastreifen",
+    "excerpt": "Ein israelischer Soldat tötet Naim Abu Nahal, Sicherheitschef der Hamas, im Gazastreifen.",
+    "date": "2026-11-25",
+    "category": "Justiz",
+    "url": "/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen.html",
+    "image": "/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/hamas-anf%C3%BChrer-bei-angriff-israels-im-gazastreifen-get%C3%B6tet/a-80034053"
+  },
+  {
     "slug": "2026-11-24-steinmeier-ruft-deutsche-unternehmen-auf-in-afrika-zu-investieren",
     "title": "Steinmeier ruft deutsche Unternehmen auf, in Afrika zu investieren",
     "excerpt": "Bundespräsident Steinmeier fordert deutsche Firmen in Accra mehr Investitionen in Afrika, wo nur 1,8 % der Exporte landen.",

@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen",
+    "title": "Israelischer Soldat tötet Hamas-Sicherheitschef im Gazastreifen",
+    "excerpt": "Ein israelischer Soldat tötet Naim Abu Nahal, Sicherheitschef der Hamas, im Gazastreifen.",
+    "date": "2026-11-25",
+    "category": "Justiz",
+    "url": "/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen.html",
+    "image": "/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-israelischer-soldat-toetet-hamas-sicherheitschef-im-gazastreifen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Hamas-Anführer bei Angriff Israels im Gazastreifen getötet - Premier Netanjahu lobt Streitkräfte",
+      "url": "https://www.dw.com/de/hamas-anf%C3%BChrer-bei-angriff-israels-im-gazastreifen-get%C3%B6tet/a-80034053",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-24T14:36:00Z"
+    },
+    "body": "Ein israelischer Soldat tötete Naim Abu Nahal, Sicherheitschef der Hamas, im Gazastreifen.\n\nAbu Nahal leitete den internen Sicherheitsapparat der Hamas und organisierte Treffen hochrangiger Funktionäre. Das Militär hatte zuvor den Vorgänger von Abu Nahal festgenommen. Premier Benjamin Netanjahu erklärte, kein Terrorist könne dem Staat entkommen. Der Angriff erfolgte trotz einer einjährigen Waffenruhe, die Israel und die Hamas seit dem 7. Oktober 2023 beanspruchen. Die israelische Armee betonte, dass gezielte Luftangriffe ranghohe Hamas-Mitglieder eliminieren.",
+    "imagePrompt": "A night scene of a desert landscape with a distant silhouette of a military vehicle on a dusty road, low light, tense atmosphere",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Israelischer Soldat tötet Hamas-Sicherheitschef im Gazastreifen",
+    "wordCount": 73,
+    "sourcePublishedAt": "2026-11-24T14:36:00Z",
+    "createdAt": "2026-11-25T01:48:23.936Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-25T01:48:24.941Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-24-steinmeier-ruft-deutsche-unternehmen-auf-in-afrika-zu-investieren",
     "title": "Steinmeier ruft deutsche Unternehmen auf, in Afrika zu investieren",
     "excerpt": "Bundespräsident Steinmeier fordert deutsche Firmen in Accra mehr Investitionen in Afrika, wo nur 1,8 % der Exporte landen.",
