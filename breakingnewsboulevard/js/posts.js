@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-25-polizeipatrouille-in-rio-schuetzt-frauen-vor-gewalt",
+    "title": "Polizeipatrouille in Rio schützt Frauen vor Gewalt",
+    "excerpt": "Die Spezialeinheit der brasilianischen Polizei patrouilliert in Rio de Janeiro, um gefährdete Frauen zu überwachen und Notrufgeräte bereitzustellen.",
+    "date": "2026-11-25",
+    "category": "Justiz",
+    "url": "/posts/2026-11-25-polizeipatrouille-in-rio-schuetzt-frauen-vor-gewalt.html",
+    "image": "/posts/2026-11-25-polizeipatrouille-in-rio-schuetzt-frauen-vor-gewalt-hero.jpg",
+    "images": [
+      "/posts/2026-11-25-polizeipatrouille-in-rio-schuetzt-frauen-vor-gewalt-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/amerika/brasilien-gewalt-gegen-frauen-100.html"
+  },
+  {
     "slug": "2026-11-25-russland-greift-ukrainische-bruecken-an-auswirkungen-auf-kiew-und-krim",
     "title": "Russland greift ukrainische Brücken an – Auswirkungen auf Kiew und Krim",
     "excerpt": "Russland bombardiert Brücken in Kiew, Odessa und Saporischschja, während die Ukraine die Krim-Brücke teilweise zerstört, was die russische Logistik im Süden der Ukraine erschwert.",
