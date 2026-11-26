@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport",
+    "title": "ATMOS und MBDA entwickeln Weltraum-Waffentransport",
+    "excerpt": "ATMOS Space Cargo und MBDA planen ein System namens PODS, das Waffen aus dem Orbit zur Erde bringen soll.",
+    "date": "2026-11-26",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport.html",
+    "image": "/posts/2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Deutsche Firmen forschen an Technik für Waffendepots im Weltraum",
+      "url": "https://www.tagesschau.de/wissen/waffendepots-orbit-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Thu, 26 Nov 2026 20:15:35 +0100"
+    },
+    "body": "ATMOS Space Cargo aus Lichtenau und der Rüstungskonzern MBDA planen ein System namens PODS, das Waffen aus dem Orbit zur Erde transportieren soll.\n\nDer Ansatz nutzt einen aufblasbaren Hitzeschild, der beim Start gefaltet und vor dem Wiedereintritt aufgeblasen wird, um große und sperrige Nutzlasten zu schützen. Die Kooperation soll Machbarkeitsstudien durchführen und ein Testflug mit ziviler Fracht im Frühjahr planen.",
+    "imagePrompt": "A satellite launch site at dusk, with a large inflatable heat shield partially deployed, reflecting sunlight, against a twilight sky",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: ATMOS und MBDA entwickeln Weltraum-Waffentransport",
+    "wordCount": 60,
+    "sourcePublishedAt": "Thu, 26 Nov 2026 20:15:35 +0100",
+    "createdAt": "2026-11-26T20:40:29.988Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-26T20:40:30.673Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-26-bundeswehr-uebt-evakuierung-im-senegal",
     "title": "Bundeswehr übt Evakuierung im Senegal",
     "excerpt": "Bundeswehrsoldaten trainieren in Dodji, Senegal, gemeinsam mit senegalesischen Streitkräften an einer Evakuierungsübung aus einem fiktiven Krisenstaat.",

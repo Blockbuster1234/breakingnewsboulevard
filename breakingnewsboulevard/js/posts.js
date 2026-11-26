@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport",
+    "title": "ATMOS und MBDA entwickeln Weltraum-Waffentransport",
+    "excerpt": "ATMOS Space Cargo und MBDA planen ein System namens PODS, das Waffen aus dem Orbit zur Erde bringen soll.",
+    "date": "2026-11-26",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport.html",
+    "image": "/posts/2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wissen/waffendepots-orbit-100.html"
+  },
+  {
     "slug": "2026-11-26-bundeswehr-uebt-evakuierung-im-senegal",
     "title": "Bundeswehr übt Evakuierung im Senegal",
     "excerpt": "Bundeswehrsoldaten trainieren in Dodji, Senegal, gemeinsam mit senegalesischen Streitkräften an einer Evakuierungsübung aus einem fiktiven Krisenstaat.",
