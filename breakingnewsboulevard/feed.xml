@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Wed, 25 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>FC Bayern bestätigt Musialas Untersuchung am 22. April 2025</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025.html</guid>
+      <pubDate>Thu, 26 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Sport</category>
+      <description>Der FC Bayern München hat bestätigt, dass Jamal Musiala erstmals am 22. April 2025 wegen neurologischer Symptome untersucht wurde.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Lkw-Unfall in Gizeh verursacht Großbrand, 30 Tote</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-25-lkw-unfall-in-gizeh-verursacht-grossbrand-30-tote.html</link>
@@ -267,15 +276,6 @@
       <category>Justiz</category>
       <description>Dänemark hat einen russischen Verteidigungsattaché ausgewiesen, nachdem zwei Männer wegen eines versuchten Mordes an Rapper Kyivstoner angeklagt wurden.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-20-daenemark-weist-russischen-verteidigungsattache-aus-nach-anschlagsvorwurf-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Depardieu und Houellebecq wegen Gruppenvergewaltigung angeklagt</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt.html</guid>
-      <pubDate>Fri, 20 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Justiz</category>
-      <description>Gérard Depardieu und Michel Houellebecq stehen wegen einer 2018 in einem Wellness‑Hotel in der Normandie begangenen Gruppenvergewaltigung im Fokus einer neuen Anzeige.</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-20-depardieu-und-houellebecq-wegen-gruppenvergewaltigung-angeklagt-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

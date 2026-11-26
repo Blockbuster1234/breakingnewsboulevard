@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025",
+    "title": "FC Bayern bestätigt Musialas Untersuchung am 22. April 2025",
+    "excerpt": "Der FC Bayern München hat bestätigt, dass Jamal Musiala erstmals am 22. April 2025 wegen neurologischer Symptome untersucht wurde.",
+    "date": "2026-11-26",
+    "category": "Sport",
+    "url": "/posts/2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025.html",
+    "image": "/posts/2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/fc-bayern-beendet-spekulationen-um-jamal-musiala/a-80051092"
+  },
+  {
     "slug": "2026-11-25-lkw-unfall-in-gizeh-verursacht-grossbrand-30-tote",
     "title": "Lkw-Unfall in Gizeh verursacht Großbrand, 30 Tote",
     "excerpt": "Ein mit Gasflaschen beladener Lkw geriet in Gizeh auf einer Autobahn in einen Unfall, der einen Großbrand auslöste, bei dem mindestens 30 Menschen ums Leben kamen.",
