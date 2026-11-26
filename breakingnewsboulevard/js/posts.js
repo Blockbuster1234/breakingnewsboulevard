@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-26-temu-verpflichtet-sich-zu-mehr-verbraucherschutz-in-der-eu",
+    "title": "Temu verpflichtet sich zu mehr Verbraucherschutz in der EU",
+    "excerpt": "Der chinesische Onlinehändler Temu kündigt an, in der EU seine Geschäftspraktiken zu ändern, um den Verbraucherschutz zu stärken.",
+    "date": "2026-11-26",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-26-temu-verpflichtet-sich-zu-mehr-verbraucherschutz-in-der-eu.html",
+    "image": "/posts/2026-11-26-temu-verpflichtet-sich-zu-mehr-verbraucherschutz-in-der-eu-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-temu-verpflichtet-sich-zu-mehr-verbraucherschutz-in-der-eu-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/temu-eu-verfahren-verbraucherschutz-100.html"
+  },
+  {
     "slug": "2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt",
     "title": "NASA-Sonde DART trifft Dimorphos – Umlaufzeit verkürzt",
     "excerpt": "Die NASA-Sonde DART traf den Asteroiden Dimorphos, wodurch seine Umlaufzeit um Didymos stark verkürzt wurde.",
