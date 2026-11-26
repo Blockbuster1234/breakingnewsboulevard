@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern",
+    "title": "Schneefall blockiert Autobahnen in Oberbayern",
+    "excerpt": "Schneefälle in Oberbayern führen zu Unfällen und Sperrungen der A93, A8 und A8 Richtung Salzburg, während Lastwagen bis nach München zurückstauen.",
+    "date": "2026-11-26",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern.html",
+    "image": "/posts/2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Wintereinbruch: Schneefall behindert Autoverkehr in Bayern",
+      "url": "https://www.tagesschau.de/wetter/wetterthema/schnee-bayern-autobahnsperrung-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Thu, 26 Nov 2026 22:54:39 +0100"
+    },
+    "body": "Schneefälle in Oberbayern verursachen zahlreiche Verkehrsunfälle und Sperrungen der Autobahnen A93, A8 und A8 Richtung Salzburg.\n\nLastwagen stauten sich bis nach München zurück, sodass die A93 zeitweise nicht befahrbar war. Die Polizei riet im südlichen Oberbayern von Fahrten in Richtung Tirol ab und warnte vor erheblichen Verkehrsbeeinträchtigungen.",
+    "imagePrompt": "snow-covered highway in the Alps with stalled trucks and a closed road sign, evening light",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Schneefall blockiert Autobahnen in Oberbayern",
+    "wordCount": 47,
+    "sourcePublishedAt": "Thu, 26 Nov 2026 22:54:39 +0100",
+    "createdAt": "2026-11-26T23:21:41.035Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-26T23:21:41.726Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport",
     "title": "ATMOS und MBDA entwickeln Weltraum-Waffentransport",
     "excerpt": "ATMOS Space Cargo und MBDA planen ein System namens PODS, das Waffen aus dem Orbit zur Erde bringen soll.",

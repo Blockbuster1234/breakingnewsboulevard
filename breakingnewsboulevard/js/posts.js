@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern",
+    "title": "Schneefall blockiert Autobahnen in Oberbayern",
+    "excerpt": "Schneefälle in Oberbayern führen zu Unfällen und Sperrungen der A93, A8 und A8 Richtung Salzburg, während Lastwagen bis nach München zurückstauen.",
+    "date": "2026-11-26",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern.html",
+    "image": "/posts/2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wetter/wetterthema/schnee-bayern-autobahnsperrung-100.html"
+  },
+  {
     "slug": "2026-11-26-atmos-und-mbda-entwickeln-weltraum-waffentransport",
     "title": "ATMOS und MBDA entwickeln Weltraum-Waffentransport",
     "excerpt": "ATMOS Space Cargo und MBDA planen ein System namens PODS, das Waffen aus dem Orbit zur Erde bringen soll.",
