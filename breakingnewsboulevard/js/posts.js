@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-26-bundeswehr-uebt-evakuierung-im-senegal",
+    "title": "Bundeswehr übt Evakuierung im Senegal",
+    "excerpt": "Bundeswehrsoldaten trainieren in Dodji, Senegal, gemeinsam mit senegalesischen Streitkräften an einer Evakuierungsübung aus einem fiktiven Krisenstaat.",
+    "date": "2026-11-26",
+    "category": "Justiz",
+    "url": "/posts/2026-11-26-bundeswehr-uebt-evakuierung-im-senegal.html",
+    "image": "/posts/2026-11-26-bundeswehr-uebt-evakuierung-im-senegal-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-bundeswehr-uebt-evakuierung-im-senegal-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/ausland/afrika/senegal-uebung-bundeswehr-100.html"
+  },
+  {
     "slug": "2026-11-26-temu-verpflichtet-sich-zu-mehr-verbraucherschutz-in-der-eu",
     "title": "Temu verpflichtet sich zu mehr Verbraucherschutz in der EU",
     "excerpt": "Der chinesische Onlinehändler Temu kündigt an, in der EU seine Geschäftspraktiken zu ändern, um den Verbraucherschutz zu stärken.",

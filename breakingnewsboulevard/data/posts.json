@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-26-bundeswehr-uebt-evakuierung-im-senegal",
+    "title": "Bundeswehr übt Evakuierung im Senegal",
+    "excerpt": "Bundeswehrsoldaten trainieren in Dodji, Senegal, gemeinsam mit senegalesischen Streitkräften an einer Evakuierungsübung aus einem fiktiven Krisenstaat.",
+    "date": "2026-11-26",
+    "category": "Justiz",
+    "url": "/posts/2026-11-26-bundeswehr-uebt-evakuierung-im-senegal.html",
+    "image": "/posts/2026-11-26-bundeswehr-uebt-evakuierung-im-senegal-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-bundeswehr-uebt-evakuierung-im-senegal-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Warum die Bundeswehr im Senegal trainiert",
+      "url": "https://www.tagesschau.de/ausland/afrika/senegal-uebung-bundeswehr-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Thu, 26 Nov 2026 18:59:05 +0100"
+    },
+    "body": "Bundeswehrsoldaten trainieren in Dodji, Senegal, gemeinsam mit senegalesischen Streitkräften an einer Evakuierungsübung aus einem fiktiven Krisenstaat.\n\nDie Übung dient der Vorbereitung auf mögliche Krisen weltweit, da die Bundeswehr bereits Erfahrungen bei Evakuierungen in Afghanistan und Sudan gesammelt hat. Der Senegal wird als stabiler Partner in Westafrika betrachtet.",
+    "imagePrompt": "A desert training camp in Senegal with soldiers and a small aircraft on a sand runway, early morning light",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Bundeswehr übt Evakuierung im Senegal",
+    "wordCount": 47,
+    "sourcePublishedAt": "Thu, 26 Nov 2026 18:59:05 +0100",
+    "createdAt": "2026-11-26T18:43:46.295Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-26T18:43:46.795Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-26-temu-verpflichtet-sich-zu-mehr-verbraucherschutz-in-der-eu",
     "title": "Temu verpflichtet sich zu mehr Verbraucherschutz in der EU",
     "excerpt": "Der chinesische Onlinehändler Temu kündigt an, in der EU seine Geschäftspraktiken zu ändern, um den Verbraucherschutz zu stärken.",
