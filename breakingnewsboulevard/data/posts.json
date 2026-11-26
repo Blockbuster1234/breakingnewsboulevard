@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt",
+    "title": "NASA-Sonde DART trifft Dimorphos – Umlaufzeit verkürzt",
+    "excerpt": "Die NASA-Sonde DART traf den Asteroiden Dimorphos, wodurch seine Umlaufzeit um Didymos stark verkürzt wurde.",
+    "date": "2026-11-26",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt.html",
+    "image": "/posts/2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Asteroiden-Abwehr - einfach schießen und hoffen reicht nicht",
+      "url": "https://www.tagesschau.de/wissen/sonde-hera-asteroid-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Wed, 25 Nov 2026 18:30:09 +0100"
+    },
+    "body": "Die NASA-Sonde DART traf den Asteroiden Dimorphos, der Teil des Doppelasteroidensystems Didymos-Dimorphos im Nahen Raum der Erde ist.\n\nDurch den Einschlag wurde die Umlaufzeit um Didymos von zwölf auf weniger als elfeinhalb Stunden verkürzt und die Rotation des Asteroiden chaotisch verändert. Die ESA-Sonde Hera ist jetzt am Asteroiden, um die Schäden und die Zusammensetzung des Geröllhaufens zu untersuchen.",
+    "imagePrompt": "A spacecraft orbiting a small asteroid with a large crater, illuminated by a distant sun, in a calm space setting",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: NASA-Sonde DART trifft Dimorphos – Umlaufzeit verkürzt",
+    "wordCount": 58,
+    "sourcePublishedAt": "Wed, 25 Nov 2026 18:30:09 +0100",
+    "createdAt": "2026-11-26T03:24:29.179Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-26T03:24:30.109Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025",
     "title": "FC Bayern bestätigt Musialas Untersuchung am 22. April 2025",
     "excerpt": "Der FC Bayern München hat bestätigt, dass Jamal Musiala erstmals am 22. April 2025 wegen neurologischer Symptome untersucht wurde.",

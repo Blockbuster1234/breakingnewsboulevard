@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt",
+    "title": "NASA-Sonde DART trifft Dimorphos – Umlaufzeit verkürzt",
+    "excerpt": "Die NASA-Sonde DART traf den Asteroiden Dimorphos, wodurch seine Umlaufzeit um Didymos stark verkürzt wurde.",
+    "date": "2026-11-26",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt.html",
+    "image": "/posts/2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt-hero.jpg",
+    "images": [
+      "/posts/2026-11-26-nasa-sonde-dart-trifft-dimorphos-umlaufzeit-verkuerzt-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wissen/sonde-hera-asteroid-100.html"
+  },
+  {
     "slug": "2026-11-26-fc-bayern-bestaetigt-musialas-untersuchung-am-22-april-2025",
     "title": "FC Bayern bestätigt Musialas Untersuchung am 22. April 2025",
     "excerpt": "Der FC Bayern München hat bestätigt, dass Jamal Musiala erstmals am 22. April 2025 wegen neurologischer Symptome untersucht wurde.",
