@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung",
+    "title": "Schweitzer sieht in Rentenentwurf Basis für Koalitionseinigung",
+    "excerpt": "Der Arbeitsminister hält seinen Rentenentwurf für eine mögliche Einigungsgrundlage und will den abschlagsfreien früheren Ruhestand nach 45 Beitragsjahren erhalten.",
+    "date": "2026-11-27",
+    "category": "Politik",
+    "url": "/posts/2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung.html",
+    "image": "/posts/2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung-hero.jpg",
+    "images": [
+      "/posts/2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/inland/innenpolitik/schweitzer-interview-100.html"
+  },
+  {
     "slug": "2026-11-27-deutschlands-rentensystem-geraet-durch-den-demografischen-wandel-unter-druck",
     "title": "Deutschlands Rentensystem gerät durch den demografischen Wandel unter Druck",
     "excerpt": "Immer weniger Erwerbstätige finanzieren die Renten: Eine Reform soll das System auf eine breitere Grundlage stellen.",

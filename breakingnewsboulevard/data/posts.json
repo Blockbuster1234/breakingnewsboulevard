@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung",
+    "title": "Schweitzer sieht in Rentenentwurf Basis für Koalitionseinigung",
+    "excerpt": "Der Arbeitsminister hält seinen Rentenentwurf für eine mögliche Einigungsgrundlage und will den abschlagsfreien früheren Ruhestand nach 45 Beitragsjahren erhalten.",
+    "date": "2026-11-27",
+    "category": "Politik",
+    "url": "/posts/2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung.html",
+    "image": "/posts/2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung-hero.jpg",
+    "images": [
+      "/posts/2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Schweitzer zu Plänen für Rentenreform: \"Wir können zusammenkommen\"",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/schweitzer-interview-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Fri, 27 Nov 2026 23:10:29 +0100"
+    },
+    "body": "Bundesarbeitsminister Alexander Schweitzer hat in den tagesthemen seinen Entwurf zur gesetzlichen Rentenreform als mögliche Einigungsgrundlage für die schwarz-rote Koalition vorgestellt.\n\nWer 45 Beitragsjahre erreicht und lange gearbeitet, Kinder erzogen oder Angehörige gepflegt hat, soll weiterhin ohne Abschläge früher in Rente gehen können. Arbeitslosengeld, Krankengeld und Minijobs sollen künftig nicht mehr für die erforderlichen 45 Jahre zählen; laut Schweitzer könnten dadurch rund 27 Prozent der Anspruchsberechtigten diese Rentenart nicht mehr nutzen.",
+    "imagePrompt": "Stylized editorial illustration of a quiet desk with blank contribution tokens and a calendar suggesting a 45-year pension threshold, soft morning light and a thoughtful, restrained mood; no people, text, logos, or photorealism.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Schweitzer sieht in Rentenentwurf Basis für Koalitionseinigung",
+    "wordCount": 70,
+    "sourcePublishedAt": "Fri, 27 Nov 2026 23:10:29 +0100",
+    "createdAt": "2026-11-27T22:58:54.333Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-27T22:58:54.959Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-27-deutschlands-rentensystem-geraet-durch-den-demografischen-wandel-unter-druck",
     "title": "Deutschlands Rentensystem gerät durch den demografischen Wandel unter Druck",
     "excerpt": "Immer weniger Erwerbstätige finanzieren die Renten: Eine Reform soll das System auf eine breitere Grundlage stellen.",
