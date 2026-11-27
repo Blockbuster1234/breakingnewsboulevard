@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Thu, 26 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Studie: Rechtsextreme Einstellungen und Umbruchswunsch nehmen zu</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Wissenschaft</category>
+      <description>Die Leipziger Autoritarismus-Studie 2026 verzeichnet mehr rechtsextreme Einstellungen und eine wachsende Sehnsucht nach gesellschaftlichem Umbruch.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Schneefall blockiert Autobahnen in Oberbayern</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern.html</link>
@@ -267,15 +276,6 @@
       <category>Justiz</category>
       <description>Seit 2016 demonstrieren Bewohner in Dordrecht vor der Chemours‑Fabrik, weil sie PFAS‑Verunreinigungen in Böden, Wasser und Nahrung fürchten.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-21-dordrecht-anwohner-protestieren-gegen-chemours-wegen-pfas-verunreinigung-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Anthropic‑KI behauptet, Riemannsche Vermutung gelöst zu haben</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben.html</guid>
-      <pubDate>Sat, 21 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Wissenschaft</category>
-      <description>Levent Alpöge von Anthropic behauptet, Claude hätte die Riemannsche Vermutung bewiesen.</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-21-anthropic-ki-behauptet-riemannsche-vermutung-geloest-zu-haben-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

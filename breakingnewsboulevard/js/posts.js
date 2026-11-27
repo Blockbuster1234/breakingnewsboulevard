@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu",
+    "title": "Studie: Rechtsextreme Einstellungen und Umbruchswunsch nehmen zu",
+    "excerpt": "Die Leipziger Autoritarismus-Studie 2026 verzeichnet mehr rechtsextreme Einstellungen und eine wachsende Sehnsucht nach gesellschaftlichem Umbruch.",
+    "date": "2026-11-27",
+    "category": "Wissenschaft",
+    "url": "/posts/2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu.html",
+    "image": "/posts/2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu-hero.jpg",
+    "images": [
+      "/posts/2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/krieg-inflation-migration-warum-dauerkrisen-den-ruf-nach-starken-f%C3%BChrern-f%C3%B6rdern-und-was-dagegen-hilft/a-80063863"
+  },
+  {
     "slug": "2026-11-26-schneefall-blockiert-autobahnen-in-oberbayern",
     "title": "Schneefall blockiert Autobahnen in Oberbayern",
     "excerpt": "Schneefälle in Oberbayern führen zu Unfällen und Sperrungen der A93, A8 und A8 Richtung Salzburg, während Lastwagen bis nach München zurückstauen.",
