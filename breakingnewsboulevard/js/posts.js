@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-27-steinmeier-wirbt-in-ghana-fuer-mehr-investitionsrisiko-deutscher-firmen",
+    "title": "Steinmeier wirbt in Ghana für mehr Investitionsrisiko deutscher Firmen",
+    "excerpt": "Beim Wirtschaftsgipfel in Ghana fordert Frank-Walter Steinmeier deutsche Unternehmen zu mehr Mut bei Investitionen in Afrika auf.",
+    "date": "2026-11-27",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-27-steinmeier-wirbt-in-ghana-fuer-mehr-investitionsrisiko-deutscher-firmen.html",
+    "image": "/posts/2026-11-27-steinmeier-wirbt-in-ghana-fuer-mehr-investitionsrisiko-deutscher-firmen-hero.jpg",
+    "images": [
+      "/posts/2026-11-27-steinmeier-wirbt-in-ghana-fuer-mehr-investitionsrisiko-deutscher-firmen-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/letzte-dienstreise-nach-afrika-bundespr%C3%A4sident-steinmeier-fordert-mehr-mut-bei-investitionen-in-afrikanischen-staaten/a-80059627"
+  },
+  {
     "slug": "2026-11-27-studie-rechtsextreme-einstellungen-und-umbruchswunsch-nehmen-zu",
     "title": "Studie: Rechtsextreme Einstellungen und Umbruchswunsch nehmen zu",
     "excerpt": "Die Leipziger Autoritarismus-Studie 2026 verzeichnet mehr rechtsextreme Einstellungen und eine wachsende Sehnsucht nach gesellschaftlichem Umbruch.",
