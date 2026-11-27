@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-27-deutschlands-rentensystem-geraet-durch-den-demografischen-wandel-unter-druck",
+    "title": "Deutschlands Rentensystem gerät durch den demografischen Wandel unter Druck",
+    "excerpt": "Immer weniger Erwerbstätige finanzieren die Renten: Eine Reform soll das System auf eine breitere Grundlage stellen.",
+    "date": "2026-11-27",
+    "category": "Politik",
+    "url": "/posts/2026-11-27-deutschlands-rentensystem-geraet-durch-den-demografischen-wandel-unter-druck.html",
+    "image": "/posts/2026-11-27-deutschlands-rentensystem-geraet-durch-den-demografischen-wandel-unter-druck-hero.jpg",
+    "images": [
+      "/posts/2026-11-27-deutschlands-rentensystem-geraet-durch-den-demografischen-wandel-unter-druck-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/der-generationenvertrag-sicherte-jahrzehnte-lang-die-rente-nun-bringen-alterung-und-niedrige-geburtenzahlen-das-system-an-grenzen/a-80072457"
+  },
+  {
     "slug": "2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen",
     "title": "Schweitzers Rentenentwurf lässt Streit um abschlagsfreie Frühverrentung offen",
     "excerpt": "Arbeitsminister Alexander Schweitzer will den Kreis für die abschlagsfreie Frühverrentung verkleinern, statt die Regelung vollständig abzuschaffen.",
