@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen",
+    "title": "Schweitzers Rentenentwurf lässt Streit um abschlagsfreie Frühverrentung offen",
+    "excerpt": "Arbeitsminister Alexander Schweitzer will den Kreis für die abschlagsfreie Frühverrentung verkleinern, statt die Regelung vollständig abzuschaffen.",
+    "date": "2026-11-27",
+    "category": "Politik",
+    "url": "/posts/2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen.html",
+    "image": "/posts/2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen-hero.jpg",
+    "images": [
+      "/posts/2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/kommentar/rentenplaene-schweitzer-100.html"
+  },
+  {
     "slug": "2026-11-27-steinmeier-wirbt-in-ghana-fuer-mehr-investitionsrisiko-deutscher-firmen",
     "title": "Steinmeier wirbt in Ghana für mehr Investitionsrisiko deutscher Firmen",
     "excerpt": "Beim Wirtschaftsgipfel in Ghana fordert Frank-Walter Steinmeier deutsche Unternehmen zu mehr Mut bei Investitionen in Afrika auf.",

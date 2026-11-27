@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen",
+    "title": "Schweitzers Rentenentwurf lässt Streit um abschlagsfreie Frühverrentung offen",
+    "excerpt": "Arbeitsminister Alexander Schweitzer will den Kreis für die abschlagsfreie Frühverrentung verkleinern, statt die Regelung vollständig abzuschaffen.",
+    "date": "2026-11-27",
+    "category": "Politik",
+    "url": "/posts/2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen.html",
+    "image": "/posts/2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen-hero.jpg",
+    "images": [
+      "/posts/2026-11-27-schweitzers-rentenentwurf-laesst-streit-um-abschlagsfreie-fruehverrentung-offen-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Kommentar zu Schweitzers Rentenplänen: Die politische Irrfahrt geht weiter",
+      "url": "https://www.tagesschau.de/kommentar/rentenplaene-schweitzer-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Fri, 27 Nov 2026 17:26:55 +0100"
+    },
+    "body": "Arbeitsminister Alexander Schweitzer (SPD) will den Kreis der Menschen einschränken, die nach 45 Beitragsjahren ohne Rentenabzüge früher in den Ruhestand gehen können; sein Rentenentwurf liegt nun vor.\n\nEine Expertenkommission der Bundesregierung hatte die Abschaffung dieser Regelung einstimmig empfohlen. Da der Entwurf politisch noch nicht abschließend abgestimmt ist, geht der Streit in der Koalition weiter; offen ist auch, ob das Bundeskabinett vor Weihnachten darüber entscheidet.",
+    "imagePrompt": "Editorial illustration of a railway switch beside a pension file and a calendar in Berlin, with the tracks diverging into a muted, unsettled evening atmosphere; stylized, non-photorealistic, no people or text.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Schweitzers Rentenentwurf lässt Streit um abschlagsfreie Frühverrentung offen",
+    "wordCount": 64,
+    "sourcePublishedAt": "Fri, 27 Nov 2026 17:26:55 +0100",
+    "createdAt": "2026-11-27T18:36:50.354Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-27T18:36:51.003Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-27-steinmeier-wirbt-in-ghana-fuer-mehr-investitionsrisiko-deutscher-firmen",
     "title": "Steinmeier wirbt in Ghana für mehr Investitionsrisiko deutscher Firmen",
     "excerpt": "Beim Wirtschaftsgipfel in Ghana fordert Frank-Walter Steinmeier deutsche Unternehmen zu mehr Mut bei Investitionen in Afrika auf.",
