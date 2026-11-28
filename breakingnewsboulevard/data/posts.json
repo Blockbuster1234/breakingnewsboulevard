@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff",
+    "title": "Pentagon betont Sicherheit seiner IT-Systeme nach Berichten über Angriff",
+    "excerpt": "Nach Berichten über einen möglichen Angriff auf die Luftwaffen-Plattform Cloud One verweist das Pentagon auf die Überwachung seiner IT-Systeme.",
+    "date": "2026-11-28",
+    "category": "Technologie",
+    "url": "/posts/2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff.html",
+    "image": "/posts/2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff-hero.jpg",
+    "images": [
+      "/posts/2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "DW",
+      "title": "Cyberangriff auf Plattform der US-Luftwaffe? Das Pentagon verweist auf geschützte und sichere Systeme",
+      "url": "https://www.dw.com/de/pentagon-beschwichtigt-nach-bericht-%C3%BCber-cyberangriff-auf-us-luftwaffe/a-80083610",
+      "termsUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "license": "DW-Nutzungsbestimmungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://corporate.dw.com/de/freie-nutzung-von-dw-inhalten/a-76961025",
+      "credit": "Quelle: DW; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "2026-11-28T09:57:00Z"
+    },
+    "body": "Nach Medienberichten über einen möglichen Cyberangriff auf die Cloud-One-Plattform der US-Luftwaffe hat das Pentagon die Sicherheit seiner IT-Infrastruktur hervorgehoben und erklärt, die Systeme würden rund um die Uhr überwacht.\n\nDas Ministerium bestätigte oder dementierte einen Angriff auf Cloud One nicht ausdrücklich. Berichte über den Vorfall stützten sich auf Angaben nicht namentlich genannter beziehungsweise mit dem Vorgang vertrauter Personen; laut NBC News könnten sensible militärische Informationen offengelegt worden sein.",
+    "imagePrompt": "Editorial illustration of a cloud-shaped digital data network over a subdued United States map, with a small military aircraft silhouette and abstract cybersecurity lines, nighttime atmosphere, muted blue and gray palette, non-photorealistic, no text.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Pentagon betont Sicherheit seiner IT-Systeme nach Berichten über Angriff",
+    "wordCount": 68,
+    "sourcePublishedAt": "2026-11-28T09:57:00Z",
+    "createdAt": "2026-11-28T14:49:04.687Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-28T14:49:05.556Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft",
     "title": "Ex-BND-Präsident Hanning bleibt in Untersuchungshaft",
     "excerpt": "Der Bundesgerichtshof in Karlsruhe hat August Hannings Haftbeschwerde verworfen; gegen den Ex-BND-Präsidenten wird unter anderem wegen Spionageverdachts ermittelt.",

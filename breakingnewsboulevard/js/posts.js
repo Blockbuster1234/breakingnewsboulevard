@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff",
+    "title": "Pentagon betont Sicherheit seiner IT-Systeme nach Berichten über Angriff",
+    "excerpt": "Nach Berichten über einen möglichen Angriff auf die Luftwaffen-Plattform Cloud One verweist das Pentagon auf die Überwachung seiner IT-Systeme.",
+    "date": "2026-11-28",
+    "category": "Technologie",
+    "url": "/posts/2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff.html",
+    "image": "/posts/2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff-hero.jpg",
+    "images": [
+      "/posts/2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/pentagon-beschwichtigt-nach-bericht-%C3%BCber-cyberangriff-auf-us-luftwaffe/a-80083610"
+  },
+  {
     "slug": "2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft",
     "title": "Ex-BND-Präsident Hanning bleibt in Untersuchungshaft",
     "excerpt": "Der Bundesgerichtshof in Karlsruhe hat August Hannings Haftbeschwerde verworfen; gegen den Ex-BND-Präsidenten wird unter anderem wegen Spionageverdachts ermittelt.",
