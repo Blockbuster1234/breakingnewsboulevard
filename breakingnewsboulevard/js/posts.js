@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft",
+    "title": "Ex-BND-Präsident Hanning bleibt in Untersuchungshaft",
+    "excerpt": "Der Bundesgerichtshof in Karlsruhe hat August Hannings Haftbeschwerde verworfen; gegen den Ex-BND-Präsidenten wird unter anderem wegen Spionageverdachts ermittelt.",
+    "date": "2026-11-28",
+    "category": "Justiz",
+    "url": "/posts/2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft.html",
+    "image": "/posts/2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft-hero.jpg",
+    "images": [
+      "/posts/2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/inland/bnd-hanning-untersuchungshaft-spionageverdacht-100.html"
+  },
+  {
     "slug": "2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg",
     "title": "Skisaison startet an Zugspitze und in Winterberg",
     "excerpt": "An der Zugspitze und in Winterberg sind die ersten Lifte geöffnet; Tages-Skipässe kosten im Schnitt 4,2 Prozent mehr als im Vorjahr.",

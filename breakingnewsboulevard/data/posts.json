@@ -1,5 +1,59 @@
 [
   {
+    "slug": "2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft",
+    "title": "Ex-BND-Präsident Hanning bleibt in Untersuchungshaft",
+    "excerpt": "Der Bundesgerichtshof in Karlsruhe hat August Hannings Haftbeschwerde verworfen; gegen den Ex-BND-Präsidenten wird unter anderem wegen Spionageverdachts ermittelt.",
+    "date": "2026-11-28",
+    "category": "Justiz",
+    "url": "/posts/2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft.html",
+    "image": "/posts/2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft-hero.jpg",
+    "images": [
+      "/posts/2026-11-28-ex-bnd-praesident-hanning-bleibt-in-untersuchungshaft-hero.jpg"
+    ],
+    "format": "short",
+    "source": {
+      "name": "Tagesschau",
+      "title": "Spionageverdacht: Ex-BND-Chef Hanning bleibt in Untersuchungshaft",
+      "url": "https://www.tagesschau.de/inland/bnd-hanning-untersuchungshaft-spionageverdacht-100.html",
+      "termsUrl": "https://www.tagesschau.de/impressum/",
+      "license": "ARD/tagesschau.de-Nutzungsbedingungen; Volltext nur als Recherchegrundlage, keine Übernahme; eigene Zusammenfassung",
+      "licenseUrl": "https://www.tagesschau.de/impressum/",
+      "credit": "Quelle: Tagesschau; Volltext als Recherchegrundlage; eigene Zusammenfassung.",
+      "reuseNote": "Den verlinkten Volltext nur zur Recherche und Faktenprüfung lesen. Keine Sätze, Formulierungen oder Fotos übernehmen; Quelle und Artikel-Link sind im Beitrag sichtbar auszuweisen.",
+      "language": "de",
+      "mode": "full",
+      "publishedAt": "Fri, 27 Nov 2026 15:10:01 +0100"
+    },
+    "body": "Der frühere BND-Präsident August Hanning bleibt nach einer Entscheidung des Bundesgerichtshofs in Karlsruhe in Untersuchungshaft.\n\nDas Gericht verwarf seine Haftbeschwerde; eine Begründung veröffentlichte es wegen der laufenden Ermittlungen nicht. Hanning wird verdächtigt, geheime BND-Erkenntnisse von seinem früheren Büroleiter gekauft und teilweise weitergegeben zu haben; gegen ihn wird unter anderem wegen geheimdienstlicher Agententätigkeit und versuchten Landesverrats ermittelt.",
+    "imagePrompt": "A stylized editorial illustration of sealed classified folders beside a closed detention-cell door in Karlsruhe, quiet overcast daytime mood, muted colors, no text or people.",
+    "imageCredit": "Breaking News Boulevard",
+    "imageLicense": "Redaktionelle Illustration",
+    "imageLicenseUrl": "",
+    "imageSourceUrl": "",
+    "imageType": "illustration",
+    "imageProvider": "Breaking News Boulevard",
+    "imageAlt": "Symbolbild: Ex-BND-Präsident Hanning bleibt in Untersuchungshaft",
+    "wordCount": 56,
+    "sourcePublishedAt": "Fri, 27 Nov 2026 15:10:01 +0100",
+    "createdAt": "2026-11-28T03:07:50.359Z",
+    "review": {
+      "status": "approved",
+      "reviewer": "Auto-Redaktion",
+      "reviewedAt": "2026-11-28T03:07:51.155Z",
+      "checks": [
+        "names",
+        "roles",
+        "numbers",
+        "facts",
+        "timeliness",
+        "source",
+        "quote",
+        "grounding",
+        "structure"
+      ]
+    }
+  },
+  {
     "slug": "2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg",
     "title": "Skisaison startet an Zugspitze und in Winterberg",
     "excerpt": "An der Zugspitze und in Winterberg sind die ersten Lifte geöffnet; Tages-Skipässe kosten im Schnitt 4,2 Prozent mehr als im Vorjahr.",
