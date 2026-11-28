@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-28-lebensmittelpreise-koennten-im-neuen-jahr-weiter-steigen",
+    "title": "Lebensmittelpreise könnten im neuen Jahr weiter steigen",
+    "excerpt": "Unternehmen rechnen häufiger mit Preiserhöhungen, und höhere Erzeugerpreise nähren die Sorge vor teureren Einkäufen.",
+    "date": "2026-11-28",
+    "category": "Wirtschaft",
+    "url": "/posts/2026-11-28-lebensmittelpreise-koennten-im-neuen-jahr-weiter-steigen.html",
+    "image": "/posts/2026-11-28-lebensmittelpreise-koennten-im-neuen-jahr-weiter-steigen-hero.jpg",
+    "images": [
+      "/posts/2026-11-28-lebensmittelpreise-koennten-im-neuen-jahr-weiter-steigen-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/wirtschaft/verbraucher/inflation-preisanstieg-ausblick-2027-100.html"
+  },
+  {
     "slug": "2026-11-28-spaniens-wahl-koennte-europas-sozialdemokraten-eine-wichtige-stimme-kosten",
     "title": "Spaniens Wahl könnte Europas Sozialdemokraten eine wichtige Stimme kosten",
     "excerpt": "Ein möglicher Regierungswechsel in Madrid könnte die europäische Linke schwächen und Spaniens Haltung zu Migration, Verteidigung und Nahost verändern.",
