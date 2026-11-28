@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg",
+    "title": "Skisaison startet an Zugspitze und in Winterberg",
+    "excerpt": "An der Zugspitze und in Winterberg sind die ersten Lifte geöffnet; Tages-Skipässe kosten im Schnitt 4,2 Prozent mehr als im Vorjahr.",
+    "date": "2026-11-28",
+    "category": "Sport",
+    "url": "/posts/2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg.html",
+    "image": "/posts/2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg-hero.jpg",
+    "images": [
+      "/posts/2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg-hero.jpg"
+    ],
+    "source": "Tagesschau",
+    "sourceUrl": "https://www.tagesschau.de/inland/gesellschaft/ski-saison-deutschland-100.html"
+  },
+  {
     "slug": "2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung",
     "title": "Schweitzer sieht in Rentenentwurf Basis für Koalitionseinigung",
     "excerpt": "Der Arbeitsminister hält seinen Rentenentwurf für eine mögliche Einigungsgrundlage und will den abschlagsfreien früheren Ruhestand nach 45 Beitragsjahren erhalten.",

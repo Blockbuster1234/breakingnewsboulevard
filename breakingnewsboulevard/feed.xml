@@ -6,7 +6,16 @@
     <atom:link href="https://www.breakingnewsboulevard.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Weltnachrichten, taeglich in eigenen Worten zusammengefasst.</description>
     <language>de</language>
-    <lastBuildDate>Fri, 27 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 06:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Skisaison startet an Zugspitze und in Winterberg</title>
+      <link>https://www.breakingnewsboulevard.com/posts/2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg.html</link>
+      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg.html</guid>
+      <pubDate>Sat, 28 Nov 2026 06:00:00 GMT</pubDate>
+      <category>Sport</category>
+      <description>An der Zugspitze und in Winterberg sind die ersten Lifte geöffnet; Tages-Skipässe kosten im Schnitt 4,2 Prozent mehr als im Vorjahr.</description>
+      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-28-skisaison-startet-an-zugspitze-und-in-winterberg-hero.jpg" type="image/jpeg" length="0" />
+    </item>
     <item>
       <title>Schweitzer sieht in Rentenentwurf Basis für Koalitionseinigung</title>
       <link>https://www.breakingnewsboulevard.com/posts/2026-11-27-schweitzer-sieht-in-rentenentwurf-basis-fuer-koalitionseinigung.html</link>
@@ -267,15 +276,6 @@
       <category>Gesundheit</category>
       <description>Jens Baas aus Berlin sagt, dass mehr Geld nicht zu mehr Arztterminen führt und fordert ein neues System.</description>
       <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-22-tk-chef-kritisiert-geld-fuer-schnellere-arzttermine-hero.jpg" type="image/jpeg" length="0" />
-    </item>
-    <item>
-      <title>Explosion auf russischem Schiff in Benghazi durch drohnenähnlichen Angriff</title>
-      <link>https://www.breakingnewsboulevard.com/posts/2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff.html</link>
-      <guid isPermaLink="true">https://www.breakingnewsboulevard.com/posts/2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff.html</guid>
-      <pubDate>Sun, 22 Nov 2026 06:00:00 GMT</pubDate>
-      <category>Welt</category>
-      <description>Explosion auf russischem Schiff in Benghazi, Libyen, wird verdächtig durch Drohnenangriff verursacht, berichtet die östliche libysche Regierung.</description>
-      <enclosure url="https://www.breakingnewsboulevard.com/posts/2026-11-22-explosion-auf-russischem-schiff-in-benghazi-durch-drohnenaehnlichen-angriff-hero.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
