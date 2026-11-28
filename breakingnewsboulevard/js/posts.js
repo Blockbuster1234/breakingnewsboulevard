@@ -1,5 +1,19 @@
 const posts = [
   {
+    "slug": "2026-11-28-spaniens-wahl-koennte-europas-sozialdemokraten-eine-wichtige-stimme-kosten",
+    "title": "Spaniens Wahl könnte Europas Sozialdemokraten eine wichtige Stimme kosten",
+    "excerpt": "Ein möglicher Regierungswechsel in Madrid könnte die europäische Linke schwächen und Spaniens Haltung zu Migration, Verteidigung und Nahost verändern.",
+    "date": "2026-11-28",
+    "category": "Welt",
+    "url": "/posts/2026-11-28-spaniens-wahl-koennte-europas-sozialdemokraten-eine-wichtige-stimme-kosten.html",
+    "image": "/posts/2026-11-28-spaniens-wahl-koennte-europas-sozialdemokraten-eine-wichtige-stimme-kosten-hero.jpg",
+    "images": [
+      "/posts/2026-11-28-spaniens-wahl-koennte-europas-sozialdemokraten-eine-wichtige-stimme-kosten-hero.jpg"
+    ],
+    "source": "DW",
+    "sourceUrl": "https://www.dw.com/de/spaniens-parlamentswahlen-und-die-auswirkungen-auf-europa/a-80075322"
+  },
+  {
     "slug": "2026-11-28-pentagon-betont-sicherheit-seiner-it-systeme-nach-berichten-ueber-angriff",
     "title": "Pentagon betont Sicherheit seiner IT-Systeme nach Berichten über Angriff",
     "excerpt": "Nach Berichten über einen möglichen Angriff auf die Luftwaffen-Plattform Cloud One verweist das Pentagon auf die Überwachung seiner IT-Systeme.",
